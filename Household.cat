@@ -72,7 +72,6 @@
         </categoryLink>
         <categoryLink id="7251-4605-b1fd-d80f" name="Freeblades" publicationId="975a-00f4-pubN89746" page="35" hidden="false" targetId="efc2-e899-f74b-55ad" primary="false"/>
         <categoryLink id="2434-58f3-dd2a-0fd2" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
-        <categoryLink id="bf96-9b27-a283-7054" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
         <categoryLink id="346a-4747-185f-fc53" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
         <categoryLink id="b9a8-00d2-8884-091f" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
       </categoryLinks>
@@ -460,28 +459,6 @@
           <entryLinks>
             <entryLink id="dce4-2a99-eb26-7fa6" name="Knightly Qualities" hidden="false" collective="false" import="true" targetId="e0a7-3f98-192c-2c04" type="selectionEntryGroup"/>
           </entryLinks>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="8cf7-3287-5928-2a53" name="Warrior Elite" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30a8-7422-6fec-674f" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5310-8568-09de-f88d" type="min"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="58d4-5f9d-dd0b-1b14" name="Nobility" hidden="false" targetId="82aa-de49-ba10-80c1" primary="false"/>
-        <categoryLink id="b17b-6342-eed4-d170" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="91e0-dd19-b4c5-b2ed" name="Lance Banners" hidden="false" collective="false" import="true" targetId="5ece-4b00-b772-39c6" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0850-48ee-8e32-acd4" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffa0-cb85-e00e-fb38" type="max"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
