@@ -17,7 +17,6 @@
         <categoryLink id="7a3b-42f9-f60d-696a" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink id="0606-1d0c-defb-d6e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="4f07-d070-7d91-0291" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-        <categoryLink id="8870-d6d8-5519-9eb0" name="Squadron" hidden="false" targetId="fb16-4d89-30b7-fbb8" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -378,11 +377,6 @@
     <entryLink id="7494-d040-547c-1a78" name="Titanic Decapitation" hidden="false" collective="false" import="false" targetId="a9b7-3d50-1282-ecb3" type="selectionEntry"/>
     <entryLink id="a76b-b826-3647-8c35" name="The Miracle of Mars" hidden="false" collective="false" import="false" targetId="dee9-1ba4-819a-306d" type="selectionEntry"/>
     <entryLink id="2065-a689-35f6-52c3" name="Forward Observers" hidden="false" collective="false" import="false" targetId="17f0-a74f-027f-c827" type="selectionEntry"/>
-    <entryLink id="1d6a-6369-540b-f5cd" name="Outflank" hidden="false" collective="false" import="true" targetId="1ff9-2715-d0fa-8049" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="95b3-9276-34a5-9e74" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="f971-31dc-24ee-2d31" name="Dark Pledge" hidden="false" collective="false" import="true" targetId="a926-7329-163c-d9a6" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="9999-b755-371a-0a55" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
