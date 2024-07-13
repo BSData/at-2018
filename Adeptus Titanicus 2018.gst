@@ -20421,6 +20421,11 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
+      <rules>
+        <rule name="Battle Level" id="6f29-80e1-8a2c-0b73" hidden="false">
+          <description>In Organised Play, each battlegroup is built to a points limit, referrered to as a Battle Rating, which is agreed upon between players before the battle or set by a Tournament Organiser before the event. The Battle Rating used can be chosen for any number of reasons but it should be noted that games fought between battlegroups with larger Battle Ratings take more time to complete. In general, games of Adeptus Titanicus fit into three broad categories: Skirmish, Confrontation, Epic Clash.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="a227-a4f3-df4e-7446" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
