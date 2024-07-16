@@ -4409,28 +4409,6 @@ The fire then goes out.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="f8aa-6108-4447-0e90" name="=Mortis= Remains of the Fallen" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="true" collective="false" import="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="equalTo"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="atLeast"/>
-                    <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a06c-86bf-4269-41b3" type="max"/>
-      </constraints>
       <rules>
         <rule id="f1ca-7438-e47a-6e56" name="Remains of the Fallen" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
           <description>Any Legio Mortis Titan may be upgraded to have the Remains of the Fallen for +20 points. Enemy units within 8&quot; of one or more Titans with this upgrade subtract 1 from the result of any Command check they make.</description>
@@ -4446,28 +4424,6 @@ The fire then goes out.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f5a-dccf-63ea-17ba" name="=Mortis= The Warmaster&apos;s Beneficence" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="true" collective="false" import="false" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="equalTo"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="atLeast"/>
-                    <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2197-e5be-b183-3068" type="max"/>
-      </constraints>
       <rules>
         <rule id="f0d8-d46c-f7c1-248e" name="The Warmaster&apos;s Beneficence" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="false">
           <description>Any Legio Mortis Titan may be upgraded to have the Warmaster’s Beneficence for +25 points. Once per game, at the start of the Strategy phase, a Titan with this upgrade can increase the Strength value of a single weapon it is equipped with by 1. This increase lasts until the end of the round.</description>
@@ -21009,8 +20965,42 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="3e3c-9275-f31a-9532" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink id="2292-032b-7b1a-5570" name="=Mortis= Remains of the Fallen" hidden="false" collective="false" import="false" targetId="f8aa-6108-4447-0e90" type="selectionEntry"/>
-        <entryLink id="6d89-f6d5-b0ab-86d9" name="=Mortis= The Warmaster&apos;s Beneficence" hidden="false" collective="false" import="false" targetId="2f5a-dccf-63ea-17ba" type="selectionEntry"/>
+        <entryLink id="2292-032b-7b1a-5570" name="=Mortis= Remains of the Fallen" hidden="false" collective="false" import="false" targetId="f8aa-6108-4447-0e90" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="a287-fdad-dc22-7e4d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="a1a5-b375-663c-96c2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f88f-e42d-38f7-bfa7" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="f88f-e42d-38f7-bfa7" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="6d89-f6d5-b0ab-86d9" name="=Mortis= The Warmaster&apos;s Beneficence" hidden="false" collective="false" import="false" targetId="2f5a-dccf-63ea-17ba" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="444b-3565-2e7c-6493" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="a3e2-3a68-898d-0c6e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f88f-e42d-38f7-bfa7" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="f88f-e42d-38f7-bfa7" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="f302-c072-c072-82ea" name="=Vulpa= Shikarian Conduits" hidden="false" collective="false" import="false" targetId="ac1f-504e-5a1c-6a95" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -21051,15 +21041,20 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         </entryLink>
         <entryLink id="b285-9a61-5285-0a39" name="=Lysanda= Mantel of Responsibility" hidden="false" collective="false" import="false" targetId="5f0a-2b12-1f44-a4b9" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7ada-d471-345c-f8a4" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7ada-d471-345c-f8a4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="7ada-d471-345c-f8a4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7134-3dd3-fe04-aadd" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76db-54dd-b6b0-a78a" type="min"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="f985-9d71-a6dd-b9e6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="f624-a649-7b26-6d73" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="fca3-c846-32aa-484d" name="=Infernus= Clinging Phosphex" hidden="false" collective="false" import="false" targetId="2133-4929-2061-f585" type="selectionEntry">
@@ -21256,11 +21251,20 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <entryLink id="f865-1276-736a-80df" name="=Laniaskara= Mordantised Ceramite" hidden="true" collective="false" import="false" targetId="170d-3f13-f670-3cc6" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4a24-73e7-556c-1bfd" type="atLeast"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4a24-73e7-556c-1bfd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4a24-73e7-556c-1bfd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="22fa-4ab3-e0c9-ce9a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="c17e-44cc-b775-cd07" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="true" collective="false" import="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry">
           <modifiers>
@@ -21307,21 +21311,39 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         </entryLink>
         <entryLink id="c790-8ac8-fbc0-5856" name="=Metalica= Bastion Armor" hidden="true" collective="false" import="true" targetId="31ff-82f8-241d-7b29" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="2afb-401e-9ec9-28b2" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2afb-401e-9ec9-28b2" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="2afb-401e-9ec9-28b2" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="b7e5-84ad-3789-cf4f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="ec63-1dc4-236f-bef8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="1324-50f5-8694-4e6d" name="=Metalica= Auditory Barrage" hidden="true" collective="false" import="true" targetId="f32d-4b22-e51e-d86f" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="2afb-401e-9ec9-28b2" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2afb-401e-9ec9-28b2" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="2afb-401e-9ec9-28b2" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="fd78-f870-f2bb-91a1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="904a-b27b-c8c7-119d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="499b-3294-6b78-4417" name="=Honorum= Basilius Throne" hidden="true" collective="false" import="true" targetId="8a7d-3ead-16e2-1979" type="selectionEntry">
           <modifiers>
