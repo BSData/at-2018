@@ -490,6 +490,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf67-a51a-b403-9501" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="15c4-a550-87e2-79e3" shared="true" id="6fc7-3a48-3b04-5921" includeChildSelections="false"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="d173-87e6-9f1b-1aaa" name="DireWolfTitan" hidden="false">
@@ -532,6 +533,53 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="e5c6-a7a6-1315-09b8" name="Replace Warlord with Dire Wolf" hidden="false"/>
     <categoryEntry id="b754-867c-2d0e-538b" name="Replace Warbringer Nemesis with Dire Wolf" hidden="false"/>
     <categoryEntry id="8e3e-2c21-301b-653e" name="Configuration" hidden="false"/>
+    <categoryEntry name="Nobility" id="e49d-7912-8e4f-a188" hidden="false" publicationId="975a-00f4-pubN89746" page="37, 39"/>
+    <categoryEntry name="Seneschal" id="b4d4-89ab-32aa-f227" hidden="false" publicationId="975a-00f4-pubN89746" page="35">
+      <rules>
+        <rule name="Seneschal" id="e231-d4c9-de60-4569" hidden="false" publicationId="975a-00f4-pubN89746" page="35">
+          <description>Where several Lances are brought together, the most senior noble will assume the rank of Seneschal and take command of all forces in the field. Their decades of experience as both a warrior and statesman prove invaluable in melding the forces under their command into a seamless and efficient fighting force. Knight Scions are bombastic and cantankerous, and Lances drawn from different keeps are often prone to letting competition and internal politics interfere. Without the strong leadership of a respected Seneschal, a Household army risks losing much of its discipline and martial might.</description>
+        </rule>
+        <rule name="Strategist" id="aa4c-3e38-3b60-2881" hidden="false" publicationId="975a-00f4-pubN89746" page="38">
+          <description>Before forces are deployed, when choosing Stratagems, the presence of the Seneschal adds +2 Stratagem points.</description>
+        </rule>
+        <rule name="The Baronial Court" id="3130-d97b-6088-5e34" hidden="false" publicationId="975a-00f4-pubN89746" page="38">
+          <description>Unlike other Banners that are part of a Lance in a Household force, the individual Knights within the Seneschal&apos;s Banner may be equipped differently, following the options available to a Support Banner of the same type of Knight. This allows the player to better represent the unique, elite warriors that make up the Seneschal&apos;s companions. However, if this option is taken, the Banner may not be issued with Coordinated Strike orders.</description>
+        </rule>
+        <rule name="Noble Sacrifice" id="ebf3-cd90-0601-4525" hidden="false" publicationId="975a-00f4-pubN89746" page="38">
+          <description>If the Seneschal is removed as the result of a Targeted Attack, the controlling player rolls a D6. On a 6, the Seneschal is saved by the sacrifice of one of the Knights in their Banner. The controlling player chooses one other Knight in the Banner to remove instead. If the Seneschal is the last remaining model in the Banner, this rule has no effecr.</description>
+        </rule>
+        <rule name="The Battle Standard" id="7da6-a188-4baf-2e2a" hidden="false" publicationId="975a-00f4-pubN89746" page="38">
+          <description>: The Seneschal will invariably march to war in great splendour and accompanied by the most treasured battle standards of their Household. These honoured relics bear the heraldry of the Household and its home world, alongside campaign and battle honours beyond number. Their presence on the battlefield provides a rallying point for one and all:
+                        • One Knight within the Seneschal&apos;s Banner may be upgraded to carry the Battle Standard at a cost of 50 points.
+                        • The Battle Standard must be clearly displayed on the model that carries it.
+                        • As long as the Knight carrying the Battle Standard is part of the Banner, any Banner or Lance within 12&quot; of that Knight may re-roll any failed Command checks to see if the Banner becomes Shaken.</description>
+        </rule>
+        <rule name="Warrior Elite" id="8877-92d6-bd09-300a" hidden="false" publicationId="975a-00f4-pubN89746" page="38">
+          <description>The Seneschal is the mightiest warrior in the force. Knights in their Banner may re-roll Hit rolls of 1 when using their Ballistic Skill or Weapon Skill.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="edc1-2cd5-6899-9032" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1cdf-02aa-171a-bcdb" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="edc1-2cd5-6899-9032">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="1cdf-02aa-171a-bcdb">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="High King" id="6023-4ce7-7008-e851" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c6a3-b60c-fc35-d35b" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" hidden="true" name=" ">
@@ -2591,7 +2639,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="4065-d038-bf12-e3ae" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="5a30-017c-682a-9587" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="dcf8-45a2-e507-c73c" name="Ordnance" hidden="false" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
         <categoryLink id="71f8-29c1-8b9c-03b6" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
@@ -2624,7 +2671,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="a5a1-cec7-9ca4-cfad" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="d0d7-358e-cf6d-cbc0" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="cf07-7eab-3170-9910" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
         <categoryLink id="730c-66e7-4d12-71b6" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
@@ -2635,7 +2681,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="908e-f9af-f0d1-a124" name="Thermal Cannon" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="908e-f9af-f0d1-a124" name="Thermal Cannon" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c302-c3f5-b5ce-c362" type="max"/>
       </constraints>
@@ -2657,7 +2703,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="2aa4-b7ec-d97f-0c2b" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="fbe5-0b66-cbbf-70da" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="9143-e2a7-9782-11c9" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
         <categoryLink id="0c3d-6b5a-820c-68fc" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
@@ -2690,7 +2735,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="aff4-f008-094e-8b18" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="9141-b241-55c3-f9d2" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
         <categoryLink id="f76e-7566-dbb5-e1ce" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="7602-7028-7b97-daca" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
@@ -3288,9 +3332,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       <selectionEntryGroups>
         <selectionEntryGroup id="6e43-6b1b-8d69-8fb3" name="Arms" hidden="false" collective="false" import="false">
           <modifiers>
-            <modifier type="set" field="99a0-8949-d4a9-39a2" value="0">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3324,13 +3368,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b533-0f7c-68e9-edc2" name="Arms" hidden="false" collective="false" import="false">
-          <modifiers>
-            <modifier type="set" field="066c-b802-af42-d4b9" value="0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="066c-b802-af42-d4b9" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa6-1b1f-d696-b080" type="max"/>
@@ -3369,9 +3406,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       <selectionEntryGroups>
         <selectionEntryGroup id="9076-e9cf-5dcd-8b8b" name="Arms" hidden="false" collective="false" import="false">
           <modifiers>
-            <modifier type="set" field="8f3e-1a25-9306-e34d" value="0">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3463,6 +3500,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85a6-21d7-2800-08c5" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4b2-9420-fc91-97c5" type="min"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Nobility" hidden="false" id="6735-f85e-9663-cec9" type="selectionEntryGroup" targetId="6d3f-68e7-c9ac-1c07"/>
+          </entryLinks>
         </entryLink>
         <entryLink id="be8e-e238-af50-a42b" name="Questoris Knight Scion Martial" hidden="false" collective="false" import="false" targetId="2f87-1543-1c08-5dcf" type="selectionEntry">
           <constraints>
@@ -3475,6 +3515,79 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="8165-a870-8c7d-3bb7" hidden="true" collective="false" import="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5776-46ba-997a-a487" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="243c-45f7-906a-fb5d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="false" name="Avenger Gatling Cannon" hidden="false" id="ec27-a227-2a5f-29ba" collective="false" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="5" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="false" name="Questoris Melee Weapon" hidden="false" id="97fa-af26-f353-86c3" collective="false" targetId="5be0-b49f-fc95-f499" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="5" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="false" name="Rapid-Fire Battlecannon" hidden="false" id="3964-744e-ca8f-f30c" collective="false" targetId="bc4c-36af-c4cd-4594" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="10" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="false" name="Thermal Cannon" hidden="false" id="93af-de55-4a65-aa7e" collective="false" targetId="908e-f9af-f0d1-a124" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="10" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Household Banners" id="0823-6856-3776-8ba2" hidden="false" type="rule" targetId="a4fd-fe8d-4c8c-0eba"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="append" value=", Warrior Born" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="a0c0-a49a-deb3-0b9f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value=", Barional Court" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="6023-4ce7-7008-e851" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="b4d4-89ab-32aa-f227" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3900-cfb6-52f2-c83c" name="Cerastus Knight Banner" hidden="false" collective="false" import="false" type="unit">
       <profiles>
@@ -3700,6 +3813,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a45-376f-5b80-540f" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24c8-62b5-db9c-c499" type="min"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Nobility" hidden="false" id="0920-e1ee-d06c-a16c" type="selectionEntryGroup" targetId="6d3f-68e7-c9ac-1c07"/>
+          </entryLinks>
         </entryLink>
         <entryLink id="dc51-c463-c333-395e" name="Acastus Knight Scion Martial" hidden="false" collective="false" import="false" targetId="69b3-e7ac-9cec-ad72" type="selectionEntry">
           <constraints>
@@ -19223,6 +19339,9 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b74d-6d26-8faf-f99e" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="522c-0980-adf7-0412" type="min"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Nobility" hidden="false" id="496a-90ae-917f-d74d" type="selectionEntryGroup" targetId="6d3f-68e7-c9ac-1c07"/>
+          </entryLinks>
         </entryLink>
         <entryLink id="5671-38ad-923a-d39d" name="Acastus Knight Asterius Scion Martial" hidden="false" collective="false" import="true" targetId="f3d0-12a4-51a2-b8ce" type="selectionEntry">
           <constraints>
@@ -19235,6 +19354,23 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value=", Warrior Born" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="a0c0-a49a-deb3-0b9f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value=", Barional Court" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="6023-4ce7-7008-e851" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="b4d4-89ab-32aa-f227" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="61e0-5e19-03b9-077d" name="Acastus Knight Asterius Lord Scion" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
@@ -20309,6 +20445,11 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lance" hidden="false" id="19c7-6300-3d5b-09bd" subType="unit-group">
+      <categoryLinks>
+        <categoryLink name="Lance" hidden="false" id="844a-3863-c250-3e8e" targetId="b1c7-cb6c-5810-e9d9" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
     <selectionEntry id="6268-9937-423c-55d9" name="Shudder Missiles" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="6665-24c0-79c0-2ee8" name="Shudder Missiles" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
@@ -20531,6 +20672,31 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="High Scion" hidden="false" id="a0c0-a49a-deb3-0b9f" collective="false">
+      <costs>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7d0a-a772-ed25-9202" id="c279-0b15-0bd1-099f" primary="false" name="High Scion"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Seneschal" hidden="false" id="ad7f-8a59-5602-0e51">
+      <categoryLinks>
+        <categoryLink name="Nobility" hidden="false" id="7e40-128a-0bf6-1cb7" targetId="e49d-7912-8e4f-a188" primary="false"/>
+        <categoryLink name="Seneschal" hidden="false" id="6f85-c895-baaf-efa4" targetId="b4d4-89ab-32aa-f227" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="High King" hidden="false" id="386e-c242-ecc7-1b70">
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Nobility" hidden="false" id="fe46-8fac-cfb7-4fa3" targetId="e49d-7912-8e4f-a188" primary="false"/>
+        <categoryLink name="High King" hidden="false" id="4935-72b9-5af4-dcf1" targetId="6023-4ce7-7008-e851" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -24324,6 +24490,44 @@ result of a single D6.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Nobility" id="6d3f-68e7-c9ac-1c07" hidden="false" publicationId="975a-00f4-pubN89746" page="37" collective="false" import="true">
+      <entryLinks>
+        <entryLink import="true" name="High Scion" hidden="false" id="8f8d-7677-41e1-b71c" collective="false" targetId="a0c0-a49a-deb3-0b9f" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="High Scion" hidden="false" id="ce69-f8c1-5fd9-cd55" targetId="7d0a-a772-ed25-9202" primary="false"/>
+            <categoryLink name="Nobility" hidden="false" id="8060-f949-4736-e5e0" targetId="e49d-7912-8e4f-a188" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="b4d7-3b3a-ee30-9009">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="15c4-a550-87e2-79e3" childId="ad7f-8a59-5602-0e51" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="15c4-a550-87e2-79e3" childId="386e-c242-ecc7-1b70" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="15c4-a550-87e2-79e3" shared="false" id="b4d7-3b3a-ee30-9009" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Seneschal" hidden="false" id="17ee-3a67-31d4-0269" type="selectionEntry" targetId="ad7f-8a59-5602-0e51"/>
+        <entryLink import="true" name="High King" hidden="false" id="47b6-f3e9-8f1f-29d0" type="selectionEntry" targetId="386e-c242-ecc7-1b70"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29c6-573e-ecf7-6b4e" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="15c4-a550-87e2-79e3" shared="true" id="5bc7-cdd1-b31b-068b" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="c491-319b-b9b1-adac" name="Weapon Characteristics" publicationId="975a-00f4-pubN65537" page="38" hidden="false">
@@ -24358,6 +24562,9 @@ result of a single D6.</description>
     </rule>
     <rule id="06a9-3744-bb42-ba59" name="Heavy Scout Titan" hidden="false">
       <description>Each maniple in a battlegroup may replace a single optional Warhound Titan with a Dire Wolf Titan. Legio Audax maniples may replace a single mandatory Reaver or a single optional Warhound Titan with a Dire Wolf Titan instead; this allows the fielding of Legio Audax maniples that were previously inaccessible to the Legio, such as Ferrox or Venator maniples, so long as the maniple includes no Titan of Scale 7 or more when assembled. Dire Wolf Titans count as the Warhound or Reaver they replace for the purposes of maniple rules.</description>
+    </rule>
+    <rule name="Household Banners" id="a4fd-fe8d-4c8c-0eba" hidden="false" publicationId="975a-00f4-pubN89746" page="34">
+      <description>Unlike Household Support Banners added to a Titan battlegroup, the Knights forming a Banner in a Household force must all be equipped in the same way.</description>
     </rule>
   </sharedRules>
 </gameSystem>
