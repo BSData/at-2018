@@ -46,6 +46,7 @@
       </rules>
       <categoryLinks>
         <categoryLink id="1986-d35d-0287-da57" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
+        <categoryLink targetId="a1f2-9a53-e8b9-632d" id="3102-bcae-a522-239c" primary="false" name="Questoris Imperialis"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
@@ -68,6 +69,7 @@
       </rules>
       <categoryLinks>
         <categoryLink id="ea95-19d8-3c12-06b9" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
+        <categoryLink targetId="2cd7-f37d-6476-cf93" id="5484-3d7a-7468-4f63" primary="false" name="Questoris Mechanicus"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
@@ -91,6 +93,7 @@
       <categoryLinks>
         <categoryLink id="fd6e-2e2e-f890-f1f2" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
         <categoryLink id="1b0f-12f7-3d63-90db" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false"/>
+        <categoryLink targetId="2bb9-9312-773b-3274" id="b1a5-7275-685d-419e" primary="false" name="Questoris Traitoris"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
@@ -114,6 +117,7 @@
       <categoryLinks>
         <categoryLink id="50e3-08f6-8d4a-d493" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="true"/>
         <categoryLink id="c176-1168-0fef-986b" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false"/>
+        <categoryLink targetId="e430-af6c-1242-8a61" id="8b20-b296-2966-d47f" primary="false" name="Questoris Oblitus"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>

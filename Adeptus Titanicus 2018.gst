@@ -444,6 +444,17 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <rule id="2670-8730-0920-2ce7" name="Warrior Born" publicationId="975a-00f4-pubN89746" page="37" hidden="false">
           <description>A High Scion is a mighty warrior. Knights in their Banner may re-roll Hit rolls of 1 when using their Weapon Skill.</description>
         </rule>
+        <rule name="Lance Standards" id="c2f5-86df-2173-1c85" hidden="false" publicationId="2988-f24d-39ef-352e" page="104">
+          <description>One Knight within each High Scion’s Banner may be upgraded with a Lance Standard from the list that follows, at the associated cost. Each Lance Standard has one or more rules associated with it. At least one model within a friendly Banner must be able to draw line of sight to the model carrying the Lance Standard to benefit from its effects and the range of the Lance Standard’s effects are measured from the Knight carrying the Lance Standard. A Lance Standard does not replace the weapons a Knight is equipped with (it is presumed the Knight carries the standard in such a way as to not impede their prowess in battle). A Lance Standard must be clearly displayed on the model that carries it. A Banner with a Battle Standard cannot have a Lance Standard.
+
+
+If the Knight carrying the Lance Standard is destroyed, choose another Knight in the High Scion’s Banner to carry the Lance Standard. If the High Scion is the sole remaining Knight in the Banner then the standard is lost, and the High Scion cannot carry it.
+
+
+Unless otherwise stated, a Lance Standard’s effects only apply to Knight Banners within the same Lance. A Lance Standard’s effect do apply to a Banner containing a Knight carrying it.
+
+</description>
+        </rule>
       </rules>
     </categoryEntry>
     <categoryEntry id="cd4a-3c69-5fc8-0773" name="LegioHonorum" publicationId="2988-f24d-39ef-352e" page="29" hidden="false"/>
@@ -579,7 +590,25 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c6a3-b60c-fc35-d35b" includeChildSelections="true"/>
       </constraints>
+      <rules>
+        <rule name="Challenges" id="b52d-7285-5ae6-f03c" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+          <description>High King’s own Knight must make Targeted Attacks with Melee weapons against enemy High Scions, Seneschals and other High Kings.</description>
+        </rule>
+        <rule name="Unshakable" id="f5ef-2f41-1ad4-5bed" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+          <description>High King’s Banner cannot become Shaken, and ignores any effects or rules that would require it to become Shaken.</description>
+        </rule>
+        <rule name="Master of Battle" id="2cf5-68d0-f16c-a1a8" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+          <description>Orders can be issued to a High King’s Banner without the need to make a Command check during the Strategy phase, even if a friendly unit has already failed a Command check while being issued Orders in that phase. Master of Battle cannot be used in conjunction with Lance Orders</description>
+        </rule>
+        <rule name="Warlord" id="ee15-fb52-59d5-0dbb" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+          <description>A High King adds 3 Stratagem points to a Knight Household instead of 2 Stratagem points</description>
+        </rule>
+      </rules>
     </categoryEntry>
+    <categoryEntry name="Questoris Oblitus" id="e430-af6c-1242-8a61" hidden="false"/>
+    <categoryEntry name="Questoris Mechanicus" id="2cd7-f37d-6476-cf93" hidden="false"/>
+    <categoryEntry name="Questoris Imperialis" id="a1f2-9a53-e8b9-632d" hidden="false"/>
+    <categoryEntry name="Questoris Traitoris" id="2bb9-9312-773b-3274" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" hidden="true" name=" ">
@@ -3190,13 +3219,19 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="The Battle Standard" hidden="false" id="40b2-113e-2ea7-6c27" collective="false" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+        <entryLink import="true" name="The Battle Standard" hidden="false" id="67d1-5810-4e06-6d7b" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Lance Standard" hidden="false" id="a0a9-d629-2d6d-33a4" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <modifiers>
         <modifier type="append" value=", Standard Bearer" field="name">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="self" childId="d4b9-40ea-dcd5-ae76" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="19c5-5856-23e4-7bdd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="5de0-6622-1565-9efc" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -3404,9 +3439,14 @@ If the result is 25, move the reactor tracker to its leftmost hole.
     <selectionEntry id="2f87-1543-1c08-5dcf" name="Questoris Knight Scion Martial" hidden="false" collective="false" import="false" type="model">
       <modifiers>
         <modifier type="append" field="name" value=", Standard Bearer">
-          <conditions>
-            <condition field="selections" scope="self" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d4b9-40ea-dcd5-ae76" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="19c5-5856-23e4-7bdd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="5de0-6622-1565-9efc" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3441,7 +3481,8 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3e74-ac1f-3eee-78a5" name="The Battle Standard" hidden="false" collective="false" import="true" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+        <entryLink import="true" name="The Battle Standard" hidden="false" id="ac59-ca8d-60ea-f20e" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Lance Standard" hidden="false" id="f389-c23b-bd7c-c385" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
@@ -3700,10 +3741,15 @@ If the result is 25, move the reactor tracker to its leftmost hole.
     </selectionEntry>
     <selectionEntry id="8f63-919a-9591-ecd2" name="Cerastus Knight Scion Martial" hidden="false" collective="false" import="false" type="upgrade">
       <modifiers>
-        <modifier type="append" field="name" value=", Standard Bearer">
-          <conditions>
-            <condition field="selections" scope="self" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="5e05-c927-c019-727b" type="equalTo"/>
-          </conditions>
+        <modifier type="append" value=", Standard Bearer" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="19c5-5856-23e4-7bdd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="5de0-6622-1565-9efc" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <selectionEntryGroups>
@@ -3720,7 +3766,8 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5e05-c927-c019-727b" name="The Battle Standard" hidden="false" collective="false" import="true" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+        <entryLink import="true" name="The Battle Standard" hidden="false" id="4ecc-1341-3ac0-ce4c" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Lance Standard" hidden="false" id="9390-5c80-ca92-eb82" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
@@ -4142,9 +4189,14 @@ If the result is 25, move the reactor tracker to its leftmost hole.
     <selectionEntry id="8d33-f08f-31d2-75a3" name="Questoris Knight Scion Magaera" hidden="false" collective="false" import="false" type="model">
       <modifiers>
         <modifier type="append" field="name" value=", Standard Bearer">
-          <conditions>
-            <condition field="selections" scope="self" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d4b9-40ea-dcd5-ae76" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="19c5-5856-23e4-7bdd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="5de0-6622-1565-9efc" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -4176,7 +4228,8 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c5e5-f9d1-81db-839d" name="The Battle Standard" hidden="false" collective="false" import="true" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+        <entryLink import="true" name="The Battle Standard" hidden="false" id="c924-4da6-f257-e273" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Lance Standard" hidden="false" id="0f27-2c1e-5515-740b" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
@@ -4185,10 +4238,15 @@ If the result is 25, move the reactor tracker to its leftmost hole.
     </selectionEntry>
     <selectionEntry id="540a-525d-45fd-2f93" name="Questoris Knight Scion Styrix" hidden="false" collective="false" import="false" type="model">
       <modifiers>
-        <modifier type="append" field="name" value=", Standard Bearer">
-          <conditions>
-            <condition field="selections" scope="self" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d4b9-40ea-dcd5-ae76" type="equalTo"/>
-          </conditions>
+        <modifier type="append" value=", Standard Bearer" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="19c5-5856-23e4-7bdd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="5de0-6622-1565-9efc" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -4220,7 +4278,8 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8d06-3d06-66f2-619c" name="The Battle Standard" hidden="false" collective="false" import="true" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+        <entryLink import="true" name="The Battle Standard" hidden="false" id="d4c9-de58-c323-c79a" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Lance Standard" hidden="false" id="4d19-3b48-3781-f1ef" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
@@ -17814,36 +17873,6 @@ After assembling their battlegroup, the player should pick one Titan in their ma
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d4b9-40ea-dcd5-ae76" name="The Battle Standard" hidden="true" collective="false" import="true" type="upgrade">
-      <comment>:</comment>
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="ad7f-8a59-5602-0e51" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="386e-c242-ecc7-1b70" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b71c-a825-1759-7e7f" type="max"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a10-6d31-3594-ae81" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="a303-9e7a-3fc7-85c2" name="The Battle Standard" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
-          <description>• One Knight within the Seneschal&apos;s Banner may be upgraded to carry the Battle Standard at a cost of 50 points.
-• The Battle Standard must be clearly displayed on the model that carries it.
-• As long as the Knight carrying the Battle Standard is part of the Banner, any Banner or Lance within 12&quot; of that Knight may re-roll any failed Command checks to see if the Banner becomes Shaken.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
-        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="c8fe-3fd8-e98f-6f9b" name="=Metalica= Harmony and Order" publicationId="3401-191e-1333-8a1d" page="81" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -19433,12 +19462,25 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a83-bad6-004b-ee94" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="The Battle Standard" hidden="false" id="9204-8b86-ba6f-df7b" collective="false" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+        <entryLink import="true" name="The Battle Standard" hidden="false" id="91dd-8db4-8225-acd7" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Lance Standard" hidden="false" id="54c8-44d3-8707-fb97" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="190"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value=", Standard Bearer" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="19c5-5856-23e4-7bdd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="5de0-6622-1565-9efc" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9167-7d32-6d19-739d" name="Cerastus Knight Atrapos Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -24540,6 +24582,317 @@ result of a single D6.</description>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Battle Standard" id="19c5-5856-23e4-7bdd" hidden="true" publicationId="2988-f24d-39ef-352e" page="103">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="King&apos;s Standard" hidden="false" id="9fe3-6953-5b82-7d14">
+          <rules>
+            <rule name="King&apos;s Standard" id="4a81-8014-2aa0-a226" hidden="false" publicationId="2988-f24d-39ef-352e" page="103">
+              <description>Friendly Banners within 12&quot; of this Battle Standard can re-roll any failed Command checks to see if the Banner becomes Shaken. Note, the King’s Standard is the same as the Battle Standard rules in Adeptus Titanicus: Doom of Molech with an adjustment to its points, and replaces those rules.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="35"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pennant of the Champion" hidden="false" id="715a-471e-893a-5abc">
+          <rules>
+            <rule name="Pennant of the Champion" id="6e7b-0992-6056-2a59" hidden="false" publicationId="2988-f24d-39ef-352e" page="103">
+              <description>Friendly Knight models within 12&quot; of this Battle Standard can re-roll Hit rolls of a 1 made with Melee weapons.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hunter’s Eye Standard" hidden="false" id="34bb-3ab5-8c26-867c">
+          <rules>
+            <rule name="Hunter’s Eye Standard" id="eb47-44b6-673b-4f9b" hidden="false" publicationId="2988-f24d-39ef-352e" page="103">
+              <description>Friendly Banners within 12&quot; of this Battle Standard can re-roll Hit rolls of 1 when making attacks at enemies over 2&quot; away.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stalwart Standard" hidden="false" id="3ee5-74c9-fc6c-729b">
+          <rules>
+            <rule name="Stalwart Standard" id="5c8a-1400-02c5-ba35" hidden="false" publicationId="2988-f24d-39ef-352e" page="103">
+              <description>Friendly Banners within 12&quot; of this Battle Standard count the first Critical Hit they suffer each round as a Devastating Hit instead.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dragon Slayer Standard" hidden="false" id="76b3-5198-a63c-0795">
+          <rules>
+            <rule name="Dragon Slayer Standard" id="b894-0b6f-81c6-08ce" hidden="false" publicationId="2988-f24d-39ef-352e" page="103">
+              <description>Friendly Knights within 12&quot; of this Battle Standard can re-roll Armour rolls of 1 when attacking with a Melee weapon against targets with Scale 6 or higher.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="70"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Colours of the Castellan" hidden="false" id="113a-7372-be76-9cb4">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Colours of the Castellan" id="c668-2bb2-5b72-6125" hidden="false" publicationId="2988-f24d-39ef-352e" page="103">
+              <description>Once per round, a single friendly Banner within 12&quot; of this Battle Standard can re-roll one failed Command check made when issuing Orders. If this re-roll results in a previously failed Command check becoming a success, additional Orders can be issued to other units as normal.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shielding Standard" hidden="false" id="86d2-8fac-4450-389b">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Shielding Standard" id="9ef1-39ff-30f8-498a" hidden="false" publicationId="2988-f24d-39ef-352e" page="103">
+              <description>Friendly Banners within 12&quot; of this Battle Standard reduce the Strength of hits from weapons with the Blast or Firestorm traits by 2, to a minimum of 3.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gauntlet Standard" hidden="false" id="76d9-ca04-dc23-dfca">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Gauntlet Standard" id="f504-5f0d-2d6c-e839" hidden="false" publicationId="2988-f24d-39ef-352e" page="104">
+              <description>When a friendly Banner ends a move made as part of a Charge order within 12&quot; of this Battle Standard, any enemy Banners within 2&quot; of that friendly Banner must make a Command check to see if they become Shaken, just as if they had lost a Knight. Make this check after the charging unit has moved and has been determined to be within 2&quot;, but before any attacks are rolled.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Icon of the Emperor" hidden="true" id="f1bc-9c29-29f2-1e99">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Icon of the Emperor" id="4a42-2337-22dd-cb63" hidden="false" publicationId="2988-f24d-39ef-352e" page="104">
+              <description>Friendly Questoris Imperialis Banners within 12&quot; of this Battle Standard add 2&quot; to their Movement characteristic while they are issued with a Full Stride order.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2841-67b5-15d0-8908" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mark of the Omnissiah" hidden="true" id="524b-0082-34a8-d23e">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Mark of the Omnissiah" id="ff46-db1a-05ad-ab3b" hidden="false" publicationId="2988-f24d-39ef-352e" page="104">
+              <description>During the Movement phase, friendly Questoris Mechanicus Banners within 12&quot; of this Battle Standard may initiate repairs – this counts as their activation for the phase. If they do so, roll a D6 for each Knight in the Banner. For each 4+ that is rolled, the Banner recovers 1 lost Structure point. This cannot bring back a Knight that has been destroyed.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2841-67b5-15d0-8908" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Eye of Horus" hidden="true" id="1cf2-f941-ca75-ea04">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Eye of Horus" id="b01a-0124-5ab1-b694" hidden="false" publicationId="2988-f24d-39ef-352e" page="104">
+              <description>Enemy Banners within 12&quot; of this Battle Standard must re-roll Command checks when testing to see if they become Shaken.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2841-67b5-15d0-8908" childId="2bb9-9312-773b-3274" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Raider’s Flag" hidden="true" id="7f37-a9b1-b77c-abc8">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Raider’s Flag" id="5dc3-79a2-5b89-acbb" hidden="false" publicationId="2988-f24d-39ef-352e" page="104">
+              <description>Attacks made against friendly Questoris Oblitus Banners within 6&quot; of the Battle Standard suffer a -1 modifier to all Hit rolls if all models from the Banner are within the Short range of the attacking unit, in addition to any other modifiers. If a Targeted Attack is made, only the nominated Knight has to be within Short range.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2841-67b5-15d0-8908" childId="e430-af6c-1242-8a61" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b14-429a-e56c-5ae7" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="9699-c884-df99-e68e" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Lance Standard" id="5de0-6622-1565-9efc" hidden="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c42-a79f-b616-0aec" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="6b8b-157e-d1e6-c27a" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bloody Standard" hidden="false" id="1a0d-34be-cad5-8f7d">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Bloody Standard" id="f931-c438-d6f6-f2c5" hidden="false" publicationId="2988-f24d-39ef-352e" page="104">
+              <description>Once per game, at the start of the Strategy phase, the Knight carrying the Bloody Standard can activate it. If they do so, Knight Banners within 6&quot; of the Lance Standard can be issued Charge orders without the need to make a Command check.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard of Valour" hidden="false" id="5fae-a254-d9fa-83bb">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Standard of Valour" id="f27e-2367-8ff5-cf01" hidden="false" publicationId="2988-f24d-39ef-352e" page="104">
+              <description>Once per game, at the start of the Combat phase, the Knight carrying the Standard of Valour can activate it. If they do so, Knight models within 6&quot; of the Lance Standard can add 1 to the Dice value of a single weapon of their choice with the Melee trait for the remainder of the phase.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard of Defiance" hidden="false" id="97a9-65c7-aa14-c97f">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Standard of Defiance" id="046a-4e68-bca8-dd19" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+              <description>Once per game, at the start of the Strategy phase, the Knight carrying the Standard of Defiance can activate it. If they do so, all Knight Banners in the Lance that are Shaken are no longer Shaken, and can be issued Orders this phase.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard of Perspicacity" hidden="false" id="5fe2-d474-1146-ebda">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="35"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Standard of Perspicacity" id="81fd-8e1a-efab-f743" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+              <description>Once per game, at the start of the Movement phase, the Knight carrying the Standard of Perspicacity can activate it. If they do so, until the end of the following round’s Movement phase, Knight Banners within the Lance suffer no penalties for being outside Lance Coherency. However, during the following round’s Strategy phase, any Banner from the Lance that has not maintained Lance coherency cannot be issued Orders via Lance Orders.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standard of Dawn" hidden="true" id="b4f0-21e2-5435-2b00">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Standard of Dawn" id="d9bd-55b7-1d0a-e3d7" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+              <description>Once per game, at the start of the Strategy phase, the Knight carrying the Standard of Dawn can activate it. If they do so, when a friendly Questoris Imperialis Banner within 6&quot; of the Lance Standard suffers a Critical Hit, roll a D6. On a 5+, the Critical Hit becomes a Devastating Hit. Each Banner within the Lance can benefit from this ability once per round.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2841-67b5-15d0-8908" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blackened Standard" hidden="true" id="d7d9-243d-b2bb-74ad">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Blackened Standard" id="aa34-7b5e-8585-8676" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+              <description>Once per game, at the start of the Strategy phase, the Knight carrying the Blackened Standard can activate it. If they do so, until the end of the round, friendly Questoris Mechanicus Banners within 4&quot; of the Lance Standard always count as at least 50% obscured against attacks made against them.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2841-67b5-15d0-8908" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Withered Standard" hidden="true" id="96bd-daba-6d9e-50ee">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="35"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Withered Standard" id="4fb2-44f1-8d48-77f9" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+              <description>Once per game, at the start of the Strategy phase, the Knight carrying the Withered Standard can activate it. If they do so, until the end of the round, subtract 2 from the result of all Repair dice rolled for all units (friend or foe) within 6&quot; of the Banner.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2841-67b5-15d0-8908" childId="2bb9-9312-773b-3274" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Icon of Conquest" hidden="true" id="4c4a-a5a3-33fb-0d37">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="35"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Icon of Conquest" id="6090-453e-8671-aee9" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
+              <description>Once per game, at the start of the Combat phase, the Knight carrying the Icon of Conquest can activate it. If they do so, until the end of the phase, friendly Questoris Oblitus Banners within 6&quot; of this Standard add +1 to the Strength value of all their weapons.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2841-67b5-15d0-8908" childId="e430-af6c-1242-8a61" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="unit" childId="7d0a-a772-ed25-9202" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
