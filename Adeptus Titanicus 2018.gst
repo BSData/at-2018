@@ -8138,7 +8138,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d011-abe9-ffd9-10b6" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="2dc6-c52e-3efc-5e21" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="2dc6-c52e-3efc-5e21" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry" flatten="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afa0-e9f7-7314-8a0c" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8508-eb9b-e33b-45e1" type="min"/>
@@ -21001,16 +21001,23 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7b17-f14f-4709-e96c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="7103-9316-d4a5-8caa" shared="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="7b17-f14f-4709-e96c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="7b17-f14f-4709-e96c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="9439-9642-da26-8247" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="4754-a2ed-20ee-9ebe" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="6e1f-9951-855b-de98" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="226b-0e2e-67df-7c70" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="b285-9a61-5285-0a39" name="=Lysanda= Mantel of Responsibility" hidden="false" collective="false" import="false" targetId="5f0a-2b12-1f44-a4b9" type="selectionEntry">
@@ -21149,9 +21156,14 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="true" collective="false" import="false" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ae2e-5751-1800-545a" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="ae2e-5751-1800-545a" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ae2e-5751-1800-545a" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <categoryLinks>
@@ -21162,8 +21174,8 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="0a38-f9e9-4688-f6e5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="8cc2-3241-cf56-6779" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="0a38-f9e9-4688-f6e5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="8cc2-3241-cf56-6779" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="0960-e092-8be7-70a5" name="=Ignatum= Gravitic Sensor Array" hidden="true" collective="false" import="false" targetId="74e8-71ca-57d3-f9b0" type="selectionEntry">
