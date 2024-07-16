@@ -21318,8 +21318,8 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="model" shared="false" id="dda0-cc8f-d3f3-db0b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="model" shared="false" id="60e2-9720-c3bc-bbb2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="78c6-1170-3a64-f81f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="259b-8d3c-dc06-7a0f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="c725-815f-945b-712d" name="=Solaria= Cameleoline Shrouding" hidden="true" collective="false" import="true" targetId="1c9d-16db-f94b-c0ec" type="selectionEntry">
