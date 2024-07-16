@@ -3189,6 +3189,16 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="130"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="The Battle Standard" hidden="false" id="40b2-113e-2ea7-6c27" collective="false" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="append" value=", Standard Bearer" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="d4b9-40ea-dcd5-ae76" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="a2a3-d4b5-189a-5f63" name="Acastus Twin Lascannon" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
@@ -17808,14 +17818,19 @@ After assembling their battlegroup, the player should pick one Titan in their ma
       <comment>:</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e616-b753-5dbd-72cb" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="ad7f-8a59-5602-0e51" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="386e-c242-ecc7-1b70" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b71c-a825-1759-7e7f" type="max"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a10-6d31-3594-ae81" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b71c-a825-1759-7e7f" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a10-6d31-3594-ae81" type="max"/>
       </constraints>
       <rules>
         <rule id="a303-9e7a-3fc7-85c2" name="The Battle Standard" publicationId="975a-00f4-pubN89746" page="38" hidden="false">
@@ -19418,6 +19433,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a83-bad6-004b-ee94" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="The Battle Standard" hidden="false" id="9204-8b86-ba6f-df7b" collective="false" targetId="d4b9-40ea-dcd5-ae76" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="190"/>
