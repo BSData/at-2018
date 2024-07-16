@@ -14,7 +14,8 @@
         </categoryLink>
         <categoryLink id="d03c-074c-d4b8-76e9" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0015-d3ed-ac13-0a76" type="min"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3582-cb2a-c303-8a1f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3582-cb2a-c303-8a1f-max" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b9a8-00d2-8884-091f" name="House" hidden="false" targetId="a57c-5cb6-44d8-ffcc" primary="false"/>
