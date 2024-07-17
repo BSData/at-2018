@@ -492,7 +492,11 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf67-a51a-b403-9501" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="d173-87e6-9f1b-1aaa" name="DireWolfTitan" hidden="false"/>
+    <categoryEntry id="d173-87e6-9f1b-1aaa" name="DireWolfTitan" hidden="false">
+      <profiles>
+        <profile name="DireWolfTitan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="ff85-0f05-7e52-dcf9"/>
+      </profiles>
+    </categoryEntry>
     <categoryEntry id="0917-7b11-20d7-2296" name="Torso" hidden="false"/>
     <categoryEntry id="b2c2-c5d6-ee00-6736" name="Auxiliary Titan" hidden="false">
       <infoLinks>
@@ -19903,9 +19907,6 @@ Take 1 selection for each weapon you are upgrading.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="6010-6066-629e-1305" name="=Crusade= Multiple Warhead Launchers" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ff0-6aca-d51f-c213" type="max"/>
-      </constraints>
       <rules>
         <rule id="e66e-da2e-f273-841f" name="Multiple Warhead Launchers" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
           <description>Any of the Legio’s Titans armed with Apocalypse missile launchers or an Apocalypse missile launcher can be upgraded to have Multiple Warhead Launchers for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Any Apocalypse missile launcher equipped with this upgrade adds 5 to their Dice value and gains the Rapid and Limited (2) traits. A Titan can upgrade a weapon with Multiple Warhead Launchers and Autoloaders, however the base cost of the weapon includes the +20 points, which is applied before determining the cost of the Autoloaders.</description>
@@ -19921,9 +19922,6 @@ Take 1 selection for each weapon you are upgrading.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="241e-6a16-8744-e27d" name="=Crusade= Plasma Rifling" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e957-1db4-4135-b7c0" type="max"/>
-      </constraints>
       <rules>
         <rule id="be0d-f120-1c58-aafb" name="Plasma Rifling" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
           <description>Any of the Legio’s Titans can be upgraded to have Plasma Rifling for +15 points per Titan. When firing a weapon with the word ‘plasma’ or ‘laser’ in its name (i.e., plasma blastgun, paired laser blasters, etc) the Titan can push its reactor to increase both the Short range and Long range of the weapon by 6&quot;.</description>
@@ -19939,9 +19937,6 @@ Take 1 selection for each weapon you are upgrading.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f3a-1f0f-7807-e137" name="=Crusade= Ranging Auspexes" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b83-6d56-6e2e-0c68" type="max"/>
-      </constraints>
       <rules>
         <rule id="f9ab-c925-3890-e345" name="Ranging Auspexes" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
           <description>Any of the Legio’s Titans can be upgraded to have Ranging Auspexes for +10 points per Titan. In the Combat phase, a Titan equipped with Ranging Auspexes can premeasure the range and check weapon arcs between itself and potential targets before selecting a target.</description>
@@ -19957,9 +19952,6 @@ Take 1 selection for each weapon you are upgrading.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="d0f2-9a3d-50d1-6958" name="=Crusade= Reactor Fetters" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77a1-5536-ce38-a0ea" type="max"/>
-      </constraints>
       <rules>
         <rule id="b981-5bb4-7f47-5837" name="Reactor Fetters" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
           <description>Any of the Legio’s Titans can be upgraded to have Reactor Fetters for +25 points. A Titan with Reactor Fetters may Vent Plasma in the Damage Control phase on a Repair dice roll of 3+ rather than 4+. However, it may not voluntarily push its reactor more than once in each phase.</description>
@@ -19975,9 +19967,6 @@ Take 1 selection for each weapon you are upgrading.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="7385-7f1f-2c1d-6963" name="=Crusade= Secondary Shield Generators" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d051-fe61-8757-c0d6" type="max"/>
-      </constraints>
       <rules>
         <rule id="10d3-0524-7bdf-2a9c" name="Secondary Shield Generators" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
           <description>Any of the Legio’s Titans can be upgraded with Secondary Shield Generators for +25 points. Once per game, when a Titan with this upgrade has a Void Shield level of X and is chosen as the target of a weapon attack, it may engage its Secondary Shield Generators – this must be done before any dice are rolled. Immediately increase the Titan’s Void Shield level by D3 and the Titan’s Reactor Level by the same amount (i.e., if a 2 is rolled, the Titan’s Void Shield level moves left along the tracker twice and the Reactor Level marker moves right along the Reactor Status tracker twice). A Titan cannot use their Emergency Shield Generators if they are suffering from the VSG Burnout Critical Damage effect.</description>
@@ -20027,9 +20016,6 @@ Take 1 selection for each weapon you are upgrading.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="cd35-17bf-d32f-5e60" name="=Crusade= Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9881-b6f9-6f35-d16d" type="max"/>
-      </constraints>
       <rules>
         <rule id="e537-e7ca-39e0-f677" name="Tracking Gyroscopes" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
           <description>Any Titan from this Legio may be equipped with Tracking Gyroscopes for +10 points. A Titan with this upgrade changes the Fire Arc of their carapace weapons to include the entire Front Arc of the Titan.</description>
@@ -20045,9 +20031,6 @@ Take 1 selection for each weapon you are upgrading.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="617d-4ecf-2753-447a" name="=Crusade= Fusion Missiles" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4c7-a70b-dee8-6060" type="max"/>
-      </constraints>
       <rules>
         <rule id="eafd-811c-116b-e0ee" name="Fusion Missiles" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
           <description>Any Titan from this Legio armed with an apocalypse missile launcher or paired apocalypse missile launchers may take Fusion Missiles as an upgrade for +25 points. Each of the Titan’s weapons must be upgraded separately. When firing a weapon equipped with Fusion Missiles, the player can choose to either use its normal profile, or fire using Fusion Missiles; if they do this, for the duration of the attack the weapon gains the Fusion trait and reduces its Dice value to 3 if the original Dice value is 8 or more, or to 2 if the original Dice value is 7 or less.</description>
@@ -20063,9 +20046,6 @@ Take 1 selection for each weapon you are upgrading.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="ef97-0bcb-8db6-0a9f" name="=Crusade= Gravitonic Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d52-902e-bb3a-75da" type="max"/>
-      </constraints>
       <rules>
         <rule id="8f05-9be4-cebc-4edc" name="Gravitonic Stabilisers" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
           <description>Any Titan from this Legio may take Gravitonic Stabilisers for +10 points. If a Titan with this upgrade is hit by a weapon with the Concussive and/or Quake traits that is not deflected by the shields, roll a D6. On a 2+, that Titan is unaffected by the Concussive and/or Quake traits, although it still suffers any other damage effects. However, a Titan with this upgrade cannot declare Power to Locomotors!</description>
@@ -20081,9 +20061,6 @@ Take 1 selection for each weapon you are upgrading.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="f474-9d16-9408-0a7d" name="=Crusade= Diabatic Warheads" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4a0-c4c4-7f52-fb7c" type="max"/>
-      </constraints>
       <rules>
         <rule id="dbf8-966c-9c0e-df53" name="Diabatic Warheads" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
           <description>Any Titan from this Legio armed with an Apocalypse missile launcher or paired Apocalypse missile launchers may take Diabatic Warheads for +15 points. Each of the Titan’s weapons must be upgraded separately. When firing a weapon equipped with Diabatic Warheads, the player can choose to use its normal profile, or fire using Diabatic Warheads; if they do this, reduce the weapon’s Strength value to 1. If an attack made with Diabatic Warheads scores at least 3 hits, regardless of whether the Void Shield saves are passed or not, increase the target Titan’s Reactor Status Level by 1. If 8 or more hits are scored, increase the target’s Reactor Status level by 2 instead. Diabatic Warheads have no additional effect on Knight Banners, beyond any damage they may inflict.</description>
@@ -20116,9 +20093,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
       </costs>
     </selectionEntry>
     <selectionEntry id="10b4-44bc-24de-8dcc" name="=Crusade= Hunting Motives" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b9-ac6f-4e0e-e045" type="max"/>
-      </constraints>
       <rules>
         <rule id="f06b-7cf9-502a-6c9e" name="Hunting Motives" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
           <description>Any Titan from this Legio of Scale 6 or lower may be equipped with Hunting Motives for +20 points. A Titan with this upgrade increases their default Speed value by 2&quot; during the Movement phase. However, they may not declare Power to Stabilisers!</description>
@@ -20134,9 +20108,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
       </costs>
     </selectionEntry>
     <selectionEntry id="9168-bb42-d17a-5391" name="=Crusade= Unguis Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca7a-535b-e792-dfab" type="max"/>
-      </constraints>
       <rules>
         <rule id="5791-4e53-a909-f3af" name="Unguis Stabilisers" publicationId="2988-f24d-39ef-352e" page="101" hidden="false">
           <description>Any Titan from this Legio with a Scale of 9 or greater may be equipped with Unguis Stabilisers for +20 points. When activated in the Strategy phase, a Titan with this upgrade may deploy their Unguis Stabilisers. If they do so, until the end of the round they may be issued a First Fire order or Split Fire order without the need to make a Command check. However, they may not move or make turns, voluntarily or otherwise for the remainder of the round (e.g., by Critical Damage effects, Stratagems, the Concussive weapon trait, etc.).</description>
@@ -20152,9 +20123,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
       </costs>
     </selectionEntry>
     <selectionEntry id="df26-6cc5-c1e1-4f71" name="=Crusade= Vox Screech" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b18e-edc2-701a-4f53" type="max"/>
-      </constraints>
       <rules>
         <rule id="09d8-fce7-d42b-1915" name="Vox Screech" publicationId="2988-f24d-39ef-352e" page="101" hidden="false">
           <description>A Titan from this Legio may be equipped with a Vox Screech for +30 points. Once per game, when a Titan with this upgrade is activated during the Movement phase they may issue a Vox Screech. Any Titan within 6&quot; of a Titan that issued a Vox Screech discards any Orders that it had issued, unless that Order was an Emergency Repairs order. This counts as the activating Titan’s activation for that phase. Friendly Titans from this Legio are not affected by a Vox Screech.</description>
@@ -20985,7 +20953,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                     </conditionGroup>
                   </conditionGroups>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
                     <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="223f-6e71-9e4f-939e" shared="true"/>
                     <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="d173-87e6-9f1b-1aaa" shared="true"/>
                   </conditions>
@@ -21115,8 +21082,8 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="model-or-unit" childId="223f-6e71-9e4f-939e" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="model-or-unit" childId="d173-87e6-9f1b-1aaa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="223f-6e71-9e4f-939e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="d173-87e6-9f1b-1aaa" shared="true"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="or">
@@ -21467,8 +21434,8 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="true" id="10b5-8ac8-447c-1233" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="5999-c125-a2d3-6925" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="10b5-8ac8-447c-1233" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="5999-c125-a2d3-6925" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="0ef7-aa6b-c1a5-6783" name="=Crusade= Armour Spikes" hidden="true" collective="false" import="true" targetId="ec20-60be-dbf7-f2b9" type="selectionEntry">
@@ -21485,8 +21452,8 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="true" id="1845-409e-b8f1-f984" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="20f7-a799-3be5-ed8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="1845-409e-b8f1-f984" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="20f7-a799-3be5-ed8c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="cdf8-888a-2086-3612" name="=Crusade= Autoloaders" hidden="true" collective="false" import="true" targetId="b44a-669d-a9d2-6cdc" type="selectionEntry">
@@ -21537,8 +21504,8 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="true" id="845e-26c1-27e8-cfb7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="4b6d-8bad-5b2e-1c92" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="845e-26c1-27e8-cfb7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="4b6d-8bad-5b2e-1c92" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="281a-6e4c-6622-cddf" name="=Crusade= Blind Missiles" hidden="true" collective="false" import="true" targetId="75f9-5be1-91bd-4a04" type="selectionEntry">
@@ -21580,50 +21547,94 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="true" id="b23a-e2b4-1b49-aa87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="7f90-c7d2-2ea4-8f88" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="b23a-e2b4-1b49-aa87" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="7f90-c7d2-2ea4-8f88" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="e195-86da-88c3-316d" name="=Crusade= Diabatic Warheads" hidden="true" collective="false" import="true" targetId="f474-9d16-9408-0a7d" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f834-a2e8-bf06-4d7c" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="a86d-52c9-0eea-4412" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="c143-4c88-7749-57a3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="9526-baed-0234-2ae0" name="=Crusade= Fusion Missiles" hidden="true" collective="false" import="true" targetId="617d-4ecf-2753-447a" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="40cd-b4c6-809f-9acf" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="40cd-b4c6-809f-9acf" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="40cd-b4c6-809f-9acf" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="d6dd-9164-91f9-6eef" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="34d1-04b6-7945-5a23" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="b8bf-372f-b1d9-35c0" name="=Crusade= Gravitonic Stabilisers" hidden="true" collective="false" import="true" targetId="ef97-0bcb-8db6-0a9f" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="7318-705d-7b35-c278" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="7318-705d-7b35-c278" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7318-705d-7b35-c278" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="837e-5236-39f8-6d1c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="0af0-8e81-2202-7f33" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="f803-f1bf-6d6d-0310" name="=Crusade= Hunting Motives" hidden="true" collective="false" import="true" targetId="10b4-44bc-24de-8dcc" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="e5b2-df10-f0a7-0c6f" type="atLeast"/>
-                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d173-87e6-9f1b-1aaa" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ad7-cd10-8d6e-8c2e" type="instanceOf"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="223f-6e71-9e4f-939e" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="d173-87e6-9f1b-1aaa" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="e5b2-df10-f0a7-0c6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e5b2-df10-f0a7-0c6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -21631,122 +21642,241 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="23b7-7dae-b605-462a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="3676-5979-5a73-7d21" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="3d1e-fb7a-aee5-acff" name="=Crusade= Macro Charges" hidden="true" collective="false" import="true" targetId="56fe-a07d-b73f-a576" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="5221-b61f-f881-45e7" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="afd5-6419-898f-7543" name="=Crusade= Macro Magazines" hidden="true" collective="false" import="true" targetId="628a-c5e1-1d3f-065e" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="be9e-bd56-3125-b325" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="9e09-2e0f-0afb-a0f8" name="=Crusade= Multiple Warhead Launchers" hidden="true" collective="false" import="true" targetId="6010-6066-629e-1305" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1ec7-9af8-fe78-c873" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="20e9-a8df-f8ea-3740" name="=Crusade= Plasma Rifling" hidden="true" collective="false" import="true" targetId="241e-6a16-8744-e27d" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="598e-5696-26c9-54b0" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="4df1-3eba-1648-e530" name="=Crusade= Ranging Auspexes" hidden="true" collective="false" import="true" targetId="8f3a-1f0f-7807-e137" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="df4a-a746-5049-5c6f" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="b594-a5fb-b1f8-401e" name="=Crusade= Reactor Fetters" hidden="true" collective="false" import="true" targetId="d0f2-9a3d-50d1-6958" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="2f60-f408-aebe-f8cd" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="6e38-3dc3-b745-7746" name="=Crusade= Secondary Shield Generators" hidden="true" collective="false" import="true" targetId="7385-7f1f-2c1d-6963" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f03e-2c70-6202-e81c" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="66a8-ff76-c95b-d994" name="=Crusade= Tracking Gyroscopes" hidden="true" collective="false" import="true" targetId="cd35-17bf-d32f-5e60" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8eed-a57c-a7f9-6ec6" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="d1b8-0b07-e58e-73bb" name="=Crusade= Unguis Stabilisers" hidden="true" collective="false" import="true" targetId="9168-bb42-d17a-5391" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cf86-f025-9c57-043d" type="atLeast"/>
-                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b6-f342-ccdb-b9cc" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5122-cb02-8703-ce88" type="instanceOf"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5221-b61f-f881-45e7" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="5221-b61f-f881-45e7" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="2c06-2a69-6377-38eb" name="=Crusade= Vox Screech" hidden="true" collective="false" import="true" targetId="df26-6cc5-c1e1-4f71" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fbc7-50e2-22e0-38b4" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="09ed-6300-0202-49c3" name="=Crusade= Seismic Auspex" hidden="true" collective="false" import="true" targetId="9a0b-a568-117f-b54b" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c2-cfd2-43b1-d54a" type="instanceOf"/>
-                    <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="eac2-b1e4-777f-0f0f" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a8cf-34fb-66af-763c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="d129-1905-4fc7-7210" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="afd5-6419-898f-7543" name="=Crusade= Macro Magazines" hidden="true" collective="false" import="true" targetId="628a-c5e1-1d3f-065e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="be9e-bd56-3125-b325" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="be9e-bd56-3125-b325" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a421-ff94-44cf-2eb8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="28f7-8bac-a0bb-c83b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9e09-2e0f-0afb-a0f8" name="=Crusade= Multiple Warhead Launchers" hidden="true" collective="false" import="true" targetId="6010-6066-629e-1305" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="1ec7-9af8-fe78-c873" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="1ec7-9af8-fe78-c873" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="b617-e8fa-4404-42f1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="1739-3d75-bf6d-72b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="20e9-a8df-f8ea-3740" name="=Crusade= Plasma Rifling" hidden="true" collective="false" import="true" targetId="241e-6a16-8744-e27d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="598e-5696-26c9-54b0" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="598e-5696-26c9-54b0" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="86fe-cc17-9ac3-7570" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="3f7e-14d5-f823-c28b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4df1-3eba-1648-e530" name="=Crusade= Ranging Auspexes" hidden="true" collective="false" import="true" targetId="8f3a-1f0f-7807-e137" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="df4a-a746-5049-5c6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="df4a-a746-5049-5c6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="true" id="f853-bd6c-a061-231c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="0b08-6bfd-20a4-8ad2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b594-a5fb-b1f8-401e" name="=Crusade= Reactor Fetters" hidden="true" collective="false" import="true" targetId="d0f2-9a3d-50d1-6958" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="2f60-f408-aebe-f8cd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2f60-f408-aebe-f8cd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="true" id="f1ff-4262-7d48-db32" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="8b6a-22e9-0d18-7338" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6e38-3dc3-b745-7746" name="=Crusade= Secondary Shield Generators" hidden="true" collective="false" import="true" targetId="7385-7f1f-2c1d-6963" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="f03e-2c70-6202-e81c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f03e-2c70-6202-e81c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="70fa-764c-1ac4-c6dc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="35e5-fb9a-a25d-b5ac" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="66a8-ff76-c95b-d994" name="=Crusade= Tracking Gyroscopes" hidden="true" collective="false" import="true" targetId="cd35-17bf-d32f-5e60" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="8eed-a57c-a7f9-6ec6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8eed-a57c-a7f9-6ec6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="1b67-fbeb-fc13-f603" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="5d34-ee91-23c6-6fd4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d1b8-0b07-e58e-73bb" name="=Crusade= Unguis Stabilisers" hidden="true" collective="false" import="true" targetId="9168-bb42-d17a-5391" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="cf86-f025-9c57-043d" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="cf86-f025-9c57-043d" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="223f-6e71-9e4f-939e" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="d173-87e6-9f1b-1aaa" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="0444-8ecc-69a1-8bd0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="7239-4c33-73c4-51de" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2c06-2a69-6377-38eb" name="=Crusade= Vox Screech" hidden="true" collective="false" import="true" targetId="df26-6cc5-c1e1-4f71" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="fbc7-50e2-22e0-38b4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="fbc7-50e2-22e0-38b4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="495f-6583-c4fa-cff5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="762f-4fe3-96b1-09cd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="09ed-6300-0202-49c3" name="=Crusade= Seismic Auspex" hidden="true" collective="false" import="true" targetId="9a0b-a568-117f-b54b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="eac2-b1e4-777f-0f0f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="eac2-b1e4-777f-0f0f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="c37f-5ca9-9d98-5cf0" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="dfd0-5f16-d7bf-b7fc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
