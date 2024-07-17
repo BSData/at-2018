@@ -19809,9 +19809,6 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="985e-c339-0b77-e617" name="=Crusade= Ablative Ceramite Plating" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca7-eb51-2c59-e143" type="max"/>
-      </constraints>
       <rules>
         <rule id="4659-4ef5-fa8f-5c62" name="Ablative Ceramite Plating" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
           <description>Any of the Legio’s Titans can be upgraded to have Ablative Ceramite Plating for +30 points. At the start of the battle, a Titan equipped with Ablative Ceramite Plating can choose either its Body, Legs or Head. The Titan ignores the bonus to the attacker’s armour roll as a result of damage already inflicted on the chosen location, as indicated by the Command Terminal (see the Adeptus Titanicus rulebook).
@@ -19829,9 +19826,6 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
       </costs>
     </selectionEntry>
     <selectionEntry id="ec20-60be-dbf7-f2b9" name="=Crusade= Armour Spikes" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da91-c598-1518-fac5" type="max"/>
-      </constraints>
       <rules>
         <rule id="69c2-ab1c-4b28-a76d" name="Armour Spikes" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
           <description>Any of the Legio’s Titans can be upgraded to have Armour Spikes for +20 points. A Titan with Armour Spikes increases the number of dice it generates when making a Smash attack from D3 to D6 (see the Adeptus Titanicus rulebook).</description>
@@ -19847,9 +19841,6 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
       </costs>
     </selectionEntry>
     <selectionEntry id="8990-ddd7-37d3-0666" name="=Crusade= Auxiliary Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a3f-a2d8-89c7-841d" type="max"/>
-      </constraints>
       <rules>
         <rule id="c05e-a059-986d-0d03" name="Auxiliary Shield Capacitors" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
           <description>Any of the Legio’s Titans can be upgraded to have Auxiliary Shield Capacitors for +20 points. Once per round, a Titan with this upgrade can declare Voids to Full! (see the Adeptus Titanicus rulebook) without having to push the reactor. As soon as the Titan’s shields collapse, the benefits from this piece of Wargear are lost for the remainder of the battle, even if the Titan’s shields are later reignited.</description>
@@ -19865,9 +19856,6 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
       </costs>
     </selectionEntry>
     <selectionEntry id="75f9-5be1-91bd-4a04" name="=Crusade= Blind Missiles" hidden="true" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3fb-b264-0de8-a67e" type="max"/>
-      </constraints>
       <rules>
         <rule id="bcaf-d6f4-42fd-9595" name="Blind Missiles" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
           <description>Any of the Legio’s Titans armed with either Apocalypse missile launchers or an Apocalypse missile launcher can be upgraded to have Blind Missiles for +20 points. Each of the Titan’s weapons must be upgraded separately. Once per game, a Titan armed with Blind Missiles may fire a blind salvo with its Apocalypse missile launchers rather than firing them normally. Place the 5&quot; Blast marker anywhere within range and firing arc of the missile launchers – they do not need line of sight. This marker remains in place until the end of the round and blocks line of sight through it.</description>
@@ -19883,9 +19871,6 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
       </costs>
     </selectionEntry>
     <selectionEntry id="b942-4f45-a1e2-18c8" name="=Crusade= Crusade Banners" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379c-b331-7436-842f" type="max"/>
-      </constraints>
       <rules>
         <rule id="f449-df36-c3f7-0208" name="Crusade Banners" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
           <description>Any of the Legio’s Titans can be upgraded to have Crusade Banners for +15 points. Friendly Knight Banners with at least one model within 6&quot; of a Titan with this upgrade cannot be Shaken for any reason.</description>
@@ -21471,56 +21456,133 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <entryLink id="5295-962a-086a-1a36" name="=Crusade= Ablative Ceramite Plating" hidden="true" collective="false" import="true" targetId="985e-c339-0b77-e617" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="c473-fa3e-8002-49ab" type="atLeast"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="c473-fa3e-8002-49ab" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="c473-fa3e-8002-49ab" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="true" id="10b5-8ac8-447c-1233" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="5999-c125-a2d3-6925" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="0ef7-aa6b-c1a5-6783" name="=Crusade= Armour Spikes" hidden="true" collective="false" import="true" targetId="ec20-60be-dbf7-f2b9" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="3a3a-b384-c49f-61ff" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="3a3a-b384-c49f-61ff" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="3a3a-b384-c49f-61ff" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="true" id="1845-409e-b8f1-f984" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="20f7-a799-3be5-ed8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="cdf8-888a-2086-3612" name="=Crusade= Autoloaders" hidden="true" collective="false" import="true" targetId="b44a-669d-a9d2-6cdc" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4f0a-1f44-e3b2-5d17" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="97c9-0bce-fc01-46f4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="97c9-0bce-fc01-46f4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="10" field="a731-e220-2d8a-41bf">
               <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="97c9-0bce-fc01-46f4" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="be6b-8894-c7d1-bdba" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="50" field="a731-e220-2d8a-41bf">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="08fc-3215-ee7f-68bb" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="438e-e195-e775-0357" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="4d45-2010-5417-235d" name="=Crusade= Auxiliary Shield Capacitors" hidden="true" collective="false" import="true" targetId="8990-ddd7-37d3-0666" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="fd5d-c162-4f07-94c2" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="fd5d-c162-4f07-94c2" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="fd5d-c162-4f07-94c2" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="true" id="845e-26c1-27e8-cfb7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="4b6d-8bad-5b2e-1c92" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="281a-6e4c-6622-cddf" name="=Crusade= Blind Missiles" hidden="true" collective="false" import="true" targetId="75f9-5be1-91bd-4a04" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="1566-6904-d727-7f9c" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="1566-6904-d727-7f9c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="1566-6904-d727-7f9c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="e8f7-90b2-140e-676d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="b0f1-e4b7-089b-5b18" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="3a55-0e66-aa74-11e0" name="=Crusade= Crusade Banners" hidden="true" collective="false" import="true" targetId="b942-4f45-a1e2-18c8" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="3bdf-54e8-437f-6bff" type="atLeast"/>
-              </conditions>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="3bdf-54e8-437f-6bff" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="3bdf-54e8-437f-6bff" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="true" id="b23a-e2b4-1b49-aa87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="7f90-c7d2-2ea4-8f88" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </entryLink>
         <entryLink id="e195-86da-88c3-316d" name="=Crusade= Diabatic Warheads" hidden="true" collective="false" import="true" targetId="f474-9d16-9408-0a7d" type="selectionEntry">
           <modifiers>
