@@ -534,7 +534,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="8e3e-2c21-301b-653e" name="Configuration" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="stub-entry" hidden="true">
+    <forceEntry id="stub-entry" hidden="true" name=" ">
       <modifiers>
         <modifier type="set" field="hidden" value="true"/>
       </modifiers>
