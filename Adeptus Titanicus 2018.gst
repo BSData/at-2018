@@ -567,22 +567,6 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
           <description>The Seneschal is the mightiest warrior in the force. Knights in their Banner may re-roll Hit rolls of 1 when using their Ballistic Skill or Weapon Skill.</description>
         </rule>
       </rules>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="edc1-2cd5-6899-9032" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1cdf-02aa-171a-bcdb" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="0" field="edc1-2cd5-6899-9032">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="1cdf-02aa-171a-bcdb">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </categoryEntry>
     <categoryEntry name="High King" id="6023-4ce7-7008-e851" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
       <constraints>
@@ -24569,7 +24553,29 @@ result of a single D6.</description>
             <constraint type="max" value="1" field="selections" scope="unit" shared="false" id="b4d7-3b3a-ee30-9009" includeChildSelections="true"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Seneschal" hidden="false" id="17ee-3a67-31d4-0269" type="selectionEntry" targetId="ad7f-8a59-5602-0e51"/>
+        <entryLink import="true" name="Seneschal" hidden="false" id="17ee-3a67-31d4-0269" type="selectionEntry" targetId="ad7f-8a59-5602-0e51">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="edc1-2cd5-6899-9032" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1cdf-02aa-171a-bcdb" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="edc1-2cd5-6899-9032">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="0" field="1cdf-02aa-171a-bcdb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="High King" hidden="false" id="47b6-f3e9-8f1f-29d0" type="selectionEntry" targetId="386e-c242-ecc7-1b70"/>
       </entryLinks>
       <constraints>
