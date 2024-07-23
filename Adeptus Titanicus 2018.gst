@@ -451,9 +451,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
 If the Knight carrying the Lance Standard is destroyed, choose another Knight in the High Scion’s Banner to carry the Lance Standard. If the High Scion is the sole remaining Knight in the Banner then the standard is lost, and the High Scion cannot carry it.
 
 
-Unless otherwise stated, a Lance Standard’s effects only apply to Knight Banners within the same Lance. A Lance Standard’s effect do apply to a Banner containing a Knight carrying it.
-
-</description>
+Unless otherwise stated, a Lance Standard’s effects only apply to Knight Banners within the same Lance. A Lance Standard’s effect do apply to a Banner containing a Knight carrying it.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -611,7 +609,7 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
     <categoryEntry name="Questoris Traitoris" id="2bb9-9312-773b-3274" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="stub-entry" hidden="true" name=" ">
+    <forceEntry id="stub-entry" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true"/>
       </modifiers>
@@ -3219,7 +3217,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="The Battle Standard" hidden="false" id="67d1-5810-4e06-6d7b" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Battle Standard" hidden="false" id="67d1-5810-4e06-6d7b" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
         <entryLink import="true" name="Lance Standard" hidden="false" id="a0a9-d629-2d6d-33a4" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <modifiers>
@@ -3481,7 +3479,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="The Battle Standard" hidden="false" id="ac59-ca8d-60ea-f20e" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Battle Standard" hidden="false" id="ac59-ca8d-60ea-f20e" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
         <entryLink import="true" name="Lance Standard" hidden="false" id="f389-c23b-bd7c-c385" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <costs>
@@ -3766,7 +3764,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="The Battle Standard" hidden="false" id="4ecc-1341-3ac0-ce4c" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Battle Standard" hidden="false" id="4ecc-1341-3ac0-ce4c" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
         <entryLink import="true" name="Lance Standard" hidden="false" id="9390-5c80-ca92-eb82" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <costs>
@@ -4228,7 +4226,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="The Battle Standard" hidden="false" id="c924-4da6-f257-e273" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Battle Standard" hidden="false" id="c924-4da6-f257-e273" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
         <entryLink import="true" name="Lance Standard" hidden="false" id="0f27-2c1e-5515-740b" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <costs>
@@ -4278,7 +4276,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="The Battle Standard" hidden="false" id="d4c9-de58-c323-c79a" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Battle Standard" hidden="false" id="d4c9-de58-c323-c79a" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
         <entryLink import="true" name="Lance Standard" hidden="false" id="4d19-3b48-3781-f1ef" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <costs>
@@ -19462,7 +19460,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a83-bad6-004b-ee94" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="The Battle Standard" hidden="false" id="91dd-8db4-8225-acd7" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+        <entryLink import="true" name="Battle Standard" hidden="false" id="91dd-8db4-8225-acd7" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
         <entryLink import="true" name="Lance Standard" hidden="false" id="54c8-44d3-8707-fb97" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
       </entryLinks>
       <costs>
