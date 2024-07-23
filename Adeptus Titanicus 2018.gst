@@ -499,7 +499,7 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf67-a51a-b403-9501" type="max"/>
-        <constraint type="max" value="1" field="selections" scope="15c4-a550-87e2-79e3" shared="true" id="6fc7-3a48-3b04-5921" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="6fc7-3a48-3b04-5921" includeChildSelections="false"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="d173-87e6-9f1b-1aaa" name="DireWolfTitan" hidden="false">
@@ -24558,15 +24558,15 @@ result of a single D6.</description>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="15c4-a550-87e2-79e3" childId="ad7f-8a59-5602-0e51" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="15c4-a550-87e2-79e3" childId="386e-c242-ecc7-1b70" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad7f-8a59-5602-0e51" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="386e-c242-ecc7-1b70" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="15c4-a550-87e2-79e3" shared="false" id="b4d7-3b3a-ee30-9009" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="unit" shared="false" id="b4d7-3b3a-ee30-9009" includeChildSelections="true"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Seneschal" hidden="false" id="17ee-3a67-31d4-0269" type="selectionEntry" targetId="ad7f-8a59-5602-0e51"/>
@@ -24574,7 +24574,7 @@ result of a single D6.</description>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29c6-573e-ecf7-6b4e" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="15c4-a550-87e2-79e3" shared="true" id="5bc7-cdd1-b31b-068b" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="b1c7-cb6c-5810-e9d9" shared="true" id="5bc7-cdd1-b31b-068b" includeChildSelections="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
