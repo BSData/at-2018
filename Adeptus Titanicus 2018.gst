@@ -24754,7 +24754,7 @@ result of a single D6.</description>
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b14-429a-e56c-5ae7" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b14-429a-e56c-5ae7" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="9699-c884-df99-e68e" includeChildSelections="true"/>
       </constraints>
       <modifiers>
