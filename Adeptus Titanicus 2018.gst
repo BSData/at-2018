@@ -566,9 +566,6 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       </infoLinks>
     </categoryEntry>
     <categoryEntry name="High King" id="6023-4ce7-7008-e851" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c6a3-b60c-fc35-d35b" includeChildSelections="true"/>
-      </constraints>
       <rules>
         <rule name="Challenges" id="b52d-7285-5ae6-f03c" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
           <description>High King’s own Knight must make Targeted Attacks with Melee weapons against enemy High Scions, Seneschals and other High Kings.</description>
@@ -3564,7 +3561,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="a271-bbde-1b23-fd30" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
+        <categoryLink id="a271-bbde-1b23-fd30" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="a0c0-49c1-1633-3848" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="c58e-22a5-8294-f8ec" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
@@ -4152,6 +4149,23 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="append" value=", Warrior Born" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="a0c0-a49a-deb3-0b9f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value=", Barional Court" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="6023-4ce7-7008-e851" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="b4d4-89ab-32aa-f227" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1a0a-5e72-9752-c32d" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" type="unit">
       <profiles>
@@ -4294,6 +4308,23 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="append" value=", Warrior Born" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="a0c0-a49a-deb3-0b9f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value=", Barional Court" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="6023-4ce7-7008-e851" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="b4d4-89ab-32aa-f227" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="a5e7-b5d0-d911-6c59" name="Hekaton Siege Claw" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
@@ -24798,29 +24829,14 @@ result of a single D6.</description>
             <categoryLink name="High Scion" hidden="false" id="ce69-f8c1-5fd9-cd55" targetId="7d0a-a772-ed25-9202" primary="false"/>
             <categoryLink name="Nobility" hidden="false" id="8060-f949-4736-e5e0" targetId="e49d-7912-8e4f-a188" primary="false"/>
           </categoryLinks>
-          <modifiers>
-            <modifier type="set" value="0" field="b4d7-3b3a-ee30-9009">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad7f-8a59-5602-0e51" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="386e-c242-ecc7-1b70" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="unit" shared="false" id="b4d7-3b3a-ee30-9009" includeChildSelections="true"/>
-          </constraints>
         </entryLink>
         <entryLink import="true" name="Seneschal" hidden="false" id="17ee-3a67-31d4-0269" type="selectionEntry" targetId="ad7f-8a59-5602-0e51">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="edc1-2cd5-6899-9032" includeChildSelections="true"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1cdf-02aa-171a-bcdb" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="edc1-2cd5-6899-9032-min" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="edc1-2cd5-6899-9032-max" includeChildSelections="true"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="0" field="edc1-2cd5-6899-9032">
+            <modifier type="set" value="0" field="edc1-2cd5-6899-9032-min">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -24830,18 +24846,27 @@ result of a single D6.</description>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="0" field="1cdf-02aa-171a-bcdb">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
-              </conditions>
+            <modifier type="set" value="0" field="edc1-2cd5-6899-9032-max">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="High King" hidden="false" id="47b6-f3e9-8f1f-29d0" type="selectionEntry" targetId="386e-c242-ecc7-1b70"/>
+        <entryLink import="true" name="High King" hidden="false" id="47b6-f3e9-8f1f-29d0" type="selectionEntry" targetId="386e-c242-ecc7-1b70">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c6a3-b60c-fc35-d35b" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29c6-573e-ecf7-6b4e" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="b1c7-cb6c-5810-e9d9" shared="true" id="5bc7-cdd1-b31b-068b" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="root-entry" shared="true" id="5bc7-cdd1-b31b-068b-min" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="5bc7-cdd1-b31b-068b-max" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
