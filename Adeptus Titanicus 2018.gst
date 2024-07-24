@@ -557,16 +557,13 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
         <rule name="Noble Sacrifice" id="ebf3-cd90-0601-4525" hidden="false" publicationId="975a-00f4-pubN89746" page="38">
           <description>If the Seneschal is removed as the result of a Targeted Attack, the controlling player rolls a D6. On a 6, the Seneschal is saved by the sacrifice of one of the Knights in their Banner. The controlling player chooses one other Knight in the Banner to remove instead. If the Seneschal is the last remaining model in the Banner, this rule has no effecr.</description>
         </rule>
-        <rule name="The Battle Standard" id="7da6-a188-4baf-2e2a" hidden="false" publicationId="975a-00f4-pubN89746" page="38">
-          <description>: The Seneschal will invariably march to war in great splendour and accompanied by the most treasured battle standards of their Household. These honoured relics bear the heraldry of the Household and its home world, alongside campaign and battle honours beyond number. Their presence on the battlefield provides a rallying point for one and all:
-                        • One Knight within the Seneschal&apos;s Banner may be upgraded to carry the Battle Standard at a cost of 50 points.
-                        • The Battle Standard must be clearly displayed on the model that carries it.
-                        • As long as the Knight carrying the Battle Standard is part of the Banner, any Banner or Lance within 12&quot; of that Knight may re-roll any failed Command checks to see if the Banner becomes Shaken.</description>
-        </rule>
         <rule name="Warrior Elite" id="8877-92d6-bd09-300a" hidden="false" publicationId="975a-00f4-pubN89746" page="38">
           <description>The Seneschal is the mightiest warrior in the force. Knights in their Banner may re-roll Hit rolls of 1 when using their Ballistic Skill or Weapon Skill.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="The Battle Standard" id="286c-ec51-d3e6-d5b5" hidden="false" type="rule" targetId="7093-2b67-29d1-2e78"/>
+      </infoLinks>
     </categoryEntry>
     <categoryEntry name="High King" id="6023-4ce7-7008-e851" hidden="false" publicationId="2988-f24d-39ef-352e" page="105">
       <constraints>
@@ -3739,6 +3736,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2d1-65f1-f526-1f6a" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d0b-56c9-3008-d54b" type="min"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Nobility" hidden="false" id="6c1c-76e9-e2d4-c81e" type="selectionEntryGroup" targetId="6d3f-68e7-c9ac-1c07"/>
+          </entryLinks>
         </entryLink>
         <entryLink id="d347-4977-be77-635e" name="Cerastus Knight Scion Martial" hidden="false" collective="false" import="false" targetId="8f63-919a-9591-ecd2" type="selectionEntry">
           <constraints>
@@ -3751,6 +3751,23 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value=", Warrior Born" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="a0c0-a49a-deb3-0b9f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value=", Barional Court" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="6023-4ce7-7008-e851" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="b4d4-89ab-32aa-f227" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="7d97-998e-da08-a298" name="Cerastus Knight Lord Scion" hidden="false" collective="false" import="false" type="upgrade">
       <selectionEntryGroups>
@@ -19754,6 +19771,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1620-964d-32ee-ad93" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Nobility" hidden="false" id="f195-f454-35dd-2c6e" type="selectionEntryGroup" targetId="6d3f-68e7-c9ac-1c07"/>
           </entryLinks>
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="105"/>
@@ -19776,11 +19794,25 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e00-4c06-ffe1-d513" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Battle Standard" hidden="false" id="de8f-a7c4-ce47-401b" type="selectionEntryGroup" targetId="19c5-5856-23e4-7bdd"/>
+            <entryLink import="true" name="Lance Standard" hidden="false" id="ea42-6a1b-809d-1843" type="selectionEntryGroup" targetId="5de0-6622-1565-9efc"/>
           </entryLinks>
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="95"/>
             <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="append" value=", Standard Bearer" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="19c5-5856-23e4-7bdd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="1" field="selections" scope="self" childId="5de0-6622-1565-9efc" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="b89a-99ce-6bce-d05e" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -19810,6 +19842,23 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="append" value=", Warrior Born" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="a0c0-a49a-deb3-0b9f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value=", Barional Court" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="6023-4ce7-7008-e851" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="b4d4-89ab-32aa-f227" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="4398-fdec-5dfe-f00f" name="House Caesarean" publicationId="bf8b-27d7-039e-5df9" page="44" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -24981,6 +25030,9 @@ result of a single D6.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="The Battle Standard" id="eed8-0d60-ebc1-1780" hidden="false" type="rule" targetId="7093-2b67-29d1-2e78"/>
+      </infoLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Lance Standard" id="5de0-6622-1565-9efc" hidden="true">
       <constraints>
@@ -25150,6 +25202,12 @@ result of a single D6.</description>
     </rule>
     <rule name="Household Banners" id="a4fd-fe8d-4c8c-0eba" hidden="false" publicationId="975a-00f4-pubN89746" page="34">
       <description>Unlike Household Support Banners added to a Titan battlegroup, the Knights forming a Banner in a Household force must all be equipped in the same way.</description>
+    </rule>
+    <rule name="The Battle Standard" id="7093-2b67-29d1-2e78" hidden="false" publicationId="975a-00f4-pubN89746" page="38">
+      <description>: The Seneschal will invariably march to war in great splendour and accompanied by the most treasured battle standards of their Household. These honoured relics bear the heraldry of the Household and its home world, alongside campaign and battle honours beyond number. Their presence on the battlefield provides a rallying point for one and all:
+                        • One Knight within the Seneschal&apos;s Banner may be upgraded to carry the Battle Standard at a cost of 50 points.
+                        • The Battle Standard must be clearly displayed on the model that carries it.
+                        • As long as the Knight carrying the Battle Standard is part of the Banner, any Banner or Lance within 12&quot; of that Knight may re-roll any failed Command checks to see if the Banner becomes Shaken.</description>
     </rule>
   </sharedRules>
 </gameSystem>
