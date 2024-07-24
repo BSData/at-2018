@@ -496,10 +496,15 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
             <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5063-b6aa-3590-30fb" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" value="1" field="fed1-5361-bf2d-b551">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf67-a51a-b403-9501" type="max"/>
-        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="6fc7-3a48-3b04-5921" includeChildSelections="false"/>
+        <constraint type="max" value="-1" field="selections" scope="root-entry" shared="true" id="fed1-5361-bf2d-b551"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="d173-87e6-9f1b-1aaa" name="DireWolfTitan" hidden="false">
