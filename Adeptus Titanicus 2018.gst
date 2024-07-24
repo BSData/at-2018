@@ -2656,7 +2656,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="48f0-6716-fe35-50f9" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
@@ -2688,7 +2688,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="69a7-7f26-63b7-ae16" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
@@ -2720,7 +2720,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="70c4-e4d1-ac10-6a2d" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
@@ -2752,7 +2752,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="854c-5aef-6533-6561" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
@@ -3360,9 +3360,15 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <selectionEntryGroup id="6e43-6b1b-8d69-8fb3" name="Arms" hidden="false" collective="false" import="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -3370,10 +3376,26 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58a8-a1f5-2e1f-8898" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="a2e2-8861-796c-f301" name="Avenger Gatling Cannon" hidden="false" collective="false" import="false" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry"/>
-            <entryLink id="a436-ad46-7044-5602" name="Questoris Melee Weapon" hidden="false" collective="false" import="false" targetId="5be0-b49f-fc95-f499" type="selectionEntry"/>
-            <entryLink id="583b-120a-3d8f-7319" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="false" targetId="bc4c-36af-c4cd-4594" type="selectionEntry"/>
-            <entryLink id="0602-729f-5874-3aa9" name="Thermal Cannon" hidden="false" collective="false" import="false" targetId="908e-f9af-f0d1-a124" type="selectionEntry"/>
+            <entryLink id="a2e2-8861-796c-f301" name="Avenger Gatling Cannon" hidden="false" collective="false" import="false" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a436-ad46-7044-5602" name="Questoris Melee Weapon" hidden="false" collective="false" import="false" targetId="5be0-b49f-fc95-f499" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="583b-120a-3d8f-7319" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="false" targetId="bc4c-36af-c4cd-4594" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="0602-729f-5874-3aa9" name="Thermal Cannon" hidden="false" collective="false" import="false" targetId="908e-f9af-f0d1-a124" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="245a-f4e8-0ab7-849f" name="Upgrades" hidden="false" collective="false" import="false">
@@ -3439,9 +3461,15 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <selectionEntryGroup id="9076-e9cf-5dcd-8b8b" name="Arms" hidden="false" collective="false" import="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -3449,10 +3477,26 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f09-8671-4b8e-da4b" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="de33-6e38-7858-b2b2" name="Avenger Gatling Cannon" hidden="false" collective="false" import="false" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry"/>
-            <entryLink id="7cbe-8587-1d92-5b54" name="Questoris Melee Weapon" hidden="false" collective="false" import="false" targetId="5be0-b49f-fc95-f499" type="selectionEntry"/>
-            <entryLink id="ba71-5499-ea4d-f169" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="false" targetId="bc4c-36af-c4cd-4594" type="selectionEntry"/>
-            <entryLink id="7492-c5d6-eaf7-ca64" name="Thermal Cannon" hidden="false" collective="false" import="false" targetId="908e-f9af-f0d1-a124" type="selectionEntry"/>
+            <entryLink id="de33-6e38-7858-b2b2" name="Avenger Gatling Cannon" hidden="false" collective="false" import="false" targetId="02f3-29a7-d9a3-54ba" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7cbe-8587-1d92-5b54" name="Questoris Melee Weapon" hidden="false" collective="false" import="false" targetId="5be0-b49f-fc95-f499" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ba71-5499-ea4d-f169" name="Rapid-Fire Battlecannon" hidden="false" collective="false" import="false" targetId="bc4c-36af-c4cd-4594" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7492-c5d6-eaf7-ca64" name="Thermal Cannon" hidden="false" collective="false" import="false" targetId="908e-f9af-f0d1-a124" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="b041-c8fc-1ba1-b71c" name="Upgrades" hidden="false" collective="false" import="false">
@@ -3552,9 +3596,15 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <selectionEntryGroup name="Loadout" id="8165-a870-8c7d-3bb7" hidden="true" collective="false" import="false">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -4012,13 +4062,16 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="6dec-b5d7-faf0-4c13" name="Questoris Knight Lord Styrix" hidden="false" collective="false" import="false" targetId="e393-1183-33fd-d14d" type="selectionEntry">
+        <entryLink id="6dec-b5d7-faf0-4c13" name="Questoris Knight Styrix Lord Scion" hidden="false" collective="false" import="false" targetId="e393-1183-33fd-d14d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5911-f08c-cd69-fd24" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b379-9ba6-2ffe-98f5" type="min"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Nobility" hidden="false" id="1be9-7713-f388-858c" type="selectionEntryGroup" targetId="6d3f-68e7-c9ac-1c07"/>
+          </entryLinks>
         </entryLink>
-        <entryLink id="f092-af82-3042-7d64" name="Questoris Knight Scion Styrix" hidden="false" collective="false" import="false" targetId="540a-525d-45fd-2f93" type="selectionEntry">
+        <entryLink id="f092-af82-3042-7d64" name="Questoris Knight Styrix Scion Martial" hidden="false" collective="false" import="false" targetId="540a-525d-45fd-2f93" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cd5-50dd-98aa-902b" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5850-db9b-1135-88de" type="min"/>
@@ -4035,6 +4088,53 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="b2e3-52e4-3721-a93d" hidden="true" collective="false" import="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5272-a369-badf-12b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cc59-7984-c36b-5ca6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="false" name="Hekaton Siege Claw" hidden="false" id="8330-6200-5b3f-a8f5" collective="false" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="10" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="false" name="Volkite Chieorovile" hidden="false" id="c3ae-ab1a-73b0-d08b" collective="false" targetId="3595-8b4e-3496-ad5f" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="15" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="1a0a-5e72-9752-c32d" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" type="unit">
       <profiles>
@@ -4110,13 +4210,16 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="23a7-c61e-575a-87a4" name="Questoris Knight Lord Magaera" hidden="false" collective="false" import="false" targetId="be8e-e48f-d3f1-580c" type="selectionEntry">
+        <entryLink id="23a7-c61e-575a-87a4" name="Questoris Knight Magaera Lord Scion" hidden="false" collective="false" import="false" targetId="be8e-e48f-d3f1-580c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43bd-744a-553b-0566" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ff-7926-59a8-453a" type="min"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Nobility" hidden="false" id="8189-a35d-9807-4624" type="selectionEntryGroup" targetId="6d3f-68e7-c9ac-1c07"/>
+          </entryLinks>
         </entryLink>
-        <entryLink id="fbfd-3e68-0d63-9f8a" name="Questoris Knight Scion Magaera" hidden="false" collective="false" import="false" targetId="8d33-f08f-31d2-75a3" type="selectionEntry">
+        <entryLink id="fbfd-3e68-0d63-9f8a" name="Questoris Knight Magaera Scion Martial" hidden="false" collective="false" import="false" targetId="8d33-f08f-31d2-75a3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3c2-f2b7-81de-dab9" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f32-9145-a71c-cb88" type="min"/>
@@ -4133,6 +4236,47 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="567c-3b77-1aa9-3778" hidden="true" collective="false" import="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9f4c-7d0c-8d79-e539" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fdcf-5a6b-f07c-9034" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="false" name="Hekaton Siege Claw" hidden="false" id="969e-f050-b9bb-182b" collective="false" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="10" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="false" name="Lightning Cannon" hidden="false" id="236f-c0f3-9aa6-48b3" collective="false" targetId="c240-3acf-9c72-43d1" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="10" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="a5e7-b5d0-d911-6c59" name="Hekaton Siege Claw" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
@@ -4156,7 +4300,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="560c-f255-894f-dc0d" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="26fd-9c38-b45a-5e16" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
         <categoryLink id="8c3a-bcb5-a358-42d2" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="b58c-e00a-805f-3df9" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
@@ -4164,11 +4307,11 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="08b9-923d-1155-0c7f" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8d33-f08f-31d2-75a3" name="Questoris Knight Scion Magaera" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="8d33-f08f-31d2-75a3" name="Questoris Knight Magaera Scion Martial" hidden="false" collective="false" import="false" type="model">
       <modifiers>
         <modifier type="append" field="name" value=", Standard Bearer">
           <conditionGroups>
@@ -4193,14 +4336,33 @@ If the result is 25, move the reactor tracker to its leftmost hole.
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6be-4af6-b8a7-19ba" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0db0-2217-8db8-2ea9" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="fd14-d4fe-7a46-9438" name="Lightning Cannon" hidden="false" collective="false" import="false" targetId="c240-3acf-9c72-43d1" type="selectionEntry"/>
-            <entryLink id="ec85-ddde-91f4-3c61" name="Hekaton Siege Claw" hidden="false" collective="false" import="false" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry"/>
+            <entryLink id="fd14-d4fe-7a46-9438" name="Lightning Cannon" hidden="false" collective="false" import="false" targetId="c240-3acf-9c72-43d1" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ec85-ddde-91f4-3c61" name="Hekaton Siege Claw" hidden="false" collective="false" import="false" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="1c7e-0daa-4530-236a" name="Upgrades" hidden="false" collective="false" import="false">
@@ -4218,7 +4380,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="45"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="540a-525d-45fd-2f93" name="Questoris Knight Scion Styrix" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="540a-525d-45fd-2f93" name="Questoris Knight Styrix Scion Martial" hidden="false" collective="false" import="false" type="model">
       <modifiers>
         <modifier type="append" value=", Standard Bearer" field="name">
           <conditionGroups>
@@ -4237,21 +4399,35 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b855-f0b6-369f-39b8" name="Arms" hidden="false" collective="false" import="false">
-          <modifiers>
-            <modifier type="set" field="722f-626d-2c2f-e229" value="0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="722f-626d-2c2f-e229" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3514-19ef-ff9e-ed66" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7638-d4d4-af69-4677" name="Hekaton Siege Claw" hidden="false" collective="false" import="false" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry"/>
-            <entryLink id="2de3-8448-6b49-a5a4" name="Volkite Chieorovile" hidden="false" collective="false" import="false" targetId="3595-8b4e-3496-ad5f" type="selectionEntry"/>
+            <entryLink id="7638-d4d4-af69-4677" name="Hekaton Siege Claw" hidden="false" collective="false" import="false" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2de3-8448-6b49-a5a4" name="Volkite Chieorovile" hidden="false" collective="false" import="false" targetId="3595-8b4e-3496-ad5f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
+              </costs>
+            </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="c918-1c60-aae2-ea61" name="Upgrades" hidden="false" collective="false" import="false">
           <entryLinks>
@@ -4290,14 +4466,13 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="8ba4-402d-2722-1bc0" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="e139-a8cf-2336-cc53" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="b473-5117-06b1-66c1" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
         <categoryLink id="3590-80e1-12f6-f4a2" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
         <categoryLink id="30fd-d6bf-a6d5-3f23" name="Voidbreaker" hidden="false" targetId="ce80-524a-1913-7f68" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
@@ -4319,7 +4494,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e393-1183-33fd-d14d" name="Questoris Knight Lord Styrix" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="e393-1183-33fd-d14d" name="Questoris Knight Styrix Lord Scion" hidden="false" collective="false" import="false" type="model">
       <categoryLinks>
         <categoryLink id="e85f-76bd-1758-5ba2" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="4a84-ce54-899c-40a4" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
@@ -4332,14 +4507,33 @@ If the result is 25, move the reactor tracker to its leftmost hole.
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2ff-d6d8-6d13-3053" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="670c-e530-3cec-1d8e" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="b6f8-fcac-5ba6-9e92" name="Volkite Chieorovile" hidden="false" collective="false" import="false" targetId="3595-8b4e-3496-ad5f" type="selectionEntry"/>
-            <entryLink id="8bd1-0e16-8aa8-a5e4" name="Hekaton Siege Claw" hidden="false" collective="false" import="false" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry"/>
+            <entryLink id="b6f8-fcac-5ba6-9e92" name="Volkite Chieorovile" hidden="false" collective="false" import="false" targetId="3595-8b4e-3496-ad5f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8bd1-0e16-8aa8-a5e4" name="Hekaton Siege Claw" hidden="false" collective="false" import="false" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c7e4-e6c0-e507-a84a" name="Upgrades" hidden="false" collective="false" import="false">
@@ -4353,7 +4547,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="be8e-e48f-d3f1-580c" name="Questoris Knight Lord Magaera" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="be8e-e48f-d3f1-580c" name="Questoris Knight Magaera Lord Scion" hidden="false" collective="false" import="false" type="model">
       <categoryLinks>
         <categoryLink id="4367-69cf-c64d-3f80" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="e11a-dc3f-6269-23a6" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
@@ -4366,14 +4560,33 @@ If the result is 25, move the reactor tracker to its leftmost hole.
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="b539-a35c-fe3f-9c34" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8959-fc3f-44b1-1b75" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10a7-65d1-2f67-ec45" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6e55-06ae-7da3-06b2" name="Lightning Cannon" hidden="false" collective="false" import="false" targetId="c240-3acf-9c72-43d1" type="selectionEntry"/>
-            <entryLink id="e418-6620-fd5e-88f6" name="Hekaton Siege Claw" hidden="false" collective="false" import="false" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry"/>
+            <entryLink id="6e55-06ae-7da3-06b2" name="Lightning Cannon" hidden="false" collective="false" import="false" targetId="c240-3acf-9c72-43d1" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="e418-6620-fd5e-88f6" name="Hekaton Siege Claw" hidden="false" collective="false" import="false" targetId="a5e7-b5d0-d911-6c59" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c2f3-2233-d318-c99d" name="Upgrades" hidden="false" collective="false" import="false">
@@ -4426,7 +4639,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="707f-d80f-4591-10d8" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="e283-11d8-1c4a-8a86" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="fc59-5ac8-27d4-d11d" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
         <categoryLink id="775a-0436-0e03-fe09" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
@@ -4435,7 +4647,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="aed7-bd3b-e9b1-3360" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
