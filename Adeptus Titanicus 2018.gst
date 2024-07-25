@@ -3175,16 +3175,15 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cdf-8f33-a959-6f54" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="fd47-c688-fe2d-3467" name="Acastus Hull Weapon" hidden="false" collective="false" import="false" targetId="e060-52c1-1d31-a331" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="35"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="69b3-e7ac-9cec-ad72" name="Acastus Knight Scion Martial" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="69b3-e7ac-9cec-ad72" name="Acastus Knight Scion Martial" hidden="false" collective="false" import="false" type="model">
       <selectionEntryGroups>
-        <selectionEntryGroup id="72a7-b423-1f4f-896d" name="Knight Hull" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="72a7-b423-1f4f-896d" name="Loadout" hidden="false" collective="false" import="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f9e-5f64-05e9-6b25" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d056-b40b-a1bc-43fb" type="min"/>
@@ -3192,6 +3191,29 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           <entryLinks>
             <entryLink id="793e-5fcb-118c-f908" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="false" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
             <entryLink id="7353-9144-2106-3591" name="Acastus Knight Asterius" hidden="false" collective="false" import="false" targetId="2dee-7316-3a42-5507" type="selectionEntry"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Upgrades" id="82d0-829e-53e5-1b70" hidden="false" collective="false" import="false" defaultSelectionEntryId="560b-467a-4065-6e83">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a20b-d1ff-5ac1-7899" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10e8-45e2-cde3-e851" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="false" name="Acastus Twin Autocannon" hidden="false" id="560b-467a-4065-6e83" collective="false" targetId="abac-6fdb-0228-d12a" type="selectionEntry"/>
+            <entryLink import="false" name="Acastus Twin Lascannon" hidden="false" id="f0c6-6374-566c-ab36" collective="false" targetId="a2a3-d4b5-189a-5f63" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3215,6 +3237,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           </conditionGroups>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="184a-ded9-ae1a-e357" id="c89c-f191-7494-df7f" primary="false" name="Knight"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="a2a3-d4b5-189a-5f63" name="Acastus Twin Lascannon" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
@@ -3343,7 +3368,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6fe-e9ae-dff4-5038" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="7bc2-34b3-b54b-e8c0" name="Acastus Hull Weapon" hidden="false" collective="false" import="false" targetId="e060-52c1-1d31-a331" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
@@ -3825,9 +3849,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7448-fdbe-6fda-c7f6" name="Acastus Knight Lord Scion" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="7448-fdbe-6fda-c7f6" name="Acastus Knight Lord Scion" hidden="false" collective="false" import="false" type="model">
       <selectionEntryGroups>
-        <selectionEntryGroup id="d88a-edca-de81-e71a" name="Knight Hull" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="d88a-edca-de81-e71a" name="Loadout" hidden="false" collective="false" import="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe67-5c0b-c1cb-6085" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c43f-7db6-59e3-66c2" type="min"/>
@@ -3836,12 +3860,38 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <entryLink id="da9c-6b24-1899-466a" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="false" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry"/>
             <entryLink id="4d4d-f6df-c9aa-161c" name="Acastus Knight Asterius" hidden="false" collective="false" import="false" targetId="2dee-7316-3a42-5507" type="selectionEntry"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Upgrades" id="be11-5ee1-f9a0-c75e" hidden="false" collective="false" import="false" defaultSelectionEntryId="8941-4ba0-88dc-9909">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8766-29bf-ad96-8ab3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f69-1713-c491-5325" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="false" name="Acastus Twin Autocannon" hidden="false" id="8941-4ba0-88dc-9909" collective="false" targetId="abac-6fdb-0228-d12a" type="selectionEntry"/>
+            <entryLink import="false" name="Acastus Twin Lascannon" hidden="false" id="f8d8-1cbe-9c8b-681a" collective="false" targetId="a2a3-d4b5-189a-5f63" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="150"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="184a-ded9-ae1a-e357" id="52e2-2f08-1e1f-038c" primary="false" name="Knight"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="67a4-f743-3594-f541" name="Acastus Knight" hidden="false" collective="false" import="false" type="upgrade">
       <selectionEntryGroups>
@@ -3936,6 +3986,53 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="fe73-0e6c-cfb7-6f4a" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="false" name="Acastus Knight Asterius" hidden="false" id="8ca8-5ff6-fc5d-c920" collective="false" targetId="2dee-7316-3a42-5507" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="50" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="false" name="Acastus Knight Porphyrion" hidden="false" id="07ff-6c58-b6e3-52c5" collective="false" targetId="76aa-5e9a-0d62-87c1" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="35" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e774-143d-ce2f-4236" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a48-12ab-89ba-b693" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="aed6-0705-b201-ff96" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
@@ -19663,7 +19760,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="61e0-5e19-03b9-077d" name="Acastus Knight Asterius Lord Scion" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="61e0-5e19-03b9-077d" name="Acastus Knight Asterius Lord Scion" hidden="false" collective="false" import="true" type="model">
       <entryLinks>
         <entryLink id="3805-d0aa-034f-8a00" name="Asterius Karacnos Mortar Battery" hidden="false" collective="false" import="true" targetId="5893-d4c8-461e-ea79" type="selectionEntry">
           <constraints>
@@ -19689,7 +19786,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f3d0-12a4-51a2-b8ce" name="Acastus Knight Asterius Scion Martial" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f3d0-12a4-51a2-b8ce" name="Acastus Knight Asterius Scion Martial" hidden="false" collective="false" import="true" type="model">
       <entryLinks>
         <entryLink id="473d-3c70-ef7e-3619" name="Asterius Karacnos Mortar Battery" hidden="false" collective="false" import="true" targetId="5893-d4c8-461e-ea79" type="selectionEntry">
           <constraints>
