@@ -2780,12 +2780,6 @@ Banners of the same type in a Lance)</description>
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="b2a2-3f92-01df-688b" shared="true"/>
                       </conditions>
@@ -2830,12 +2824,6 @@ Banners of the same type in a Lance)</description>
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="b2a2-3f92-01df-688b" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="and">
@@ -2888,25 +2876,7 @@ Banners of the same type in a Lance)</description>
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd52-c322-af81-89f4" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b2a2-3f92-01df-688b" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="b2a2-3f92-01df-688b" shared="true"/>
                       </conditions>
                     </conditionGroup>
@@ -2947,12 +2917,6 @@ Banners of the same type in a Lance)</description>
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="b2a2-3f92-01df-688b" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="and">
@@ -3008,12 +2972,6 @@ Banners of the same type in a Lance)</description>
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="b2a2-3f92-01df-688b" shared="true"/>
                       </conditions>
@@ -3050,25 +3008,7 @@ Banners of the same type in a Lance)</description>
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd52-c322-af81-89f4" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b2a2-3f92-01df-688b" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="b2a2-3f92-01df-688b" shared="true"/>
                       </conditions>
                     </conditionGroup>
@@ -3111,19 +3051,13 @@ Banners of the same type in a Lance)</description>
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd52-c322-af81-89f4" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3165,19 +3099,13 @@ Banners of the same type in a Lance)</description>
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd52-c322-af81-89f4" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3219,19 +3147,13 @@ Banners of the same type in a Lance)</description>
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cd52-c322-af81-89f4" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3cc6-636c-fee7-512c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf01-97da-4948-9367" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc77-aa8a-386b-53a7" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
