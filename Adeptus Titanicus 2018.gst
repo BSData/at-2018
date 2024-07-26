@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="2" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="3" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -21920,37 +21920,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </costs>
         </entryLink>
         <entryLink id="5169-2027-214d-f6d5" name="Corrupted Payload" hidden="false" collective="false" import="true" targetId="acd5-32cf-09c2-f234" type="selectionEntry"/>
-        <entryLink id="1825-cf45-e251-9b7d" name="Focused Capacitors" hidden="true" collective="false" import="true" targetId="3159-88a9-3acf-c133" type="selectionEntry">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model" shared="true" id="8f45-7654-8ca3-469b"/>
-            <constraint type="max" value="0" field="selections" scope="model" shared="true" id="db0d-baf2-dffd-f8d1"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="12b5-203d-86d9-3e60" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="1" field="db0d-baf2-dffd-f8d1">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="model" childId="12b5-203d-86d9-3e60" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2" field="db0d-baf2-dffd-f8d1">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="model" childId="12b5-203d-86d9-3e60" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="20" field="a731-e220-2d8a-41bf">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="bd35-3f71-8bea-7e42" shared="true" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
-          </costs>
-        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Base Mutation" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="true" collective="false" import="true">
