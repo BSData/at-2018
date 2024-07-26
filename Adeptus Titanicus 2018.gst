@@ -23546,28 +23546,10 @@ Note, Shutdown orders and other effects that change a Titan’s current Order ar
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="ec39-4681-e804-c20d" name="Legio Krytos" publicationId="975a-00f4-pubN87630" page="45" hidden="true" collective="false" import="true">
-          <comment>1 Titan Stalker: The Princeps is adept at taking down larger
-prey, knowing just how to exploit their weaknesses if they
-can get close enough.
-When targeting a Titan that is within 12&apos;&apos;, the Princeps
-Seniores may add r to the Armour rolls of any hits,
-provided that the targeted Titan has a Scale either equal
-to or greater than their own.
-2 Humardu Savage: Some of the primitive humans harvested
-from Humardu by the Tiger Eyes would eventually join their
-ranks; although despite years of psycho-conditioning they still
-retained much of their savage nature.
-When the Princeps Seniores Titan makes a Smash
-Attack (see page 36 of the Adeptus Titanicus rulebook),
-add 2 to the Strength of the attack.
-3 Trophy Taker: The Tiger Eyes are known to claim
-trophies from their fallen foes, their Princeps going so far
-as to tear limbs and heads off enemy Titans as a display of
-their savage dominance.
-Any weapon disabled by the Tiger Eyes Princeps using a
-Smash Attack, or a weapon with the Melee trait, is harder
-to repair; these require a dice score r higher than normal
-when making Repair actions.</comment>
+          <comment>1 Titan Stalker: The Princeps is adept at taking down larger prey, knowing just how to exploit their weaknesses if they can get close enough. When targeting a Titan that is within 12&apos;&apos;, the Princeps Seniores may add r to the Armour rolls of any hits, provided that the targeted Titan has a Scale either equal to or greater than their own.
+2 Humardu Savage: Some of the primitive humans harvested from Humardu by the Tiger Eyes would eventually join their ranks; although despite years of psycho-conditioning they still retained much of their savage nature. When the Princeps Seniores Titan makes a Smash Attack (see page 36 of the Adeptus Titanicus rulebook), add 2 to the Strength of the attack.
+3 Trophy Taker: The Tiger Eyes are known to claim trophies from their fallen foes, their Princeps going so far as to tear limbs and heads off enemy Titans as a display of their savage dominance.
+Any weapon disabled by the Tiger Eyes Princeps using a Smash Attack, or a weapon with the Melee trait, is harder to repair; these require a dice score r higher than normal when making Repair actions.</comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -23628,27 +23610,9 @@ when making Repair actions.</comment>
         </selectionEntryGroup>
         <selectionEntryGroup id="d5b1-5dd1-dcf7-f453" name="Legio Fureans" publicationId="975a-00f4-pubN87630" page="50" hidden="true" collective="false" import="true">
           <comment>D3 PERSONAL TRAIT
-I Razor Tongue: The Princeps is skilled at delivering biting
-challenges and chilling threats, unnerving their opponents even
-before the first blow is struck.
-At the start of the round, the Princeps can choose an
-enemy Titan within 24&quot; of their own Titan. For the
-duration of the round, the chosen Titan&apos;s Command
-characteristic is increased by 2 , to a maxim um of 10.
-2 Bloodied but Unbroken: The more damage the
-Princeps&apos; Titan sustains, the more driven they become,
-seeking to ensure that even should they fall, their enemies are
-sure to fall with them.
-For each point of Critical Damage the Princeps&apos; Titan
-has suffered (not including Critical Damage inflicted
-on weapons), increase the Strength of any weapons
-with the Melee trait and their Smash Attacks by r,
-to a maximum of +3.
-3 Cruel: The Princeps has no pity for weaklings. Unworthy foes
-are swiftly crushed underfoot with little thought of honour or
-mercy- after all, what mercy does the boot give the ant?
-When making attacks against units with a Scale of 5 or
-lower, increase the Strength of any hits by 2.</comment>
+I Razor Tongue: The Princeps is skilled at delivering biting challenges and chilling threats, unnerving their opponents even before the first blow is struck. At the start of the round, the Princeps can choose an enemy Titan within 24&quot; of their own Titan. For the duration of the round, the chosen Titan&apos;s Command characteristic is increased by 2 , to a maxim um of 10.
+2 Bloodied but Unbroken: The more damage the Princeps&apos; Titan sustains, the more driven they become, seeking to ensure that even should they fall, their enemies are sure to fall with them. For each point of Critical Damage the Princeps&apos; Titan has suffered (not including Critical Damage inflicted on weapons), increase the Strength of any weapons with the Melee trait and their Smash Attacks by r, to a maximum of +3.
+3 Cruel: The Princeps has no pity for weaklings. Unworthy foes are swiftly crushed underfoot with little thought of honour or mercy- after all, what mercy does the boot give the ant? When making attacks against units with a Scale of 5 or lower, increase the Strength of any hits by 2.</comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>

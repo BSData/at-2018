@@ -82,7 +82,7 @@
         <rule id="bb9e-8cb5-7e6e-16cb" name="Questoris Traitorus" publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
           <description>• All Knight Banners within a Lance as part of a Questoris Traitoris Household force are referred to as Questoris Traitoris Banners. 
 • A Questoris Traitoris Household force can purchase Stratagems available to any Knight Household and to Questoris Traitoris Households.
- • A Questoris Traitoris Household force can include Traitor Titans of Legend as reinforcements. 
+• A Questoris Traitoris Household force can include Traitor Titans of Legend as reinforcements. 
 • A Questoris Traitoris Household force can include any Corrupted Titans or Renegade Knight Banners (these will be explored in future supplements). 
 • A Questoris Traitoris Household force cannot include any Loyalist Titans of Legend or Blackshield Titans of Legend. 
 • A Questoris Traitoris Household force cannot purchase Stratagems available to Questoris Imperialis, Questoris Mechanicus, or Questoris Oblitus Households.</description>
@@ -2108,12 +2108,7 @@
               </constraints>
               <rules>
                 <rule id="0463-6b33-c59e-04bf" name="Master of War" publicationId="2988-f24d-39ef-352e" page="87" hidden="false">
-                  <description>: The Seneschal is a talented strategist,
-having won many battles during the Great Crusade
-through daring plans and brilliant tactics.
-If the Seneschal’s Lance benefits from the Valorous
-Charge ability, Banners within the Lance add 4&quot; to their
-Speed characteristic instead of 2&quot;.</description>
+                  <description>: The Seneschal is a talented strategist, having won many battles during the Great Crusade through daring plans and brilliant tactics. If the Seneschal’s Lance benefits from the Valorous Charge ability, Banners within the Lance add 4&quot; to their Speed characteristic instead of 2&quot;.</description>
                 </rule>
               </rules>
               <costs>
@@ -2141,11 +2136,7 @@ Speed characteristic instead of 2&quot;.</description>
               </constraints>
               <rules>
                 <rule id="9162-780b-19e9-3f71" name="Courting Death" publicationId="2988-f24d-39ef-352e" page="87" hidden="false">
-                  <description>The deaths of loved ones and honoured
-friends has left the Seneschal bitter and broken, hoping to
-salve the pain of loss with the blood of their enemies, or
-should that fail, their own life. Once per game, the Seneschal’s Banner can choose to activate a second time during the Combat phase. If they do, the Banner immediately suffers a Critical Hit,
-ignoring ion shields.</description>
+                  <description>The deaths of loved ones and honoured friends has left the Seneschal bitter and broken, hoping to salve the pain of loss with the blood of their enemies, or should that fail, their own life. Once per game, the Seneschal’s Banner can choose to activate a second time during the Combat phase. If they do, the Banner immediately suffers a Critical Hit, ignoring ion shields.</description>
                 </rule>
               </rules>
               <costs>
@@ -2177,14 +2168,7 @@ ignoring ion shields.</description>
               </constraints>
               <rules>
                 <rule id="72ab-adf8-3236-856b" name="Survivor of Betrayal" publicationId="2988-f24d-39ef-352e" page="87" hidden="false">
-                  <description>Betrayal has forever scarred the
-Seneschal, forcing them to kill members of their own
-Household when they made the choice to turn against them
-in support of their chosen liege. Once per round, when the Seneschal’s Banner suffers
-damage, one damaging Armour roll can be reduced by
-one level, i.e., a Critical Hit becomes a Devastating Hit,
-a Devastating Hit becomes a Direct Hit, while a Direct
-Hit becomes a Superficial Hit.</description>
+                  <description>Betrayal has forever scarred the Seneschal, forcing them to kill members of their own Household when they made the choice to turn against them in support of their chosen liege. Once per round, when the Seneschal’s Banner suffers damage, one damaging Armour roll can be reduced by one level, i.e., a Critical Hit becomes a Devastating Hit, a Devastating Hit becomes a Direct Hit, while a Direct Hit becomes a Superficial Hit.</description>
                 </rule>
               </rules>
               <costs>
@@ -2198,14 +2182,7 @@ Hit becomes a Superficial Hit.</description>
               </constraints>
               <rules>
                 <rule id="e285-a079-e010-fbd7" name="Favoured by Mars" publicationId="2988-f24d-39ef-352e" page="89" hidden="false">
-                  <description>The Seneschal is a rare Scion of Mars,
-having trained in the use of Knight armours under the
-forge lords of the Red Planet, skills they now bring to the
-liberation of the Imperium or in support of the Warmaster. The weapons carried by the Seneschal’s Banner are
-of higher quality than normal. Increase the Strength
-value of any weapon in the Seneschal’s Banner with
-a starting Strength value of 4 or higher by 1, to a
-maximum of Strength 8.</description>
+                  <description>The Seneschal is a rare Scion of Mars, having trained in the use of Knight armours under the forge lords of the Red Planet, skills they now bring to the liberation of the Imperium or in support of the Warmaster. The weapons carried by the Seneschal’s Banner are of higher quality than normal. Increase the Strength value of any weapon in the Seneschal’s Banner with a starting Strength value of 4 or higher by 1, to a maximum of Strength 8.</description>
                 </rule>
               </rules>
               <costs>
@@ -2219,15 +2196,7 @@ maximum of Strength 8.</description>
               </constraints>
               <rules>
                 <rule id="eac1-6757-f6dc-3a84" name="Faithful Servant" publicationId="2988-f24d-39ef-352e" page="89" hidden="false">
-                  <description>The Seneschal and their ancestors have
-forever remained faithful to their Forge World and will
-never stray, no matter the path they are led down.
-Once per game, the Seneschal’s Knight Household can
-reuse a Stratagem that cost 2 or fewer Stratagem points
-and has been used earlier in the battle. The Seneschal
-must be on the battlefield to use this ability. If the
-Stratagem is one that can be used more than once (i.e., Artillery Bombardment), it may instead be used twice
-in one phase by the Questoris Mechanicus player.</description>
+                  <description>The Seneschal and their ancestors have forever remained faithful to their Forge World and will never stray, no matter the path they are led down. Once per game, the Seneschal’s Knight Household can reuse a Stratagem that cost 2 or fewer Stratagem points and has been used earlier in the battle. The Seneschal must be on the battlefield to use this ability. If the Stratagem is one that can be used more than once (i.e., Artillery Bombardment), it may instead be used twice in one phase by the Questoris Mechanicus player.</description>
                 </rule>
               </rules>
               <costs>
@@ -2259,12 +2228,7 @@ in one phase by the Questoris Mechanicus player.</description>
               </constraints>
               <rules>
                 <rule id="d60f-1353-081c-4b26" name="From Darkness Born" publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
-                  <description>The Seneschal craves the darkness
-of night and fights expertly within its comforting shroud, to the point that they lead their banners into battle in the
-stygian hours, the better to despatch their enemies.
-Weapons targeting Banners within the Seneschal’s
-Lance reduce any positive Acc modifiers gained from a
-weapon’s range by 1, to a minimum of 0.</description>
+                  <description>The Seneschal craves the darkness of night and fights expertly within its comforting shroud, to the point that they lead their banners into battle in the stygian hours, the better to despatch their enemies. Weapons targeting Banners within the Seneschal’s Lance reduce any positive Acc modifiers gained from a weapon’s range by 1, to a minimum of 0.</description>
                 </rule>
               </rules>
               <costs>
@@ -2278,16 +2242,7 @@ weapon’s range by 1, to a minimum of 0.</description>
               </constraints>
               <rules>
                 <rule id="9764-178a-2f64-a89d" name="Battle Madness" publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
-                  <description>Where once sense and honour guided
-the Seneschal, now the sound of guns and the roar of the
-chainblade bring only screaming madness and homicidal
-impulse, the lord transformed by battle into a beast.
-Once per game, at the start of any Strategy phase, the
-Seneschal’s Banner may work themselves into a Battle
-Madness. When they do, for the remainder of the game, reduce the Ballistic Skill of the Seneschal’s Banner by
-1 (to a minimum of 6+) and its Command value by 4
-(to a minimum of 10+). However, increase their Speed
-characteristic by 3&quot;.</description>
+                  <description>Where once sense and honour guided the Seneschal, now the sound of guns and the roar of the chainblade bring only screaming madness and homicidal impulse, the lord transformed by battle into a beast. Once per game, at the start of any Strategy phase, the Seneschal’s Banner may work themselves into a Battle Madness. When they do, for the remainder of the game, reduce the Ballistic Skill of the Seneschal’s Banner by 1 (to a minimum of 6+) and its Command value by 4 (to a minimum of 10+). However, increase their Speed characteristic by 3&quot;.</description>
                 </rule>
               </rules>
               <costs>
@@ -2301,15 +2256,7 @@ characteristic by 3&quot;.</description>
               </constraints>
               <rules>
                 <rule id="2ffb-f752-50ec-664d" name="Warmaster’s Chosen" publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
-                  <description>The Warmaster favours the Seneschal
-and their Household, providing them with a greater portion
-of his armies’ ordnance, and the soldiers with which to use it.
-Once per game, the Seneschal’s Banner can load
-Improved Ordnance. When it does, until the end of the
-round, all weapons without the Melee trait carried by
-the Seneschal’s Banner gain the Ordnance trait. If they
-already have the Ordnance trait then they may re-roll
-any Armour rolls that fail to cause damag</description>
+                  <description>The Warmaster favours the Seneschal and their Household, providing them with a greater portion of his armies’ ordnance, and the soldiers with which to use it. Once per game, the Seneschal’s Banner can load Improved Ordnance. When it does, until the end of the round, all weapons without the Melee trait carried by the Seneschal’s Banner gain the Ordnance trait. If they already have the Ordnance trait then they may re-roll any Armour rolls that fail to cause damag</description>
                 </rule>
               </rules>
               <costs>
@@ -2341,14 +2288,7 @@ any Armour rolls that fail to cause damag</description>
               </constraints>
               <rules>
                 <rule id="3838-e4ac-4fc1-c029" name="Giant Killer" publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
-                  <description>Countless great beasts lie broken at the feet
-of the Seneschal, each one brought low by a skilled giant
-killer, as adept at felling xenos monsters as they are at
-bringing down Legio Titans.
-Banners within the Seneschal’s Lance ignore the
-penalty for making Targeted attacks against enemy
-units with a Scale of 8 or higher. This ability cannot be
-used in conjunction with Coordinated Strikes.</description>
+                  <description>Countless great beasts lie broken at the feet of the Seneschal, each one brought low by a skilled giant killer, as adept at felling xenos monsters as they are at bringing down Legio Titans. Banners within the Seneschal’s Lance ignore the penalty for making Targeted attacks against enemy units with a Scale of 8 or higher. This ability cannot be used in conjunction with Coordinated Strikes.</description>
                 </rule>
               </rules>
               <costs>
@@ -2362,13 +2302,7 @@ used in conjunction with Coordinated Strikes.</description>
               </constraints>
               <rules>
                 <rule id="e247-1ddd-e2db-9d60" name="Xenos Sympathiser" publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
-                  <description>Centuries of isolation have turned the
-Seneschal and their people to making alliances with alien
-empires and xenos lords, the Scions trading in forbidden
-technologies to augment their war machines.
-The Seneschal’s Banner can re-roll failed ion shield
-saves. In addition, their ion shield saves cannot be
-reduced to less than 6+ by the Strength of a hit.</description>
+                  <description>Centuries of isolation have turned the Seneschal and their people to making alliances with alien empires and xenos lords, the Scions trading in forbidden technologies to augment their war machines. The Seneschal’s Banner can re-roll failed ion shield saves. In addition, their ion shield saves cannot be reduced to less than 6+ by the Strength of a hit.</description>
                 </rule>
               </rules>
               <costs>
@@ -2382,8 +2316,7 @@ reduced to less than 6+ by the Strength of a hit.</description>
               </constraints>
               <rules>
                 <rule id="f938-1612-2655-6365" name="Freeblade King" publicationId="2988-f24d-39ef-352e" page="91" hidden="false">
-                  <description>The Seneschal is an infamous exile from a great Knight Household, having fled their home world with their closest retainers to set up a splinter kingdom on another continent or even another world. Lances in the Seneschal’s Knight Household can be made up of Freeblades. Freeblades may only be issued Coordinated Strike orders if all Knights in a Banner are armed with the same weapons and must follow all other rules for Lance composition (e.g., must have two
-Banners of the same type in a Lance)</description>
+                  <description>The Seneschal is an infamous exile from a great Knight Household, having fled their home world with their closest retainers to set up a splinter kingdom on another continent or even another world. Lances in the Seneschal’s Knight Household can be made up of Freeblades. Freeblades may only be issued Coordinated Strike orders if all Knights in a Banner are armed with the same weapons and must follow all other rules for Lance composition (e.g., must have two Banners of the same type in a Lance)</description>
                 </rule>
               </rules>
               <costs>
