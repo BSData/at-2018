@@ -19160,16 +19160,16 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink id="8bd4-6576-0c82-6089" name="Retainers" hidden="false" targetId="5063-b6aa-3590-30fb" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="aff1-0776-4452-3e33" name="Moirax Knight Scion Auxilia" hidden="false" collective="false" import="true" targetId="b364-f730-c1ca-208b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b7-d8ef-037a-86a0" type="min"/>
-            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ff4-ec8c-b826-6920" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="ed8e-725e-95cc-cfce" name="Moirax Knight Scion Martial" hidden="false" collective="false" import="true" targetId="1497-e03b-3ed2-3ebe" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a718-9eda-a4ea-45d6" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c802-b747-0f11-36f4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="aff1-0776-4452-3e33" name="Moirax Knight Scion Auxilia" hidden="false" collective="false" import="true" targetId="b364-f730-c1ca-208b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b7-d8ef-037a-86a0" type="min"/>
+            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ff4-ec8c-b826-6920" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="3a3e-672a-651e-7d92" name="Ionic Flare Shield" hidden="false" collective="false" import="true" targetId="77ba-108d-edd5-7993" type="selectionEntry">
@@ -19183,6 +19183,63 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="7629-2e2a-5dc2-42b1" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8f0-ef8e-026b-ba73" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a470-05ad-79ae-5739" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Two Lightning Locks" hidden="false" id="aa4d-aa25-2449-015e" collective="false">
+              <entryLinks>
+                <entryLink import="true" name="Lightning Lock" hidden="false" id="29ac-2329-76a3-beec" collective="false" targetId="1c8c-5516-1c2d-5124" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9db0-5589-db4f-b764" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c404-70bf-d557-fd34" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Volkite Veuglaire and Gyges Siege Claw" hidden="false" id="bd0d-4a35-231a-1200" collective="false">
+              <entryLinks>
+                <entryLink import="true" name="Volkite Veuglaire" hidden="false" id="6522-8505-bc19-4917" collective="false" targetId="1c3e-d7b2-c0f1-5345" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7df-ab48-755c-9360" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5665-3b75-0e1d-fb97" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Gyges Siege Claw" hidden="false" id="a2ab-986e-86b4-2b42" collective="false" targetId="7f23-dafa-b324-105c" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8e2-94bb-1195-3d20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2875-3510-5b04-49cd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="11c3-a34f-1748-cf07" name="Armiger Knights Banner" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -19610,7 +19667,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1497-e03b-3ed2-3ebe" name="Moirax Knight Scion Martial" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1497-e03b-3ed2-3ebe" name="Moirax Knight Scion Martial" hidden="false" collective="false" import="true" type="model">
       <selectionEntryGroups>
         <selectionEntryGroup id="a3e2-3392-3b01-3bed" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="5c90-f7e5-76d9-7e2e">
           <constraints>
@@ -19653,6 +19710,19 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -19660,7 +19730,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b364-f730-c1ca-208b" name="Moirax Knight Scion Auxilia" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b364-f730-c1ca-208b" name="Moirax Knight Scion Auxilia" hidden="false" collective="false" import="true" type="model">
       <selectionEntryGroups>
         <selectionEntryGroup id="1052-65cd-1fd4-1ff1" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="318e-6406-15b7-9588">
           <constraints>
@@ -19672,8 +19742,8 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
               <entryLinks>
                 <entryLink id="3e7a-c859-3aa8-da06" name="Lightning Lock" hidden="false" collective="false" import="true" targetId="1c8c-5516-1c2d-5124" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e0-2e01-4c08-a42c" type="min"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bec-40e3-019a-680f" type="max"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a632-63c4-5711-d76c-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a632-63c4-5711-d76c-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -19703,6 +19773,19 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -20057,7 +20140,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink id="316c-e22a-e3c8-93be" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="4882-65c1-6a18-b1fc" name="Cerastus Knight Atrapos Lord Scion" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4882-65c1-6a18-b1fc" name="Cerastus Knight Atrapos Lord Scion" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e180-921c-3e18-8446" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="772a-2825-35cd-577f" type="max"/>
@@ -20080,7 +20163,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c5a9-52de-3f3a-3174" name="Cerastus Knight Atrapos Scion Martial" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c5a9-52de-3f3a-3174" name="Cerastus Knight Atrapos Scion Martial" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdde-301c-2ac5-fdc6" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="067f-fd3e-eabb-0f5a" type="min"/>
