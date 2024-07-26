@@ -2935,7 +2935,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </profiles>
       <categoryLinks>
         <categoryLink id="a1c2-087e-2f2b-165e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
-        <categoryLink id="7fa8-cde3-2bae-42bd" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="1c34-0f0b-9757-f335" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
         <categoryLink id="0e7f-b9d6-184f-b71c" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
         <categoryLink id="e16a-b151-5af7-0f01" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
@@ -2964,7 +2963,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="b820-6c08-e890-cd6b" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="115e-1401-95cc-2f44" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
         <categoryLink id="1053-1d35-5f96-abdd" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
         <categoryLink id="405d-2e50-f3ec-bbf7" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
@@ -2995,7 +2993,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </profiles>
       <categoryLinks>
         <categoryLink id="712c-ac3a-8767-8667" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
-        <categoryLink id="b0c8-4ff9-7db2-b004" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="ac65-6f0f-ccb8-5e8f" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
         <categoryLink id="e198-66c0-c0e9-4edf" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
         <categoryLink id="a5c8-2687-83b3-01ff" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
@@ -3025,7 +3022,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </profiles>
       <categoryLinks>
         <categoryLink id="5b97-0c66-1f90-a39e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
-        <categoryLink id="4b9d-5309-c4a2-fcfa" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="d547-6c87-9436-0210" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
         <categoryLink id="dae4-fa97-f2b4-d61b" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
         <categoryLink id="08ba-4da4-e071-a571" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
@@ -3056,10 +3052,10 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       </profiles>
       <categoryLinks>
         <categoryLink id="2e6a-66ed-9712-14d8" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
-        <categoryLink id="eddc-554c-0a5f-704a" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="f51b-e2ec-76cd-f826" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
         <categoryLink id="7122-ce1f-5d56-2892" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
         <categoryLink id="9887-7952-aabf-6230" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
+        <categoryLink targetId="9b05-f144-0ae5-5d6b" id="815f-76f5-2516-8809" primary="false" name="Knight Weapon"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
@@ -3087,7 +3083,6 @@ If the result is 25, move the reactor tracker to its leftmost hole.
       <categoryLinks>
         <categoryLink id="a598-e115-9bc2-7664" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="false"/>
         <categoryLink id="6500-ed63-eb3b-d4fd" name="Firestorm" hidden="false" targetId="8fed-c116-efe0-e973" primary="false"/>
-        <categoryLink id="b14f-903b-3d04-702b" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="ad80-adbd-8ba4-2707" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
         <categoryLink id="971f-2aab-2a5a-e0a1" name="Knight Weapon" hidden="false" targetId="9b05-f144-0ae5-5d6b" primary="false"/>
       </categoryLinks>
@@ -3794,10 +3789,69 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           </conditionGroups>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry id="7d97-998e-da08-a298" name="Cerastus Knight Lord Scion" hidden="false" collective="false" import="false" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="3c76-7de8-7ad6-7681" name="Knight Hull" hidden="false" collective="false" import="false">
+        <selectionEntryGroup name="Loadout" id="7b7d-62b6-9a65-87ef" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="false" name="Cerastus Knight Acheron" hidden="false" id="8b49-4bf0-87c7-b688" collective="false" targetId="6d84-11a3-b6c4-29ac" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="increment" value="25" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="false" name="Cerastus Knight Castigator" hidden="false" id="93b2-e363-8512-5f97" collective="false" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="increment" value="20" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="false" name="Cerastus Knight Lancer" hidden="false" id="c2f9-08bf-31fb-e890" collective="false" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="increment" value="20" field="a731-e220-2d8a-41bf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="184a-ded9-ae1a-e357" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a02f-167b-bf4f-e5f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4326-4a0c-28a4-c98c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="7d97-998e-da08-a298" name="Cerastus Knight Lord Scion" hidden="false" collective="false" import="false" type="model">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3c76-7de8-7ad6-7681" name="Loadout" hidden="false" collective="false" import="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aea-c6d7-e221-0781" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2115-1b22-9fa8-62f5" type="min"/>
@@ -3807,14 +3861,30 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <entryLink id="54dd-da5d-c4ed-dbd2" name="Cerastus Knight Castigator" hidden="false" collective="false" import="false" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="697b-e89f-105c-2a4a" name="Cerastus Knight Lancer" hidden="false" collective="false" import="false" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="70"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="184a-ded9-ae1a-e357" id="9e1d-bcf0-9fe8-56df" primary="false" name="Knight"/>
+      </categoryLinks>
     </selectionEntry>
-    <selectionEntry id="8f63-919a-9591-ecd2" name="Cerastus Knight Scion Martial" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="8f63-919a-9591-ecd2" name="Cerastus Knight Scion Martial" hidden="false" collective="false" import="false" type="model">
       <modifiers>
         <modifier type="append" value=", Standard Bearer" field="name">
           <conditionGroups>
@@ -3828,7 +3898,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup id="323d-05e9-d28c-6d12" name="Knight Hull" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="323d-05e9-d28c-6d12" name="Loadout" hidden="false" collective="false" import="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14a4-9100-5808-6d1a" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7493-60f0-5e25-4f0f" type="min"/>
@@ -3838,6 +3908,19 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <entryLink id="135c-87a4-773f-eb85" name="Cerastus Knight Castigator" hidden="false" collective="false" import="false" targetId="7c6c-6bc6-32eb-e84a" type="selectionEntry"/>
             <entryLink id="d06d-c78c-32d6-2b12" name="Cerastus Knight Lancer" hidden="false" collective="false" import="false" targetId="5ecc-ff8d-2dcc-d06c" type="selectionEntry"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -3848,6 +3931,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="184a-ded9-ae1a-e357" id="e7f7-003e-71d6-63a7" primary="false" name="Knight"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="7448-fdbe-6fda-c7f6" name="Acastus Knight Lord Scion" hidden="false" collective="false" import="false" type="model">
       <selectionEntryGroups>
