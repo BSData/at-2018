@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="2" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="3" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -5192,7 +5192,6 @@ The fire then goes out.</description>
         <categoryLink id="5c18-bdfe-7c54-9653" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
         <categoryLink id="753d-b758-5195-b6a7" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
         <categoryLink id="4eb4-79be-29a8-df10" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
-        <categoryLink id="c6e8-1b72-e14c-9e8e" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="489d-4d8a-9ab0-8ebe" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -16481,6 +16480,22 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </categoryLinks>
       <entryLinks>
         <entryLink id="57a3-180b-0f7d-7ffd" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Focused Capacitors" hidden="true" id="7baf-99fc-a1ef-ba33" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0e4a-10df-7466-d167"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e465-f7ba-75d8-8f7e"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="45"/>
@@ -16798,6 +16813,22 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </categoryLinks>
       <entryLinks>
         <entryLink id="1da7-b1ca-378b-6d13" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Focused Capacitors" hidden="true" id="13bd-b2b3-6597-2cf6" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bebd-6c4c-dae1-7936"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68ac-1777-6188-16fc"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
@@ -17859,6 +17890,22 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </categoryLinks>
       <entryLinks>
         <entryLink id="77d3-4fb2-1c06-318c" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Focused Capacitors" hidden="true" id="45a9-9552-cedf-5303" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cf8d-30cc-a86e-3a47"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c786-4d54-32cc-b55a"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="70"/>
@@ -17998,6 +18045,22 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </categoryLinks>
       <entryLinks>
         <entryLink id="abb1-a002-5836-d4b8" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Focused Capacitors" hidden="true" id="d60c-8537-a679-9aad" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b609-aa85-0a07-b2dc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="439a-b580-fb2e-b75e"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
@@ -18989,11 +19052,10 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
       </profiles>
       <categoryLinks>
         <categoryLink id="ae3c-cc42-17b3-43c1" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
-        <categoryLink id="dfb7-b8ef-443d-7854" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="a019-6bfb-5b55-1e2a" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
         <categoryLink id="b0c3-2b88-86cb-de39" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="b9d8-866e-4a33-e2c4" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
-        <categoryLink id="629e-44f2-7cf3-05da" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink name="Melee" hidden="false" id="5728-6640-75b9-d882" targetId="4739-6f52-a293-aa06" primary="false"/>
+        <categoryLink name="Rending" hidden="false" id="8681-1dba-ca87-6956" targetId="511f-4690-c2b7-9996" primary="false"/>
+        <categoryLink name="Bypass" hidden="false" id="3e72-5632-1a54-7b8c" targetId="719c-7b89-a08d-4acc" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a505-6880-5939-fd32" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -19024,10 +19086,10 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
       <categoryLinks>
         <categoryLink id="1c4f-c2dd-eb09-1488" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="c673-e1c1-0f3f-bb68" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="9048-af56-2b52-6c31" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
         <categoryLink id="c924-949e-8ffc-01fa" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="c46d-26fb-404c-708c" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
         <categoryLink id="d89d-0d5b-4096-52f8" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink name="Melee" hidden="false" id="71b7-6306-f4df-48c4" targetId="4739-6f52-a293-aa06" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d99b-53d7-0a3d-6b1c" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -19059,10 +19121,13 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
       <categoryLinks>
         <categoryLink id="e5c3-ce86-4e62-3c7e" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="38b6-b9fa-42c3-dcc7" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
-        <categoryLink id="14f4-7f55-347f-de41" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
         <categoryLink id="c8fa-8df5-ca39-61fe" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="8d64-e06b-8238-7fb4" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
         <categoryLink id="5a71-d40b-f6ab-329a" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
+        <categoryLink name="Melee" hidden="false" id="7235-2e61-ddea-bea8" targetId="4739-6f52-a293-aa06" primary="false"/>
+        <categoryLink name="Rending" hidden="false" id="4211-6301-ed45-b084" targetId="511f-4690-c2b7-9996" primary="false"/>
+        <categoryLink name="Concussive" hidden="false" id="cbe8-4900-e666-a9cf" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
+        <categoryLink name="Ordnance" hidden="false" id="f098-cc80-20b0-806a" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
+        <categoryLink name="Quake" hidden="false" id="fcb8-5c9c-8bec-a5ae" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d1cc-97ab-a150-63dd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
@@ -21036,6 +21101,22 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </categoryLinks>
       <entryLinks>
         <entryLink id="5c5f-1dcc-eb91-7951" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Focused Capacitors" hidden="true" id="dd18-0ea4-04f2-7e8f" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ba9a-d2ea-642b-2901"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0869-fa91-ba27-37fa"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
@@ -21196,6 +21277,22 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </categoryLinks>
       <entryLinks>
         <entryLink id="b28a-da46-ae08-48ae" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Focused Capacitors" hidden="true" id="a967-cb30-fbdc-17b8" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="48e6-ba93-137d-0386"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ac9-dd3a-23de-3f45"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="35"/>
@@ -21348,7 +21445,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink id="8ad9-b989-04d0-8fbd" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
         <categoryLink id="17ea-fea8-fc35-e969" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
         <categoryLink id="3363-f548-3f5c-b875" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
-        <categoryLink id="0538-3542-5391-4743" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
         <categoryLink id="dcf5-d266-4f05-c71b" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <entryLinks>
@@ -22676,7 +22772,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </costs>
         </entryLink>
         <entryLink id="5169-2027-214d-f6d5" name="Corrupted Payload" hidden="false" collective="false" import="true" targetId="acd5-32cf-09c2-f234" type="selectionEntry"/>
-        <entryLink id="1825-cf45-e251-9b7d" name="Focused Capacitors" hidden="false" collective="false" import="true" targetId="3159-88a9-3acf-c133" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f085-672c-f8c5-11c1" name="Base Mutation" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="true" collective="false" import="true">
