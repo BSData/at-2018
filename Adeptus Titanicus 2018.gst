@@ -3375,7 +3375,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="e8ef-1423-ad7c-bbd8" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6e43-6b1b-8d69-8fb3" name="Arms" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="6e43-6b1b-8d69-8fb3" name="Weapons" hidden="false" collective="false" import="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -3434,7 +3434,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="c10b-22e5-2848-2ebd" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b533-0f7c-68e9-edc2" name="Arms" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="b533-0f7c-68e9-edc2" name="Weapons" hidden="false" collective="false" import="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="066c-b802-af42-d4b9" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa6-1b1f-d696-b080" type="max"/>
@@ -3476,7 +3476,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="66e0-a560-760a-0589" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9076-e9cf-5dcd-8b8b" name="Arms" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="9076-e9cf-5dcd-8b8b" name="Weapons" hidden="false" collective="false" import="false">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -4565,7 +4565,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="43c8-7220-03b3-b06f" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2e68-616e-61fe-24c2" name="Arms" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="2e68-616e-61fe-24c2" name="Weapons" hidden="false" collective="false" import="false">
           <modifiers>
             <modifier type="set" field="a6be-4af6-b8a7-19ba" value="0">
               <conditions>
@@ -4634,7 +4634,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="c119-2849-9713-7c05" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b855-f0b6-369f-39b8" name="Arms" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="b855-f0b6-369f-39b8" name="Weapons" hidden="false" collective="false" import="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="722f-626d-2c2f-e229" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3514-19ef-ff9e-ed66" type="max"/>
@@ -4736,7 +4736,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="4a84-ce54-899c-40a4" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2a73-8730-ff87-7748" name="Arms" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="2a73-8730-ff87-7748" name="Weapons" hidden="false" collective="false" import="false">
           <modifiers>
             <modifier type="set" field="f2ff-d6d8-6d13-3053" value="0">
               <conditions>
@@ -4789,7 +4789,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="e11a-dc3f-6269-23a6" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1dce-fae5-e156-d84c" name="Arms" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="1dce-fae5-e156-d84c" name="Weapons" hidden="false" collective="false" import="false">
           <modifiers>
             <modifier type="set" field="8959-fc3f-44b1-1b75" value="0">
               <conditions>
@@ -19383,7 +19383,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink id="b749-7bef-2b7a-8985" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9226-15f7-516c-a749" name="Arms" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="9226-15f7-516c-a749" name="Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac0a-e38d-7804-0eaf" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce8e-5afd-342d-ec22" type="max"/>
@@ -19438,7 +19438,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
     </selectionEntry>
     <selectionEntry id="37bd-1bf3-0df2-2cb5" name="Armiger Knight Scion Martial" hidden="false" collective="false" import="true" type="model">
       <selectionEntryGroups>
-        <selectionEntryGroup id="a862-dfb3-f136-c997" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd78-6334-e863-f281">
+        <selectionEntryGroup id="a862-dfb3-f136-c997" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd78-6334-e863-f281">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ef-32a0-c04d-a99e" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f7a-b7be-086e-e6e8" type="max"/>
@@ -19510,7 +19510,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
     </selectionEntry>
     <selectionEntry id="3ccd-476c-5c16-3c5b" name="Armiger Knight Scion Auxilia" hidden="false" collective="false" import="true" type="model">
       <selectionEntryGroups>
-        <selectionEntryGroup id="3670-cfaa-2342-73fc" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="bff6-de91-a7f4-7cf6">
+        <selectionEntryGroup id="3670-cfaa-2342-73fc" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="bff6-de91-a7f4-7cf6">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb2d-478e-fbf3-d27e" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd3b-0ff1-dc56-dca6" type="max"/>
@@ -19669,7 +19669,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
     </selectionEntry>
     <selectionEntry id="1497-e03b-3ed2-3ebe" name="Moirax Knight Scion Martial" hidden="false" collective="false" import="true" type="model">
       <selectionEntryGroups>
-        <selectionEntryGroup id="a3e2-3392-3b01-3bed" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="5c90-f7e5-76d9-7e2e">
+        <selectionEntryGroup id="a3e2-3392-3b01-3bed" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="5c90-f7e5-76d9-7e2e">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e246-9df0-2e80-25c0" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ec-e6e5-978d-8862" type="max"/>
@@ -19732,7 +19732,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
     </selectionEntry>
     <selectionEntry id="b364-f730-c1ca-208b" name="Moirax Knight Scion Auxilia" hidden="false" collective="false" import="true" type="model">
       <selectionEntryGroups>
-        <selectionEntryGroup id="1052-65cd-1fd4-1ff1" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="318e-6406-15b7-9588">
+        <selectionEntryGroup id="1052-65cd-1fd4-1ff1" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="318e-6406-15b7-9588">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3602-3f1f-d4be-7ce4" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6119-a96c-7067-a721" type="max"/>
