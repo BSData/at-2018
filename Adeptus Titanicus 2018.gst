@@ -19261,6 +19261,63 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="98dc-dfea-a1ba-2390" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd95-d701-78e8-be99" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd30-5ead-ee5a-e89f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Thermal Spear and Reaper Chain-Cleaver" hidden="false" id="ec5d-7e70-9f98-3600" collective="false">
+              <entryLinks>
+                <entryLink import="true" name="Thermal Spear" hidden="false" id="4beb-691b-c023-9705" collective="false" targetId="883e-d464-9efa-600d" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="60d5-0dc8-e631-45dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac18-5674-15ab-388e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Reaper Chain-Cleaver" hidden="false" id="05da-1ccf-f536-9835" collective="false" targetId="3dfb-5a93-4b27-5b39" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43bf-a523-3485-e625" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2069-d9f3-0505-2864" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Two Armiger Autocannons" hidden="false" id="a6b8-1d52-3f94-dbec" collective="false">
+              <entryLinks>
+                <entryLink import="true" name="Armiger Autocannon" hidden="false" id="e339-4173-3c03-dd58" collective="false" targetId="9f10-b828-80c9-d6fe" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5929-7900-1fb8-4544" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="78a2-af34-cba2-ec98" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="7df5-f56c-c89a-ee52" name="Armiger Knight" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
@@ -19365,6 +19422,19 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="026f-9900-c230-b4b8" name="Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -19424,6 +19494,19 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b1c7-cb6c-5810-e9d9" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="6023-4ce7-7008-e851" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b4d4-89ab-32aa-f227" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="7c15-09f6-9173-a6fe" name="Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
