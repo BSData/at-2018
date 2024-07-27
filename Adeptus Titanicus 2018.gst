@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="3" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="4" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -268,7 +268,6 @@ Note that it is not necessary to make the Hit rolls - these hits are automatic. 
     <categoryEntry id="4a24-73e7-556c-1bfd" name="LegioLaniaskara" hidden="false"/>
     <categoryEntry id="6740-1e8a-8e25-88fd" name="LegioKulisaetai" hidden="false"/>
     <categoryEntry id="ccee-936e-87d6-bf29" name="LegioTritonis" hidden="false"/>
-    <categoryEntry id="ae2e-5751-1800-545a" name="LegioDamicium" hidden="false"/>
     <categoryEntry id="b539-a35c-fe3f-9c34" name="Stratagem Hand" hidden="false">
       <modifiers>
         <modifier type="set" field="2567-1956-8edb-ada6" value="8">
@@ -400,13 +399,7 @@ If the Destroying Terrain special rule is in use, the terrain takes hits as norm
     <categoryEntry id="9e2e-c35f-34a4-d245" name="Tricks and Tactics" publicationId="2988-f24d-39ef-352e" page="107" hidden="false"/>
     <categoryEntry id="e37e-10e6-accd-329d" name="Shoulder" hidden="false"/>
     <categoryEntry id="3b8b-38d1-147a-f99d" name="Ancillary Reactor System" hidden="false"/>
-    <categoryEntry id="f13e-f477-7652-0e1c" name="LegioAstraman" hidden="false"/>
-    <categoryEntry id="f986-f640-3cb3-478a" name="LegioKulisaetai" hidden="false"/>
     <categoryEntry id="f778-49fb-1bfd-4838" name="LegioDamicium" hidden="false"/>
-    <categoryEntry id="83db-4337-737c-1db8" name="LegioIgnatum" hidden="false"/>
-    <categoryEntry id="753b-9e36-a10c-7961" name="LegioTritonis" hidden="false"/>
-    <categoryEntry id="b4cb-2809-41b4-6d83" name="LegioLaniaskara" hidden="false"/>
-    <categoryEntry id="a768-815b-17bf-6136" name="LegioVenator" hidden="false"/>
     <categoryEntry id="efc2-e899-f74b-55ad" name="Freeblades" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
       <rules>
         <rule id="7233-2ed1-2a09-cccc" name="Freeblades" publicationId="975a-00f4-pubN89746" page="35" hidden="false">
@@ -6504,7 +6497,6 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
       </rules>
       <categoryLinks>
         <categoryLink id="f02a-37e1-1b7a-54ff" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
-        <categoryLink id="bd40-2589-1f9d-e30a" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="068e-b035-3674-0ce4" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
         <categoryLink id="e38f-be32-5100-b67b" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
@@ -6531,7 +6523,6 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
       </rules>
       <categoryLinks>
         <categoryLink id="160d-314e-4d7e-7258" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
-        <categoryLink id="52c9-6fc2-a263-7166" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="cbbc-6719-dae1-2e9d" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
         <categoryLink id="2450-46c0-28cd-42fb" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
@@ -6558,8 +6549,8 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
       </rules>
       <categoryLinks>
         <categoryLink id="eb6f-48f1-7363-103d" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
-        <categoryLink id="c9eb-3740-741a-5ebe" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
         <categoryLink id="ce4e-d79e-d344-09bc" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink targetId="5f7b-2051-3935-7637" id="d310-647f-53a1-3f40" primary="false" name="LegioIgnatum"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1"/>
@@ -6584,8 +6575,8 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
       </rules>
       <categoryLinks>
         <categoryLink id="9a8a-87a7-c2e3-41e2" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
-        <categoryLink id="0045-7a6f-b5e2-5292" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
         <categoryLink id="871e-cc37-4945-1855" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink targetId="5f7b-2051-3935-7637" id="01f7-c960-7307-bc4f" primary="false" name="LegioIgnatum"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2"/>
@@ -6609,9 +6600,9 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="c697-e873-2c87-cca4" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
         <categoryLink id="56a8-ba94-2a0f-1c07" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
         <categoryLink id="776f-d2e5-84e1-a80b" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink targetId="4a24-73e7-556c-1bfd" id="2ee7-a7bd-4524-7d53" primary="false" name="LegioLaniaskara"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1"/>
@@ -6636,8 +6627,8 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
       </rules>
       <categoryLinks>
         <categoryLink id="2d20-871a-7077-6cfb" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
-        <categoryLink id="029e-e259-fc56-53a5" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
         <categoryLink id="ba05-5f8a-eb17-49a1" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink targetId="6740-1e8a-8e25-88fd" id="4ef3-04c1-2921-fbf0" primary="false" name="LegioKulisaetai"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="1"/>
@@ -6662,8 +6653,8 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
       </rules>
       <categoryLinks>
         <categoryLink id="6d62-d708-e5d3-7c2f" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
-        <categoryLink id="9716-bc0e-6199-9133" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
         <categoryLink id="4384-04e8-abda-0dd7" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink targetId="6740-1e8a-8e25-88fd" id="df5f-5ec0-c3a3-fea6" primary="false" name="LegioKulisaetai"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2"/>
@@ -6688,8 +6679,8 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
       </rules>
       <categoryLinks>
         <categoryLink id="5fe7-093f-b82b-1091" name="Legio Specific Stratagem" hidden="false" targetId="eb21-0dae-9a3d-863a" primary="false"/>
-        <categoryLink id="4099-59c5-c97c-4a60" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
         <categoryLink id="0b33-52ea-786d-b3a0" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink targetId="ccee-936e-87d6-bf29" id="ba7a-8300-e0dc-b430" primary="false" name="LegioTritonis"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3"/>
@@ -6731,7 +6722,6 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
       </rules>
       <categoryLinks>
         <categoryLink id="8b7c-ad51-e7d4-20d8" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="076e-e445-f63a-8a03" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="fe1e-8c6f-7c35-291f" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
       <costs>
@@ -6747,7 +6737,6 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
       </rules>
       <categoryLinks>
         <categoryLink id="e383-6349-b3aa-6a9c" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="c156-4375-0c4d-2877" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
         <categoryLink id="b7bc-35a2-25d2-fee6" name="LegioIgnatum" hidden="false" targetId="5f7b-2051-3935-7637" primary="false"/>
       </categoryLinks>
       <costs>
@@ -6769,7 +6758,6 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
       </rules>
       <categoryLinks>
         <categoryLink id="6a9f-abfb-e397-7ffb" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="29a3-7818-7f79-e4f0" name="LegioVenator" hidden="false" targetId="a768-815b-17bf-6136" primary="false"/>
         <categoryLink id="125f-91dd-d582-a337" name="LegioVenator" hidden="false" targetId="43b6-60b3-8111-290c" primary="false"/>
       </categoryLinks>
       <costs>
@@ -6788,7 +6776,6 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
       </rules>
       <categoryLinks>
         <categoryLink id="44ed-5e7d-6f58-e3e1" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="f1fa-3dd6-b7b2-95dc" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
         <categoryLink id="cbd3-4c50-c547-8b66" name="LegioLaniaskara" hidden="false" targetId="4a24-73e7-556c-1bfd" primary="false"/>
       </categoryLinks>
       <costs>
@@ -6804,7 +6791,6 @@ their Reactor Status marker by 2. The Titan automatically fails their Command ch
       </rules>
       <categoryLinks>
         <categoryLink id="4462-7806-fa4d-b50b" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="ad52-2e3b-c08b-3a53" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
         <categoryLink id="4b85-83d5-04be-9e02" name="LegioKulisaetai" hidden="false" targetId="6740-1e8a-8e25-88fd" primary="false"/>
       </categoryLinks>
       <costs>
@@ -6824,7 +6810,6 @@ Note that for the purposes of the maniple’s rules, the replacement Titan does 
       </rules>
       <categoryLinks>
         <categoryLink id="7618-c1eb-3eef-eb24" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
-        <categoryLink id="5788-689c-bd4f-f1dd" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
         <categoryLink id="f276-b54e-4e72-99b2" name="LegioTritonis" hidden="false" targetId="ccee-936e-87d6-bf29" primary="false"/>
       </categoryLinks>
       <costs>
@@ -6845,7 +6830,6 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
       <categoryLinks>
         <categoryLink id="5992-f48d-e889-e56f" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="22e5-bc97-c768-b417" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
-        <categoryLink id="b395-68a0-416e-ba64" name="LegioDamicium" hidden="false" targetId="ae2e-5751-1800-545a" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
@@ -6860,7 +6844,7 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
       </rules>
       <categoryLinks>
         <categoryLink id="0e13-ad19-c3ee-69f9" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="6ee1-ce9c-ed40-327c" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
+        <categoryLink targetId="5f7b-2051-3935-7637" id="12d1-84a6-27eb-827b" primary="false" name="LegioIgnatum"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
@@ -6875,7 +6859,6 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
       </rules>
       <categoryLinks>
         <categoryLink id="5832-b2dc-b9cb-38ad" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="9f60-1051-b719-c89e" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="4292-b5e6-4fff-f5b0" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
       <costs>
@@ -6891,7 +6874,7 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
       </rules>
       <categoryLinks>
         <categoryLink id="fd0c-375a-7b5f-6bc7" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="9c29-3da1-24b3-e36f" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
+        <categoryLink targetId="324b-8404-7509-9b36" id="97c8-e9d8-97d9-b24c" primary="false" name="LegioAstraman"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
@@ -6906,7 +6889,7 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
       </rules>
       <categoryLinks>
         <categoryLink id="5711-74c9-d8e1-38cc" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="0963-7a46-bec0-3925" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
+        <categoryLink targetId="4a24-73e7-556c-1bfd" id="de44-d892-3368-4c74" primary="false" name="LegioLaniaskara"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
@@ -6921,7 +6904,7 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
       </rules>
       <categoryLinks>
         <categoryLink id="202e-662b-2b0b-ad36" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="6dd9-4f26-7b40-c0d0" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
+        <categoryLink targetId="6740-1e8a-8e25-88fd" id="13f9-4d93-2b47-df43" primary="false" name="LegioKulisaetai"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
@@ -6936,7 +6919,7 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
       </rules>
       <categoryLinks>
         <categoryLink id="39cf-0545-73f6-f32d" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="1261-4ba7-0f88-ba90" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
+        <categoryLink targetId="ccee-936e-87d6-bf29" id="8a25-08db-3db7-198b" primary="false" name="LegioTritonis"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
@@ -6967,7 +6950,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
       </rules>
       <categoryLinks>
         <categoryLink id="79b7-fd71-d457-ffe0" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="1989-e08d-dfd5-793e" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="5e59-ddc7-762f-dd03" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
       <costs>
@@ -14986,36 +14968,30 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <entryLink id="3d47-581b-de11-2989" name="Legio Astraman (Morning Stars)" hidden="false" collective="false" import="false" targetId="dd39-c2b7-a515-da8a" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="3494-08d6-98f4-adf7" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
-                <categoryLink id="da9a-36bb-3fb5-5c4e" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
               </categoryLinks>
             </entryLink>
             <entryLink id="d513-ddb4-c33e-70aa" name="Legio Damicium (Unbroken Lords)" hidden="false" collective="false" import="false" targetId="0fb5-613c-cbb2-90df" type="selectionEntry">
               <categoryLinks>
-                <categoryLink id="b309-b758-a59a-d51e" name="LegioDamicium" hidden="false" targetId="ae2e-5751-1800-545a" primary="false"/>
                 <categoryLink id="8153-651e-1686-5beb" name="LegioDamicium" hidden="false" targetId="f778-49fb-1bfd-4838" primary="false"/>
               </categoryLinks>
             </entryLink>
             <entryLink id="38a2-81f9-a087-d692" name="Legio Ignatum (Fire Wasps)" hidden="false" collective="false" import="false" targetId="4a11-763b-6a82-bc29" type="selectionEntry">
               <categoryLinks>
-                <categoryLink id="588c-8d99-ff83-f1a3" name="LegioIgnatum" hidden="false" targetId="83db-4337-737c-1db8" primary="false"/>
                 <categoryLink id="6a73-1068-adb6-9fdb" name="LegioIgnatum" hidden="false" targetId="5f7b-2051-3935-7637" primary="false"/>
               </categoryLinks>
             </entryLink>
             <entryLink id="d2b7-bf8f-f1a7-6111" name="Legio Kulisaetai (Gatekeepers)" hidden="false" collective="false" import="false" targetId="621d-d3d2-41c9-5052" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="d013-b218-4465-1480" name="LegioKulisaetai" hidden="false" targetId="6740-1e8a-8e25-88fd" primary="false"/>
-                <categoryLink id="f240-1278-539b-02e5" name="LegioKulisaetai" hidden="false" targetId="f986-f640-3cb3-478a" primary="false"/>
               </categoryLinks>
             </entryLink>
             <entryLink id="5467-d0bf-0128-5742" name="Legio Laniaskara (Impalers)" hidden="false" collective="false" import="false" targetId="8d2d-07be-eb8c-6cce" type="selectionEntry">
               <categoryLinks>
-                <categoryLink id="ae39-660c-f063-ddb5" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
                 <categoryLink id="6b91-874e-98a3-3397" name="LegioLaniaskara" hidden="false" targetId="4a24-73e7-556c-1bfd" primary="false"/>
               </categoryLinks>
             </entryLink>
             <entryLink id="71c1-8633-c2e6-9666" name="Legio Tritonis (Dark Tide)" hidden="false" collective="false" import="false" targetId="dddd-cc44-e662-51a6" type="selectionEntry">
               <categoryLinks>
-                <categoryLink id="a5fc-e01d-901c-8b2f" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
                 <categoryLink id="5d27-818d-1735-87a5" name="LegioTritonis" hidden="false" targetId="ccee-936e-87d6-bf29" primary="false"/>
               </categoryLinks>
             </entryLink>
@@ -21969,8 +21945,8 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="ae2e-5751-1800-545a" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ae2e-5751-1800-545a" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="f778-49fb-1bfd-4838" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f778-49fb-1bfd-4838" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -23169,21 +23145,9 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
         <selectionEntryGroup id="8025-8d3b-2c9d-557d" name="Legio Crucius" publicationId="3401-191e-1333-8a1d" page="120" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da6d-e379-1848-8c31" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4501-ac6c-5b8c-1b03" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23231,16 +23195,8 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02ce-a62d-4e4b-d7cc" type="instanceOf"/>
+                    <condition field="selections" scope="unit" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8129-9843-a287-cd8e" type="atLeast"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02ce-a62d-4e4b-d7cc" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -23287,21 +23243,9 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
         <selectionEntryGroup id="f58e-72e0-ff85-c9c1" name="Legio Vulcanum" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d02-6c17-cd84-a92f" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d02-6c17-cd84-a92f" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4225-27f8-9c8b-e56e" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23347,21 +23291,9 @@ to its Body, bypassing void shields</description>
         <selectionEntryGroup id="ac40-2804-740a-9a43" name="Legio Interfector" publicationId="975a-00f4-pubN89746" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3d0-92f8-3bf7-4799" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3d0-92f8-3bf7-4799" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="f0a4-f7dc-25cf-21c8" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23406,21 +23338,9 @@ to its Body, bypassing void shields</description>
         <selectionEntryGroup id="1120-fdc2-ecc5-cc3c" name="Legio Astorum" publicationId="3401-191e-1333-8a1d" page="40" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbd6-65fd-6354-a154" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbd6-65fd-6354-a154" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="06c2-f93e-7bf5-9fd5" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23465,21 +23385,9 @@ to its Body, bypassing void shields</description>
         <selectionEntryGroup id="5ce1-0c6a-e618-f82b" name="Legio Defensor" publicationId="3401-191e-1333-8a1d" page="51" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63e1-fca8-5023-12d6" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63e1-fca8-5023-12d6" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="7b17-f14f-4709-e96c" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23524,21 +23432,9 @@ to its Body, bypassing void shields</description>
         <selectionEntryGroup id="3a43-d236-96f1-fe11" name="Legio Atarus" publicationId="3401-191e-1333-8a1d" page="71" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf14-af1e-5d72-7c8b" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf14-af1e-5d72-7c8b" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23584,21 +23480,9 @@ Note, Shutdown orders and other effects that change a Titan’s current Order ar
         <selectionEntryGroup id="b769-d295-72ac-9210" name="Legio Solaria" publicationId="3401-191e-1333-8a1d" page="60" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="14a9-163a-83aa-7520" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="14a9-163a-83aa-7520" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="56c0-1162-173d-b052" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23647,21 +23531,9 @@ Note, Shutdown orders and other effects that change a Titan’s current Order ar
 Any weapon disabled by the Tiger Eyes Princeps using a Smash Attack, or a weapon with the Melee trait, is harder to repair; these require a dice score r higher than normal when making Repair actions.</comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="95e8-3d8e-a0ad-4ad3" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23710,21 +23582,9 @@ I Razor Tongue: The Princeps is skilled at delivering biting challenges and chil
 3 Cruel: The Princeps has no pity for weaklings. Unworthy foes are swiftly crushed underfoot with little thought of honour or mercy- after all, what mercy does the boot give the ant? When making attacks against units with a Scale of 5 or lower, increase the Strength of any hits by 2.</comment>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a92-f760-bf0e-ce26" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a92-f760-bf0e-ce26" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="72ba-4008-bf4b-fe3b" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23769,21 +23629,9 @@ I Razor Tongue: The Princeps is skilled at delivering biting challenges and chil
         <selectionEntryGroup id="e641-9188-67b5-df35" name="Legio Vulpa" publicationId="975a-00f4-pubN87630" page="55" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7093-f8b3-b5f9-d38d" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7093-f8b3-b5f9-d38d" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="561a-cb05-d4b5-94fd" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23828,21 +23676,9 @@ I Razor Tongue: The Princeps is skilled at delivering biting challenges and chil
         <selectionEntryGroup id="cb29-872a-4486-f9ae" name="Legio Astraman" publicationId="3401-191e-1333-8a1d" page="90" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd39-c2b7-a515-da8a" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd39-c2b7-a515-da8a" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="324b-8404-7509-9b36" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23887,21 +23723,9 @@ I Razor Tongue: The Princeps is skilled at delivering biting challenges and chil
         <selectionEntryGroup id="e6d0-050e-88b5-e508" name="Legio Ignatum" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a11-763b-6a82-bc29" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a11-763b-6a82-bc29" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5f7b-2051-3935-7637" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -23946,21 +23770,9 @@ I Razor Tongue: The Princeps is skilled at delivering biting challenges and chil
         <selectionEntryGroup id="001d-77ad-127e-4f78" name="Legio Venator" publicationId="3401-191e-1333-8a1d" page="153" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2acb-2c7d-5ba6-77ff" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2acb-2c7d-5ba6-77ff" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="43b6-60b3-8111-290c" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24006,21 +23818,9 @@ phase or Combat phase of that round as normal.</description>
         <selectionEntryGroup id="a6d4-87f8-35f1-cfc3" name="Legio Laniaskara" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d2d-07be-eb8c-6cce" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d2d-07be-eb8c-6cce" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4a24-73e7-556c-1bfd" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24065,21 +23865,9 @@ phase or Combat phase of that round as normal.</description>
         <selectionEntryGroup id="ccf0-42a7-26e2-39df" name="Legio Kulisaetai" publicationId="ce02-a882-fdad-dd36" page="48" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="621d-d3d2-41c9-5052" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="621d-d3d2-41c9-5052" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="6740-1e8a-8e25-88fd" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24124,21 +23912,9 @@ phase or Combat phase of that round as normal.</description>
         <selectionEntryGroup id="14f8-508c-9fd0-ec98" name="Legio Tritonis" publicationId="ce02-a882-fdad-dd36" page="52" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dddd-cc44-e662-51a6" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dddd-cc44-e662-51a6" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ccee-936e-87d6-bf29" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24185,21 +23961,9 @@ After resolving all the effects of the attack that caused the Critical Damage, t
         <selectionEntryGroup id="555f-bfe5-45d1-982d" name="Legio Damicium" publicationId="ce02-a882-fdad-dd36" page="54" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fb5-613c-cbb2-90df" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fb5-613c-cbb2-90df" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="f778-49fb-1bfd-4838" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24244,21 +24008,9 @@ After resolving all the effects of the attack that caused the Critical Damage, t
         <selectionEntryGroup id="d0dc-deaf-4977-fdf7" name="Legio Praesagius" publicationId="3401-191e-1333-8a1d" page="101" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6da-1530-1bdd-276a" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6da-1530-1bdd-276a" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4e62-72e2-a04f-9b86" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24303,21 +24055,9 @@ After resolving all the effects of the attack that caused the Critical Damage, t
         <selectionEntryGroup id="a3c1-a5f6-c4c2-2907" name="Legio Oberon" publicationId="3401-191e-1333-8a1d" page="147" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dee5-885d-fc38-08ce" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dee5-885d-fc38-08ce" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="7dc9-a722-55be-5f42" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24362,21 +24102,9 @@ After resolving all the effects of the attack that caused the Critical Damage, t
         <selectionEntryGroup id="e65b-3627-5603-9fca" name="Legio Lysanda" publicationId="3401-191e-1333-8a1d" page="159" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f808-ec75-4a31-8a29" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f808-ec75-4a31-8a29" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="7ada-d471-345c-f8a4" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24421,21 +24149,9 @@ After resolving all the effects of the attack that caused the Critical Damage, t
         <selectionEntryGroup id="0446-e465-77ca-0eaa" name="Legio Infernus" publicationId="3265-f408-cc9b-bfa3" page="31" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd79-8c5d-3949-d89d" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd79-8c5d-3949-d89d" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="99b7-5e2f-9ea4-bbdf" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24480,21 +24196,9 @@ After resolving all the effects of the attack that caused the Critical Damage, t
         <selectionEntryGroup id="c8cb-58d9-15ce-ebb3" name="Legio Audax" publicationId="3265-f408-cc9b-bfa3" page="37" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9a0-229e-7cfb-4def" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9a0-229e-7cfb-4def" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24539,21 +24243,9 @@ After resolving all the effects of the attack that caused the Critical Damage, t
         <selectionEntryGroup id="a036-3e02-ded8-932f" name="Legio Gryphonicus" publicationId="3401-191e-1333-8a1d" page="31" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0986-9b84-b734-e9c8" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0986-9b84-b734-e9c8" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="0796-178c-50ce-2d1f" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24598,21 +24290,9 @@ After resolving all the effects of the attack that caused the Critical Damage, t
         <selectionEntryGroup id="8e37-010b-d3ad-5d4f" name="Legio Tempestus" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbc6-216c-8a22-c1b4" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbc6-216c-8a22-c1b4" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="15bd-0b4b-5cac-dc48" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24657,21 +24337,9 @@ After resolving all the effects of the attack that caused the Critical Damage, t
         <selectionEntryGroup id="5934-231a-92f8-2cc9" name="Legio Magna" publicationId="bf8b-27d7-039e-5df9" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4cad-18cf-5711-5331" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24717,21 +24385,9 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
         <selectionEntryGroup id="6aa8-9ba4-e231-f678" name="Legio Osedax" publicationId="3401-191e-1333-8a1d" page="141" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2ca-fd65-b60e-4dca" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="fc8c-656d-ffe8-69b6" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24776,21 +24432,9 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
         <selectionEntryGroup id="e47b-cbbd-f38e-c205" name="Legio Honorum" publicationId="3401-191e-1333-8a1d" page="131" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="158f-4cf2-be7e-6c75" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="158f-4cf2-be7e-6c75" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cd4a-3c69-5fc8-0773" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24835,21 +24479,9 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
         <selectionEntryGroup id="6b5d-826b-e8e5-a37f" name="Legio Metalica" publicationId="3401-191e-1333-8a1d" page="81" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523b-21dd-9c2f-96fe" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523b-21dd-9c2f-96fe" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2afb-401e-9ec9-28b2" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24894,21 +24526,9 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
         <selectionEntryGroup id="261f-91f8-139b-2e09" name="Legio Vulturum" publicationId="bf8b-27d7-039e-5df9" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a98-05b4-ed38-bbc4" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -24953,21 +24573,9 @@ After resolving the effects of the weapon attack, the weapon suffers the Detonat
         <selectionEntryGroup id="720f-7645-718f-df71" name="Legio Mortis" publicationId="bf8b-27d7-039e-5df9" page="31" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b13-8735-b4bf-0caf" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="f88f-e42d-38f7-bfa7" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -25014,21 +24622,9 @@ If the Princeps’ Titan is a Corrupted Titan, it instead rolls two dice, re-rol
         <selectionEntryGroup id="cc4f-8c1b-e6fd-04d8" name="Legio Mordaxis" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e6f-c618-89f4-d690" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9d14-f4fb-5868-1b62" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>

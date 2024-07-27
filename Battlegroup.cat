@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="2" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="3" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -674,7 +674,6 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="d960-4189-8cb1-9d61" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-        <categoryLink id="098b-2405-4339-e65b" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="bcdb-aac0-0cc2-aac6" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -688,7 +687,6 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="ee58-c888-891f-64de" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-        <categoryLink id="c42b-9432-6577-10cd" name="LegioAstraman" hidden="false" targetId="f13e-f477-7652-0e1c" primary="false"/>
         <categoryLink id="d817-81f8-4d56-621d" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -696,7 +694,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae2e-5751-1800-545a" type="atLeast"/>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f778-49fb-1bfd-4838" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -766,7 +764,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-        <categoryLink id="9c5c-00d9-c76c-f7f5" name="LegioLaniaskara" hidden="false" targetId="b4cb-2809-41b4-6d83" primary="false"/>
+        <categoryLink targetId="4a24-73e7-556c-1bfd" id="07f5-8316-e562-1cd3" primary="false" name="LegioLaniaskara"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bab5-942b-7806-af79" name="=Honorum= Crusading Spirit" hidden="true" collective="false" import="true" targetId="c80f-d884-325b-745c" type="selectionEntry">
@@ -855,7 +853,6 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="ce07-431f-69fa-5dd6" name="LegioTritonis" hidden="false" targetId="753b-9e36-a10c-7961" primary="false"/>
         <categoryLink id="0500-1ee4-6dd0-8362" name="LegioTritonis" hidden="false" targetId="ccee-936e-87d6-bf29" primary="false"/>
         <categoryLink id="d316-0996-34ef-a634" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
