@@ -14945,10 +14945,24 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <categoryLink id="898e-488d-de70-42bb" name="LegioPraesagius" hidden="false" targetId="4e62-72e2-a04f-9b86" primary="false"/>
               </categoryLinks>
             </entryLink>
-            <entryLink id="fa1d-ffc7-fbe8-4235" name="Legio Audax (Ember Wolves)" hidden="false" collective="false" import="false" targetId="e9a0-229e-7cfb-4def" type="selectionEntry">
+            <entryLink id="fa1d-ffc7-fbe8-4235" name="Legio Audax (Ember Wolves)" hidden="true" collective="false" import="false" targetId="e9a0-229e-7cfb-4def" type="selectionEntry">
               <categoryLinks>
                 <categoryLink id="d1d8-389f-bb87-28fa" name="LegioAudax" hidden="false" targetId="4f76-34ac-3cf7-34c6" primary="false"/>
               </categoryLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ab5b-9a2c-91b9-35a2" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="26ca-c6f5-04b3-10c1" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="223f-6e71-9e4f-939e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="d173-87e6-9f1b-1aaa" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="66c8-bfd3-3495-8a80" name="Legio Osedax (The Cockatrices)" hidden="false" collective="false" import="false" targetId="f2ca-fd65-b60e-4dca" type="selectionEntry">
               <categoryLinks>
@@ -16158,7 +16172,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
+                        <condition field="selections" scope="model-or-unit" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -16167,7 +16181,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
+                        <condition field="selections" scope="model-or-unit" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
                       </conditions>
                     </modifier>
                   </modifiers>
