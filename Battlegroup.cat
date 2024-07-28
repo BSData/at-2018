@@ -15,7 +15,18 @@
         </categoryLink>
         <categoryLink id="09c3-4572-186e-436f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="false"/>
         <categoryLink id="7a3b-42f9-f60d-696a" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
-        <categoryLink id="0606-1d0c-defb-d6e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
+        <categoryLink id="0606-1d0c-defb-d6e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7bd6-c857-ad95-8794"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="2" field="7bd6-c857-ad95-8794">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink id="4f07-d070-7d91-0291" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </forceEntry>
@@ -130,21 +141,6 @@
     <entryLink id="da16-a787-0bc8-23ed" name="Ferrox Light Maniple" hidden="false" collective="false" import="false" targetId="365e-d892-5c42-f7a3" type="selectionEntry"/>
     <entryLink id="f87f-52a5-0f04-ba5a" name="Fortis Battle Maniple" hidden="false" collective="false" import="false" targetId="2004-6a18-7dac-156c" type="selectionEntry"/>
     <entryLink id="34d0-7019-8dcc-71c5" name="Acastus Knight Banner" hidden="false" collective="false" import="false" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
-      <modifiers>
-        <modifier type="increment" field="d0e1-5f6d-1da1-6370" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" field="d0e1-5f6d-1da1-6370" value="1">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3997-93d3-81f3-8802" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e1-5f6d-1da1-6370" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="2f6d-7ec0-5d32-a1bc" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>
@@ -862,21 +858,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="b539-98b2-4d19-2ed2" name="Acastus Knight Asterius Banner" hidden="false" collective="false" import="true" targetId="3997-93d3-81f3-8802" type="selectionEntry">
-      <modifiers>
-        <modifier type="increment" field="d0b4-c318-58f4-43db" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" field="d0b4-c318-58f4-43db" value="1">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b77-15d2-9ca8-5cf7" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b4-c318-58f4-43db" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="447d-74bf-dbd3-c004" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
       </categoryLinks>

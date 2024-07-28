@@ -304,16 +304,6 @@
     </entryLink>
     <entryLink id="acastus-freeblades" name="Acastus Knight Banner" hidden="false" collective="false" import="false" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
       <comment>Freeblade</comment>
-      <modifiers>
-        <modifier type="increment" field="b4ed-04bf-182a-2fde" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b1c7-cb6c-5810-e9d9" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4ed-04bf-182a-2fde" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="7057-1fae-7d3d-dcad" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
@@ -378,16 +368,6 @@
     </entryLink>
     <entryLink id="a311-6183-fe16-3256" name="Acastus Knight Asterius Banner" hidden="false" collective="false" import="true" targetId="3997-93d3-81f3-8802" type="selectionEntry">
       <comment>Freeblade</comment>
-      <modifiers>
-        <modifier type="increment" field="e4a9-c1f7-2e2f-2825" value="1">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="b1c7-cb6c-5810-e9d9" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4a9-c1f7-2e2f-2825" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="4da5-bb7a-c3e3-f011" name="Freeblades" hidden="false" targetId="efc2-e899-f74b-55ad" primary="true"/>
       </categoryLinks>
