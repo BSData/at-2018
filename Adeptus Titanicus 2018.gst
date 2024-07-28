@@ -510,6 +510,24 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       <infoLinks>
         <infoLink id="fe83-c22c-b0d9-dd08" name="Auxiliary Titan" hidden="false" targetId="8e9d-aea7-06fc-55f7" type="rule"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="eef9-125f-2ba2-d383"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="eef9-125f-2ba2-d383">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7c04-d50d-bc70-52f3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="eef9-125f-2ba2-d383">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="20c9-0c15-57e3-bf84" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </categoryEntry>
     <categoryEntry id="e1ea-4e6f-d353-2cc4" name="Replace optional Warhound with Dire Wolf" hidden="false"/>
     <categoryEntry id="fbd3-5e33-6755-835f" name="Replace Reaver with Dire Wolf" hidden="false"/>

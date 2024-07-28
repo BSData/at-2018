@@ -92,20 +92,13 @@
       <categoryLinks>
         <categoryLink id="adde-353e-0207-cfb6" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="6aa3-6d2a-1c55-5f2a" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
-      </entryLinks>
     </entryLink>
     <entryLink id="sinister-support-battlegroup" name="Warlord-Sinister Titan" hidden="false" collective="false" import="false" targetId="dfeb-83af-7b26-622a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3542-a0f1-8d51-4ad7" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="warmaster-support-battlegroup" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry">
-      <entryLinks>
-        <entryLink id="bf69-b24a-bca7-73f6" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
-      </entryLinks>
-    </entryLink>
+    <entryLink id="warmaster-support-battlegroup" name="Warmaster Titan" hidden="false" collective="false" import="false" targetId="2062-8f97-c49e-abe2" type="selectionEntry"/>
     <entryLink id="573e-1025-b9ca-55d0" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ad03-604a-3a36-5298" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
@@ -857,11 +850,7 @@
         <categoryLink id="d316-0996-34ef-a634" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="02ae-1f94-83f2-f648" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry">
-      <entryLinks>
-        <entryLink id="03af-1f12-71f0-afe0" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
-      </entryLinks>
-    </entryLink>
+    <entryLink id="02ae-1f94-83f2-f648" name="Warmaster Iconoclast Heavy Battle Titan" hidden="false" collective="false" import="true" targetId="c45d-04e4-f35f-8b20" type="selectionEntry"/>
     <entryLink id="4174-c2c4-e29b-7ed7" name="Armiger Knights Banner" hidden="false" collective="false" import="false" targetId="11c3-a34f-1748-cf07" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ec0d-3c08-8cbc-7888" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
@@ -901,9 +890,6 @@
       <categoryLinks>
         <categoryLink id="79bc-1d9a-779e-55a5" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="5da2-7a6f-7f3d-4fc9" name="Auxiliary Titan" hidden="false" collective="false" import="true" targetId="4c64-8a28-7368-156d" type="selectionEntry"/>
-      </entryLinks>
     </entryLink>
     <entryLink id="57be-9c1f-e989-e2d9" name="=Krytos= Civilisation&apos;s Ruin" hidden="true" collective="false" import="true" targetId="a6aa-ba0e-b76f-7b43" type="selectionEntry">
       <modifiers>
@@ -934,24 +920,4 @@
     </entryLink>
     <entryLink id="b794-3768-8a75-3a14" name="Battle Level" hidden="false" collective="false" import="true" targetId="270a-cdcc-91b8-0787" type="selectionEntry"/>
   </entryLinks>
-  <sharedSelectionEntries>
-    <selectionEntry id="4c64-8a28-7368-156d" name="Auxiliary Titan" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="increment" field="24f8-e31a-7275-eab2" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="24f8-e31a-7275-eab2" type="max"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a0-1f89-67e9-af2b" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70e4-6146-61bf-1602" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
-      </costs>
-    </selectionEntry>
-  </sharedSelectionEntries>
 </catalogue>
