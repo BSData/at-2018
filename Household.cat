@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="3" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <forceEntries>
-    <forceEntry id="5334-72bf-3cf7-d361" name="Household" hidden="false">
+    <forceEntry id="5334-72bf-3cf7-d361" name="Household Battlegroup" hidden="false">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cd7-277c-6238-0452" type="min"/>
       </constraints>

@@ -4,7 +4,7 @@
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
   <forceEntries>
-    <forceEntry id="d377-9ed7-0d3e-7f70" name="Battlegroup" hidden="false">
+    <forceEntry id="d377-9ed7-0d3e-7f70" name="Legio Battlegroup" hidden="false">
       <categoryLinks>
         <categoryLink id="adf7-4e73-ff4d-9814" name="Configuration" hidden="false" targetId="8e3e-2c21-301b-653e" primary="false"/>
         <categoryLink id="f372-1970-b16d-17a5" name="Allegiance" hidden="false" targetId="2841-67b5-15d0-8908" primary="false">
