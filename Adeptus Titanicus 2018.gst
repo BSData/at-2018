@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="4" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="5" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -20042,7 +20042,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink id="f0eb-04ad-ef59-6031" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="aeb2-ef75-2cf2-dfd9" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="41c6-be07-3eae-944d" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
-        <categoryLink targetId="e65b-5f68-35f7-ddc1" id="4e1e-b94d-cc0a-e99d" primary="false" name="AuxiliaryBanner"/>
+        <categoryLink targetId="e65b-5f68-35f7-ddc1" id="4e1e-b94d-cc0a-e99d" primary="false" name="Auxiliary Knight Banner"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="fbc8-58ae-3e54-9f50" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
