@@ -510,6 +510,24 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       <infoLinks>
         <infoLink id="fe83-c22c-b0d9-dd08" name="Auxiliary Titan" hidden="false" targetId="8e9d-aea7-06fc-55f7" type="rule"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="eef9-125f-2ba2-d383"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="eef9-125f-2ba2-d383">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7c04-d50d-bc70-52f3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="eef9-125f-2ba2-d383">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="20c9-0c15-57e3-bf84" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </categoryEntry>
     <categoryEntry id="e1ea-4e6f-d353-2cc4" name="Replace optional Warhound with Dire Wolf" hidden="false"/>
     <categoryEntry id="fbd3-5e33-6755-835f" name="Replace Reaver with Dire Wolf" hidden="false"/>
@@ -583,6 +601,22 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
     <categoryEntry name="Questoris Mechanicus" id="2cd7-f37d-6476-cf93" hidden="false"/>
     <categoryEntry name="Questoris Imperialis" id="a1f2-9a53-e8b9-632d" hidden="false"/>
     <categoryEntry name="Questoris Traitoris" id="2bb9-9312-773b-3274" hidden="false"/>
+    <categoryEntry name="Auxiliary Knight Banner" id="e65b-5f68-35f7-ddc1" hidden="false">
+      <infoLinks>
+        <infoLink name="Auxiliary Knight Banner" id="010f-4511-3b42-f5fd" hidden="false" type="rule" targetId="bd57-6f3f-7d22-a8c1"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dc90-346f-abdf-2bdc"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="dc90-346f-abdf-2bdc">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false" includeChildSelections="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="b1c7-cb6c-5810-e9d9" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" hidden="true">
@@ -4035,14 +4069,12 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <rule id="5fc8-3571-bc88-ce38" name="Acastus Knight Artillery" hidden="false">
           <description>If an Acastus Knight Banner is issued First Fire or Split Fire orders during the Strategy phase, their BS is increased to 3+ until the End phase</description>
         </rule>
-        <rule id="3ef4-e452-b5b7-159a" name="Auxilliary Knight Banner" publicationId="25e8-c9ce-9330-c53b" page="5" hidden="false">
-          <description>A Battlegroup can include a maximum of one Auxiliary Knight Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one Auxiliary Knight Banner per Lance as reinforcements. No Knight Banner within a Lance, other than the Seneschal’s Banner, may be an Auxiliary Knight Banner</description>
-        </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="3d8f-b7cc-548a-f877" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="418b-8a01-5ad1-7065" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="108a-4a65-bea8-c57e" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink targetId="e65b-5f68-35f7-ddc1" id="6660-d215-4bbc-e690" primary="false" name="Auxiliary Knight Banner"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a220-9945-dec5-1453" name="Acastus Knight Lord Scion" hidden="false" collective="false" import="false" targetId="7448-fdbe-6fda-c7f6" type="selectionEntry">
@@ -4112,6 +4144,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Auxiliary Knight Banner" id="08fa-7f4a-8485-70cb" hidden="false" type="rule" targetId="bd57-6f3f-7d22-a8c1"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="aed6-0705-b201-ff96" name="Cerastus Knight Atrapos" hidden="false" collective="false" import="false" type="upgrade">
       <categoryLinks>
@@ -20002,14 +20037,12 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <rule id="1e39-5ff3-026b-fcb3" name="Acastus Knight Artillery" hidden="false">
           <description>If an Acastus Knight Asterius Banner is issued First Fire or Split Fire orders during the Strategy phase, their BS is increased to 3+ until the End phase.</description>
         </rule>
-        <rule id="34f6-0ecd-d47e-eef3" name="Auxilliary Knight Banner" publicationId="25e8-c9ce-9330-c53b" page="5" hidden="false">
-          <description>A Battlegroup can include a maximum of one Acastus Knight Banner or  Acastus Knight Asterius Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one of these Banners per Lance as reinforcements. No Knight Banner, other than the Seneschal’s Banner, within a Lance may be an Auxiliary Knight Banner.</description>
-        </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="f0eb-04ad-ef59-6031" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="aeb2-ef75-2cf2-dfd9" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="41c6-be07-3eae-944d" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
+        <categoryLink targetId="e65b-5f68-35f7-ddc1" id="4e1e-b94d-cc0a-e99d" primary="false" name="AuxiliaryBanner"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="fbc8-58ae-3e54-9f50" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
@@ -20066,6 +20099,9 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Auxiliary Knight Banner" id="190c-289f-5025-289b" hidden="false" type="rule" targetId="bd57-6f3f-7d22-a8c1"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="61e0-5e19-03b9-077d" name="Acastus Knight Asterius Lord Scion" hidden="false" collective="false" import="true" type="model">
       <entryLinks>
@@ -25256,6 +25292,9 @@ result of a single D6.</description>
                         • One Knight within the Seneschal&apos;s Banner may be upgraded to carry the Battle Standard at a cost of 50 points.
                         • The Battle Standard must be clearly displayed on the model that carries it.
                         • As long as the Knight carrying the Battle Standard is part of the Banner, any Banner or Lance within 12&quot; of that Knight may re-roll any failed Command checks to see if the Banner becomes Shaken.</description>
+    </rule>
+    <rule name="Auxiliary Knight Banner" id="bd57-6f3f-7d22-a8c1" hidden="false" publicationId="25e8-c9ce-9330-c53b" page="5">
+      <description>A Battlegroup can include a maximum of one Auxiliary Knight Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one Auxiliary Knight Banner per Lance as reinforcements. No Knight Banner within a Lance, other than the Seneschal’s Banner, may be an Auxiliary Knight Banner</description>
     </rule>
   </sharedRules>
 </gameSystem>
