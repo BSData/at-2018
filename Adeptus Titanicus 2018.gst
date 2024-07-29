@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="5" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="6" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -481,12 +481,7 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       <modifiers>
         <modifier type="increment" field="cf67-a51a-b403-9501" value="1">
           <repeats>
-            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="917a-77ef-30e4-b812" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" field="cf67-a51a-b403-9501" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5063-b6aa-3590-30fb" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98d8-1204-e5c2-6cdf" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
         <modifier type="set" value="1" field="fed1-5361-bf2d-b551">
@@ -616,6 +611,24 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
           </repeats>
         </modifier>
       </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Reinforcement Banner" id="98d8-1204-e5c2-6cdf" hidden="false">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="7bd6-c857-ad95-8794"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="2" field="7bd6-c857-ad95-8794">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="parent" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="-1" field="7bd6-c857-ad95-8794">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="20c9-0c15-57e3-bf84" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>This category is used to exclude Retainers from the banner limit, while still allowing them to have the &apos;Banner&apos; category</comment>
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
@@ -3615,6 +3628,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="a271-bbde-1b23-fd30" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="a0c0-49c1-1633-3848" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="c58e-22a5-8294-f8ec" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="46e7-7f0b-6da8-35cd" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="af24-dd9d-cfa8-fdbf" name="Questoris Knight Lord Scion" hidden="false" collective="false" import="false" targetId="9570-2851-584c-62e9" type="selectionEntry">
@@ -3777,6 +3791,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="3a1f-4bc7-37d6-a705" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="0167-368b-e85d-bd03" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="f23c-e700-3731-4a85" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="e2d5-53dc-901b-d022" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="fb37-5a63-8e4b-45de" name="Cerastus Knight Lord Scion" hidden="false" collective="false" import="false" targetId="7d97-998e-da08-a298" type="selectionEntry">
@@ -4075,6 +4090,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="418b-8a01-5ad1-7065" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="108a-4a65-bea8-c57e" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink targetId="e65b-5f68-35f7-ddc1" id="6660-d215-4bbc-e690" primary="false" name="Auxiliary Knight Banner"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="325c-bd95-a43d-27c9" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a220-9945-dec5-1453" name="Acastus Knight Lord Scion" hidden="false" collective="false" import="false" targetId="7448-fdbe-6fda-c7f6" type="selectionEntry">
@@ -4273,6 +4289,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="185c-cd7d-9550-48a3" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="6685-93da-bc92-172e" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="a901-f5ba-596d-d304" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="a7fd-3325-ab39-b717" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5626-d833-9689-d56b" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
@@ -4438,6 +4455,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="86ca-10cc-4dd2-5b4b" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="d92e-a23e-0b64-8679" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="7970-2070-0821-999f" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="567f-f7f7-d229-251b" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="009f-a8cf-de0d-c07a" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
@@ -20043,6 +20061,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink id="aeb2-ef75-2cf2-dfd9" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
         <categoryLink id="41c6-be07-3eae-944d" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink targetId="e65b-5f68-35f7-ddc1" id="4e1e-b94d-cc0a-e99d" primary="false" name="Auxiliary Knight Banner"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="d4b8-7991-1de6-532c" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="fbc8-58ae-3e54-9f50" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
@@ -20229,6 +20248,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink id="8176-d5e9-e21a-d3a9" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="1fad-75b8-0f95-0922" name="Agile" hidden="false" targetId="e580-b213-3f86-c2fc" primary="false"/>
         <categoryLink id="316c-e22a-e3c8-93be" name="Knight" hidden="false" targetId="184a-ded9-ae1a-e357" primary="false"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="8db7-6087-c876-7cf9" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4882-65c1-6a18-b1fc" name="Cerastus Knight Atrapos Lord Scion" hidden="false" collective="false" import="true" type="model">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="5" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="6" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -102,19 +102,16 @@
     <entryLink id="573e-1025-b9ca-55d0" name="Questoris Knight Magaera Banner" hidden="false" collective="false" import="false" targetId="1a0a-5e72-9752-c32d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ad03-604a-3a36-5298" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="601d-cafb-12cb-a3a5" primary="false" name="Banner Reinforcement"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1df3-98f5-9d87-11f1" name="Questoris Knight Styrix Banner" hidden="false" collective="false" import="false" targetId="dec1-8a16-1df5-e112" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ee08-c741-e4b4-9a6b" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="8854-259a-98a8-afad" primary="false" name="Banner Reinforcement"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="af14-0d8e-c0ed-ae81" name="Questoris Knight Banner" hidden="false" collective="false" import="false" targetId="812b-786b-9435-cd20" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="983b-08b8-edf6-a8e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="6d71-4389-db26-6eca" primary="false" name="Banner Reinforcement"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d63c-4bb8-d8a9-b777" name="Axiom Battleline Maniple" hidden="false" collective="false" import="false" targetId="3ca3-42a8-26bb-5676" type="selectionEntry"/>
@@ -123,7 +120,6 @@
     <entryLink id="ee61-27d4-5330-1a0d" name="Cerastus Knight Banner" hidden="false" collective="false" import="false" targetId="3900-cfb6-52f2-c83c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7a2b-24b9-a677-80f3" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="15f2-1a81-edc3-1674" primary="false" name="Banner Reinforcement"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a061-9137-013f-cf00" name="Corsair Battleline Maniple" hidden="false" collective="false" import="false" targetId="241d-3394-9612-08c7" type="selectionEntry"/>
@@ -136,7 +132,6 @@
     <entryLink id="34d0-7019-8dcc-71c5" name="Acastus Knight Banner" hidden="false" collective="false" import="false" targetId="3b77-15d2-9ca8-5cf7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="2f6d-7ec0-5d32-a1bc" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="46de-08d6-3293-e74b" primary="false" name="Banner Reinforcement"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4ef2-2fba-7456-a7f7" name="Auspex Bafflers" hidden="false" collective="false" import="false" targetId="92b5-e290-3859-ee00" type="selectionEntry">
@@ -854,13 +849,11 @@
     <entryLink id="b539-98b2-4d19-2ed2" name="Acastus Knight Asterius Banner" hidden="false" collective="false" import="true" targetId="3997-93d3-81f3-8802" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="447d-74bf-dbd3-c004" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="3d7e-414e-c8ef-a3eb" primary="false" name="Banner Reinforcement"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="abe4-c85c-73b6-1aaf" name="Cerastus Knight Atrapos Banner" hidden="false" collective="false" import="true" targetId="9167-7d32-6d19-739d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8b07-8368-d9c0-056e" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="true"/>
-        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="d95c-9535-e664-7465" primary="false" name="Banner Reinforcement"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="cd15-0d60-20eb-9426" name="Dire Wolf Titan" hidden="false" collective="false" import="true" targetId="76b8-ecdb-cbf6-0c45" type="selectionEntry">
@@ -897,19 +890,4 @@
     </entryLink>
     <entryLink id="b794-3768-8a75-3a14" name="Battle Level" hidden="false" collective="false" import="true" targetId="270a-cdcc-91b8-0787" type="selectionEntry"/>
   </entryLinks>
-  <categoryEntries>
-    <categoryEntry name="Reinforcement Banner" id="98d8-1204-e5c2-6cdf" hidden="false">
-      <constraints>
-        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="7bd6-c857-ad95-8794"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="2" field="7bd6-c857-ad95-8794">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false" includeChildSelections="true"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <comment>This category is used to exclude Retainers from the banner limit, while still allowing them to have the &apos;Banner&apos; category</comment>
-    </categoryEntry>
-  </categoryEntries>
 </catalogue>
