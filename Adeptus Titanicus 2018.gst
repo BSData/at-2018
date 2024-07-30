@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="6" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="7" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -10253,6 +10253,9 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <entryLinks>
             <entryLink id="b436-4279-e2cd-3a2c" name="Cerastus Knight Banner" hidden="false" collective="false" import="false" targetId="3900-cfb6-52f2-c83c" type="selectionEntry"/>
             <entryLink id="38bb-4276-eafd-63b6" name="Questoris Knight Banner" hidden="false" collective="false" import="false" targetId="812b-786b-9435-cd20" type="selectionEntry"/>
+            <entryLink import="true" name="Cerastus Knight Atrapos Banner" hidden="false" id="c111-57fc-8ee5-03b6" type="selectionEntry" targetId="9167-7d32-6d19-739d"/>
+            <entryLink import="true" name="Questoris Knight Magaera Banner" hidden="false" id="acfd-2a40-e22c-652a" type="selectionEntry" targetId="1a0a-5e72-9752-c32d"/>
+            <entryLink import="true" name="Questoris Knight Styrix Banner" hidden="false" id="8e7d-85e6-9d34-ead3" type="selectionEntry" targetId="dec1-8a16-1df5-e112"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="96fc-f52e-c501-659e" name="Legio Trait: Mainstay of the Titan Legion" publicationId="975a-00f4-pubN65537" page="89" hidden="true" collective="false" import="false">
