@@ -6030,7 +6030,7 @@ Legio Audax Squadrons can contain up to five Titans, unless they can normally co
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="14a9-163a-83aa-7520" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="56c0-1162-173d-b052" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
