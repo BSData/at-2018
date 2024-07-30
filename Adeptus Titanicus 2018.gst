@@ -16715,6 +16715,23 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Carapace, Paired</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="5" field="fff8-b599-3d0a-2555">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b21f-61e9-4f0d-88e6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=", Rapid" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="d5ca-a1c9-d50a-2335" name="Earthbreaker Missiles [WL]" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
@@ -16761,6 +16778,42 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </categoryLinks>
       <entryLinks>
         <entryLink id="6303-cfd0-6a1a-c9ee" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="false" name="=Atarus= Infernus Missiles" hidden="true" id="b145-d969-d1d6-ebf7" collective="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="9aca-8423-c9b4-b532" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="9ca4-4864-1a67-a4de" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="=Crusade= Multiple Warhead Launchers" hidden="true" id="0daa-82c1-fd91-7ba5" collective="false" targetId="6010-6066-629e-1305" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="6f50-0338-6c43-8a0a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="6ae3-547e-b8f0-395e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
@@ -16996,6 +17049,23 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Carapace</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="5" field="fff8-b599-3d0a-2555">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="b21f-61e9-4f0d-88e6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=", Rapid" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="d57b-9161-2996-9145" name="Earthbreaker Missiles [RVR]" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
@@ -17043,6 +17113,42 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </categoryLinks>
       <entryLinks>
         <entryLink id="5fa1-9b8c-18ec-c87c" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="false" name="=Atarus= Infernus Missiles" hidden="true" id="02c7-4aa5-7c19-c9df" collective="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="96ea-893a-5c6f-0aa3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="bfc8-a812-b891-3fcc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="=Crusade= Multiple Warhead Launchers" hidden="true" id="9e09-2e0f-0afb-a0f8" collective="false" targetId="6010-6066-629e-1305" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="b617-e8fa-4404-42f1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="1739-3d75-bf6d-72b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
@@ -18012,6 +18118,24 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       </categoryLinks>
       <entryLinks>
         <entryLink id="4f75-d279-028b-c888" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="false" name="=Atarus= Infernus Missiles" hidden="true" id="81d8-7987-ad17-9804" collective="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="f8f5-826f-4bea-ee52" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="6918-26e7-fbb2-1542" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
@@ -20769,7 +20893,7 @@ Take 1 selection for each weapon you are upgrading.</description>
       </rules>
       <categoryLinks>
         <categoryLink id="0bd9-036f-02ae-b032" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
-        <categoryLink id="00c6-a9eb-fb03-1824" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+        <categoryLink id="00c6-a9eb-fb03-1824" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
@@ -21767,31 +21891,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="85e7-86fc-a3a2-b6d2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink id="81d8-7987-ad17-9804" name="=Atarus= Infernus Missiles" hidden="true" collective="false" import="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="model-or-unit" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f8f5-826f-4bea-ee52" type="min"/>
-            <constraint field="selections" scope="model-or-unit" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6918-26e7-fbb2-1542" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="0d03-0629-0cb0-6cb1" name="=Krytos= Earthbreaker Missiles" hidden="false" collective="false" import="false" targetId="4c8f-29c9-0c8e-67b6" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -22641,31 +22740,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </modifiers>
           <constraints>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="28f7-8bac-a0bb-c83b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="9e09-2e0f-0afb-a0f8" name="=Crusade= Multiple Warhead Launchers" hidden="true" collective="false" import="true" targetId="6010-6066-629e-1305" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="1ec7-9af8-fe78-c873" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="1ec7-9af8-fe78-c873" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="b617-e8fa-4404-42f1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="1739-3d75-bf6d-72b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="20e9-a8df-f8ea-3740" name="=Crusade= Plasma Rifling" hidden="true" collective="false" import="true" targetId="241e-6a16-8744-e27d" type="selectionEntry">
