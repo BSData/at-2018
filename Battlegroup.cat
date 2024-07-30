@@ -511,13 +511,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="ae8d-c57e-44ea-9093" name="=Solaria= Fog of War" hidden="true" collective="false" import="false" targetId="63d6-80e8-e266-00b0" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="56c0-1162-173d-b052" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
