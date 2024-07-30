@@ -17957,6 +17957,33 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="70"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="false" name="=Magna= Directed Pressure Outlet" hidden="true" id="de1d-5c05-9ee2-9e89" publicationId="2988-f24d-39ef-352e" page="38" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="primary-category" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1160-2387-85ff-e661" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Directed Pressure Outlet" id="a8fd-fb0a-f2c5-1ef5" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="121">
+              <description>Any Legio Magna Titan armed with a weapon with the Fusion trait may be equipped with a Directed Pressure Outlet for +20 points. Each Fusion weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="LegioSpecificWargear" hidden="false" id="deb9-538e-357a-3875" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+            <categoryLink name="LegioMagna" hidden="false" id="06c4-5f3f-c36f-dc7f" targetId="4cad-18cf-5711-5331" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="81bb-fc59-dff5-2755" name="Apocalypse Missile Array" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -19144,6 +19171,33 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="false" name="=Magna= Directed Pressure Outlet" hidden="true" id="0f5e-fb0c-9fe0-f8c5" publicationId="2988-f24d-39ef-352e" page="38" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="primary-category" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6d1-a740-e719-8a7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Directed Pressure Outlet" id="e7e1-eb56-c697-8000" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="121">
+              <description>Any Legio Magna Titan armed with a weapon with the Fusion trait may be equipped with a Directed Pressure Outlet for +20 points. Each Fusion weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="LegioSpecificWargear" hidden="false" id="8ad9-81d3-d7f5-2623" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+            <categoryLink name="LegioMagna" hidden="false" id="66d3-e3f0-5fa9-9ecc" targetId="4cad-18cf-5711-5331" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="d0ae-adc7-c079-d005" name="Krius Grav Imploder" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -21228,6 +21282,33 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="false" name="=Magna= Directed Pressure Outlet" hidden="true" id="ae36-945d-e526-9ce0" publicationId="2988-f24d-39ef-352e" page="38" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="primary-category" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e607-2b74-50d5-9c42" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Directed Pressure Outlet" id="071b-9270-ea68-b0be" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="121">
+              <description>Any Legio Magna Titan armed with a weapon with the Fusion trait may be equipped with a Directed Pressure Outlet for +20 points. Each Fusion weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="LegioSpecificWargear" hidden="false" id="22ab-2b51-35bb-de0a" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+            <categoryLink name="LegioMagna" hidden="false" id="6f0a-4cc2-00be-4558" targetId="4cad-18cf-5711-5331" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="834a-4f80-00fb-a341" name="Swarmer Missiles" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
