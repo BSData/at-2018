@@ -18,6 +18,7 @@ To create a Household Battlegroup add a Household to your Roster. Each Lance is 
     <publication id="3401-191e-1333-8a1d" name="Loyalist Legios"/>
     <publication id="3f10-4381-6c37-a2f9" name="Adeptus Titanicus 2018 Errata v1.2"/>
     <publication id="bf8b-27d7-039e-5df9" name="Traitor Legios"/>
+    <publication name="Adeptus Titanicus 2018 Errata v1.4" id="03c2-ef7b-0d7f-c155" hidden="false"/>
   </publications>
   <costTypes>
     <costType id="a731-e220-2d8a-41bf" name="Points" defaultCostLimit="-1" hidden="false"/>
@@ -952,7 +953,7 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       </constraints>
       <rules>
         <rule id="141c-9df4-b519-6fe0" name="Sabotage" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this stratagem at the start of any phase. Pick an enemy unit which does not currently have Shutdown orders, remove its current Order (if any), then roll an Order dice - the unit immediately takes the order shown. If it cannot be issued that Order, only its current Order is removed - no new Order is given.</description>
+          <description>Play this stratagem at the start of any phase. Pick an enemy unit which does not currently have Shutdown orders, remove its current Order (if any), then roll an Order dice – the unit immediately takes the Order shown. If it cannot be issued that Order, only its current Order is removed – no new Order is given.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5030,8 +5031,7 @@ targets (within the weapon’s firing arc, within range etc). Each target counts
     <selectionEntry id="ba6a-6565-fd40-3645" name="=Atarus= Infernus Missiles" publicationId="3401-191e-1333-8a1d" page="71" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="4527-5dce-6630-39c6" name="Infernus Missiles" publicationId="3401-191e-1333-8a1d" page="71" hidden="false">
-          <description>Any Legio Atarus Titan armed with Apocalypse missile launchers, Apocalypse missile arrays or an Apocalypse missile launcher can be upgraded to have Infernus missiles for +25 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with this upgrade gains the Voidbreaker (2) trait. In addition, if a unit suffers at least one hit from a weapon with this upgrade, place a 5&quot; Blast marker under the unit. In the End phase, any model with at least part of its base on the marker takes a Strength 4 hit, ignoring void shields and ion shields. After resolving any hits, the fire goes out and the marker is removed. Titans suffer this hit to their Legs. In addition, Blocking terrain touched by the marker takes a Strength 4 hit (see the Adeptus Titanicus rulebook for details on damaging and destroying terrain) and, if not destroyed, is set alight. In the End phase, burning terrain suffers a Strength 4 hit, and deals a Strength 4 hit to any models in it, as detailed above.
-The fire then goes out.</description>
+          <description>Any Legio Atarus Titan armed with Apocalypse missile launchers, Apocalypse missile arrays or an Apocalypse missile launcher can be upgraded to have Infernus Missiles for +25 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with this upgrade gains the Voidbreaker (2) trait. In addition, if a unit suffers at least one hit from a weapon with this upgrade, place a 5&quot; Blast marker under the unit. In the End phase, any model with at least part of its base on the marker takes a Strength 4 hit, ignoring void shields and ion shields. After resolving any hits, the fire goes out and the marker is removed. Titans suffer this hit to their Legs. In addition, Blocking terrain touched by the template takes a Strength 4 hit (see the Adeptus Titanicus rulebook for details on damaging and destroying terrain) and, if not destroyed, is set alight. In the End phase, burning terrain suffers a Strength 4 Hit, and deals a Strength 4 Hit to any models in it, as detailed above. The fire then goes out.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5046,7 +5046,7 @@ The fire then goes out.</description>
     <selectionEntry id="4c8f-29c9-0c8e-67b6" name="=Krytos= Earthbreaker Missiles" publicationId="975a-00f4-pubN87630" page="45" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="107c-7e05-bf9d-8946" name="Earthbreaker Missiles" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
-          <description>A Legio Krytos Warlord or Reaver Titan that is equipped with Apocalypse missile launchers or an Apocalypse missile launcher can take Earthbreaker missiles as an upgrade for +25 points for a Warlord Titan and +15 points for a Reaver Titan. When firing the Titan’s Apocalypse missile launchers, the player can choose to either use its normal profile, or reduce its Dice value to 4 for a Warlord Titan, or 2 for a Reaver Titan, and give it the Quake trait. Earthbreaker missiles increase their Strength by 5 when resolving damage against terrain</description>
+          <description>A Legio Krytos Warlord or Reaver Titan that is equipped with Apocalypse missile launchers or an Apocalypse missile launcher can take Earthbreaker missiles as an upgrade for +25 points for a Warlord Titan and +15 points for a Reaver Titan. When firing the Titan’s Apocalypse missile launchers, the player can choose to either use its normal profile, or reduce its Dice value to 4 for a Warlord Titan, or 2 for a Reaver Titan, and give it the Quake trait. Earthbreaker missiles increase their Strength by 5 when resolving damage against terrain.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -16859,7 +16859,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">72&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
@@ -17639,7 +17639,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">72&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11-14</characteristic>
