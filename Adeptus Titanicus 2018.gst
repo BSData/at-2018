@@ -18,6 +18,7 @@ To create a Household Battlegroup add a Household to your Roster. Each Lance is 
     <publication id="3401-191e-1333-8a1d" name="Loyalist Legios"/>
     <publication id="3f10-4381-6c37-a2f9" name="Adeptus Titanicus 2018 Errata v1.2"/>
     <publication id="bf8b-27d7-039e-5df9" name="Traitor Legios"/>
+    <publication name="Adeptus Titanicus 2018 Errata v1.4" id="03c2-ef7b-0d7f-c155" hidden="false"/>
   </publications>
   <costTypes>
     <costType id="a731-e220-2d8a-41bf" name="Points" defaultCostLimit="-1" hidden="false"/>
@@ -952,7 +953,7 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       </constraints>
       <rules>
         <rule id="141c-9df4-b519-6fe0" name="Sabotage" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this stratagem at the start of any phase. Pick an enemy unit which does not currently have Shutdown orders, remove its current Order (if any), then roll an Order dice - the unit immediately takes the order shown. If it cannot be issued that Order, only its current Order is removed - no new Order is given.</description>
+          <description>Play this stratagem at the start of any phase. Pick an enemy unit which does not currently have Shutdown orders, remove its current Order (if any), then roll an Order dice – the unit immediately takes the Order shown. If it cannot be issued that Order, only its current Order is removed – no new Order is given.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5014,8 +5015,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
     <selectionEntry id="3dfc-85e0-9496-60ec" name="=Vulcanum= Janus Pattern Missiles" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="a8c6-6592-fa07-3c94" name="Janus Pattern Missiles" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
-          <description>Any Legio Vulcanum Titan with an Apocalypse missile launcher, Apocalypse missile array or paired Apocalypse missile launchers may take Janus pattern missiles for +20points. Legio Vulcanum Titans with Janus pattern missiles may split the dice of their missile launches between more than one target as the Janus warheads disperse in flight. The titan chooses a main target for its missiles, which will either be the same target as the rest of its weapons or one of its targets if has the Split Fire order, At least one dice must then be allocated to the Titan’s main target, The rest of the missile launcher’s dice can then either be applied to the main target or any other target within 12” of the main target, provided the new target(s) are eligible
-targets (within the weapon’s firing arc, within range etc). Each target counts as a separate attack for the purpose of calculating modifiers to Hit rolls, etc.</description>
+          <description>Any Legio Vulcanum Titan with an Apocalypse missile launcher, Apocalypse missile array or paired Apocalypse missile launchers may take Janus pattern missiles for +20points. Legio Vulcanum Titans with Janus pattern missiles may split the dice of their missile launches between more than one target as the Janus warheads disperse in flight. The titan chooses a main target for its missiles, which will either be the same target as the rest of its weapons or one of its targets if has the Split Fire order, At least one dice must then be allocated to the Titan’s main target, The rest of the missile launcher’s dice can then either be applied to the main target or any other target within 12” of the main target, provided the new target(s) are eligible targets (within the weapon’s firing arc, within range etc). Each target counts as a separate attack for the purpose of calculating modifiers to Hit rolls, etc.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5030,8 +5030,7 @@ targets (within the weapon’s firing arc, within range etc). Each target counts
     <selectionEntry id="ba6a-6565-fd40-3645" name="=Atarus= Infernus Missiles" publicationId="3401-191e-1333-8a1d" page="71" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="4527-5dce-6630-39c6" name="Infernus Missiles" publicationId="3401-191e-1333-8a1d" page="71" hidden="false">
-          <description>Any Legio Atarus Titan armed with Apocalypse missile launchers, Apocalypse missile arrays or an Apocalypse missile launcher can be upgraded to have Infernus missiles for +25 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with this upgrade gains the Voidbreaker (2) trait. In addition, if a unit suffers at least one hit from a weapon with this upgrade, place a 5&quot; Blast marker under the unit. In the End phase, any model with at least part of its base on the marker takes a Strength 4 hit, ignoring void shields and ion shields. After resolving any hits, the fire goes out and the marker is removed. Titans suffer this hit to their Legs. In addition, Blocking terrain touched by the marker takes a Strength 4 hit (see the Adeptus Titanicus rulebook for details on damaging and destroying terrain) and, if not destroyed, is set alight. In the End phase, burning terrain suffers a Strength 4 hit, and deals a Strength 4 hit to any models in it, as detailed above.
-The fire then goes out.</description>
+          <description>Any Legio Atarus Titan armed with Apocalypse missile launchers, Apocalypse missile arrays or an Apocalypse missile launcher can be upgraded to have Infernus Missiles for +25 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with this upgrade gains the Voidbreaker (2) trait. In addition, if a unit suffers at least one hit from a weapon with this upgrade, place a 5&quot; Blast marker under the unit. In the End phase, any model with at least part of its base on the marker takes a Strength 4 hit, ignoring void shields and ion shields. After resolving any hits, the fire goes out and the marker is removed. Titans suffer this hit to their Legs. In addition, Blocking terrain touched by the template takes a Strength 4 hit (see the Adeptus Titanicus rulebook for details on damaging and destroying terrain) and, if not destroyed, is set alight. In the End phase, burning terrain suffers a Strength 4 Hit, and deals a Strength 4 Hit to any models in it, as detailed above. The fire then goes out.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5046,7 +5045,7 @@ The fire then goes out.</description>
     <selectionEntry id="4c8f-29c9-0c8e-67b6" name="=Krytos= Earthbreaker Missiles" publicationId="975a-00f4-pubN87630" page="45" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="107c-7e05-bf9d-8946" name="Earthbreaker Missiles" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="false">
-          <description>A Legio Krytos Warlord or Reaver Titan that is equipped with Apocalypse missile launchers or an Apocalypse missile launcher can take Earthbreaker missiles as an upgrade for +25 points for a Warlord Titan and +15 points for a Reaver Titan. When firing the Titan’s Apocalypse missile launchers, the player can choose to either use its normal profile, or reduce its Dice value to 4 for a Warlord Titan, or 2 for a Reaver Titan, and give it the Quake trait. Earthbreaker missiles increase their Strength by 5 when resolving damage against terrain</description>
+          <description>A Legio Krytos Warlord or Reaver Titan that is equipped with Apocalypse missile launchers or an Apocalypse missile launcher can take Earthbreaker missiles as an upgrade for +25 points for a Warlord Titan and +15 points for a Reaver Titan. When firing the Titan’s Apocalypse missile launchers, the player can choose to either use its normal profile, or reduce its Dice value to 4 for a Warlord Titan, or 2 for a Reaver Titan, and give it the Quake trait. Earthbreaker missiles increase their Strength by 5 when resolving damage against terrain.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -16030,6 +16029,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b4c-a5f1-3348-1cf3" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="1b4c-a5f1-3348-1cf3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="0969-2a69-0c81-c174" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
@@ -16160,6 +16166,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c308-84df-cbd7-ae63" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="c308-84df-cbd7-ae63">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="608f-49c3-ac17-ba10" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
@@ -16227,18 +16240,28 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="2ed2-4348-2aeb-0078" name="=Audax= Ursus Claw" hidden="false" collective="false" import="false" targetId="f476-3a7b-5612-d96e" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="model-or-unit" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
                 <entryLink id="059f-73f9-983f-6b61" name="Ursus Claw" hidden="false" collective="false" import="false" targetId="abfb-13ba-25c8-f130" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="model-or-unit" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -16288,6 +16311,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a845-8974-9124-140a" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="a845-8974-9124-140a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="3095-5097-cede-0c0d" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
@@ -16562,6 +16592,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
               <conditions>
                 <condition field="selections" scope="47c9-43b5-8afc-b64f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=", Maximal Fire" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="47c9-43b5-8afc-b64f" childId="4b31-816a-2c3d-cb9d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -16859,7 +16894,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">72&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
@@ -17159,9 +17194,9 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       <profiles>
         <profile id="d10f-9630-c104-eb62" name="Melta Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
-            <modifier type="set" field="8320-f9a1-68a0-47c2" value="15&apos;&apos;">
+            <modifier type="increment" value="3" field="8320-f9a1-68a0-47c2">
               <conditions>
-                <condition field="selections" scope="087a-abff-3ffe-f488" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f488-be0f-7490-948b" type="equalTo"/>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="f488-be0f-7490-948b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -17310,6 +17345,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <condition field="selections" scope="f2ae-e883-28c4-dbcc" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="append" value=", Maximal Fire" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="f2ae-e883-28c4-dbcc" childId="4b31-816a-2c3d-cb9d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">12</characteristic>
@@ -17351,7 +17391,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       <modifiers>
         <modifier type="add" field="category" value="12b5-203d-86d9-3e60">
           <conditions>
-            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -17361,6 +17401,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
               <conditions>
                 <condition field="selections" scope="edcd-f43d-10ba-7f60" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=", Maximal Fire" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="edcd-f43d-10ba-7f60" childId="4b31-816a-2c3d-cb9d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -17591,6 +17636,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fe8-5be7-02a5-0fb4" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="6fe8-5be7-02a5-0fb4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="80c3-d1c5-44bc-595c" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
@@ -17639,7 +17691,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">72&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11-14</characteristic>
@@ -18001,6 +18053,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6102-5061-22da-a0b6" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="6102-5061-22da-a0b6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="4242-2e7d-2598-ed46" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
           <constraints>
@@ -18030,6 +18089,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion (Draining), Maximal Fire</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="3" field="8320-f9a1-68a0-47c2">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="de1d-5c05-9ee2-9e89" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -18178,9 +18244,9 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       <profiles>
         <profile id="10b9-a4d6-6acc-0f35" name="Melta Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
-            <modifier type="set" field="8320-f9a1-68a0-47c2" value="15&apos;&apos;">
+            <modifier type="increment" value="3" field="8320-f9a1-68a0-47c2">
               <conditions>
-                <condition field="selections" scope="39de-6938-1a9c-3ea6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f488-be0f-7490-948b" type="equalTo"/>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="aa63-be01-3e1a-895a" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -18300,7 +18366,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       <modifiers>
         <modifier type="add" field="category" value="12b5-203d-86d9-3e60">
           <conditions>
-            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -18310,6 +18376,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
               <conditions>
                 <condition field="selections" scope="5da9-e647-8914-3264" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a5d-6ca3-e345-9e83" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=", Maximal Fire" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="5da9-e647-8914-3264" childId="7a5d-6ca3-e345-9e83" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -19190,6 +19261,13 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f5f6-c908-6c0d-5aaf" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="f5f6-c908-6c0d-5aaf">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="2150-108b-8691-fad4" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
           <constraints>
@@ -19278,6 +19356,13 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Melee, Fusion (Draining)</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="3" field="8320-f9a1-68a0-47c2">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="0f5e-fb0c-9fe0-f8c5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -20693,6 +20778,13 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fc8-6bca-46dc-7954" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="8fc8-6bca-46dc-7954">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="959b-ce0c-0b58-a493" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
@@ -21391,6 +21483,13 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="3" field="8320-f9a1-68a0-47c2">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="ae36-945d-e526-9ce0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
