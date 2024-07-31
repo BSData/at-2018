@@ -17189,9 +17189,9 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       <profiles>
         <profile id="d10f-9630-c104-eb62" name="Melta Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
-            <modifier type="set" field="8320-f9a1-68a0-47c2" value="15&apos;&apos;">
+            <modifier type="increment" value="3" field="8320-f9a1-68a0-47c2">
               <conditions>
-                <condition field="selections" scope="087a-abff-3ffe-f488" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f488-be0f-7490-948b" type="equalTo"/>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="f488-be0f-7490-948b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -18074,6 +18074,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion (Draining), Maximal Fire</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="3" field="8320-f9a1-68a0-47c2">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="de1d-5c05-9ee2-9e89" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -18222,9 +18229,9 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       <profiles>
         <profile id="10b9-a4d6-6acc-0f35" name="Melta Cannon" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
-            <modifier type="set" field="8320-f9a1-68a0-47c2" value="15&apos;&apos;">
+            <modifier type="increment" value="3" field="8320-f9a1-68a0-47c2">
               <conditions>
-                <condition field="selections" scope="39de-6938-1a9c-3ea6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f488-be0f-7490-948b" type="equalTo"/>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="aa63-be01-3e1a-895a" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -19329,6 +19336,13 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Melee, Fusion (Draining)</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="3" field="8320-f9a1-68a0-47c2">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="0f5e-fb0c-9fe0-f8c5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -21449,6 +21463,13 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="3" field="8320-f9a1-68a0-47c2">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="ae36-945d-e526-9ce0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
