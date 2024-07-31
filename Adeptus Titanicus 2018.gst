@@ -5015,8 +5015,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
     <selectionEntry id="3dfc-85e0-9496-60ec" name="=Vulcanum= Janus Pattern Missiles" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="a8c6-6592-fa07-3c94" name="Janus Pattern Missiles" publicationId="bf8b-27d7-039e-5df9" page="71" hidden="false">
-          <description>Any Legio Vulcanum Titan with an Apocalypse missile launcher, Apocalypse missile array or paired Apocalypse missile launchers may take Janus pattern missiles for +20points. Legio Vulcanum Titans with Janus pattern missiles may split the dice of their missile launches between more than one target as the Janus warheads disperse in flight. The titan chooses a main target for its missiles, which will either be the same target as the rest of its weapons or one of its targets if has the Split Fire order, At least one dice must then be allocated to the Titan’s main target, The rest of the missile launcher’s dice can then either be applied to the main target or any other target within 12” of the main target, provided the new target(s) are eligible
-targets (within the weapon’s firing arc, within range etc). Each target counts as a separate attack for the purpose of calculating modifiers to Hit rolls, etc.</description>
+          <description>Any Legio Vulcanum Titan with an Apocalypse missile launcher, Apocalypse missile array or paired Apocalypse missile launchers may take Janus pattern missiles for +20points. Legio Vulcanum Titans with Janus pattern missiles may split the dice of their missile launches between more than one target as the Janus warheads disperse in flight. The titan chooses a main target for its missiles, which will either be the same target as the rest of its weapons or one of its targets if has the Split Fire order, At least one dice must then be allocated to the Titan’s main target, The rest of the missile launcher’s dice can then either be applied to the main target or any other target within 12” of the main target, provided the new target(s) are eligible targets (within the weapon’s firing arc, within range etc). Each target counts as a separate attack for the purpose of calculating modifiers to Hit rolls, etc.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -16030,6 +16029,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b4c-a5f1-3348-1cf3" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="1b4c-a5f1-3348-1cf3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="0969-2a69-0c81-c174" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
@@ -16160,6 +16166,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c308-84df-cbd7-ae63" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="c308-84df-cbd7-ae63">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="608f-49c3-ac17-ba10" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
@@ -16288,6 +16301,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a845-8974-9124-140a" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="a845-8974-9124-140a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="3095-5097-cede-0c0d" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
@@ -17591,6 +17611,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fe8-5be7-02a5-0fb4" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="6fe8-5be7-02a5-0fb4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="80c3-d1c5-44bc-595c" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
@@ -18001,6 +18028,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6102-5061-22da-a0b6" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="6102-5061-22da-a0b6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="4242-2e7d-2598-ed46" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
           <constraints>
@@ -19190,6 +19224,13 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f5f6-c908-6c0d-5aaf" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="f5f6-c908-6c0d-5aaf">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="2150-108b-8691-fad4" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
           <constraints>
@@ -20693,6 +20734,13 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fc8-6bca-46dc-7954" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="8fc8-6bca-46dc-7954">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="959b-ce0c-0b58-a493" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
       </entryLinks>
