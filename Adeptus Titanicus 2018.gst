@@ -16594,6 +16594,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <condition field="selections" scope="47c9-43b5-8afc-b64f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="append" value=", Maximal Fire" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="47c9-43b5-8afc-b64f" childId="4b31-816a-2c3d-cb9d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
@@ -17340,6 +17345,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <condition field="selections" scope="f2ae-e883-28c4-dbcc" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="append" value=", Maximal Fire" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="f2ae-e883-28c4-dbcc" childId="4b31-816a-2c3d-cb9d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">12</characteristic>
@@ -17381,7 +17391,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       <modifiers>
         <modifier type="add" field="category" value="12b5-203d-86d9-3e60">
           <conditions>
-            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -17391,6 +17401,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
               <conditions>
                 <condition field="selections" scope="edcd-f43d-10ba-7f60" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=", Maximal Fire" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="edcd-f43d-10ba-7f60" childId="4b31-816a-2c3d-cb9d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -18351,7 +18366,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
       <modifiers>
         <modifier type="add" field="category" value="12b5-203d-86d9-3e60">
           <conditions>
-            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
+            <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b31-816a-2c3d-cb9d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -18361,6 +18376,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <modifier type="set" field="98c1-7f92-4b2c-8d4c" value="-1">
               <conditions>
                 <condition field="selections" scope="5da9-e647-8914-3264" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a5d-6ca3-e345-9e83" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=", Maximal Fire" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="5da9-e647-8914-3264" childId="7a5d-6ca3-e345-9e83" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
