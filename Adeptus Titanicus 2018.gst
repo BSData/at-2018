@@ -16240,18 +16240,28 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <entryLink id="2ed2-4348-2aeb-0078" name="=Audax= Ursus Claw" hidden="false" collective="false" import="false" targetId="f476-3a7b-5612-d96e" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="model-or-unit" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
                 <entryLink id="059f-73f9-983f-6b61" name="Ursus Claw" hidden="false" collective="false" import="false" targetId="abfb-13ba-25c8-f130" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="model-or-unit" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
