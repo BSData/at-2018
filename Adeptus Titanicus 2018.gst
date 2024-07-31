@@ -952,7 +952,7 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       </constraints>
       <rules>
         <rule id="141c-9df4-b519-6fe0" name="Sabotage" publicationId="bf8b-27d7-039e-5df9" page="173" hidden="false">
-          <description>Play this stratagem at the start of any phase. Pick an enemy unit which does not currently have Shutdown orders, remove its current Order (if any), then roll an Order dice - the unit immediately takes the order shown. If it cannot be issued that Order, only its current Order is removed - no new Order is given.</description>
+          <description>Play this stratagem at the start of any phase. Pick an enemy unit which does not currently have Shutdown orders, remove its current Order (if any), then roll an Order dice – the unit immediately takes the Order shown. If it cannot be issued that Order, only its current Order is removed – no new Order is given.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -16859,7 +16859,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">72&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
@@ -17639,7 +17639,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">24&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-1</characteristic>
             <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">72&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11-14</characteristic>
