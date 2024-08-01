@@ -17330,7 +17330,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="c6a6-4d27-cf52-e4ce" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0487-6aac-5294-3b10" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="9bed-b27a-783f-6b5b" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
