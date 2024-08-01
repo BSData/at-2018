@@ -16627,13 +16627,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="6e19-0b5e-f4ac-5902" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="558c-ae48-6cc0-ebf6" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="c49c-97f7-5e62-6d41" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
           </costs>
         </entryLink>
         <entryLink id="097f-672b-ba10-1aa9" name="=Interfector= Static Rounds" hidden="false" collective="false" import="true" targetId="9851-51aa-c013-d644" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="8236-d656-3894-648e" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
@@ -17387,10 +17391,14 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="e7fe-318f-0686-817d" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9ec9-aebc-d6ca-d60d" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="5b8e-af29-b85a-e157" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="45"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="74d7-9bed-434f-2fb9" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -17444,13 +17452,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="13f1-7b0c-63e2-efdb" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b36b-f4ee-e2a9-f796" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="1e76-599c-c07e-26b7" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
           </costs>
         </entryLink>
         <entryLink id="a9c6-d72f-8984-da4a" name="=Interfector= Static Rounds" hidden="false" collective="false" import="true" targetId="9851-51aa-c013-d644" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="bbe7-baf8-cfd1-52f4" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
@@ -18419,10 +18431,14 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="dd45-0ee3-9662-d5c1" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d44c-32a4-9a5c-2b55" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="7a5d-6ca3-e345-9e83" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="ef00-2a11-ae93-3d2c" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
           </costs>
         </entryLink>
       </entryLinks>
