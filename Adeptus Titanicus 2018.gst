@@ -18445,7 +18445,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="305d-910d-21e1-5e2f" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5e58-4f29-485f-3681" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="70d2-a16b-43e8-23cd" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
@@ -19076,7 +19080,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ae4c-fe6c-3b47-c673" name="Corrosive Payload" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ae4c-fe6c-3b47-c673" name="Corrosive Payload" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a351-869b-2725-02f3" type="max"/>
       </constraints>
@@ -19089,6 +19093,18 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d634-d27a-fd9c-3f8f" shared="true" includeChildSelections="true"/>
+                <condition type="atMost" value="1" field="selections" scope="parent" childId="upgrade" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="a00e-f16d-89bf-b013" name="Unholy Benedictions" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
