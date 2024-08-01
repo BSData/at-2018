@@ -19455,7 +19455,11 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink name="Quake" hidden="false" id="fcb8-5c9c-8bec-a5ae" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d1cc-97ab-a150-63dd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="6e14-6edc-0f55-41c9" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
