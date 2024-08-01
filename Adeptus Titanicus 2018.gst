@@ -19316,7 +19316,11 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink id="1c90-cd4a-2ce0-b3b2" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="bd78-070b-4088-cfe1" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
