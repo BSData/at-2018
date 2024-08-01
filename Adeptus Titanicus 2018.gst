@@ -6509,9 +6509,21 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
     <selectionEntry id="4b31-816a-2c3d-cb9d" name="=Vulturum= Storm Frag Shells" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="ae4c-fe6c-3b47-c673" shared="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5c80-4c19-098e-4775" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="5c80-4c19-098e-4775" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -16490,7 +16502,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="f92d-1497-f2a6-ae30" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b5df-841b-210b-a0a4" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="74a2-75df-cbdc-d765" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
@@ -16623,13 +16639,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="6e19-0b5e-f4ac-5902" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="558c-ae48-6cc0-ebf6" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="c49c-97f7-5e62-6d41" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
           </costs>
         </entryLink>
         <entryLink id="097f-672b-ba10-1aa9" name="=Interfector= Static Rounds" hidden="false" collective="false" import="true" targetId="9851-51aa-c013-d644" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="8236-d656-3894-648e" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
@@ -16694,7 +16714,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="4fef-31c0-7c78-47a6" name="Ordnance" hidden="false" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f73b-291c-5e1a-f3ad" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="130d-0bc7-6c42-839b" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
@@ -17322,7 +17346,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="c6a6-4d27-cf52-e4ce" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0487-6aac-5294-3b10" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="9bed-b27a-783f-6b5b" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
@@ -17375,10 +17403,14 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="e7fe-318f-0686-817d" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9ec9-aebc-d6ca-d60d" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="5b8e-af29-b85a-e157" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="45"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="74d7-9bed-434f-2fb9" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -17432,13 +17464,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="13f1-7b0c-63e2-efdb" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b36b-f4ee-e2a9-f796" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="1e76-599c-c07e-26b7" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
           </costs>
         </entryLink>
         <entryLink id="a9c6-d72f-8984-da4a" name="=Interfector= Static Rounds" hidden="false" collective="false" import="true" targetId="9851-51aa-c013-d644" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="bbe7-baf8-cfd1-52f4" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
@@ -18407,10 +18443,14 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="dd45-0ee3-9662-d5c1" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d44c-32a4-9a5c-2b55" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
         <entryLink id="7a5d-6ca3-e345-9e83" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
           <costs>
             <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="ef00-2a11-ae93-3d2c" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -18445,7 +18485,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="305d-910d-21e1-5e2f" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5e58-4f29-485f-3681" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="70d2-a16b-43e8-23cd" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
@@ -19076,7 +19120,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ae4c-fe6c-3b47-c673" name="Corrosive Payload" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ae4c-fe6c-3b47-c673" name="Corrosive Payload" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a351-869b-2725-02f3" type="max"/>
       </constraints>
@@ -19089,6 +19133,19 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d634-d27a-fd9c-3f8f" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="4b31-816a-2c3d-cb9d" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="9851-51aa-c013-d644" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="a00e-f16d-89bf-b013" name="Unholy Benedictions" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -19300,7 +19357,11 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink id="1c90-cd4a-2ce0-b3b2" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="bd78-070b-4088-cfe1" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
@@ -19439,7 +19500,11 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink name="Quake" hidden="false" id="fcb8-5c9c-8bec-a5ae" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d1cc-97ab-a150-63dd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
+        <entryLink import="true" name="Corrosive Payload" hidden="false" id="6e14-6edc-0f55-41c9" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
@@ -21445,9 +21510,21 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
     <selectionEntry id="9851-51aa-c013-d644" name="=Interfector= Static Rounds" publicationId="bf8b-27d7-039e-5df9" page="81" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3d0-92f8-3bf7-4799" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="ae4c-fe6c-3b47-c673" shared="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f3d0-92f8-3bf7-4799" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="f3d0-92f8-3bf7-4799" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
