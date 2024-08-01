@@ -6509,9 +6509,21 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
     <selectionEntry id="4b31-816a-2c3d-cb9d" name="=Vulturum= Storm Frag Shells" publicationId="bf8b-27d7-039e-5df9" page="131" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c80-4c19-098e-4775" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="ae4c-fe6c-3b47-c673" shared="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5c80-4c19-098e-4775" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="5c80-4c19-098e-4775" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -19127,7 +19139,8 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="d634-d27a-fd9c-3f8f" shared="true" includeChildSelections="true"/>
-                <condition type="atMost" value="1" field="selections" scope="parent" childId="upgrade" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="4b31-816a-2c3d-cb9d" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="9851-51aa-c013-d644" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -21497,9 +21510,21 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
     <selectionEntry id="9851-51aa-c013-d644" name="=Interfector= Static Rounds" publicationId="bf8b-27d7-039e-5df9" page="81" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3d0-92f8-3bf7-4799" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="ae4c-fe6c-3b47-c673" shared="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f3d0-92f8-3bf7-4799" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="f3d0-92f8-3bf7-4799" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
