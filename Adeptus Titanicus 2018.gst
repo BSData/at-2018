@@ -5176,6 +5176,21 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2b8-5770-d303-fa53" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="99b7-5e2f-9ea4-bbdf" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="99b7-5e2f-9ea4-bbdf" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="7689-d32b-cef1-edf0" name="=Infernus= Dark Blessing" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
@@ -17506,6 +17521,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <selectionEntryGroup name="Upgrades" id="0d9d-23d9-e395-aa42" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="62b5-bef8-8224-493e" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="false" name="=Infernus= Clinging Phosphex" hidden="false" id="fca3-c846-32aa-484d" collective="false" targetId="2133-4929-2061-f585" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -18510,6 +18526,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <selectionEntryGroup name="Upgrades" id="3fe6-985e-5648-61e5" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="54d2-59d3-051a-c76b" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="false" name="=Infernus= Clinging Phosphex" hidden="false" id="0380-a4eb-79ff-6700" collective="false" targetId="2133-4929-2061-f585" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -22622,54 +22639,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="f985-9d71-a6dd-b9e6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="f624-a649-7b26-6d73" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="fca3-c846-32aa-484d" name="=Infernus= Clinging Phosphex" hidden="false" collective="false" import="false" targetId="2133-4929-2061-f585" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="c7aa-80e5-43d2-0cfd" shared="true" includeChildSelections="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="ab89-eea6-1e3a-84dd" shared="true" includeChildSelections="false"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="99b7-5e2f-9ea4-bbdf" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="99b7-5e2f-9ea4-bbdf" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="1" field="2ec8-ba58-1f9c-fc71">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="model" childId="c7aa-80e5-43d2-0cfd" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="model" childId="ab89-eea6-1e3a-84dd" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="2" field="2ec8-ba58-1f9c-fc71">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="2" field="selections" scope="model" childId="c7aa-80e5-43d2-0cfd" shared="true"/>
-                    <condition type="equalTo" value="2" field="selections" scope="model" childId="ab89-eea6-1e3a-84dd" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="2255-12f8-15c6-7872" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="0" field="selections" scope="model-or-unit" shared="false" id="2ec8-ba58-1f9c-fc71" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="2281-11a9-8008-a263" name="=Infernus= Dark Blessing" hidden="false" collective="false" import="false" targetId="7689-d32b-cef1-edf0" type="selectionEntry">
