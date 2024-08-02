@@ -5204,13 +5204,17 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="d3b8-241d-444d-3fd0" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
         <categoryLink id="4218-83ed-2b66-dbd6" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="407c-0b10-4319-984d" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="55"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="3579-002a-a453-389a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="6917-2819-ac0a-3f32" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="81ba-0dd4-a06d-ea23" name="=Mordaxis= Plasma Blastgun with Toxin Nodes" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
@@ -5238,13 +5242,17 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="753d-b758-5195-b6a7" name="Blast (X)" hidden="false" targetId="a8cf-34fb-66af-763c" primary="false"/>
         <categoryLink id="4eb4-79be-29a8-df10" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="489d-4d8a-9ab0-8ebe" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="3fb7-07c2-f62c-ac3d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="269e-b572-eba4-3c8a" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="5f42-557f-65e1-68b2" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
@@ -5273,13 +5281,17 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink id="423b-7323-88b5-0427" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
         <categoryLink id="13f6-915b-f8d1-4281" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="130f-8533-e7be-2428" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="45"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="5c8e-b303-c286-d51d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="5ccf-09b5-1eed-3e35" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="2351-970d-8215-e66c" name="=Mordaxis= Toxin Nodes" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
@@ -5500,13 +5512,17 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
         <categoryLink id="e0d2-8557-62bf-935d" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
         <categoryLink id="0860-bcbf-6fa9-175b" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="c6df-3abd-589f-c90e" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="9d3a-38c2-431e-1e5c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="520a-863a-d009-78e7" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="6646-91ea-1418-5c89" name="=Gryphonicus= Gravatus Plating" publicationId="3401-191e-1333-8a1d" page="31" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
@@ -5668,13 +5684,17 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
         <categoryLink id="6496-65c9-c5fb-4ae3" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
         <categoryLink id="b4ac-e296-2579-a493" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="b522-48c9-380c-21bf" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="e063-4fc6-a303-051a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="2aac-0721-082e-90ea" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="2699-bb53-cff4-a864" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
@@ -5704,13 +5724,17 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
         <categoryLink id="7f78-d27b-e23a-fa98" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
         <categoryLink id="e9d3-ce0a-60fc-44a1" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="84e0-fcbd-06f5-a4b4" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="55"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="40a8-35ba-f330-842e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="0756-9062-046e-ab41" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="fe03-8e18-b108-5853" name="=Tempestus= Paired Chasmata Laser Blaster" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
@@ -5740,13 +5764,17 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
         <categoryLink id="69fe-1832-c88e-6c52" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
         <categoryLink id="3869-edca-ad10-4c32" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="f24c-29c1-442a-c465" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="80"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="b078-f6ec-aab9-8979" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="f048-9b79-be93-c1c5" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="01e4-e3f5-4396-d5c4" name="=Tempestus= Chasmata Laser Blaster" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
@@ -5775,13 +5803,17 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
         <categoryLink id="5bd4-eb3b-b033-1206" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
         <categoryLink id="761b-052c-8de7-2d14" name="LegioTempestus" hidden="false" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="b4c1-3e8f-38df-6400" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="b40f-0205-dfb7-407e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="4e26-e7a4-d920-4f11" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="e6da-1530-1bdd-276a" name="Legio Praesagius (True Messengers)" publicationId="3401-191e-1333-8a1d" page="101" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
@@ -7222,13 +7254,17 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         <categoryLink id="a75d-5d2a-1eec-69fa" name="LegioAudax" hidden="false" targetId="4f76-34ac-3cf7-34c6" primary="false"/>
         <categoryLink id="d49c-b8f4-a52c-728d" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="46c0-b1a7-4fc8-7f42" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="6056-5f9f-0a73-cb90" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="c8ff-425d-6b5b-b827" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="fcfd-d034-1395-9eea" name="Venator Light Maniple" publicationId="975a-00f4-pubN65537" page="61" hidden="false" collective="false" import="false" type="unit">
       <rules>
@@ -16363,13 +16399,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="e17a-21f6-a210-1304" name="Melee" hidden="false" targetId="4739-6f52-a293-aa06" primary="false"/>
         <categoryLink id="8653-959b-23d3-cd5a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="9fdf-0495-68b4-07cb" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="5919-9262-7bb3-1118" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="d5ec-b4a2-398a-4f9c" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="e89d-64cd-eb26-e165" name="Reaver Titan Power Fist" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16395,13 +16435,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="8740-21ce-022b-68fe" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
         <categoryLink id="b7e8-44d6-7cbd-f450" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="6167-9d9f-9f79-3867" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="5bbc-2b78-4216-2154" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="9489-ad29-5562-d0e1" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="fee8-4996-06cd-64bc" name="Bellicosa Volcano Cannon [WLD]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16428,13 +16472,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="b614-502b-537e-7c2e" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="de9b-186c-462e-de11" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="5e93-1c88-a70c-fc1b" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="55"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="5caa-fdb2-f543-1679" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="5f34-096c-726c-b10f" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="375a-7b78-8edd-71d5" name="Laser Blaster" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16461,13 +16509,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="2c2a-7017-e7d8-646b" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="e12b-9239-334b-6ac5" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="f188-d23d-d7e1-1c3f" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="c887-80a0-22c4-db20" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="7497-8a36-63d9-cc04" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="bfdb-4953-f838-7d21" name="Paired Gatling Blasters" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16511,15 +16563,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="519e-81ff-2bb2-6327" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b71a-bf57-8aa2-84a8"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="b71a-bf57-8aa2-84a8">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="74a2-75df-cbdc-d765" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="16cb-f1bb-2db6-ee0c" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="74a2-75df-cbdc-d765" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -16550,13 +16608,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="d5b4-7afe-c940-15f6" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
         <categoryLink id="e6e2-d4cb-b0fa-d569" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="5d09-d8ed-7360-0d4a" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="89e0-83bc-6465-0efc" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="87cb-49e2-915a-f950" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="5960-ee8c-3107-46c4" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16605,6 +16667,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e465-f7ba-75d8-8f7e"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="dccb-5e73-0cd2-08ba" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6bf4-b36c-6843-a8a5"/>
@@ -16681,6 +16744,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="7a33-3a9a-18a7-236f" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="65e8-d987-54d2-e3cb"/>
@@ -16720,13 +16784,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="abfb-2be7-daf7-1c27" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="f171-36ff-f4eb-082e" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="ef15-4c97-4ef7-9c43" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="a7a7-a1af-0a75-df3d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="7906-f2c9-d22d-f61c" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="2cea-d272-fa57-5553" name="Macro Gatling Blaster" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16769,15 +16837,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="da24-d8b2-34db-99b0" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6b45-6a2d-e815-bf38"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="6b45-6a2d-e815-bf38">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="130d-0bc7-6c42-839b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf7e-8619-318d-3904" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="130d-0bc7-6c42-839b" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -16808,13 +16882,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="1c93-b53c-02ae-4f19" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
         <categoryLink id="c1b3-6cc6-b28d-ce25" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="2623-4f1a-6a29-25af" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="8601-4988-1aaa-e468" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="2823-237c-2a27-d8ee" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="bd33-0564-6277-6dc1" name="Apocalypse Missile Launchers" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16936,7 +17014,18 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="6ae3-547e-b8f0-395e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="45c6-a9aa-d2c3-64e2" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="78e3-cb1c-d504-bda2"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="78e3-cb1c-d504-bda2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b145-d969-d1d6-ebf7" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -16964,13 +17053,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="73dc-ef25-920d-aeda" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
         <categoryLink id="1e8e-830d-91dc-42be" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="3b7a-76d2-d1eb-7257" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="98ed-12fb-e83c-096f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="b6bf-58b0-f07a-9091" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="1904-506f-6b2d-0843" name="Mori Quake Cannon [WLD]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16997,13 +17090,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="e88c-fda5-0109-909d" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="ed33-27bc-886f-1fe9" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="b747-4979-9ec0-5205" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="e68c-aa13-645d-b8dc" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="c631-8a77-d90b-7fcc" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="bd35-3f71-8bea-7e42" name="Plasma Blast Gun [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17063,6 +17160,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68ac-1777-6188-16fc"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="eb1e-3790-d998-1145" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -17158,13 +17256,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="e152-1f07-5e91-ee59" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="0b1d-b3d5-b057-5fec" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="3ce4-21dc-baa0-9567" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="a8cb-5119-ab37-27c9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="6c5f-f2c1-df41-54c8" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="54d9-e1d5-30b0-c357" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17287,6 +17389,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="1739-3d75-bf6d-72b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="269e-405c-1817-ad52" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -17331,6 +17434,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <selectionEntryGroup name="Upgrades" id="0096-278e-bce3-1286" hidden="false">
           <entryLinks>
             <entryLink import="false" name="=Magna= Directed Pressure Outlet" hidden="false" id="f488-be0f-7490-948b" collective="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="9b16-b135-1764-e5e0" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -17361,13 +17465,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="5759-af7b-9310-73db" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
         <categoryLink id="6637-327e-bf82-7190" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="e993-7231-9458-b05d" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="35"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="58b8-8911-67cf-af70" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="d9c2-a1e5-1204-a400" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="c7aa-80e5-43d2-0cfd" name="Inferno Gun [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17393,13 +17501,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="9e15-7ace-25ae-5fd9" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="294a-ed52-cda5-cea6" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="cd2f-c7a0-0f89-8198" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="0d9d-23d9-e395-aa42" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="62b5-bef8-8224-493e" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="aa7a-74f4-180e-3b5e" name="Gatling Blaster" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17452,6 +17564,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="a6da-ee02-3d8f-9d93" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -17518,6 +17631,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="122a-31fd-9e71-fa5b" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9051-bea4-7ae0-f3de"/>
@@ -17594,6 +17708,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="85ba-6e4b-e058-f16c" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="d83b-c246-2527-f3cd"/>
@@ -17839,13 +17954,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="c02a-8b6a-734a-bc5b" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="768d-0cfc-9a53-fa70" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="3b7f-aa92-4cd2-e209" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="55"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="9bf5-7b12-e74d-bb66" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="f56e-8dd9-50d2-b3b6" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="304a-a91b-5b0f-116e" name="Mori Quake Cannon [WBG]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17872,13 +17991,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="219c-1f30-6fdb-36fd" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="6dc2-3e2e-cadf-636a" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="b44a-29bc-48ed-5ba3" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="185b-61ec-e058-504c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="e220-67a7-efc9-e66b" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="abfb-13ba-25c8-f130" name="Ursus Claw" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17908,13 +18031,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="6485-122d-5cf7-14a2" name="Specialised" hidden="false" targetId="7e70-5a5c-eee8-c911" primary="false"/>
         <categoryLink id="db4a-4f94-e290-3d69" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="429d-427a-9e98-67c3" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="d79c-16e6-52ef-f30c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="8145-fe78-2e85-aacc" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="59e1-0284-05e3-4c67" name="Natrix Shock Lance" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17943,13 +18070,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="90c8-cb14-41fe-bec3" name="Shock" hidden="false" targetId="d3e0-093e-a13d-3deb" primary="false"/>
         <categoryLink id="fc35-d22d-0a4d-b07b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="720f-f146-07e7-bc12" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="60ab-15ba-2a5c-fe30" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="d4fb-fb2e-8377-1c65" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="dfeb-83af-7b26-622a" name="Warlord-Sinister Titan" hidden="false" collective="false" import="false" type="model">
       <profiles>
@@ -18093,13 +18224,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="50b6-71cd-2459-579c" name="Psi" hidden="false" targetId="4c40-7e16-b79e-4b95" primary="false"/>
         <categoryLink id="35c6-657f-fef4-0013" name="Taxing" hidden="false" targetId="d9b5-b91c-0693-fc39" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="5c3b-0ff4-ed3e-6672" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="c413-ab8a-afda-e13e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="7b14-7c44-cb1f-774e" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="2062-8f97-c49e-abe2" name="Warmaster Titan" hidden="false" collective="false" import="false" type="model">
       <profiles>
@@ -18302,6 +18437,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c786-4d54-32cc-b55a"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="0dab-0ea1-e971-4f7e" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="false" name="=Magna= Directed Pressure Outlet" hidden="true" id="de1d-5c05-9ee2-9e89" publicationId="2988-f24d-39ef-352e" page="38" collective="false">
@@ -18383,6 +18519,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="6918-26e7-fbb2-1542" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="753f-d7f9-1157-06dd" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -18411,13 +18548,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="e953-2985-c957-729c" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="8b4c-0fba-7864-cb6c" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="8adf-0ace-ba97-fe5e" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="3fe6-985e-5648-61e5" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="54d2-59d3-051a-c76b" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="39de-6938-1a9c-3ea6" name="Melta Cannon [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -18459,6 +18600,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <selectionEntryGroup name="Upgrades" id="a90b-0541-79ea-9759" hidden="false">
           <entryLinks>
             <entryLink import="false" name="=Magna= Directed Pressure Outlet" hidden="false" id="aa63-be01-3e1a-895a" collective="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="9333-2b74-2677-5ea5" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -18521,6 +18663,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="439a-b580-fb2e-b75e"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="4def-ba01-780a-36b0" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -18549,13 +18692,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="933e-5d2e-7b76-aa7c" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="a769-62e5-7329-3f2a" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="8cc6-206d-ae93-a902" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="1363-6291-4e69-5b01" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="1894-f640-fda0-4227" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="5da9-e647-8914-3264" name="Vulcan Megabolter [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <modifiers>
@@ -18618,6 +18765,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="0840-1bef-67bf-67e0" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2db6-dbaf-92d3-dff1"/>
@@ -18679,6 +18827,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="25d2-98e1-d17e-bd1d" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -19029,7 +19178,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
     </selectionEntry>
     <selectionEntry id="fc6c-b6b9-51a0-b7b0" name="Hardened Casing" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9d0-ffa4-bf08-46c3" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9d0-ffa4-bf08-46c3" type="max"/>
       </constraints>
       <rules>
         <rule id="29a4-303c-f0f0-4528" name="Hardened Casing" hidden="false">
@@ -19146,13 +19295,17 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <categoryLink id="6ed0-3800-85fd-2980" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
         <categoryLink id="0d1f-2137-6887-6a93" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="e65e-e5a1-190c-57fd" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="c2d1-79ec-de5e-def1" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="04c9-b057-c94a-dcf2" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="4f49-0fb1-426f-c152" name="Volkite Eradicator [RVR]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -19179,13 +19332,17 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <categoryLink id="6695-5bb0-714c-7190" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
         <categoryLink id="f382-ccb5-69e0-a8d2" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="707d-c397-ef99-6a3f" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="e5f4-f0fb-e5ab-3e91" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="0ed3-6653-1949-a2cf" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="2e8a-92e8-a90e-545e" name="Volkite Destructor" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -19213,13 +19370,17 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         <categoryLink id="85e3-3232-4627-b203" name="Beam (X)" hidden="false" targetId="1875-e91f-1789-465f" primary="false"/>
         <categoryLink id="ee6c-7629-e207-b1b1" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="cd14-9724-9dc5-2abe" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="bf5d-fc55-6e58-c20b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="f822-4541-c656-6246" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="a6aa-ba0e-b76f-7b43" name="=Krytos= Civilisation&apos;s Ruin" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
@@ -19554,6 +19715,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="e354-e37e-a6ab-4c1e" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -19583,13 +19745,17 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <categoryLink name="Rending" hidden="false" id="8681-1dba-ca87-6956" targetId="511f-4690-c2b7-9996" primary="false"/>
         <categoryLink name="Bypass" hidden="false" id="3e72-5632-1a54-7b8c" targetId="719c-7b89-a08d-4acc" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="a505-6880-5939-fd32" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="0e8f-9b5e-4257-44f9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="1a89-7432-cf7d-4752" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="232a-afe2-64bb-c0a1" name="Krius Siege Drill" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -19657,6 +19823,23 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hunter Shells" hidden="false" id="d0a2-8aa9-c434-48da" type="selectionEntry" targetId="f595-8a61-ffd1-817a">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="569a-ce3b-3398-9cbe"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="569a-ce3b-3398-9cbe">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d0a2-8aa9-c434-48da" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -19707,15 +19890,21 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="fb1b-155b-4d88-9a3b" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2729-9116-b3a0-0e6f"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="2729-9116-b3a0-0e6f">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6e14-6edc-0f55-41c9" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6e14-6edc-0f55-41c9" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e819-7ac5-bafa-eb94" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -21128,6 +21317,13 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="45"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="95c2-14aa-54a9-3158" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="6f6b-8542-6713-c1a1" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="f374-419b-269d-50e3" name="Volcano Cannon [DW]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -21507,13 +21703,17 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="7a3a-c1c0-864d-88c5" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
         <categoryLink id="8df6-b718-30b4-3ec2" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="45fe-0eb8-705a-8273" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="4f6b-8643-839f-3986" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="7ff0-9d3d-cef1-d4ff" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="cfff-d280-9b0e-aadb" name="Graviton Destructor [WH]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -21540,13 +21740,17 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="1c8c-3b31-0a1f-8ee2" name="Concussive" hidden="false" targetId="62f0-d5ca-5ce1-596f" primary="false"/>
         <categoryLink id="358c-4420-51f8-6fc6" name="Rending" hidden="false" targetId="511f-4690-c2b7-9996" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="17b4-084a-864a-9c45" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="1ec5-17b4-a538-2c94" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="bbb5-2ec2-8978-3277" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="3322-b111-508b-cf74" name="Graviton Ruinator" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -21573,20 +21777,22 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="dfb0-dae8-4772-8d3a" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="f508-558b-7a64-ef09" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="5fb0-a5aa-c207-ef4b" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="b157-7067-1ff9-6c30" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="b6b1-43a1-95fe-f311" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="3159-88a9-3acf-c133" name="Focused Capacitors" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="5486-85cc-7f58-c9a8" name="Focused Capacitors" hidden="false">
-          <description>Any Traitor Titan equipped with a weapon with the Maximal Fire trait can be upgraded with a Focused Capacitors for a cost equal to a points cost of 10 points + 5x the weapon’s
-Dice value (e.g., a Warhound’s plasma blastgun would be +20 points), so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be
-upgraded separately.
+          <description>Any Traitor Titan equipped with a weapon with the Maximal Fire trait can be upgraded with a Focused Capacitors for a cost equal to a points cost of 10 points + 5x the weapon’s Dice value (e.g., a Warhound’s plasma blastgun would be +20 points), so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately.
 
 When firing a weapon with this upgrade, the player may choose to use its Focused Capacitors. If it does so, the Maximal Fire trait increases the Strength of the weapon by 3 instead of 2. However, for the duration of the attack, the weapon has a Long Range of ‘-’, meaning it can only target units within its Short Range.</description>
         </rule>
@@ -21620,13 +21826,17 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink id="7115-07f2-4789-2e89" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
         <categoryLink id="7a27-8148-6c7e-7296" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="8faf-4029-53e8-e427" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="fb8b-b6f5-3417-008a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="7278-5fc1-8c95-10c1" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="22d3-59fd-2b09-5980" name="Conversion Beam Dissolutor [RVR]" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -21704,6 +21914,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0869-fa91-ba27-37fa"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="367f-a67e-6496-f432" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8a01-ce9a-9342-3c9e"/>
@@ -21812,6 +22023,9 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="cd23-e474-3b0a-1052" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -21857,6 +22071,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Corrosive Payload" hidden="false" id="e6bc-1d60-b3f6-cff4" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673"/>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="f9bf-ea92-afd6-9280" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -21891,13 +22106,17 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink id="7eb6-488c-ea1a-e52c" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
         <categoryLink id="008f-2733-668f-4763" name="Quake" hidden="false" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="b7e5-361f-b1bb-bd89" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="fd97-bfac-adef-cb3d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="afe5-4552-c918-c725" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="d6d1-fb21-8e6b-67c4" name="Conversion Beam Dissipator" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -21924,29 +22143,43 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink id="227b-700e-a0a8-5ed0" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
         <categoryLink id="000d-252f-eb93-a0a6" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="b28a-da46-ae08-48ae" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink import="true" name="Focused Capacitors" hidden="true" id="a967-cb30-fbdc-17b8" type="selectionEntry" targetId="3159-88a9-3acf-c133">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="48e6-ba93-137d-0386"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ac9-dd3a-23de-3f45"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="35"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="5d7f-8a97-eb96-a50a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="4c07-f781-e081-3c78" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="Focused Capacitors" hidden="true" id="a967-cb30-fbdc-17b8" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="48e6-ba93-137d-0386"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ac9-dd3a-23de-3f45"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="94e5-46d4-ad27-56d5"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="94e5-46d4-ad27-56d5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a967-cb30-fbdc-17b8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="270a-cdcc-91b8-0787" name="Battle Level" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -22027,13 +22260,17 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink id="bd21-e26c-3a45-ad7f" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
         <categoryLink id="db34-6a5f-bed9-735c" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="fffa-866a-0cd0-9860" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="45"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="b0fb-05c4-abba-61a8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="4e5d-8768-c30c-479b" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="6775-cf80-8ca0-60cc" name="=Mordaxis= Melta Cannon with Toxin Nodes [WM]" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
@@ -22062,13 +22299,17 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink id="0da4-2154-b8c9-a54f" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
         <categoryLink id="ca82-0dd8-5285-2815" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="1e18-b65f-fd46-c4ac" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="af66-6c81-8d58-3cf1" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="b6d5-5599-dee1-93ee" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="1b40-7701-03cc-2909" name="=Mordaxis= Plasma Blastgun with Toxin Nodes [WM]" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
@@ -22096,13 +22337,17 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink id="3363-f548-3f5c-b875" name="LegioMordaxis" hidden="false" targetId="9d14-f4fb-5868-1b62" primary="false"/>
         <categoryLink id="dcf5-d266-4f05-c71b" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="0990-f5fa-5659-61a3" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="4731-571a-d63d-025b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="4154-e6dc-a20b-b85c" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="High Scion" hidden="false" id="a0c0-a49a-deb3-0b9f" collective="false">
       <costs>
