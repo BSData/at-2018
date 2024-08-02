@@ -16506,6 +16506,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hunter Shells" hidden="false" id="16cb-f1bb-2db6-ee0c" type="selectionEntry" targetId="f595-8a61-ffd1-817a">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b71a-bf57-8aa2-84a8"/>
@@ -16755,6 +16760,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <selectionEntryGroup name="Upgrades" id="ca90-0888-c615-2b60" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Corrosive Payload" hidden="false" id="130d-0bc7-6c42-839b" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hunter Shells" hidden="false" id="cf7e-8619-318d-3904" type="selectionEntry" targetId="f595-8a61-ffd1-817a">
               <costs>
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
               </costs>
@@ -17433,6 +17443,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Corrosive Payload" hidden="false" id="9bed-b27a-783f-6b5b" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hunter Shells" hidden="false" id="9ee2-ea51-84cd-b9b9" type="selectionEntry" targetId="f595-8a61-ffd1-817a">
               <costs>
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
               </costs>
@@ -18909,18 +18924,13 @@ After assembling their battlegroup, the player should pick one Titan in their ma
     <selectionEntry id="f595-8a61-ffd1-817a" name="Hunter Shells" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa7a-74f4-180e-3b5e" type="atLeast"/>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cea-d272-fa57-5553" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="43fb-83e1-2c6b-100c" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2133-dad8-77a1-472c" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a4b-0f8c-5f26-0094" includeChildSelections="false"/>
       </constraints>
       <rules>
         <rule id="c58b-ac0c-f7de-adbd" name="Hunter Shells" hidden="false">
@@ -18930,7 +18940,7 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
         </rule>
       </rules>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
@@ -19688,6 +19698,11 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <selectionEntryGroup name="Upgrades" id="ddf6-c81b-d7c2-df61" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Corrosive Payload" hidden="false" id="6e14-6edc-0f55-41c9" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hunter Shells" hidden="false" id="e819-7ac5-bafa-eb94" type="selectionEntry" targetId="f595-8a61-ffd1-817a">
               <costs>
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
               </costs>
@@ -23313,7 +23328,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </modifiers>
       <entryLinks>
         <entryLink id="43ce-7298-a62f-4d43" name="Aquila Benedictus" hidden="false" collective="false" import="true" targetId="420e-234b-ffd8-d613" type="selectionEntry"/>
-        <entryLink id="3da8-5021-8fe3-20a1" name="Hunter Shells" hidden="false" collective="false" import="true" targetId="f595-8a61-ffd1-817a" type="selectionEntry"/>
         <entryLink id="23d0-a3eb-5bee-d509" name="Null Emitter" hidden="false" collective="false" import="true" targetId="31c3-cb32-1048-ba54" type="selectionEntry"/>
         <entryLink id="ab4d-45a8-e96d-8769" name="Plasmatic Binders" hidden="false" collective="false" import="true" targetId="528d-e5e2-a24d-4e06" type="selectionEntry"/>
         <entryLink id="83a8-203f-e0f2-33c4" name="Spark of Vengeance" hidden="false" collective="false" import="true" targetId="c5cb-fe7e-6bc2-f4bd" type="selectionEntry"/>
