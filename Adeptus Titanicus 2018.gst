@@ -5041,6 +5041,9 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2543-4250-9d3f-119d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="4c8f-29c9-0c8e-67b6" name="=Krytos= Earthbreaker Missiles" publicationId="975a-00f4-pubN87630" page="45" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
@@ -6999,6 +7002,9 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09eb-7965-ab43-cfed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="5b5c-2d02-7856-0dd8" name="=Tritonis= Radiative Warheads" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
@@ -17015,15 +17021,41 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </constraints>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="45c6-a9aa-d2c3-64e2" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="false" name="=Kulisaetai= Accelerated Autoloaders" hidden="true" id="0e10-f38f-fb61-93d3" collective="false" targetId="7c51-55b9-4942-4061" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="6740-1e8a-8e25-88fd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6740-1e8a-8e25-88fd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Stratagem Hand" hidden="false" id="b1e7-f56f-e28b-650a" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="39cd-1f15-f5eb-8507" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="0fd6-2767-3a2f-f360" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="78e3-cb1c-d504-bda2"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="78e3-cb1c-d504-bda2">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b145-d969-d1d6-ebf7" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="b145-d969-d1d6-ebf7" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0e10-f38f-fb61-93d3" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -17366,10 +17398,6 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   </conditionGroups>
                 </modifier>
               </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="96ea-893a-5c6f-0aa3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="bfc8-a812-b891-3fcc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
             </entryLink>
             <entryLink import="true" name="=Crusade= Multiple Warhead Launchers" hidden="true" id="9e09-2e0f-0afb-a0f8" collective="false" targetId="6010-6066-629e-1305" type="selectionEntry">
               <modifiers>
@@ -17384,13 +17412,41 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   </conditionGroups>
                 </modifier>
               </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="b617-e8fa-4404-42f1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="1739-3d75-bf6d-72b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="269e-405c-1817-ad52" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="false" name="=Kulisaetai= Accelerated Autoloaders" hidden="true" id="026c-2664-f725-ae13" collective="false" targetId="7c51-55b9-4942-4061" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="6740-1e8a-8e25-88fd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6740-1e8a-8e25-88fd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Stratagem Hand" hidden="false" id="681d-d77c-84a4-2151" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1a69-7c62-8dce-96c0"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="1a69-7c62-8dce-96c0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="02c7-4aa5-7c19-c9df" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="026c-2664-f725-ae13" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -21462,6 +21518,9 @@ Take 1 selection for each weapon you are upgrading.</description>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7755-b5fc-b271-cc92" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="241e-6a16-8744-e27d" name="=Crusade= Plasma Rifling" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -22873,34 +22932,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="1d0e-9503-48d9-caab" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="3f57-fa28-acc6-bf89" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="026c-2664-f725-ae13" name="=Kulisaetai= Accelerated Autoloaders" hidden="true" collective="false" import="false" targetId="7c51-55b9-4942-4061" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="6740-1e8a-8e25-88fd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6740-1e8a-8e25-88fd" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <categoryLinks>
-            <categoryLink id="e047-4e0c-0839-6efd" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="5189-1927-186f-7de6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="53bf-c1a8-0fd1-a8d1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="f865-1276-736a-80df" name="=Laniaskara= Mordantised Ceramite" hidden="true" collective="false" import="false" targetId="170d-3f13-f670-3cc6" type="selectionEntry">
