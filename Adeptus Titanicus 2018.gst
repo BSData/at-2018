@@ -6510,18 +6510,11 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="ae4c-fe6c-3b47-c673" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5c80-4c19-098e-4775" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="5c80-4c19-098e-4775" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5c80-4c19-098e-4775" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="5c80-4c19-098e-4775" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -16501,17 +16494,31 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="5974-b0ae-e61c-7fa1" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="f92d-1497-f2a6-ae30" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Corrosive Payload" hidden="false" id="74a2-75df-cbdc-d765" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="f5d0-3573-4b2e-4c9e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="74a2-75df-cbdc-d765" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b71a-bf57-8aa2-84a8"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="b71a-bf57-8aa2-84a8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="74a2-75df-cbdc-d765" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="0b27-6d01-57d3-0e9d" name="Turbo Laser Destructor [RVR]" publicationId="3401-191e-1333-8a1d" page="168" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16570,29 +16577,42 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="9e4f-0371-376f-7c8a" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
         <categoryLink id="99d8-7869-619e-c643" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="57a3-180b-0f7d-7ffd" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink import="true" name="Focused Capacitors" hidden="true" id="7baf-99fc-a1ef-ba33" type="selectionEntry" targetId="3159-88a9-3acf-c133">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0e4a-10df-7466-d167"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e465-f7ba-75d8-8f7e"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="45"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="6900-d32d-40b9-60c5" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Focused Capacitors" hidden="true" id="7baf-99fc-a1ef-ba33" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0e4a-10df-7466-d167"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e465-f7ba-75d8-8f7e"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6bf4-b36c-6843-a8a5"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="6bf4-b36c-6843-a8a5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7baf-99fc-a1ef-ba33" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="47c9-43b5-8afc-b64f" name="Vulcan Megabolter [RVR]" hidden="false" collective="false" import="false" type="upgrade">
       <modifiers>
@@ -16638,23 +16658,37 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="b78a-6229-583e-36cf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="6e19-0b5e-f4ac-5902" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="c49c-97f7-5e62-6d41" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
-          </costs>
-        </entryLink>
-        <entryLink id="097f-672b-ba10-1aa9" name="=Interfector= Static Rounds" hidden="false" collective="false" import="true" targetId="9851-51aa-c013-d644" type="selectionEntry"/>
-        <entryLink import="true" name="Corrosive Payload" hidden="false" id="8236-d656-3894-648e" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="adc0-442c-9379-458f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="=Interfector= Static Rounds" hidden="false" id="097f-672b-ba10-1aa9" collective="false" targetId="9851-51aa-c013-d644" type="selectionEntry"/>
+            <entryLink import="false" name="=Vulturum= Storm Frag Shells" hidden="false" id="c49c-97f7-5e62-6d41" collective="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="8236-d656-3894-648e" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="65e8-d987-54d2-e3cb"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="65e8-d987-54d2-e3cb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8236-d656-3894-648e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="2165-2206-85af-b273" name="Turbo Laser Destructor [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16713,17 +16747,31 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="fa26-0def-9143-1e95" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="4fef-31c0-7c78-47a6" name="Ordnance" hidden="false" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Corrosive Payload" hidden="false" id="130d-0bc7-6c42-839b" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="ca90-0888-c615-2b60" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="130d-0bc7-6c42-839b" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6b45-6a2d-e815-bf38"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="6b45-6a2d-e815-bf38">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="130d-0bc7-6c42-839b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="73bc-c1cd-03b3-bedf" name="Reaver Titan Chainfist" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16835,49 +16883,52 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="c21f-1609-c88a-b089" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="5ca4-19fb-d2bb-3e89" name="Qualifier-SpecialMissiles" hidden="false" targetId="06ab-258d-46aa-3b1f" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="6303-cfd0-6a1a-c9ee" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink import="false" name="=Atarus= Infernus Missiles" hidden="true" id="b145-d969-d1d6-ebf7" collective="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="9aca-8423-c9b4-b532" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="9ca4-4864-1a67-a4de" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="=Crusade= Multiple Warhead Launchers" hidden="true" id="0daa-82c1-fd91-7ba5" collective="false" targetId="6010-6066-629e-1305" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="6f50-0338-6c43-8a0a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="6ae3-547e-b8f0-395e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="608c-08ba-83c8-14f7" hidden="false">
+          <entryLinks>
+            <entryLink import="false" name="=Atarus= Infernus Missiles" hidden="true" id="b145-d969-d1d6-ebf7" collective="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="9aca-8423-c9b4-b532" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="9ca4-4864-1a67-a4de" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="=Crusade= Multiple Warhead Launchers" hidden="true" id="0daa-82c1-fd91-7ba5" collective="false" targetId="6010-6066-629e-1305" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="6f50-0338-6c43-8a0a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="6ae3-547e-b8f0-395e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="8bd4-e1ff-d447-389e" name="Volcano Cannon" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -16969,29 +17020,42 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="2f1e-97dc-dc89-7cd6" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="0a1d-e8c3-acb5-aa1f" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="1da7-b1ca-378b-6d13" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink import="true" name="Focused Capacitors" hidden="true" id="13bd-b2b3-6597-2cf6" type="selectionEntry" targetId="3159-88a9-3acf-c133">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bebd-6c4c-dae1-7936"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68ac-1777-6188-16fc"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="486b-2a22-1dce-37be" hidden="false">
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="c86c-a3ce-22f1-5898"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="c86c-a3ce-22f1-5898">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="13bd-b2b3-6597-2cf6" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Focused Capacitors" hidden="true" id="13bd-b2b3-6597-2cf6" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bebd-6c4c-dae1-7936"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68ac-1777-6188-16fc"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="be6b-8894-c7d1-bdba" name="Warp Missile Support Rack" hidden="false" collective="false" import="false" type="upgrade">
       <modifiers>
@@ -17170,49 +17234,52 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="ef76-24da-820b-228a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="79c0-8961-c4ea-c5d9" name="Qualifier-SpecialMissiles" hidden="false" targetId="06ab-258d-46aa-3b1f" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="5fa1-9b8c-18ec-c87c" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink import="false" name="=Atarus= Infernus Missiles" hidden="true" id="02c7-4aa5-7c19-c9df" collective="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="96ea-893a-5c6f-0aa3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="bfc8-a812-b891-3fcc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="=Crusade= Multiple Warhead Launchers" hidden="true" id="9e09-2e0f-0afb-a0f8" collective="false" targetId="6010-6066-629e-1305" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="b617-e8fa-4404-42f1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="1739-3d75-bf6d-72b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="aff2-70e3-db2b-961b" hidden="false">
+          <entryLinks>
+            <entryLink import="false" name="=Atarus= Infernus Missiles" hidden="true" id="02c7-4aa5-7c19-c9df" collective="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="96ea-893a-5c6f-0aa3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="bfc8-a812-b891-3fcc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="=Crusade= Multiple Warhead Launchers" hidden="true" id="9e09-2e0f-0afb-a0f8" collective="false" targetId="6010-6066-629e-1305" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="b617-e8fa-4404-42f1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="1739-3d75-bf6d-72b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="087a-abff-3ffe-f488" name="Melta Cannon [RVR]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17246,14 +17313,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="c0f9-fbe8-b8a5-2432" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="decb-1557-2de8-c50e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="3142-627e-de68-5a41" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink id="f488-be0f-7490-948b" name="=Magna= Directed Pressure Outlet" hidden="false" collective="false" import="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="35"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="0096-278e-bce3-1286" hidden="false">
+          <entryLinks>
+            <entryLink import="false" name="=Magna= Directed Pressure Outlet" hidden="false" id="f488-be0f-7490-948b" collective="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="bfee-3947-a004-3a4e" name="Paired Turbo Laser Destructor" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17345,17 +17415,31 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="cafa-ef6a-f696-7e3e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="c6a6-4d27-cf52-e4ce" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Corrosive Payload" hidden="false" id="9bed-b27a-783f-6b5b" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="a1a7-1fc6-9cb0-612e" hidden="false">
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="221c-33e6-d12d-f51d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="221c-33e6-d12d-f51d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9bed-b27a-783f-6b5b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="9bed-b27a-783f-6b5b" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="f2ae-e883-28c4-dbcc" name="Vulcan Megabolter Array" hidden="false" collective="false" import="false" type="upgrade">
       <modifiers>
@@ -17402,22 +17486,36 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="20c7-8b0b-9546-211b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="e7fe-318f-0686-817d" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="5b8e-af29-b85a-e157" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="45"/>
-          </costs>
-        </entryLink>
-        <entryLink import="true" name="Corrosive Payload" hidden="false" id="74d7-9bed-434f-2fb9" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="41d8-df51-c0bd-9b74" hidden="false">
+          <entryLinks>
+            <entryLink import="false" name="=Vulturum= Storm Frag Shells" hidden="false" id="5b8e-af29-b85a-e157" collective="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="45"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="74d7-9bed-434f-2fb9" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9051-bea4-7ae0-f3de"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="9051-bea4-7ae0-f3de">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="74d7-9bed-434f-2fb9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="edcd-f43d-10ba-7f60" name="Vulcan Megabolter [WH]" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <modifiers>
@@ -17463,23 +17561,37 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="6467-0a33-3b57-e7e7" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
         <categoryLink id="13f1-7b0c-63e2-efdb" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="1e76-599c-c07e-26b7" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
-          </costs>
-        </entryLink>
-        <entryLink id="a9c6-d72f-8984-da4a" name="=Interfector= Static Rounds" hidden="false" collective="false" import="true" targetId="9851-51aa-c013-d644" type="selectionEntry"/>
-        <entryLink import="true" name="Corrosive Payload" hidden="false" id="bbe7-baf8-cfd1-52f4" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="77dd-2f6a-46a9-1004" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="bbe7-baf8-cfd1-52f4" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="=Interfector= Static Rounds" hidden="false" id="a9c6-d72f-8984-da4a" collective="false" targetId="9851-51aa-c013-d644" type="selectionEntry"/>
+            <entryLink import="false" name="=Vulturum= Storm Frag Shells" hidden="false" id="1e76-599c-c07e-26b7" collective="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="d83b-c246-2527-f3cd"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="d83b-c246-2527-f3cd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="bbe7-baf8-cfd1-52f4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="e7f3-4f09-8dc2-5b18" name="Void Shield (3+)" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
@@ -18142,56 +18254,69 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="f527-92d5-4fe5-2426" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
         <categoryLink id="1aa7-5da7-275f-0dd0" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="77d3-4fb2-1c06-318c" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink import="true" name="Focused Capacitors" hidden="true" id="45a9-9552-cedf-5303" type="selectionEntry" targetId="3159-88a9-3acf-c133">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cf8d-30cc-a86e-3a47"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c786-4d54-32cc-b55a"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="70"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="false" name="=Magna= Directed Pressure Outlet" hidden="true" id="de1d-5c05-9ee2-9e89" publicationId="2988-f24d-39ef-352e" page="38" collective="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="069e-9639-ab6a-9486" hidden="false">
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="02d0-c91d-b402-6d0c"/>
+          </constraints>
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="1" field="02d0-c91d-b402-6d0c">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="primary-category" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="45a9-9552-cedf-5303" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1160-2387-85ff-e661" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <rules>
-            <rule name="Directed Pressure Outlet" id="a8fd-fb0a-f2c5-1ef5" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="121">
-              <description>Any Legio Magna Titan armed with a weapon with the Fusion trait may be equipped with a Directed Pressure Outlet for +20 points. Each Fusion weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink name="LegioSpecificWargear" hidden="false" id="deb9-538e-357a-3875" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
-            <categoryLink name="LegioMagna" hidden="false" id="06c4-5f3f-c36f-dc7f" targetId="4cad-18cf-5711-5331" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
-            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Focused Capacitors" hidden="true" id="45a9-9552-cedf-5303" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cf8d-30cc-a86e-3a47"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c786-4d54-32cc-b55a"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="false" name="=Magna= Directed Pressure Outlet" hidden="true" id="de1d-5c05-9ee2-9e89" publicationId="2988-f24d-39ef-352e" page="38" collective="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="primary-category" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1160-2387-85ff-e661" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <rules>
+                <rule name="Directed Pressure Outlet" id="a8fd-fb0a-f2c5-1ef5" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="121">
+                  <description>Any Legio Magna Titan armed with a weapon with the Fusion trait may be equipped with a Directed Pressure Outlet for +20 points. Each Fusion weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink name="LegioSpecificWargear" hidden="false" id="deb9-538e-357a-3875" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+                <categoryLink name="LegioMagna" hidden="false" id="06c4-5f3f-c36f-dc7f" targetId="4cad-18cf-5711-5331" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+                <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="81bb-fc59-dff5-2755" name="Apocalypse Missile Array" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -18218,31 +18343,34 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="bd37-fe21-d5ab-e973" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="0ede-c55f-a5d0-a3f0" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="4f75-d279-028b-c888" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink import="false" name="=Atarus= Infernus Missiles" hidden="true" id="81d8-7987-ad17-9804" collective="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="f8f5-826f-4bea-ee52" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="6918-26e7-fbb2-1542" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="2251-6a09-dd23-c350" hidden="false">
+          <entryLinks>
+            <entryLink import="false" name="=Atarus= Infernus Missiles" hidden="true" id="81d8-7987-ad17-9804" collective="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="cfcc-e5c0-bb0b-db6f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="f8f5-826f-4bea-ee52" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="6918-26e7-fbb2-1542" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="ab89-eea6-1e3a-84dd" name="Inferno Gun [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -18308,14 +18436,17 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="3344-796c-e173-a05a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="acea-cf4f-491d-c894" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="c5bd-e809-c7bb-1655" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink id="aa63-be01-3e1a-895a" name="=Magna= Directed Pressure Outlet" hidden="false" collective="false" import="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="a90b-0541-79ea-9759" hidden="false">
+          <entryLinks>
+            <entryLink import="false" name="=Magna= Directed Pressure Outlet" hidden="false" id="aa63-be01-3e1a-895a" collective="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="0f5d-e59f-3d5f-21c3" name="Plasma Blast Gun [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -18342,29 +18473,42 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="af1e-21b4-54f8-d795" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="3493-e7cd-e9b1-c439" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="abb1-a002-5836-d4b8" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink import="true" name="Focused Capacitors" hidden="true" id="d60c-8537-a679-9aad" type="selectionEntry" targetId="3159-88a9-3acf-c133">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b609-aa85-0a07-b2dc"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="439a-b580-fb2e-b75e"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="9b9d-7eb3-1477-3467" hidden="false">
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6c3f-b73b-af89-5ba7"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="6c3f-b73b-af89-5ba7">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d60c-8537-a679-9aad" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Focused Capacitors" hidden="true" id="d60c-8537-a679-9aad" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b609-aa85-0a07-b2dc"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="439a-b580-fb2e-b75e"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="7c5c-cf20-958d-0b71" name="Turbo Laser Destructor [WM]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -18442,22 +18586,36 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="36e3-6d18-9816-b943" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="dd45-0ee3-9662-d5c1" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="7a5d-6ca3-e345-9e83" name="=Vulturum= Storm Frag Shells" hidden="false" collective="false" import="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
-          </costs>
-        </entryLink>
-        <entryLink import="true" name="Corrosive Payload" hidden="false" id="ef00-2a11-ae93-3d2c" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="d38e-b6c0-23d2-7707" hidden="false">
+          <entryLinks>
+            <entryLink import="false" name="=Vulturum= Storm Frag Shells" hidden="false" id="7a5d-6ca3-e345-9e83" collective="false" targetId="4b31-816a-2c3d-cb9d" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="ef00-2a11-ae93-3d2c" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2db6-dbaf-92d3-dff1"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="2db6-dbaf-92d3-dff1">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="ef00-2a11-ae93-3d2c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="08fc-3215-ee7f-68bb" name="Revelator Missile Launcher" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -18484,17 +18642,31 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <categoryLink id="24a6-b187-92a3-d1ad" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="305d-910d-21e1-5e2f" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Corrosive Payload" hidden="false" id="70d2-a16b-43e8-23cd" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="e481-5375-fd79-c366" hidden="false">
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="74bd-54e3-53e8-3d43"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="74bd-54e3-53e8-3d43">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="70d2-a16b-43e8-23cd" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="70d2-a16b-43e8-23cd" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="d152-f92c-fa32-dcfd" name="Plasmatic Locomotors" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
@@ -19135,15 +19307,9 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d634-d27a-fd9c-3f8f" shared="true" includeChildSelections="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="4b31-816a-2c3d-cb9d" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="9851-51aa-c013-d644" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d634-d27a-fd9c-3f8f" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -19356,17 +19522,31 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Corrosive Payload" hidden="false" id="bd78-070b-4088-cfe1" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="f3ca-62ae-ba58-f8df" hidden="false">
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="3984-7d67-5b93-d3ac"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="3984-7d67-5b93-d3ac">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="bd78-070b-4088-cfe1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="bd78-070b-4088-cfe1" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="9796-81cd-7844-051b" name="Desolator Chainsword" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -19434,40 +19614,41 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <categoryLink id="d89d-0d5b-4096-52f8" name="Draining" hidden="false" targetId="8ab9-d312-06e4-8ba0" primary="false"/>
         <categoryLink name="Melee" hidden="false" id="71b7-6306-f4df-48c4" targetId="4739-6f52-a293-aa06" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="d99b-53d7-0a3d-6b1c" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="50"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="false" name="=Magna= Directed Pressure Outlet" hidden="true" id="0f5e-fb0c-9fe0-f8c5" publicationId="2988-f24d-39ef-352e" page="38" collective="false">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="primary-category" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6d1-a740-e719-8a7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <rules>
-            <rule name="Directed Pressure Outlet" id="e7e1-eb56-c697-8000" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="121">
-              <description>Any Legio Magna Titan armed with a weapon with the Fusion trait may be equipped with a Directed Pressure Outlet for +20 points. Each Fusion weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink name="LegioSpecificWargear" hidden="false" id="8ad9-81d3-d7f5-2623" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
-            <categoryLink name="LegioMagna" hidden="false" id="66d3-e3f0-5fa9-9ecc" targetId="4cad-18cf-5711-5331" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
-            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="3454-7b17-b4cf-99e4" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="false" name="=Magna= Directed Pressure Outlet" hidden="true" id="0f5e-fb0c-9fe0-f8c5" publicationId="2988-f24d-39ef-352e" page="38" collective="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="primary-category" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6d1-a740-e719-8a7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <rules>
+                <rule name="Directed Pressure Outlet" id="e7e1-eb56-c697-8000" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="121">
+                  <description>Any Legio Magna Titan armed with a weapon with the Fusion trait may be equipped with a Directed Pressure Outlet for +20 points. Each Fusion weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink name="LegioSpecificWargear" hidden="false" id="8ad9-81d3-d7f5-2623" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+                <categoryLink name="LegioMagna" hidden="false" id="66d3-e3f0-5fa9-9ecc" targetId="4cad-18cf-5711-5331" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+                <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="d0ae-adc7-c079-d005" name="Krius Grav Imploder" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -19499,17 +19680,31 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink name="Ordnance" hidden="false" id="f098-cc80-20b0-806a" targetId="5ad8-0ca8-4bb7-83b6" primary="false"/>
         <categoryLink name="Quake" hidden="false" id="fcb8-5c9c-8bec-a5ae" targetId="27c5-bdc6-5cc3-ec66" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Corrosive Payload" hidden="false" id="6e14-6edc-0f55-41c9" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="ddf6-c81b-d7c2-df61" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="6e14-6edc-0f55-41c9" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2729-9116-b3a0-0e6f"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="2729-9116-b3a0-0e6f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6e14-6edc-0f55-41c9" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="59ac-39c7-b7b9-ecb6" name="Dedicated Void Shunts" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -21483,46 +21678,51 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink id="30b1-cf0b-24c4-77f8" name="Maximal Fire" hidden="false" targetId="12b5-203d-86d9-3e60" primary="false"/>
         <categoryLink id="2d1a-fbbd-0406-2c0e" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="5c5f-1dcc-eb91-7951" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-        <entryLink import="true" name="Focused Capacitors" hidden="true" id="dd18-0ea4-04f2-7e8f" type="selectionEntry" targetId="3159-88a9-3acf-c133">
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ba9a-d2ea-642b-2901"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0869-fa91-ba27-37fa"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="4600-8ed0-3fcc-1540" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Focused Capacitors" hidden="true" id="dd18-0ea4-04f2-7e8f" type="selectionEntry" targetId="3159-88a9-3acf-c133">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0869-fa91-ba27-37fa"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8a01-ce9a-9342-3c9e"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="8a01-ce9a-9342-3c9e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="dd18-0ea4-04f2-7e8f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="9851-51aa-c013-d644" name="=Interfector= Static Rounds" publicationId="bf8b-27d7-039e-5df9" page="81" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="ae4c-fe6c-3b47-c673" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="f3d0-92f8-3bf7-4799" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="f3d0-92f8-3bf7-4799" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f3d0-92f8-3bf7-4799" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="f3d0-92f8-3bf7-4799" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -21575,40 +21775,41 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink id="a1c3-bb5d-7df2-40d3" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="8a75-7fa1-5a71-7caf" name="Fusion" hidden="false" targetId="2e59-3e13-7382-4fac" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="6208-97b6-0cfa-66ac" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="false" name="=Magna= Directed Pressure Outlet" hidden="true" id="ae36-945d-e526-9ce0" publicationId="2988-f24d-39ef-352e" page="38" collective="false">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="primary-category" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e607-2b74-50d5-9c42" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <rules>
-            <rule name="Directed Pressure Outlet" id="071b-9270-ea68-b0be" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="121">
-              <description>Any Legio Magna Titan armed with a weapon with the Fusion trait may be equipped with a Directed Pressure Outlet for +20 points. Each Fusion weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink name="LegioSpecificWargear" hidden="false" id="22ab-2b51-35bb-de0a" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
-            <categoryLink name="LegioMagna" hidden="false" id="6f0a-4cc2-00be-4558" targetId="4cad-18cf-5711-5331" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
-            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="b768-3c6f-bb56-0ac7" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="false" name="=Magna= Directed Pressure Outlet" hidden="true" id="ae36-945d-e526-9ce0" publicationId="2988-f24d-39ef-352e" page="38" collective="false">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="primary-category" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e607-2b74-50d5-9c42" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <rules>
+                <rule name="Directed Pressure Outlet" id="071b-9270-ea68-b0be" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="121">
+                  <description>Any Legio Magna Titan armed with a weapon with the Fusion trait may be equipped with a Directed Pressure Outlet for +20 points. Each Fusion weapon a Titan is armed with must be upgraded separately. A Titan equipped with a Directed Pressure Outlet adds 3&quot; to the weapon’s Short Range.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink name="LegioSpecificWargear" hidden="false" id="22ab-2b51-35bb-de0a" targetId="91bd-c88a-f6bb-bb3d" primary="false"/>
+                <categoryLink name="LegioMagna" hidden="false" id="6f0a-4cc2-00be-4558" targetId="4cad-18cf-5711-5331" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+                <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="834a-4f80-00fb-a341" name="Swarmer Missiles" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -21634,13 +21835,27 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink id="5ff7-84a6-293f-5341" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
         <categoryLink id="de08-e467-d352-574f" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="cedc-1b84-85fe-418a" name="Weapon Destroyed" hidden="true" collective="false" import="true" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="6b11-fcf6-bee3-6d0e" hidden="false">
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="67f7-224d-bd47-803b"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="67f7-224d-bd47-803b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6bc-1d60-b3f6-cff4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Corrosive Payload" hidden="false" id="e6bc-1d60-b3f6-cff4" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lance" hidden="false" id="19c7-6300-3d5b-09bd" subType="unit-group">
       <categoryLinks>
