@@ -15784,6 +15784,9 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                     <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
                     <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Multiple Warhead Launchers" id="3ba4-2249-a71c-cccb" hidden="false" type="rule" targetId="fa71-afe2-0322-1f39"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry id="8ae0-021b-312c-fa7b" name="Plasma Rifling" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -21348,8 +21351,8 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="0650-92fc-8cbf-7fd8" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="0650-92fc-8cbf-7fd8" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -21389,11 +21392,6 @@ Take 1 selection for each weapon you are upgrading.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="6010-6066-629e-1305" name="=Crusade= Multiple Warhead Launchers" hidden="true" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="e66e-da2e-f273-841f" name="Multiple Warhead Launchers" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
-          <description>Any of the Legio’s Titans armed with Apocalypse missile launchers or an Apocalypse missile launcher can be upgraded to have Multiple Warhead Launchers for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Any Apocalypse missile launcher equipped with this upgrade adds 5 to their Dice value and gains the Rapid and Limited (2) traits. A Titan can upgrade a weapon with Multiple Warhead Launchers and Autoloaders, however the base cost of the weapon includes the +20 points, which is applied before determining the cost of the Autoloaders.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="0bd9-036f-02ae-b032" name="LegioCrusade" hidden="false" targetId="9329-8448-1502-f1d1" primary="false"/>
         <categoryLink id="00c6-a9eb-fb03-1824" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
@@ -21410,13 +21408,16 @@ Take 1 selection for each weapon you are upgrading.</description>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="9329-8448-1502-f1d1" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="3140-6b36-9c57-f59e" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="3140-6b36-9c57-f59e" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Multiple Warhead Launchers" id="efa5-e85f-0809-9bb8" hidden="false" type="rule" targetId="fa71-afe2-0322-1f39"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="241e-6a16-8744-e27d" name="=Crusade= Plasma Rifling" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -25986,6 +25987,9 @@ result of a single D6.</description>
     </rule>
     <rule name="Auxiliary Knight Banner" id="bd57-6f3f-7d22-a8c1" hidden="false" publicationId="25e8-c9ce-9330-c53b" page="5">
       <description>A Battlegroup can include a maximum of one Auxiliary Knight Banner per maniple as reinforcements. A Knight Household Force can include a maximum of one Auxiliary Knight Banner per Lance as reinforcements. No Knight Banner within a Lance, other than the Seneschal’s Banner, may be an Auxiliary Knight Banner</description>
+    </rule>
+    <rule name="Multiple Warhead Launchers" id="fa71-afe2-0322-1f39" hidden="false" publicationId="2988-f24d-39ef-352e" page="99">
+      <description>Any of the Legio’s Titans armed with Apocalypse missile launchers or an Apocalypse missile launcher can be upgraded to have Multiple Warhead Launchers for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Any Apocalypse missile launcher equipped with this upgrade adds 5 to their Dice value and gains the Rapid and Limited (2) traits. A Titan can upgrade a weapon with Multiple Warhead Launchers and Autoloaders, however the base cost of the weapon includes the +20 points, which is applied before determining the cost of the Autoloaders.</description>
     </rule>
   </sharedRules>
 </gameSystem>
