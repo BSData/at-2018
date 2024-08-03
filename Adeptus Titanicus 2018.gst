@@ -7000,21 +7000,6 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="146b-78b6-75ce-e17e" name="=Astraman= Maglock Shells (6 Dice)" publicationId="3401-191e-1333-8a1d" page="90" hidden="true" collective="false" import="false" type="upgrade">
-      <rules>
-        <rule id="12ca-f28d-7db1-35da" name="Maglock Shells" publicationId="3401-191e-1333-8a1d" page="90" hidden="false">
-          <description>Ordnance Weapons.  Add 1 to all armour rolls. Natural 1s are still a superficial hit.  This is for 6 dice weapons.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="5832-b2dc-b9cb-38ad" name="LegioSpecificWargear" hidden="false" targetId="91bd-c88a-f6bb-bb3d" primary="true"/>
-        <categoryLink id="4292-b5e6-4fff-f5b0" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
-        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="1582-9f6b-0e82-c228" name="=Venator= Blind Launchers" publicationId="3401-191e-1333-8a1d" page="153" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="3c32-7526-899c-0455" name="=Venator= Blind Launchers" publicationId="3401-191e-1333-8a1d" page="153" hidden="false">
@@ -7106,10 +7091,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a52a-5348-8d0b-fe2d" name="=Astraman= Maglock Shells (12 Dice)" publicationId="3401-191e-1333-8a1d" page="90" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="a52a-5348-8d0b-fe2d" name="=Astraman= Maglock Shells" publicationId="3401-191e-1333-8a1d" page="90" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="314b-c859-601b-4f9f" name="Maglock Shells" publicationId="3401-191e-1333-8a1d" page="90" hidden="false">
-          <description>Ordnance Weapons.  Add 1 to all armour rolls. Natural 1s are still a superficial hit.  This is for 12 dice weapons.</description>
+          <description>Any Legio Astraman Titan armed with a weapon with the Ordnance trait may take Maglock Shells so long as that Titan does not already have an upgrade affecting that weapon at a cost of +5 points multiplied by each weapon’s Dice value; for example a Reaver Gatling Blaster would have a cost of +30 points. Each weapon a Titan is armed with must be upgraded separately. Add 1 to the result of all Armour rolls made by a weapon with this upgrade when resolving an attack made with an Ordnance weapon. Rolls of a natural 1 are still a Superficial Hit.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -7117,9 +7102,20 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         <categoryLink id="5e59-ddc7-762f-dd03" name="LegioAstraman" hidden="false" targetId="324b-8404-7509-9b36" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1260-8d1f-16f7-75ad" name="=Astorum= Machine Defiance" publicationId="3401-191e-1333-8a1d" page="40" hidden="true" collective="false" import="false" type="unit">
       <modifiers>
@@ -16657,6 +16653,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="519e-81ff-2bb2-6327" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="false" name="=Astraman= Maglock Shells" hidden="true" id="0bf5-02ab-9a91-e8ea" collective="false" targetId="a52a-5348-8d0b-fe2d" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="60"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b71a-bf57-8aa2-84a8"/>
@@ -16668,6 +16669,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="16cb-f1bb-2db6-ee0c" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="74a2-75df-cbdc-d765" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0bf5-02ab-9a91-e8ea" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16942,6 +16944,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="da24-d8b2-34db-99b0" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="false" name="=Astraman= Maglock Shells" hidden="true" id="0ca8-55d2-2f9d-738a" collective="false" targetId="a52a-5348-8d0b-fe2d" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6b45-6a2d-e815-bf38"/>
@@ -16953,6 +16960,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="cf7e-8619-318d-3904" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="130d-0bc7-6c42-839b" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0ca8-55d2-2f9d-738a" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -17813,9 +17821,14 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="221c-33e6-d12d-f51d">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9bed-b27a-783f-6b5b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="9bed-b27a-783f-6b5b" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8790-03ac-a68a-8639" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <entryLinks>
@@ -17830,6 +17843,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="a6da-ee02-3d8f-9d93" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="false" name="=Astraman= Maglock Shells" hidden="true" id="8790-03ac-a68a-8639" collective="false" targetId="a52a-5348-8d0b-fe2d" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -20161,6 +20179,11 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="fb1b-155b-4d88-9a3b" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="false" name="=Astraman= Maglock Shells" hidden="true" id="51c3-9513-8122-18fd" collective="false" targetId="a52a-5348-8d0b-fe2d" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2729-9116-b3a0-0e6f"/>
@@ -20172,6 +20195,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="6e14-6edc-0f55-41c9" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="e819-7ac5-bafa-eb94" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="51c3-9513-8122-18fd" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -23076,31 +23100,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="b9ec-20b6-e73c-9fd6" name="=Astraman= Maglock Shells (6 Dice)" hidden="true" collective="false" import="false" targetId="146b-78b6-75ce-e17e" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="5ad8-0ca8-4bb7-83b6" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="e044-40f0-8310-528b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="d87d-a2f2-376c-af42" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
         <entryLink id="cd70-9ca2-c6f9-1f07" name="=Damicium= Secondary Plating" hidden="true" collective="false" import="false" targetId="dc14-b65e-acfb-906a" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -23203,31 +23202,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="d3fa-19ab-cab6-26e3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="2397-848f-b361-5971" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="f902-8a56-8c96-4c3c" name="=Astraman= Maglock Shells (12 Dice)" hidden="true" collective="false" import="false" targetId="a52a-5348-8d0b-fe2d" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="5ad8-0ca8-4bb7-83b6" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="324b-8404-7509-9b36" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="ed82-eddb-d321-bc2e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="3c78-05aa-9117-f409" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="c790-8ac8-fbc0-5856" name="=Metalica= Bastion Armor" hidden="true" collective="false" import="true" targetId="31ff-82f8-241d-7b29" type="selectionEntry">
