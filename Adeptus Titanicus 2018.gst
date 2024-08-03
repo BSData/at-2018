@@ -15817,6 +15817,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                     <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
                     <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
                   </costs>
+                  <rules>
+                    <rule name="Macro Magazines" id="d00c-7f7d-f8a1-6112" hidden="false" publicationId="2988-f24d-39ef-352e" page="98">
+                      <description>Any weapon with the Rapid trait equipped by a Titan from this Legio can be upgraded to have Macro Magazines for +30 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon with the Rapid trait a Titan is armed with must be upgraded separately. Increase the Dice value of that weapon by 2. Add 2 to the result when rolling on the Catastrophic Damage table for a Titan with Macro Magazines – this effective is cumulative (i.e., a Titan with two Macro Magazines would add 4 to the result).</description>
+                    </rule>
+                  </rules>
                 </selectionEntry>
                 <selectionEntry id="3140-6b36-9c57-f59e" name="Multiple Warhead Launchers" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -16791,6 +16796,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <condition type="equalTo" value="1" field="selections" scope="47c9-43b5-8afc-b64f" childId="4b31-816a-2c3d-cb9d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="2" field="fff8-b599-3d0a-2555">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0016-3938-773f-96b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
@@ -16833,15 +16843,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="7a33-3a9a-18a7-236f" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Macro Magazines" hidden="true" id="0016-3938-773f-96b8" collective="false" targetId="628a-c5e1-1d3f-065e" type="selectionEntry"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="65e8-d987-54d2-e3cb"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="65e8-d987-54d2-e3cb">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="8236-d656-3894-648e" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="8236-d656-3894-648e" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="0016-3938-773f-96b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -17038,7 +17054,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
-        <profile name="Diabatic Warheads" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="true" id="e406-26cb-01ad-9935" page="">
+        <profile name="Diabatic Warheads" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="true" id="e406-26cb-01ad-9935">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">9</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
@@ -17497,7 +17513,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
-        <profile name="Diabatic Warheads" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="true" id="7904-c207-8a44-6f0d" page="">
+        <profile name="Diabatic Warheads" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="true" id="7904-c207-8a44-6f0d">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">9</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
@@ -17839,6 +17855,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <condition type="equalTo" value="1" field="selections" scope="f2ae-e883-28c4-dbcc" childId="4b31-816a-2c3d-cb9d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="2" field="fff8-b599-3d0a-2555">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5202-2336-4122-0f2a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">12</characteristic>
@@ -17881,15 +17902,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="122a-31fd-9e71-fa5b" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Macro Magazines" hidden="true" id="5202-2336-4122-0f2a" collective="false" targetId="628a-c5e1-1d3f-065e" type="selectionEntry"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9051-bea4-7ae0-f3de"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="9051-bea4-7ae0-f3de">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="74d7-9bed-434f-2fb9" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="74d7-9bed-434f-2fb9" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="5202-2336-4122-0f2a" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -17914,6 +17941,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <modifier type="append" value=", Maximal Fire" field="bcd4-cb45-5d53-b7d8">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="edcd-f43d-10ba-7f60" childId="4b31-816a-2c3d-cb9d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="fff8-b599-3d0a-2555">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f65e-682c-9e3f-c10e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -17958,15 +17990,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="85ba-6e4b-e058-f16c" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Macro Magazines" hidden="true" id="f65e-682c-9e3f-c10e" collective="false" targetId="628a-c5e1-1d3f-065e" type="selectionEntry"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="d83b-c246-2527-f3cd"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="d83b-c246-2527-f3cd">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="bbe7-baf8-cfd1-52f4" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="bbe7-baf8-cfd1-52f4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f65e-682c-9e3f-c10e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -18972,6 +19010,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <condition type="equalTo" value="1" field="selections" scope="5da9-e647-8914-3264" childId="7a5d-6ca3-e345-9e83" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="2" field="fff8-b599-3d0a-2555">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9dbf-3a44-b812-0822" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">6</characteristic>
@@ -19013,15 +19056,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="0840-1bef-67bf-67e0" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Macro Magazines" hidden="true" id="9dbf-3a44-b812-0822" collective="false" targetId="628a-c5e1-1d3f-065e" type="selectionEntry"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2db6-dbaf-92d3-dff1"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="2db6-dbaf-92d3-dff1">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="ef00-2a11-ae93-3d2c" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="ef00-2a11-ae93-3d2c" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="9dbf-3a44-b812-0822" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -21494,6 +21543,13 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Paired, Rapid</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="2" field="fff8-b599-3d0a-2555">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7496-857a-0748-4365" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -21507,6 +21563,24 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="af1d-6c67-7839-97b0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="=Crusade= Macro Magazines" hidden="true" id="7496-857a-0748-4365" collective="false" targetId="628a-c5e1-1d3f-065e" type="selectionEntry"/>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="cc3f-7019-b843-a475" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7478-afa0-a495-3e52" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="7478-afa0-a495-3e52">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7496-857a-0748-4365" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="d178-20d4-d7ab-992d" name="Neutron Laser" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -21700,9 +21774,7 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
     <selectionEntry id="628a-c5e1-1d3f-065e" name="=Crusade= Macro Magazines" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="5f3f-2bf8-86e5-6f4e" name="Macro Magazines" publicationId="2988-f24d-39ef-352e" page="98" hidden="false">
-          <description>Any weapon with the Rapid trait equipped by a Titan from this Legio can be upgraded to have Macro Magazines for +30 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon with the Rapid trait a Titan is armed with must be upgraded separately. Increase the Dice value of that weapon by 2. Add 2 to the result when rolling on the Catastrophic Damage table for a Titan with Macro Magazines – this effective is cumulative (i.e., a Titan with two Macro Magazines would add 4 to the result).
-
-Take 1 selection for each weapon you are upgrading.</description>
+          <description>Any weapon with the Rapid trait equipped by a Titan from this Legio can be upgraded to have Macro Magazines for +30 points, so long as that Titan does not already have an upgrade affecting that weapon. Each weapon with the Rapid trait a Titan is armed with must be upgraded separately. Increase the Dice value of that weapon by 2. Add 2 to the result when rolling on the Catastrophic Damage table for a Titan with Macro Magazines – this effective is cumulative (i.e., a Titan with two Macro Magazines would add 4 to the result).</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -21713,6 +21785,21 @@ Take 1 selection for each weapon you are upgrading.</description>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98d7-4ce1-9760-96c9" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="be9e-bd56-3125-b325" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="be9e-bd56-3125-b325" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6010-6066-629e-1305" name="=Crusade= Multiple Warhead Launchers" hidden="true" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -22339,6 +22426,13 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Rapid</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="2" field="fff8-b599-3d0a-2555">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6006-ba9e-632c-a1bc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -22358,14 +22452,20 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="67f7-224d-bd47-803b">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6bc-1d60-b3f6-cff4" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6bc-1d60-b3f6-cff4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6006-ba9e-632c-a1bc" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Corrosive Payload" hidden="false" id="e6bc-1d60-b3f6-cff4" type="selectionEntry" targetId="ae4c-fe6c-3b47-c673"/>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="f9bf-ea92-afd6-9280" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Macro Magazines" hidden="true" id="6006-ba9e-632c-a1bc" collective="false" targetId="628a-c5e1-1d3f-065e" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -23398,30 +23498,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="23b7-7dae-b605-462a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="3676-5979-5a73-7d21" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="afd5-6419-898f-7543" name="=Crusade= Macro Magazines" hidden="true" collective="false" import="true" targetId="628a-c5e1-1d3f-065e" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="be9e-bd56-3125-b325" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="be9e-bd56-3125-b325" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a421-ff94-44cf-2eb8" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="28f7-8bac-a0bb-c83b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="20e9-a8df-f8ea-3740" name="=Crusade= Plasma Rifling" hidden="true" collective="false" import="true" targetId="241e-6a16-8744-e27d" type="selectionEntry">
