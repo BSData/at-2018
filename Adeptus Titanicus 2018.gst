@@ -16026,6 +16026,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                     <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
                     <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
                   </costs>
+                  <rules>
+                    <rule name="Seismic Auspex" id="69f9-0f88-e248-cf83" hidden="false" publicationId="2988-f24d-39ef-352e" page="100">
+                      <description>Any Warbringer Nemesis Titan from this Legio can be upgraded for 5 x half the Strength of the weapon (e.g., a volcano cannon would be +30 points). The weapon gains the Barrage trait and applies only a -1 modifier rather than a -2 modifier when making attacks at targets it does not have line of sight to. The Barrage trait can only be used if the Warbringer Nemesis Titan has not moved this turn (voluntarily or involuntarily).
+
+Take 1 selection for each half strength of the weapon you are upgrading.</description>
+                    </rule>
+                  </rules>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -16604,6 +16611,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Shieldbane(Draining)</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value=", Barrage" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2272-1295-5534-c65b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -16621,9 +16635,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <selectionEntryGroup name="Upgrades" id="c887-80a0-22c4-db20" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="7497-8a36-63d9-cc04" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Seismic Auspex" hidden="true" id="2272-1295-5534-c65b" collective="false" targetId="9a0b-a568-117f-b54b" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="a499-678c-ed35-c0e8" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="2272-1295-5534-c65b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="bfdb-4953-f838-7d21" name="Paired Gatling Blasters" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17229,6 +17255,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="e3c6-7409-67bc-84c5" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="append" value=", Barrage" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="331e-580d-ceab-913f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </profile>
       </profiles>
@@ -17247,6 +17278,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <entryLinks>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="b6bf-58b0-f07a-9091" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
             <entryLink import="true" name="=Crusade= Macro Charges" hidden="true" id="e3c6-7409-67bc-84c5" collective="false" targetId="56fe-a07d-b73f-a576" type="selectionEntry"/>
+            <entryLink import="true" name="=Crusade= Seismic Auspex" hidden="true" id="331e-580d-ceab-913f" collective="false" targetId="9a0b-a568-117f-b54b" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6539-a2c4-6839-5def" includeChildSelections="true"/>
@@ -17260,6 +17296,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="a499-678c-ed35-c0e8" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="331e-580d-ceab-913f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1904-506f-6b2d-0843" name="Mori Quake Cannon [WLD]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17683,6 +17726,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="f2da-686b-199e-278b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="append" value=", Barrage" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8d2d-8323-dff3-beb7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
@@ -17716,6 +17764,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <entryLink import="false" name="=Magna= Directed Pressure Outlet" hidden="false" id="f488-be0f-7490-948b" collective="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="9b16-b135-1764-e5e0" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
             <entryLink import="true" name="=Crusade= Macro Charges" hidden="true" id="f2da-686b-199e-278b" collective="false" targetId="56fe-a07d-b73f-a576" type="selectionEntry"/>
+            <entryLink import="true" name="=Crusade= Seismic Auspex" hidden="true" id="8d2d-8323-dff3-beb7" collective="false" targetId="9a0b-a568-117f-b54b" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1b44-3d7c-3acf-849d"/>
@@ -17729,6 +17782,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="a499-678c-ed35-c0e8" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="8d2d-8323-dff3-beb7" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="bfee-3947-a004-3a4e" name="Paired Turbo Laser Destructor" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17821,6 +17881,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Ordnance</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value=", Barrage" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0330-81f9-1448-13a1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -17867,9 +17934,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="=Crusade= Seismic Auspex" hidden="true" id="0330-81f9-1448-13a1" collective="false" targetId="9a0b-a568-117f-b54b" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="a499-678c-ed35-c0e8" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="0330-81f9-1448-13a1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="f2ae-e883-28c4-dbcc" name="Vulcan Megabolter Array" hidden="false" collective="false" import="false" type="upgrade">
       <modifiers>
@@ -18286,6 +18365,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <selectionEntryGroup name="Upgrades" id="9bf5-7b12-e74d-bb66" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="f56e-8dd9-50d2-b3b6" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Seismic Auspex" hidden="true" id="09ed-6300-0202-49c3" collective="false" targetId="9a0b-a568-117f-b54b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -18306,6 +18386,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x),Concussive, Quake</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">15+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value=", Barrage" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2a7a-badc-c88d-bba6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -18323,9 +18410,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <selectionEntryGroup name="Upgrades" id="185b-61ec-e058-504c" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="e220-67a7-efc9-e66b" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Seismic Auspex" hidden="true" id="2a7a-badc-c88d-bba6" collective="false" targetId="9a0b-a568-117f-b54b" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="a499-678c-ed35-c0e8" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="2a7a-badc-c88d-bba6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="abfb-13ba-25c8-f130" name="Ursus Claw" publicationId="3401-191e-1333-8a1d" page="169" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -22060,9 +22159,7 @@ Take the correct amount of selections to come to the total cost for the upgrade 
     <selectionEntry id="9a0b-a568-117f-b54b" name="=Crusade= Seismic Auspex" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="6b74-3421-ab9b-72ee" name="Seismic Auspex" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
-          <description>Any Warbringer Nemesis Titan from this Legio can be upgraded for 5 x half the Strength of the weapon (e.g., a volcano cannon would be +30 points). The weapon gains the Barrage trait and applies only a -1 modifier rather than a -2 modifier when making attacks at targets it does not have line of sight to. The Barrage trait can only be used if the Warbringer Nemesis Titan has not moved this turn (voluntarily or involuntarily).
-
-Take 1 selection for each half strength of the weapon you are upgrading.</description>
+          <description>Any Warbringer Nemesis Titan from this Legio can be upgraded for 5 x half the Strength of the weapon (e.g., a volcano cannon would be +30 points). The weapon gains the Barrage trait and applies only a -1 modifier rather than a -2 modifier when making attacks at targets it does not have line of sight to. The Barrage trait can only be used if the Warbringer Nemesis Titan has not moved this turn (voluntarily or involuntarily).</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -22073,6 +22170,28 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4087-d0e5-6bf1-4d50" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="eac2-b1e4-777f-0f0f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="eac2-b1e4-777f-0f0f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="c37f-5ca9-9d98-5cf0" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="10b4-44bc-24de-8dcc" name="=Crusade= Hunting Motives" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -23600,30 +23719,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="495f-6583-c4fa-cff5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="762f-4fe3-96b1-09cd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="09ed-6300-0202-49c3" name="=Crusade= Seismic Auspex" hidden="true" collective="false" import="true" targetId="9a0b-a568-117f-b54b" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="eac2-b1e4-777f-0f0f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="eac2-b1e4-777f-0f0f" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="c37f-5ca9-9d98-5cf0" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="dfd0-5f16-d7bf-b7fc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
