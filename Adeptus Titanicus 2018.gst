@@ -7074,6 +7074,21 @@ This lasts until the end of the Combat phase. In addition, Legio Damicium Titans
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a08-3da3-d467-6a04" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="ccee-936e-87d6-bf29" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="ccee-936e-87d6-bf29" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="dc14-b65e-acfb-906a" name="=Damicium= Secondary Plating" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
@@ -17159,6 +17174,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             </entryLink>
             <entryLink import="true" name="=Crusade= Fusion Missiles" hidden="true" id="665b-ab89-c37f-393d" collective="false" targetId="617d-4ecf-2753-447a" type="selectionEntry"/>
             <entryLink import="false" name="=Vulcanum= Janus Pattern Missiles" hidden="true" id="f986-8527-8301-103f" collective="false" targetId="3dfc-85e0-9496-60ec" type="selectionEntry"/>
+            <entryLink import="false" name="=Tritonis= Radiative Warheads" hidden="true" id="9ca4-b720-3ba1-693c" collective="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="78e3-cb1c-d504-bda2"/>
@@ -17170,6 +17186,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="b145-d969-d1d6-ebf7" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="0e10-f38f-fb61-93d3" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="9ca4-b720-3ba1-693c" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -17619,6 +17636,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             </entryLink>
             <entryLink import="true" name="=Crusade= Fusion Missiles" hidden="true" id="1d65-6019-5074-5d61" collective="false" targetId="617d-4ecf-2753-447a" type="selectionEntry"/>
             <entryLink import="false" name="=Vulcanum= Janus Pattern Missiles" hidden="true" id="1737-8e57-4a38-a25b" collective="false" targetId="3dfc-85e0-9496-60ec" type="selectionEntry"/>
+            <entryLink import="false" name="=Tritonis= Radiative Warheads" hidden="true" id="a0ac-08b3-92ca-ea4b" collective="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1a69-7c62-8dce-96c0"/>
@@ -17630,6 +17648,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="02c7-4aa5-7c19-c9df" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="026c-2664-f725-ae13" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a0ac-08b3-92ca-ea4b" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -23159,31 +23178,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="22fa-4ab3-e0c9-ce9a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="c17e-44cc-b775-cd07" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="621c-b697-04b8-7517" name="=Tritonis= Radiative Warheads" hidden="true" collective="false" import="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ccee-936e-87d6-bf29" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="ccee-936e-87d6-bf29" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="c6ee-89aa-a190-9403" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="e07b-460c-43f2-9615" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="e0d5-c856-00c2-92c4" name="=Venator= Blind Launchers" hidden="true" collective="false" import="false" targetId="1582-9f6b-0e82-c228" type="selectionEntry">
