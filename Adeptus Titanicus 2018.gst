@@ -17010,6 +17010,28 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
+        <profile name="Diabatic Warheads" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="true" id="e406-26cb-01ad-9935" page="">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">9</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Carapace, Paired</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f727-11ed-ce43-b1d7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="8f47-93ad-0ac9-6064" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
@@ -17035,6 +17057,27 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </categoryLinks>
             </entryLink>
             <entryLink import="true" name="=Crusade= Blind Missiles" hidden="true" id="6a5f-5b3d-443b-2d0c" collective="false" targetId="75f9-5be1-91bd-4a04" type="selectionEntry"/>
+            <entryLink import="true" name="=Crusade= Diabatic Warheads" hidden="true" id="f727-11ed-ce43-b1d7" collective="false" targetId="f474-9d16-9408-0a7d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="78e3-cb1c-d504-bda2"/>
@@ -17361,6 +17404,28 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
+        <profile name="Diabatic Warheads" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="true" id="7904-c207-8a44-6f0d" page="">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">9</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Carapace, Paired</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a0c2-76f5-def8-91ff" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="4b06-870c-fb54-991b" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
@@ -17387,6 +17452,27 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </categoryLinks>
             </entryLink>
             <entryLink import="true" name="=Crusade= Blind Missiles" hidden="true" id="281a-6e4c-6622-cddf" collective="false" targetId="75f9-5be1-91bd-4a04" type="selectionEntry"/>
+            <entryLink import="true" name="=Crusade= Diabatic Warheads" hidden="true" id="a0c2-76f5-def8-91ff" collective="false" targetId="f474-9d16-9408-0a7d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1a69-7c62-8dce-96c0"/>
@@ -21589,6 +21675,9 @@ Take 1 selection for each weapon you are upgrading.</description>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3bb-c35c-e58c-780c" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="9a0b-a568-117f-b54b" name="=Crusade= Seismic Auspex" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -23081,31 +23170,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="b23a-e2b4-1b49-aa87" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="7f90-c7d2-2ea4-8f88" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="e195-86da-88c3-316d" name="=Crusade= Diabatic Warheads" hidden="true" collective="false" import="true" targetId="f474-9d16-9408-0a7d" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="a86d-52c9-0eea-4412" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="c143-4c88-7749-57a3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="9526-baed-0234-2ae0" name="=Crusade= Fusion Missiles" hidden="true" collective="false" import="true" targetId="617d-4ecf-2753-447a" type="selectionEntry">
