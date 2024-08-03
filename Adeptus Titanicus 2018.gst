@@ -5250,7 +5250,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Fusion</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x), Fusion</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -5289,7 +5289,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Maximal Fire</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x),Maximal Fire</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -5327,7 +5327,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Draining</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x),Draining</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -15904,6 +15904,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                     <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
                     <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
                   </costs>
+                  <rules>
+                    <rule name="Macro Charges" id="47ba-ddf6-2997-a98d" hidden="false" publicationId="2988-f24d-39ef-352e" page="99">
+                      <description>Any Titan from this Legio equipped with a Blast 3&quot; weapon may be equipped with Macro Charges for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with Macro Charges replaces the Blast (3&quot;) trait with the Blast (5&quot;) trait and increases its Strength value by 1. However, when a weapon equipped with Macro Charges detonates, the Strength of any hit taken is increased by 2.</description>
+                    </rule>
+                  </rules>
                 </selectionEntry>
                 <selectionEntry id="12ae-a386-868d-be5b" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -16543,7 +16548,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Draining</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x),Draining</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -17169,9 +17174,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Draining</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x), Draining</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="2761-1395-aa4e-73bd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e3c6-7409-67bc-84c5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="f14d-88df-2e41-f0b4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e3c6-7409-67bc-84c5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -17188,7 +17205,18 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <selectionEntryGroup name="Upgrades" id="98ed-12fb-e83c-096f" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="b6bf-58b0-f07a-9091" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Macro Charges" hidden="true" id="e3c6-7409-67bc-84c5" collective="false" targetId="56fe-a07d-b73f-a576" type="selectionEntry"/>
           </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6539-a2c4-6839-5def" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="6539-a2c4-6839-5def">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e3c6-7409-67bc-84c5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -17205,7 +17233,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Concussive, Quake</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x),Concussive, Quake</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -17242,9 +17270,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">9+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (3&quot;), Maximal Fire</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x), Maximal Fire</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="2761-1395-aa4e-73bd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="82f1-b22f-0b6b-04e1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="f14d-88df-2e41-f0b4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="82f1-b22f-0b6b-04e1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -17265,9 +17305,14 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="c86c-a3ce-22f1-5898">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="13bd-b2b3-6597-2cf6" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="13bd-b2b3-6597-2cf6" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="82f1-b22f-0b6b-04e1" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <entryLinks>
@@ -17288,6 +17333,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </constraints>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="eb1e-3790-d998-1145" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Macro Charges" hidden="true" id="82f1-b22f-0b6b-04e1" collective="false" targetId="56fe-a07d-b73f-a576" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -17584,6 +17630,16 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <condition type="greaterThan" value="0" field="selections" scope="parent" childId="f488-be0f-7490-948b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="2761-1395-aa4e-73bd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f2da-686b-199e-278b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="f14d-88df-2e41-f0b4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f2da-686b-199e-278b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
@@ -17595,7 +17651,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Fusion</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x), Fusion</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -17616,7 +17672,18 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <entryLinks>
             <entryLink import="false" name="=Magna= Directed Pressure Outlet" hidden="false" id="f488-be0f-7490-948b" collective="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="9b16-b135-1764-e5e0" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Macro Charges" hidden="true" id="f2da-686b-199e-278b" collective="false" targetId="56fe-a07d-b73f-a576" type="selectionEntry"/>
           </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1b44-3d7c-3acf-849d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="1b44-3d7c-3acf-849d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f2da-686b-199e-278b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -18124,7 +18191,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11-14</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Draining</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x),Draining</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">15+</characteristic>
           </characteristics>
         </profile>
@@ -18161,7 +18228,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11-14</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Concussive, Quake</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x),Concussive, Quake</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">15+</characteristic>
           </characteristics>
         </profile>
@@ -18710,6 +18777,16 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <condition type="greaterThan" value="0" field="selections" scope="parent" childId="aa63-be01-3e1a-895a" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="2761-1395-aa4e-73bd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d66f-44d4-6e20-5c89" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="f14d-88df-2e41-f0b4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d66f-44d4-6e20-5c89" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
@@ -18721,7 +18798,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Fusion</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x), Fusion</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -18742,7 +18819,18 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <entryLinks>
             <entryLink import="false" name="=Magna= Directed Pressure Outlet" hidden="false" id="aa63-be01-3e1a-895a" collective="false" targetId="4f84-f656-4fde-4bd6" type="selectionEntry"/>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="9333-2b74-2677-5ea5" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Macro Charges" hidden="true" id="d66f-44d4-6e20-5c89" collective="false" targetId="56fe-a07d-b73f-a576" type="selectionEntry"/>
           </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="df82-2e58-65d2-fc91"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="df82-2e58-65d2-fc91">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d66f-44d4-6e20-5c89" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -18759,9 +18847,21 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Maximal Fire</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x), Maximal Fire</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="2761-1395-aa4e-73bd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc83-8f72-d848-f760" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="f14d-88df-2e41-f0b4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc83-8f72-d848-f760" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -18782,9 +18882,14 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="6c3f-b73b-af89-5ba7">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d60c-8537-a679-9aad" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d60c-8537-a679-9aad" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc83-8f72-d848-f760" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <entryLinks>
@@ -18805,6 +18910,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </constraints>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="4def-ba01-780a-36b0" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Macro Charges" hidden="true" id="dc83-8f72-d848-f760" collective="false" targetId="56fe-a07d-b73f-a576" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -21453,9 +21559,21 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">-</characteristic>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Draining, Carapace</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x), Draining, Carapace</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="2761-1395-aa4e-73bd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b942-c58c-6c70-25f2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="f14d-88df-2e41-f0b4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b942-c58c-6c70-25f2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -21468,6 +21586,24 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="2078-5bea-1b8a-132b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="=Crusade= Macro Charges" hidden="true" id="b942-c58c-6c70-25f2" collective="false" targetId="56fe-a07d-b73f-a576" type="selectionEntry"/>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="8957-edbf-0262-62b1" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="67fa-6ee9-8bb7-f011" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="67fa-6ee9-8bb7-f011">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b942-c58c-6c70-25f2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="985e-c339-0b77-e617" name="=Crusade= Ablative Ceramite Plating" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -21686,9 +21822,7 @@ Take the correct amount of selections to come to the total cost for the upgrade 
     <selectionEntry id="56fe-a07d-b73f-a576" name="=Crusade= Macro Charges" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="68b8-aab2-8492-9df0" name="Macro Charges" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
-          <description>Any Titan from this Legio equipped with a Blast 3&quot; weapon may be equipped with Macro Charges for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with Macro Charges replaces the Blast (3&quot;) trait with the Blast (5&quot;) trait and increases its Strength value by 1. However, when a weapon equipped with Macro Charges detonates, the Strength of any hit taken is increased by 2.
-
-Take 1 selection for each weapon you are upgrading.</description>
+          <description>Any Titan from this Legio equipped with a Blast 3&quot; weapon may be equipped with Macro Charges for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. A weapon with Macro Charges replaces the Blast (3&quot;) trait with the Blast (5&quot;) trait and increases its Strength value by 1. However, when a weapon equipped with Macro Charges detonates, the Strength of any hit taken is increased by 2.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -21699,6 +21833,21 @@ Take 1 selection for each weapon you are upgrading.</description>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4968-6b33-2481-129f" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5221-b61f-f881-45e7" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="5221-b61f-f881-45e7" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="cd35-17bf-d32f-5e60" name="=Crusade= Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -22380,7 +22529,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Carapace, Draining</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x),Carapace, Draining</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -22419,7 +22568,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Fusion</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x),Fusion</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -22458,7 +22607,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">5&quot;</characteristic>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast, Maximal Fire</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Blast (x),Maximal Fire</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
         </profile>
@@ -23249,30 +23398,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="23b7-7dae-b605-462a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="3676-5979-5a73-7d21" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="3d1e-fb7a-aee5-acff" name="=Crusade= Macro Charges" hidden="true" collective="false" import="true" targetId="56fe-a07d-b73f-a576" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5221-b61f-f881-45e7" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="5221-b61f-f881-45e7" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a8cf-34fb-66af-763c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="d129-1905-4fc7-7210" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="afd5-6419-898f-7543" name="=Crusade= Macro Magazines" hidden="true" collective="false" import="true" targetId="628a-c5e1-1d3f-065e" type="selectionEntry">
