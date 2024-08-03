@@ -15913,6 +15913,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                     <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
                     <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
                   </costs>
+                  <rules>
+                    <rule name="Fusion Missiles" id="a277-c344-00f3-8261" hidden="false" publicationId="2988-f24d-39ef-352e" page="100">
+                      <description>Any Titan from this Legio armed with an apocalypse missile launcher or paired apocalypse missile launchers may take Fusion Missiles as an upgrade for +25 points. Each of the Titan’s weapons must be upgraded separately. When firing a weapon equipped with Fusion Missiles, the player can choose to either use its normal profile, or fire using Fusion Missiles; if they do this, for the duration of the attack the weapon gains the Fusion trait and reduces its Dice value to 3 if the original Dice value is 8 or more, or to 2 if the original Dice value is 7 or less.</description>
+                    </rule>
+                  </rules>
                 </selectionEntry>
                 <selectionEntry id="6e6e-a651-c9ba-d4c7" name="Gravitonic Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -17035,6 +17040,28 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             </modifier>
           </modifiers>
         </profile>
+        <profile name="Fusion Missiles [WL]" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="d89d-f312-8eed-83bd">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">11+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Carapace, Paired, Fusion</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="665b-ab89-c37f-393d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="8f47-93ad-0ac9-6064" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
@@ -17086,6 +17113,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="=Crusade= Fusion Missiles" hidden="true" id="665b-ab89-c37f-393d" collective="false" targetId="617d-4ecf-2753-447a" type="selectionEntry"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="78e3-cb1c-d504-bda2"/>
@@ -17104,6 +17132,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="2e59-3e13-7382-4fac" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="665b-ab89-c37f-393d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="8bd4-e1ff-d447-389e" name="Volcano Cannon" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -17422,6 +17457,28 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
             </modifier>
           </modifiers>
         </profile>
+        <profile name="Fusion Missiles [RVR]" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="5978-9806-222f-0e4a">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">30&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">120&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Barrage, Carapace, Fusion</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1d65-6019-5074-5d61" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="4b06-870c-fb54-991b" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
@@ -17474,6 +17531,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="=Crusade= Fusion Missiles" hidden="true" id="1d65-6019-5074-5d61" collective="false" targetId="617d-4ecf-2753-447a" type="selectionEntry"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1a69-7c62-8dce-96c0"/>
@@ -17492,6 +17550,13 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="2e59-3e13-7382-4fac" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="1d65-6019-5074-5d61" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="087a-abff-3ffe-f488" name="Melta Cannon [RVR]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -21646,6 +21711,21 @@ Take 1 selection for each weapon you are upgrading.</description>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e377-736f-78ff-1887" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="40cd-b4c6-809f-9acf" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="40cd-b4c6-809f-9acf" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ef97-0bcb-8db6-0a9f" name="=Crusade= Gravitonic Stabilisers" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -23130,31 +23210,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="b23a-e2b4-1b49-aa87" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="7f90-c7d2-2ea4-8f88" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="9526-baed-0234-2ae0" name="=Crusade= Fusion Missiles" hidden="true" collective="false" import="true" targetId="617d-4ecf-2753-447a" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="40cd-b4c6-809f-9acf" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="40cd-b4c6-809f-9acf" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="d6dd-9164-91f9-6eef" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="34d1-04b6-7945-5a23" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="b8bf-372f-b1d9-35c0" name="=Crusade= Gravitonic Stabilisers" hidden="true" collective="false" import="true" targetId="ef97-0bcb-8db6-0a9f" type="selectionEntry">
