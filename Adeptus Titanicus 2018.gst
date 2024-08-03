@@ -5071,6 +5071,21 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="95e8-3d8e-a0ad-4ad3" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="95e8-3d8e-a0ad-4ad3" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb4d-462b-db80-69ff" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="0d56-2ed6-8229-739e" name="=Fureans= Hunting Auspex" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
@@ -16979,21 +16994,9 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <profile id="d5ca-a1c9-d50a-2335" name="Earthbreaker Missiles [WL]" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3255-3e6b-fe05-ab5d" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -17077,6 +17080,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   </conditionGroups>
                 </modifier>
               </modifiers>
+            </entryLink>
+            <entryLink import="false" name="=Krytos= Earthbreaker Missiles" hidden="false" id="3255-3e6b-fe05-ab5d" collective="false" targetId="4c8f-29c9-0c8e-67b6" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -17373,21 +17381,9 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
         <profile id="d57b-9161-2996-9145" name="Earthbreaker Missiles [RVR]" publicationId="bf8b-27d7-039e-5df9" page="41" hidden="true" typeId="b054-6896-e395-0e91" typeName="Weapon">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bffc-4266-a83d-cae6" type="atLeast"/>
-                        <condition field="selections" scope="primary-category" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="6982-2d18-55cb-61e5" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0d03-0629-0cb0-6cb1" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -17472,6 +17468,11 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
                   </conditionGroups>
                 </modifier>
               </modifiers>
+            </entryLink>
+            <entryLink import="false" name="=Krytos= Earthbreaker Missiles" hidden="false" id="0d03-0629-0cb0-6cb1" collective="false" targetId="4c8f-29c9-0c8e-67b6" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -22564,47 +22565,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="c2d3-27b3-0f8a-79f0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="85e7-86fc-a3a2-b6d2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0d03-0629-0cb0-6cb1" name="=Krytos= Earthbreaker Missiles" hidden="false" collective="false" import="false" targetId="4c8f-29c9-0c8e-67b6" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="95e8-3d8e-a0ad-4ad3" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="95e8-3d8e-a0ad-4ad3" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="d36f-5e44-2150-3428" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="7103-9316-d4a5-8caa" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="a731-e220-2d8a-41bf" value="15">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="d36f-5e44-2150-3428" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="a731-e220-2d8a-41bf" value="25">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="7103-9316-d4a5-8caa" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="1ab6-808e-4a70-23f0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="2e27-9fd6-d182-f626" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="a40a-3549-383a-bf44" name="=Fureans= Hunting Auspex" hidden="true" collective="false" import="false" targetId="0d56-2ed6-8229-739e" type="selectionEntry">
