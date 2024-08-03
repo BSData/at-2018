@@ -23752,7 +23752,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
     <selectionEntryGroup id="f360-b4bd-e6cd-d077" name="Universal Wargear" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="4715-b621-482b-2762" name="Bastion Shielding" hidden="false" collective="false" import="true" targetId="256f-a0de-9b30-27a6" type="selectionEntry"/>
-        <entryLink id="3f5f-b100-1958-84f3" name="Hardened Casing" hidden="false" collective="false" import="true" targetId="fc6c-b6b9-51a0-b7b0" type="selectionEntry"/>
         <entryLink id="9f27-dfb1-6771-73ef" name="Oath Banner" hidden="false" collective="false" import="true" targetId="e37d-f716-228b-5c9d" type="selectionEntry"/>
         <entryLink id="9204-a8c6-7202-0910" name="Ranging Auspex" hidden="false" collective="false" import="true" targetId="da3a-8e05-dcc0-bd3b" type="selectionEntry"/>
         <entryLink id="efe7-93fd-c4a7-3520" name="Tracking Gyroscopes" hidden="false" collective="false" import="true" targetId="28ac-d2b9-5667-854e" type="selectionEntry">
