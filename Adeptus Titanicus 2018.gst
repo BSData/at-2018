@@ -5026,6 +5026,21 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e47c-7c2e-a7fd-f945" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4225-27f8-9c8b-e56e" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="4225-27f8-9c8b-e56e" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ba6a-6565-fd40-3645" name="=Atarus= Infernus Missiles" publicationId="3401-191e-1333-8a1d" page="71" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
@@ -17114,6 +17129,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </costs>
             </entryLink>
             <entryLink import="true" name="=Crusade= Fusion Missiles" hidden="true" id="665b-ab89-c37f-393d" collective="false" targetId="617d-4ecf-2753-447a" type="selectionEntry"/>
+            <entryLink import="false" name="=Vulcanum= Janus Pattern Missiles" hidden="true" id="f986-8527-8301-103f" collective="false" targetId="3dfc-85e0-9496-60ec" type="selectionEntry"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="78e3-cb1c-d504-bda2"/>
@@ -17532,6 +17548,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
               </costs>
             </entryLink>
             <entryLink import="true" name="=Crusade= Fusion Missiles" hidden="true" id="1d65-6019-5074-5d61" collective="false" targetId="617d-4ecf-2753-447a" type="selectionEntry"/>
+            <entryLink import="false" name="=Vulcanum= Janus Pattern Missiles" hidden="true" id="1737-8e57-4a38-a25b" collective="false" targetId="3dfc-85e0-9496-60ec" type="selectionEntry"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1a69-7c62-8dce-96c0"/>
@@ -18642,6 +18659,7 @@ For example, if the Reaver from a Venator Light Maniple was replaced with a Warl
           <entryLinks>
             <entryLink import="false" name="=Atarus= Infernus Missiles" hidden="true" id="81d8-7987-ad17-9804" collective="false" targetId="ba6a-6565-fd40-3645" type="selectionEntry"/>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="753f-d7f9-1157-06dd" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="false" name="=Vulcanum= Janus Pattern Missiles" hidden="true" id="198f-4991-0a7a-8c17" collective="false" targetId="3dfc-85e0-9496-60ec" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -22620,31 +22638,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           <constraints>
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="0c4d-f18b-ff50-dec6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="d16c-6cf5-e4b5-8804" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="8a87-811f-0078-972c" name="=Vulcanum= Janus Pattern Missiles" hidden="true" collective="false" import="false" targetId="3dfc-85e0-9496-60ec" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="4225-27f8-9c8b-e56e" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="4225-27f8-9c8b-e56e" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="c2d3-27b3-0f8a-79f0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="85e7-86fc-a3a2-b6d2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink id="a40a-3549-383a-bf44" name="=Fureans= Hunting Auspex" hidden="true" collective="false" import="false" targetId="0d56-2ed6-8229-739e" type="selectionEntry">
