@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="9" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="10" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -16059,8 +16059,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="17c4-13fd-4cef-2987" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
-        <categoryLink id="c161-c1d8-f789-0f47" name="ReaverTitan" hidden="false" targetId="d36f-5e44-2150-3428" primary="true"/>
+        <categoryLink id="17c4-13fd-4cef-2987" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="c161-c1d8-f789-0f47" name="ReaverTitan" hidden="false" targetId="d36f-5e44-2150-3428" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="360a-34ac-766d-69f2" name="Weapons" hidden="false" collective="false" import="false">
@@ -16211,8 +16211,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="1fb9-4ade-8578-24a5" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
-        <categoryLink id="e9d5-d649-c246-8d73" name="WarlordTitan" hidden="false" targetId="7103-9316-d4a5-8caa" primary="true"/>
+        <categoryLink id="1fb9-4ade-8578-24a5" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="e9d5-d649-c246-8d73" name="WarlordTitan" hidden="false" targetId="7103-9316-d4a5-8caa" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2c49-32dd-c032-07ff" name="Weapons" hidden="false" collective="false" import="false">
@@ -16348,8 +16348,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="9848-624b-2e4a-6ddf" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
-        <categoryLink id="e12e-1619-83e6-4a5c" name="WarhoundTitan" hidden="false" targetId="223f-6e71-9e4f-939e" primary="true"/>
+        <categoryLink id="9848-624b-2e4a-6ddf" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="e12e-1619-83e6-4a5c" name="WarhoundTitan" hidden="false" targetId="223f-6e71-9e4f-939e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f4dd-18ef-5ac0-0de0" name="Weapons" hidden="false" collective="false" import="false">
@@ -18207,8 +18207,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <infoLink id="eba8-4123-b6e8-8cb8" name="Auxiliary Titan" hidden="true" targetId="8e9d-aea7-06fc-55f7" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="6c54-363e-23cf-0e6c" name="WarbringerNemesisTitan" hidden="false" targetId="c37f-5ca9-9d98-5cf0" primary="true"/>
-        <categoryLink id="e5dd-4763-2ead-cde7" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink id="6c54-363e-23cf-0e6c" name="WarbringerNemesisTitan" hidden="false" targetId="c37f-5ca9-9d98-5cf0" primary="false"/>
+        <categoryLink id="e5dd-4763-2ead-cde7" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
         <categoryLink id="581e-fe63-34ff-c79b" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -18527,8 +18527,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="0ea4-ff8f-798b-3392" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
-        <categoryLink id="02c5-198c-8fd0-eb4b" name="WarlordSinisterPsiTitan" hidden="false" targetId="f54f-c26d-3d2a-2749" primary="true"/>
+        <categoryLink id="0ea4-ff8f-798b-3392" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="02c5-198c-8fd0-eb4b" name="WarlordSinisterPsiTitan" hidden="false" targetId="f54f-c26d-3d2a-2749" primary="false"/>
         <categoryLink id="d7dd-e3aa-4ba1-e5a6" name="WarlordTitan" hidden="false" targetId="7103-9316-d4a5-8caa" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -21595,8 +21595,8 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <infoLink id="5955-5f82-b4da-399f" name="Heavy Scout Titan" hidden="false" targetId="06a9-3744-bb42-ba59" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="39eb-22c8-e3d6-e6ff" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
-        <categoryLink id="d001-0b93-f45c-01e4" name="DireWolfTitan" hidden="false" targetId="d173-87e6-9f1b-1aaa" primary="true"/>
+        <categoryLink id="39eb-22c8-e3d6-e6ff" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="true"/>
+        <categoryLink id="d001-0b93-f45c-01e4" name="DireWolfTitan" hidden="false" targetId="d173-87e6-9f1b-1aaa" primary="false"/>
         <categoryLink id="0f9d-1fcf-293c-116c" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
