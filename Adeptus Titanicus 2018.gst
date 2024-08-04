@@ -18204,7 +18204,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="eba8-4123-b6e8-8cb8" name="Auxiliary Titan" hidden="false" targetId="8e9d-aea7-06fc-55f7" type="rule"/>
+        <infoLink id="eba8-4123-b6e8-8cb8" name="Auxiliary Titan" hidden="true" targetId="8e9d-aea7-06fc-55f7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6c54-363e-23cf-0e6c" name="WarbringerNemesisTitan" hidden="false" targetId="c37f-5ca9-9d98-5cf0" primary="true"/>
@@ -18331,6 +18331,13 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="325"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="b2c2-c5d6-ee00-6736" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6982-2d18-55cb-61e5" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="02fe-12bb-3cc6-2dcf" name="Bellicosa Volcano Cannon [WBG]" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -20106,6 +20113,13 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="850"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="b2c2-c5d6-ee00-6736" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6982-2d18-55cb-61e5" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="230c-f352-c94a-ee82" name="Cruciator Gatling Array" publicationId="bf8b-27d7-039e-5df9" page="167" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -21668,6 +21682,13 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="210"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="b2c2-c5d6-ee00-6736" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6982-2d18-55cb-61e5" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="b967-d555-0090-2218" name="Ardex Defensor Mega-Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -26276,6 +26297,13 @@ result of a single D6.</description>
     </rule>
     <rule id="8e9d-aea7-06fc-55f7" name="Auxiliary Titan" hidden="false">
       <description>This Titan is an Auxiliary Titan. A battlegroup can include a maximum of 1 Auxiliary Titan as Reinforcements per maniple or Knight Lance in the battlegroup.</description>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6982-2d18-55cb-61e5" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="06a9-3744-bb42-ba59" name="Heavy Scout Titan" hidden="false">
       <description>Each maniple in a battlegroup may replace a single optional Warhound Titan with a Dire Wolf Titan. Legio Audax maniples may replace a single mandatory Reaver or a single optional Warhound Titan with a Dire Wolf Titan instead; this allows the fielding of Legio Audax maniples that were previously inaccessible to the Legio, such as Ferrox or Venator maniples, so long as the maniple includes no Titan of Scale 7 or more when assembled. Dire Wolf Titans count as the Warhound or Reaver they replace for the purposes of maniple rules.</description>
