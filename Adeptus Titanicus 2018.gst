@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="10" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="11" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -496,11 +496,7 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
         <constraint type="max" value="-1" field="selections" scope="root-entry" shared="true" id="fed1-5361-bf2d-b551"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="d173-87e6-9f1b-1aaa" name="DireWolfTitan" hidden="false">
-      <profiles>
-        <profile name="DireWolfTitan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="ff85-0f05-7e52-dcf9"/>
-      </profiles>
-    </categoryEntry>
+    <categoryEntry id="d173-87e6-9f1b-1aaa" name="DireWolfTitan" hidden="false"/>
     <categoryEntry id="0917-7b11-20d7-2296" name="Torso" hidden="false"/>
     <categoryEntry id="b2c2-c5d6-ee00-6736" name="Auxiliary Titan" hidden="false">
       <infoLinks>
