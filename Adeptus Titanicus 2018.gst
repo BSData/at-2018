@@ -329,12 +329,8 @@ Units can move across Battlefield Assets without penalty. If a Titan&apos;s base
     <categoryEntry id="99b7-5e2f-9ea4-bbdf" name="LegioInfernus" hidden="false"/>
     <categoryEntry id="9d14-f4fb-5868-1b62" name="LegioMordaxis" hidden="false"/>
     <categoryEntry id="4f76-34ac-3cf7-34c6" name="LegioAudax" hidden="false"/>
-    <categoryEntry id="fb16-4d89-30b7-fbb8" name="Squadron" hidden="false"/>
     <categoryEntry id="c37f-5ca9-9d98-5cf0" name="WarbringerNemesisTitan" hidden="false"/>
     <categoryEntry id="91bd-c88a-f6bb-bb3d" name="LegioSpecificWargear" hidden="false"/>
-    <categoryEntry id="06ab-258d-46aa-3b1f" name="Qualifier-SpecialMissiles" hidden="false"/>
-    <categoryEntry id="f7cb-94c3-1bc4-1d94" name="Qualifier-BolterWeapons" hidden="false"/>
-    <categoryEntry id="5959-24a2-6bd7-ad76" name="Qualifier-Blast3Weapons" hidden="false"/>
     <categoryEntry id="87f5-9eef-f2bc-d248" name="Impale" publicationId="bf8b-27d7-039e-5df9" page="167" hidden="false">
       <rules>
         <rule id="c660-4152-ef3e-aeba" name="Impale" publicationId="3265-f408-cc9b-bfa3" page="95" hidden="false">
@@ -16861,7 +16857,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="c7aa-f663-52e2-c5ca" name="Carapace" hidden="false" targetId="33e1-d3ed-4420-3e22" primary="true"/>
         <categoryLink id="34e9-66f3-4e49-9bc9" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
         <categoryLink id="b78a-6229-583e-36cf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="6e19-0b5e-f4ac-5902" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
@@ -17150,7 +17145,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="a183-6bdb-9463-6566" name="Arc: Corridor" hidden="false" targetId="8e5a-4544-df39-4e4c" primary="false"/>
         <categoryLink id="c0f6-dc4d-43d0-250c" name="Paired" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false"/>
         <categoryLink id="c21f-1609-c88a-b089" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="5ca4-19fb-d2bb-3e89" name="Qualifier-SpecialMissiles" hidden="false" targetId="06ab-258d-46aa-3b1f" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="15"/>
@@ -17172,17 +17166,10 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                            <condition type="atLeast" value="1" field="selections" scope="model" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -17629,7 +17616,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="1e7c-6ff7-16d6-7380" name="Paired" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false"/>
         <categoryLink id="9fd8-4e7a-18b3-6920" name="Arc: 360 Degree" hidden="false" targetId="ed82-caea-5092-bf7e" primary="false"/>
         <categoryLink id="ef76-24da-820b-228a" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="79c0-8961-c4ea-c5d9" name="Qualifier-SpecialMissiles" hidden="false" targetId="06ab-258d-46aa-3b1f" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
@@ -17651,17 +17637,10 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                            <condition type="atLeast" value="1" field="selections" scope="model" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="06ab-258d-46aa-3b1f" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="f834-a2e8-bf06-4d7c" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -17994,7 +17973,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="8d2a-cd4e-2577-7e6b" name="Paired" hidden="false" targetId="b8e5-fe94-7842-e1b4" primary="false"/>
         <categoryLink id="143e-1417-e155-e751" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
         <categoryLink id="20c7-8b0b-9546-211b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="e7fe-318f-0686-817d" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
@@ -18080,7 +18058,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="5cf1-75ba-8266-b2aa" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
         <categoryLink id="1f47-fa17-59e4-f828" name="Arm" hidden="false" targetId="44b5-8770-ea8e-2401" primary="true"/>
         <categoryLink id="ad18-28ce-f3ad-7e1b" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="6467-0a33-3b57-e7e7" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
         <categoryLink id="13f1-7b0c-63e2-efdb" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
       </categoryLinks>
       <costs>
@@ -18890,7 +18867,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
       <categoryLinks>
         <categoryLink id="dbd8-26be-8844-621a" name="Barrage" hidden="false" targetId="a499-678c-ed35-c0e8" primary="false"/>
         <categoryLink id="c2e1-227f-a004-5c95" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="e6a2-f75d-9be5-8910" name="Qualifier-SpecialMissiles" hidden="false" targetId="06ab-258d-46aa-3b1f" primary="false"/>
         <categoryLink id="bd37-fe21-d5ab-e973" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="0ede-c55f-a5d0-a3f0" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
@@ -19173,7 +19149,6 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
       <categoryLinks>
         <categoryLink id="8ebe-c28b-1a93-8f29" name="Rapid" hidden="false" targetId="a421-ff94-44cf-2eb8" primary="false"/>
         <categoryLink id="abe4-5d4f-3c57-f305" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
-        <categoryLink id="dfa9-f291-767d-7e84" name="Qualifier-BolterWeapons" hidden="false" targetId="f7cb-94c3-1bc4-1d94" primary="false"/>
         <categoryLink id="36e3-6d18-9816-b943" name="Arc: Front" hidden="false" targetId="6bfc-b62c-823a-5a29" primary="false"/>
         <categoryLink id="dd45-0ee3-9662-d5c1" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
