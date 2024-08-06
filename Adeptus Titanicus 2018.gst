@@ -623,6 +623,7 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       </modifiers>
       <comment>This category is used to exclude Retainers from the banner limit, while still allowing them to have the &apos;Banner&apos; category</comment>
     </categoryEntry>
+    <categoryEntry name="Titan of Legend" id="9a74-94db-f8be-10e8" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" hidden="true">
@@ -9029,6 +9030,11 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5d3-89bc-e622-8efb" type="min"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="055e-09da-4524-d5a3" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Knights of Legend" hidden="false" id="75e0-9723-c1ba-1fc3" type="selectionEntry" targetId="efba-d45d-4116-76bc" sortIndex="16">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c188-853c-e33b-145e" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -22928,6 +22934,151 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="Nobility" hidden="false" id="fe46-8fac-cfb7-4fa3" targetId="e49d-7912-8e4f-a188" primary="false"/>
         <categoryLink name="High King" hidden="false" id="4935-72b9-5af4-dcf1" targetId="6023-4ce7-7008-e851" primary="false"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Titans of Legend" hidden="false" id="efba-d45d-4116-76bc">
+      <categoryLinks>
+        <categoryLink targetId="9a74-94db-f8be-10e8" id="c239-48c6-1863-6549" primary="false" name="Titan of Legend"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Iben Faruk" hidden="true" id="f646-3ee3-0920-4757" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Iben Faruk" hidden="false" id="1dee-3970-5fa7-9ba5" collective="false">
+      <profiles>
+        <profile name="Warhound Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="af53-b4b1-a65d-7632">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">8&quot;/12&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">3/5</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">2</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="6376-2e51-7fd9-540a" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="WarhoundTitan" hidden="false" id="84b3-02d9-25d1-9a13" targetId="223f-6e71-9e4f-939e" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="8f6f-a75f-792d-dceb" targetId="9a74-94db-f8be-10e8" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="477b-571b-1ada-d1a3" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="10c4-d7e7-3448-d534" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="ec79-638f-f80d-e46a">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ec79-638f-f80d-e46a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9464-1d1b-6f44-b64a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Inferno Gun [WH]" hidden="false" id="385d-8b5d-8a70-83ea" collective="false" targetId="c7aa-80e5-43d2-0cfd" type="selectionEntry"/>
+                <entryLink import="false" name="Plasma Blast Gun [WH]" hidden="false" id="1143-e267-2ec6-03d5" collective="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
+                <entryLink import="false" name="Turbo Laser Destructor [WH]" hidden="false" id="9965-9b10-fa0e-8087" collective="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter [WH]" hidden="false" id="f921-ccbf-297e-3293" collective="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
+                <entryLink import="false" name="=Tempestus= Chasmata Turbo Laser Destructor [WH]" hidden="true" id="e181-85cd-4cf4-0693" collective="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry"/>
+                <entryLink import="false" name="=Mordaxis= Plasma Blastgun with Toxin Nodes" hidden="true" id="9faa-54ad-a003-8de0" collective="false" targetId="81ba-0dd4-a06d-ea23" type="selectionEntry"/>
+                <entryLink import="false" name="=Audax= Ursus Claw" hidden="false" id="cde3-d0e3-5a81-013e" collective="false" targetId="f476-3a7b-5612-d96e" type="selectionEntry"/>
+                <entryLink import="false" name="Ursus Claw" hidden="false" id="04e0-ff73-db98-bc89" collective="false" targetId="abfb-13ba-25c8-f130" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="false" name="Natrix Shock Lance" hidden="false" id="2032-bd29-cb2c-b32c" collective="false" targetId="59e1-0284-05e3-4c67" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Eradicator [WH]" hidden="false" id="b284-c558-7651-81a8" collective="false" targetId="2f29-8298-5888-bcc6" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Destructor [WH]" hidden="false" id="46f2-47ab-4575-616c" collective="false" targetId="cfff-d280-9b0e-aadb" type="selectionEntry"/>
+                <entryLink import="true" name="Conversion Beam Dissolutor [WH]" hidden="false" id="4e1e-dbf9-ee36-a692" collective="false" targetId="8bc9-6a75-d799-0d56" type="selectionEntry"/>
+                <entryLink import="true" name="Incisor Pattern Melta Lance" hidden="false" id="92b4-04fa-9a21-d656" collective="false" targetId="9cfc-2c4f-fa54-e935" type="selectionEntry"/>
+                <entryLink import="true" name="Swarmer Missiles" hidden="false" id="6f74-e341-57d1-ec12" collective="false" targetId="834a-4f80-00fb-a341" type="selectionEntry"/>
+                <entryLink import="true" name="Shudder Missiles" hidden="false" id="4ae4-5489-74f5-9e46" collective="false" targetId="6268-9937-423c-55d9" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="4fe9-cdab-d655-8ab5" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="d215-f710-cd45-7305" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="e17e-2ce9-87ba-7803" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Traitor Wargear" hidden="false" id="619d-05bb-e6c9-e080" collective="false" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Base Mutation" hidden="false" id="f102-d0fc-a450-0608" collective="false" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Corrupt Titan" hidden="false" id="b737-4803-ef0f-7850" collective="false" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink import="true" name="Additional Mutations" hidden="false" id="7d36-579b-d8b3-3868" collective="false" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="acc5-af77-38b8-4f17" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="acc5-af77-38b8-4f17">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="275b-32bf-0170-69dd" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+        <entryLink import="false" name="Legio Fureans (Tiger Eyes)" hidden="false" id="a72b-a68a-4c6a-e807" collective="false" targetId="1a92-f760-bf0e-ce26" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="LegioFureans" hidden="false" id="b30b-af36-6bb9-709c" targetId="72ba-4008-bf4b-fe3b" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c183-0a96-dc4a-c042-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c183-0a96-dc4a-c042-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="200"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="1a92-f760-bf0e-ce26" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Kingslayer" hidden="false" id="4416-6237-2ad3-d30d">
+          <rules>
+            <rule name="Kingslayer" id="31ca-7532-f6e2-7fdf" hidden="false">
+              <description>The Titan has the hunting auspex upgrade at no extra cost. Add 2 to Armour rolls for attacks made against Titans Scale 10 or larger.</description>
+            </rule>
+            <rule name="Hunting Auspex" id="415d-e25b-0bd4-d086" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="51">
+              <description>Any Legio Fureans Titan may take a Hunting Auspex upgrade for +20 points. When making a ranged attack at over 12” away, a Legio Fureans Titan equipped with a Hunting Auspex may reduce any penalty to Hit by 1, to a minimum of 0.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b160-b851-5bbd-d214-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b160-b851-5bbd-d214-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b0d0-9802-9f0f-78d8" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

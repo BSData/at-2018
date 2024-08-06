@@ -15,6 +15,7 @@
         </categoryLink>
         <categoryLink id="09c3-4572-186e-436f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="false"/>
         <categoryLink id="7a3b-42f9-f60d-696a" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="e480-77a6-70bc-49ad" targetId="9a74-94db-f8be-10e8" type="category"/>
         <categoryLink id="0606-1d0c-defb-d6e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="4f07-d070-7d91-0291" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
@@ -882,5 +883,6 @@
       </modifiers>
     </entryLink>
     <entryLink id="b794-3768-8a75-3a14" name="Battle Level" hidden="false" collective="false" import="true" targetId="270a-cdcc-91b8-0787" type="selectionEntry"/>
+    <entryLink import="true" name="Iben Faruk" hidden="false" id="9ca5-e3f4-f6d4-3067" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
   </entryLinks>
 </catalogue>
