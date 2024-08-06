@@ -17622,7 +17622,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             </modifier>
           </modifiers>
         </profile>
-        <profile name="Fusion Missiles [RVR]" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="5978-9806-222f-0e4a">
+        <profile name="Fusion Missiles [RVR]" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="true" id="5978-9806-222f-0e4a">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
