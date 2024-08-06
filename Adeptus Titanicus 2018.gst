@@ -5267,6 +5267,18 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="81ba-0dd4-a06d-ea23" name="=Mordaxis= Plasma Blastgun with Toxin Nodes" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
@@ -5305,6 +5317,18 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5f42-557f-65e1-68b2" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
@@ -5344,6 +5368,18 @@ If the result is 25, move the reactor tracker to its leftmost hole.
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="2351-970d-8215-e66c" name="=Mordaxis= Toxin Nodes" publicationId="3265-f408-cc9b-bfa3" page="34" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
@@ -5575,6 +5611,18 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="15bd-0b4b-5cac-dc48" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="15bd-0b4b-5cac-dc48" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6646-91ea-1418-5c89" name="=Gryphonicus= Gravatus Plating" publicationId="3401-191e-1333-8a1d" page="31" hidden="true" collective="false" import="false" type="upgrade">
       <rules>
@@ -5747,6 +5795,18 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="15bd-0b4b-5cac-dc48" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="15bd-0b4b-5cac-dc48" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="2699-bb53-cff4-a864" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
@@ -5787,6 +5847,18 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="15bd-0b4b-5cac-dc48" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="15bd-0b4b-5cac-dc48" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="fe03-8e18-b108-5853" name="=Tempestus= Paired Chasmata Laser Blaster" publicationId="975a-00f4-pubN65537" page="92" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
@@ -5827,6 +5899,18 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="15bd-0b4b-5cac-dc48" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="15bd-0b4b-5cac-dc48" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="01e4-e3f5-4396-d5c4" name="=Tempestus= Chasmata Laser Blaster" publicationId="3401-191e-1333-8a1d" page="21" hidden="true" collective="false" import="false" type="upgrade">
       <profiles>
@@ -5866,6 +5950,18 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="15bd-0b4b-5cac-dc48" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="15bd-0b4b-5cac-dc48" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="e6da-1530-1bdd-276a" name="Legio Praesagius (True Messengers)" publicationId="3401-191e-1333-8a1d" page="101" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
@@ -6496,9 +6592,14 @@ A Titan that arrives in this way cannot be activated in the Strategy phase or Mo
     <selectionEntry id="4f84-f656-4fde-4bd6" name="=Magna= Directed Pressure Outlet" publicationId="2988-f24d-39ef-352e" page="38" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3009-299d-5b6d-7a0e" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="3009-299d-5b6d-7a0e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -7343,6 +7444,18 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="fcfd-d034-1395-9eea" name="Venator Light Maniple" publicationId="975a-00f4-pubN65537" page="61" hidden="false" collective="false" import="false" type="unit">
       <rules>
@@ -16076,33 +16189,9 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="efad-f00d-3202-591f" name="Reaver Titan Chainfist" hidden="false" collective="false" import="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
                 <entryLink id="b8f6-c8f4-a641-e19c" name="Reaver Titan Power Fist" hidden="false" collective="false" import="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
                 <entryLink id="5b29-3b36-2460-e090" name="Volcano Cannon" hidden="false" collective="false" import="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
-                <entryLink id="064b-58f1-d5da-64a1" name="=Tempestus= Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="29eb-226f-2914-22b5" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="ea37-10a0-56cd-3018" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="d813-f8ae-081e-d421" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
+                <entryLink id="064b-58f1-d5da-64a1" name="=Tempestus= Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry"/>
+                <entryLink id="29eb-226f-2914-22b5" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry"/>
+                <entryLink id="ea37-10a0-56cd-3018" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="d813-f8ae-081e-d421" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="27cf-b4d5-20b6-9032" name="Carapace" hidden="false" collective="false" import="false">
@@ -16122,15 +16211,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="b0db-882e-0d36-f524" name="Turbo Laser Destructor [RVR]" hidden="false" collective="false" import="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
                 <entryLink id="73f2-7386-528b-89a6" name="Warp Missile Support Rack" hidden="false" collective="false" import="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
                 <entryLink id="c860-31b1-1c90-21a4" name="Vulcan Megabolter [RVR]" hidden="false" collective="false" import="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
-                <entryLink id="0c2b-34ac-a75d-59d0" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" collective="false" import="false" targetId="08c7-5efe-0712-c420" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
+                <entryLink id="0c2b-34ac-a75d-59d0" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" collective="false" import="false" targetId="08c7-5efe-0712-c420" type="selectionEntry"/>
                 <entryLink id="14de-4175-9e2f-e718" name="Volkite Eradicator [RVR]" hidden="false" collective="false" import="true" targetId="4f49-0fb1-426f-c152" type="selectionEntry"/>
                 <entryLink id="4b7b-2dc9-c500-a30e" name="Graviton Destructor [RVR]" hidden="false" collective="false" import="true" targetId="7093-9a5b-12c0-f7ed" type="selectionEntry"/>
                 <entryLink id="dbdd-17d8-ae92-20db" name="Conversion Beam Dissolutor [RVR]" hidden="false" collective="false" import="true" targetId="22d3-59fd-2b09-5980" type="selectionEntry"/>
@@ -16250,24 +16331,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="6ec1-2cea-cca2-ad48" name="Paired Laser Blaster" hidden="false" collective="false" import="false" targetId="5fc7-120d-623b-8b5a" type="selectionEntry"/>
                 <entryLink id="86cd-7a25-7463-7bf6" name="Paired Turbo Laser Destructor" hidden="false" collective="false" import="false" targetId="bfee-3947-a004-3a4e" type="selectionEntry"/>
                 <entryLink id="1ece-bd9a-ec7c-6f25" name="Vulcan Megabolter Array" hidden="false" collective="false" import="false" targetId="f2ae-e883-28c4-dbcc" type="selectionEntry"/>
-                <entryLink id="12f8-fb5a-890c-e131" name="=Tempestus= Paired Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="fe03-8e18-b108-5853" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="546f-50b5-3f74-2a5c" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" hidden="true" collective="false" import="false" targetId="2699-bb53-cff4-a864" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
+                <entryLink id="12f8-fb5a-890c-e131" name="=Tempestus= Paired Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="fe03-8e18-b108-5853" type="selectionEntry"/>
+                <entryLink id="546f-50b5-3f74-2a5c" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" hidden="true" collective="false" import="false" targetId="2699-bb53-cff4-a864" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -16363,38 +16428,9 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="23f0-ce15-158e-d8f5" name="Plasma Blast Gun [WH]" hidden="false" collective="false" import="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
                 <entryLink id="fc86-6790-bf6c-3f0a" name="Turbo Laser Destructor [WH]" hidden="false" collective="false" import="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
                 <entryLink id="1524-5b2a-1e79-12e8" name="Vulcan Megabolter [WH]" hidden="false" collective="false" import="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
-                <entryLink id="3ee3-eda0-0fc6-d1e0" name="=Tempestus= Chasmata Turbo Laser Destructor [WH]" hidden="true" collective="false" import="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="d011-07ff-8e38-c6dd" name="=Mordaxis= Plasma Blastgun with Toxin Nodes" hidden="true" collective="false" import="false" targetId="81ba-0dd4-a06d-ea23" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="2ed2-4348-2aeb-0078" name="=Audax= Ursus Claw" hidden="false" collective="false" import="false" targetId="f476-3a7b-5612-d96e" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                            <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
+                <entryLink id="3ee3-eda0-0fc6-d1e0" name="=Tempestus= Chasmata Turbo Laser Destructor [WH]" hidden="true" collective="false" import="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry"/>
+                <entryLink id="d011-07ff-8e38-c6dd" name="=Mordaxis= Plasma Blastgun with Toxin Nodes" hidden="true" collective="false" import="false" targetId="81ba-0dd4-a06d-ea23" type="selectionEntry"/>
+                <entryLink id="2ed2-4348-2aeb-0078" name="=Audax= Ursus Claw" hidden="false" collective="false" import="false" targetId="f476-3a7b-5612-d96e" type="selectionEntry"/>
                 <entryLink id="059f-73f9-983f-6b61" name="Ursus Claw" hidden="false" collective="false" import="false" targetId="abfb-13ba-25c8-f130" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
@@ -18204,33 +18240,9 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="6e33-48f6-2013-3b3f" name="Laser Blaster" hidden="false" collective="false" import="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
                 <entryLink id="9bad-1aff-1896-7087" name="Melta Cannon [RVR]" hidden="false" collective="false" import="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
                 <entryLink id="7513-a417-fe47-e267" name="Volcano Cannon" hidden="false" collective="false" import="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
-                <entryLink id="2021-8c59-2b52-27b9" name="=Tempestus= Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="80c2-5b5f-d0d8-58d3" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="d813-f8ae-081e-d421" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="d0dd-da70-419a-ac77" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
+                <entryLink id="2021-8c59-2b52-27b9" name="=Tempestus= Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry"/>
+                <entryLink id="80c2-5b5f-d0d8-58d3" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="d813-f8ae-081e-d421" type="selectionEntry"/>
+                <entryLink id="d0dd-da70-419a-ac77" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="52a3-9f9b-284a-8ab7" name="Carapace" hidden="false" collective="false" import="false">
@@ -18548,24 +18560,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="872a-f370-b765-b8a2" name="Paired Laser Blaster" hidden="false" collective="false" import="false" targetId="5fc7-120d-623b-8b5a" type="selectionEntry"/>
                 <entryLink id="6705-d4d1-e64d-79ab" name="Paired Turbo Laser Destructor" hidden="false" collective="false" import="false" targetId="bfee-3947-a004-3a4e" type="selectionEntry"/>
                 <entryLink id="6b34-07d3-2016-d510" name="Vulcan Megabolter Array" hidden="false" collective="false" import="false" targetId="f2ae-e883-28c4-dbcc" type="selectionEntry"/>
-                <entryLink id="d2db-a80f-9572-48b0" name="=Tempestus= Paired Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="fe03-8e18-b108-5853" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="55e6-f1dc-36c6-464a" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" hidden="true" collective="false" import="false" targetId="2699-bb53-cff4-a864" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="15bd-0b4b-5cac-dc48" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
+                <entryLink id="d2db-a80f-9572-48b0" name="=Tempestus= Paired Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="fe03-8e18-b108-5853" type="selectionEntry"/>
+                <entryLink id="55e6-f1dc-36c6-464a" name="=Tempestus= Paired Chasmata Turbo Laser Destructors" hidden="true" collective="false" import="false" targetId="2699-bb53-cff4-a864" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2ef2-a185-9def-9e73" name="Arm B" hidden="false" collective="false" import="false">
@@ -18705,18 +18701,28 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="9d43-fc92-4c7c-c40f" name="=Mordaxis= Melta Cannon with Toxin Nodes [WM]" hidden="false" collective="false" import="true" targetId="6775-cf80-8ca0-60cc" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
                 <entryLink id="fd21-c496-9459-8683" name="=Mordaxis= Plasma Blastgun with Toxin Nodes [WM]" hidden="false" collective="false" import="true" targetId="1b40-7701-03cc-2909" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -20013,24 +20019,8 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
                 <entryLink id="c992-513d-ce8b-a3d1" name="Plasma Blast Gun [WM]" hidden="false" collective="false" import="true" targetId="0f5d-e59f-3d5f-21c3" type="selectionEntry"/>
                 <entryLink id="c1a7-2420-9494-895b" name="Vulcan Megabolter [WM]" hidden="false" collective="false" import="true" targetId="5da9-e647-8914-3264" type="selectionEntry"/>
                 <entryLink id="22d1-c410-ab47-c5d7" name="Turbo Laser Destructor [WM]" hidden="false" collective="false" import="true" targetId="7c5c-cf20-958d-0b71" type="selectionEntry"/>
-                <entryLink id="ecab-d55a-bc73-d476" name="=Mordaxis= Melta Cannon with Toxin Nodes [WM]" hidden="false" collective="false" import="true" targetId="6775-cf80-8ca0-60cc" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="0cb1-c15a-3278-9141" name="=Mordaxis= Plasma Blastgun with Toxin Nodes [WM]" hidden="false" collective="false" import="true" targetId="1b40-7701-03cc-2909" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
+                <entryLink id="ecab-d55a-bc73-d476" name="=Mordaxis= Melta Cannon with Toxin Nodes [WM]" hidden="false" collective="false" import="true" targetId="6775-cf80-8ca0-60cc" type="selectionEntry"/>
+                <entryLink id="0cb1-c15a-3278-9141" name="=Mordaxis= Plasma Blastgun with Toxin Nodes [WM]" hidden="false" collective="false" import="true" targetId="1b40-7701-03cc-2909" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fb73-07e9-6881-8093" name="Carapace Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a70-d1f9-846f-23ae">
@@ -21582,15 +21572,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
                 <entryLink id="68e4-c7c8-4547-6f61" name="Neutron Laser" hidden="false" collective="false" import="true" targetId="d178-20d4-d7ab-992d" type="selectionEntry"/>
                 <entryLink id="4b99-39d1-1564-0722" name="Volcano Cannon [DW]" hidden="false" collective="false" import="true" targetId="f374-419b-269d-50e3" type="selectionEntry"/>
                 <entryLink id="ce19-680c-0b07-74ac" name="Conversion Beam Dissipator" hidden="false" collective="false" import="true" targetId="d6d1-fb21-8e6b-67c4" type="selectionEntry"/>
-                <entryLink id="ade4-29b5-9702-d8ae" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="false" collective="false" import="true" targetId="a227-a4f3-df4e-7446" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d14-f4fb-5868-1b62" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
+                <entryLink id="ade4-29b5-9702-d8ae" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="false" collective="false" import="true" targetId="a227-a4f3-df4e-7446" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="18e3-70a6-6b01-5c60" name="Torso" hidden="false" collective="false" import="true" defaultSelectionEntryId="09a9-fa35-d484-a36d">
@@ -22808,6 +22790,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6775-cf80-8ca0-60cc" name="=Mordaxis= Melta Cannon with Toxin Nodes [WM]" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
@@ -22847,6 +22841,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1b40-7701-03cc-2909" name="=Mordaxis= Plasma Blastgun with Toxin Nodes [WM]" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
@@ -22885,6 +22891,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="9d14-f4fb-5868-1b62" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="High Scion" hidden="false" id="a0c0-a49a-deb3-0b9f" collective="false">
       <costs>
