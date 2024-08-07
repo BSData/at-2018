@@ -22941,6 +22941,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Iben Faruk" hidden="true" id="f646-3ee3-0920-4757" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+        <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="c597-91f7-30a1-7798" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="false" name="Iben Faruk" hidden="false" id="1dee-3970-5fa7-9ba5" collective="false">
@@ -23078,6 +23079,140 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b0d0-9802-9f0f-78d8" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Mantellum Fulmen" hidden="false" id="b539-aae7-d903-4b5c" collective="false">
+      <profiles>
+        <profile name="Warhound Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="a0a9-e7c0-0093-b826">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">8&quot;/12&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">3/5</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">2</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="2675-d126-6c0f-e0f2" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="WarhoundTitan" hidden="false" id="6414-2f0e-67e2-5d19" targetId="223f-6e71-9e4f-939e" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="006f-9356-38f8-a9ba" targetId="9a74-94db-f8be-10e8" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="73a2-f10e-ff68-9add" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="af24-d771-242e-6326" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="dd5f-2f66-3c7d-d65f">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dd5f-2f66-3c7d-d65f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a9f2-9cb4-7143-2c93" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Inferno Gun [WH]" hidden="false" id="d1b6-15c2-9551-b97e" collective="false" targetId="c7aa-80e5-43d2-0cfd" type="selectionEntry"/>
+                <entryLink import="false" name="Plasma Blast Gun [WH]" hidden="false" id="55fe-9380-8aa6-e8af" collective="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
+                <entryLink import="false" name="Turbo Laser Destructor [WH]" hidden="false" id="1373-ff59-f94f-94f5" collective="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter [WH]" hidden="false" id="ab18-8450-fe56-86cb" collective="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
+                <entryLink import="false" name="=Tempestus= Chasmata Turbo Laser Destructor [WH]" hidden="true" id="8fb3-3c00-8a3e-0ab0" collective="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry"/>
+                <entryLink import="false" name="=Mordaxis= Plasma Blastgun with Toxin Nodes" hidden="true" id="a329-0c89-5e9e-41ec" collective="false" targetId="81ba-0dd4-a06d-ea23" type="selectionEntry"/>
+                <entryLink import="false" name="=Audax= Ursus Claw" hidden="false" id="606a-135f-f552-2bc9" collective="false" targetId="f476-3a7b-5612-d96e" type="selectionEntry"/>
+                <entryLink import="false" name="Ursus Claw" hidden="false" id="dace-c97f-f040-955d" collective="false" targetId="abfb-13ba-25c8-f130" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="false" name="Natrix Shock Lance" hidden="false" id="51d9-fa81-058b-14d8" collective="false" targetId="59e1-0284-05e3-4c67" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Eradicator [WH]" hidden="false" id="d105-912c-99bd-2ff7" collective="false" targetId="2f29-8298-5888-bcc6" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Destructor [WH]" hidden="false" id="8228-cf5a-f8d4-9ca0" collective="false" targetId="cfff-d280-9b0e-aadb" type="selectionEntry"/>
+                <entryLink import="true" name="Conversion Beam Dissolutor [WH]" hidden="false" id="2c37-9f88-d1f6-4ae0" collective="false" targetId="8bc9-6a75-d799-0d56" type="selectionEntry"/>
+                <entryLink import="true" name="Incisor Pattern Melta Lance" hidden="false" id="d17b-78fb-6bae-9a69" collective="false" targetId="9cfc-2c4f-fa54-e935" type="selectionEntry"/>
+                <entryLink import="true" name="Swarmer Missiles" hidden="false" id="0196-6174-8dbf-a28b" collective="false" targetId="834a-4f80-00fb-a341" type="selectionEntry"/>
+                <entryLink import="true" name="Shudder Missiles" hidden="false" id="0c15-02c9-38b6-a362" collective="false" targetId="6268-9937-423c-55d9" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="0637-feaf-a7bb-34c2" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="3620-4b8a-65a9-023f" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="e765-afd7-ca36-e2f6" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Traitor Wargear" hidden="false" id="7728-68ba-9ca2-e8eb" collective="false" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Base Mutation" hidden="false" id="97cd-d354-90e5-38e6" collective="false" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Corrupt Titan" hidden="false" id="2988-e558-4efb-77b9" collective="false" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink import="true" name="Additional Mutations" hidden="false" id="9bf6-a4cc-6fa0-b91c" collective="false" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e37d-c152-3689-35f4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="e37d-c152-3689-35f4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="2f91-2258-e630-7255" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+        <entryLink import="false" name="Legio Tempestus (Storm Lords)" hidden="false" id="6678-aec9-168d-a268" collective="false" targetId="cbc6-216c-8a22-c1b4" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="LegioTempestus" hidden="false" id="7768-8dbf-e76f-01ad" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb7b-9a8e-26bf-d09a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb7b-9a8e-26bf-d09a-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="205"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="8e37-010b-d3ad-5d4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Solitary Hunter" hidden="false" id="8287-795d-bc63-f272">
+          <rules>
+            <rule name="Solitary Hunter" id="9765-0745-8720-4907" hidden="false">
+              <description>Cannot be part of a squadron. When issued a First Fire order, it may fire all weapons.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c67-1d7e-9d52-cfcd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c67-1d7e-9d52-cfcd-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a72e-7817-d285-39a4" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
