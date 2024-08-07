@@ -22942,6 +22942,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <entryLinks>
         <entryLink import="true" name="Iben Faruk" hidden="true" id="f646-3ee3-0920-4757" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
         <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="c597-91f7-30a1-7798" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+        <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="bd6e-238f-d9d7-4613" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="false" name="Iben Faruk" hidden="false" id="1dee-3970-5fa7-9ba5" collective="false">
@@ -23213,6 +23214,142 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a72e-7817-d285-39a4" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Vestiti Ferrus" hidden="false" id="08ce-f55b-ff2f-e7e9" collective="false">
+      <profiles>
+        <profile name="Reaver Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="a5f8-caab-7046-9097">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">6&quot;/9&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">4+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">2/3</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">3</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="e8a6-dfe9-d0e3-7456" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="ReaverTitan" hidden="false" id="4017-79e4-bfe7-5467" targetId="d36f-5e44-2150-3428" primary="false"/>
+        <categoryLink targetId="9a74-94db-f8be-10e8" id="452f-ec98-1b84-0f3b" primary="true" name="Titan of Legend"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="f1e8-9180-b4d3-33a3" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="e4ae-86dd-ed28-4142" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="3549-1fc3-5766-8efc">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3549-1fc3-5766-8efc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3078-65d1-cd46-bc65" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Gatling Blaster" hidden="false" id="e045-ae91-30e0-2a45" collective="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
+                <entryLink import="false" name="Laser Blaster" hidden="false" id="7055-23e7-061d-03e7" collective="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
+                <entryLink import="false" name="Melta Cannon [RVR]" hidden="false" id="99d9-7150-d8b9-538b" collective="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
+                <entryLink import="false" name="Reaver Titan Chainfist" hidden="false" id="6ba9-3f05-753c-45c5" collective="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
+                <entryLink import="false" name="Reaver Titan Power Fist" hidden="false" id="e73d-a7e8-379a-7574" collective="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
+                <entryLink import="false" name="Volcano Cannon" hidden="false" id="d5c0-e38f-d859-fef1" collective="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
+                <entryLink import="false" name="=Tempestus= Chasmata Laser Blaster" hidden="true" id="636a-4bbd-65a4-2b24" collective="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry"/>
+                <entryLink import="false" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" id="1fc3-a08d-f5ba-1ca0" collective="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry"/>
+                <entryLink import="false" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" id="2f5e-d55e-6681-4240" collective="false" targetId="d813-f8ae-081e-d421" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Carapace" id="66a6-b99a-32fb-e7d2" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="4759-4d03-fd6a-d557">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4759-4d03-fd6a-d557" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ee5-69a4-ca4d-3b7b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Apocalypse Missile Launcher" hidden="false" id="9e27-34f9-c131-4188" collective="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
+                <entryLink import="false" name="Turbo Laser Destructor [RVR]" hidden="false" id="6347-dbef-a2fe-99dd" collective="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink import="false" name="Warp Missile Support Rack" hidden="false" id="02db-5b6e-9160-8a9a" collective="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter [RVR]" hidden="false" id="ad64-fa61-f341-a0b8" collective="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink import="false" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" id="dbfc-549a-784f-bf14" collective="false" targetId="08c7-5efe-0712-c420" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Eradicator [RVR]" hidden="false" id="a930-a05c-cc19-42cf" collective="false" targetId="4f49-0fb1-426f-c152" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Destructor [RVR]" hidden="false" id="05a8-c8d6-bb7e-51a8" collective="false" targetId="7093-9a5b-12c0-f7ed" type="selectionEntry"/>
+                <entryLink import="true" name="Conversion Beam Dissolutor [RVR]" hidden="false" id="21a2-45da-9f29-9ee6" collective="false" targetId="22d3-59fd-2b09-5980" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="2f42-517d-ff38-287f" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="950d-ec1f-9926-da85" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="004d-5e86-280a-7c23" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="260e-93e7-cc9b-275c" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="07ff-69e7-fa89-c05f" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Traitor Wargear" hidden="false" id="6c6b-0c88-1622-8570" collective="false" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Corrupt Titan" hidden="false" id="984e-ba6a-39e6-c7ad" collective="false" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink import="true" name="Base Mutation" hidden="false" id="1d20-3d65-2785-060c" collective="false" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Additional Mutations" hidden="false" id="ad09-dc4b-7a7c-4d17" collective="false" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e067-28ae-0361-518a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="e067-28ae-0361-518a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="7988-048e-c560-a814" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+        <entryLink import="false" name="Legio Vulpa (Death Stalkers)" hidden="false" id="7ca3-1d48-0683-b57b" collective="false" targetId="7093-f8b3-b5f9-d38d" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="LegioVulpa" hidden="false" id="6392-e787-eb99-4310" targetId="561a-cb05-d4b5-94fd" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93a8-7a65-263e-6088-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93a8-7a65-263e-6088-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="275"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ironclad" hidden="false" id="1b36-16f6-f19b-906e">
+          <rules>
+            <rule name="Ironclad" id="01ce-ead1-45ae-ea08" hidden="false">
+              <description>When this Titan suffers a Devastating Hit, roll a D6. On a 6, the Titan loses 1 Structure point instead of 2.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="e641-9188-67b5-df35" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4f52-7c6a-2e7e-ce80" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>

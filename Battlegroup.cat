@@ -885,5 +885,6 @@
     <entryLink id="b794-3768-8a75-3a14" name="Battle Level" hidden="false" collective="false" import="true" targetId="270a-cdcc-91b8-0787" type="selectionEntry"/>
     <entryLink import="true" name="Iben Faruk" hidden="false" id="9ca5-e3f4-f6d4-3067" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
     <entryLink import="true" name="Mantellum Fulmen" hidden="false" id="5659-aac2-59c5-e654" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+    <entryLink import="true" name="Vestiti Ferrus" hidden="false" id="cdbc-07d0-7633-5a78" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
   </entryLinks>
 </catalogue>
