@@ -939,5 +939,25 @@
         </entryLink>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Lucius Pretorian" hidden="false" id="04ce-63d3-db10-88bd" type="selectionEntry" targetId="5357-5da1-e9dd-4392">
+      <entryLinks>
+        <entryLink import="true" name="Legio Astorum (Warp Runners)" hidden="false" id="45b3-bffd-ca07-efb7" type="selectionEntry" targetId="dbd6-65fd-6354-a154">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f98a-a7ab-1fa5-ffe7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f98a-a7ab-1fa5-ffe7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dawn of Enlightenment" hidden="false" id="432f-c537-cfb2-d237" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2">
+      <entryLinks>
+        <entryLink import="true" name="Legio Defensor (Nova Guard)" hidden="false" id="aaeb-cd8c-aa94-708e" type="selectionEntry" targetId="63e1-fca8-5023-12d6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="716a-46a6-80da-89a7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="716a-46a6-80da-89a7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
