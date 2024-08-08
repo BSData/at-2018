@@ -23334,6 +23334,120 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4f52-7c6a-2e7e-ce80" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="model" import="false" name="Hammer of Tyrants" hidden="false" id="f7d8-5efb-466d-a8d8" collective="false">
+      <profiles>
+        <profile name="Warlord Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="3581-62b3-8f99-8311">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/2</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">4</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="b64c-d774-d616-b026" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="WarlordTitan" hidden="false" id="488a-da00-949c-cbb9" targetId="7103-9316-d4a5-8caa" primary="false"/>
+        <categoryLink targetId="9a74-94db-f8be-10e8" id="7578-b83f-8dec-5f22" primary="true" name="Titan of Legend"/>
+        <categoryLink targetId="95e8-3d8e-a0ad-4ad3" id="4a9d-26ce-df16-34f6" primary="false" name="LegioKrytos"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="cc4d-88af-91cd-e3f2" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="a14d-bcfd-9563-8cde" hidden="false" collective="false" import="false">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="22d1-e0d7-8657-76d3-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="22d1-e0d7-8657-76d3-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Bellicosa Volcano Cannon [WLD]" hidden="false" id="bc73-d9e4-7b70-72d9" collective="false" targetId="fee8-4996-06cd-64bc" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4b0-75d9-7d4d-5d1a-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4b0-75d9-7d4d-5d1a-max" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="false" name="Sunfury Plasma Annihilator" hidden="false" id="a881-9bbb-1418-38a6" collective="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff17-fa52-2961-d168-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff17-fa52-2961-d168-max" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Carapace" id="d693-df79-3103-f62e" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="37bd-a809-433f-f246">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37bd-a809-433f-f246" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d77c-d1da-4dbb-ed54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Apocalypse Missile Launchers" hidden="false" id="6eb5-5ac0-ce5c-c074" collective="false" targetId="bd33-0564-6277-6dc1" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Gatling Blasters" hidden="false" id="b9d1-ffbd-a756-13ee" collective="false" targetId="bfdb-4953-f838-7d21" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Laser Blaster" hidden="false" id="d2ab-d96a-9d24-3df4" collective="false" targetId="5fc7-120d-623b-8b5a" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Turbo Laser Destructor" hidden="false" id="292d-08bf-118c-e620" collective="false" targetId="bfee-3947-a004-3a4e" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter Array" hidden="false" id="433a-ee6c-44b5-2b98" collective="false" targetId="f2ae-e883-28c4-dbcc" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="false" name="Ardex Defensor Cannon" hidden="false" id="c110-248c-82d8-0012" collective="false" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="0f25-7d33-d85f-f2e8" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="b3ed-2eab-4393-35c6" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="d003-d147-f164-013f" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="6959-6bda-b039-b5fd" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="b1e9-6a25-c9f5-c4ed" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Traitor Wargear" hidden="false" id="0039-1b81-fa6b-7375" collective="false" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Base Mutation" hidden="false" id="d3a8-6230-1c9d-0a45" collective="false" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Corrupt Titan" hidden="false" id="924a-c0af-b98c-8070" collective="false" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink import="true" name="Additional Mutations" hidden="false" id="b4b8-ba7a-ad72-e89b" collective="false" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7f66-66e1-bf96-dd6c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="7f66-66e1-bf96-dd6c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="8cf2-1034-db69-fbc6" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="515"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Fuelled by Rage" id="6d11-e7b0-dd00-6e9d" hidden="false">
+          <description>When using the Maximal Fire trait, 1s do not increase the reactor level. The first time the Titan suffers a Critical Hit, return the Reactor marker to the leftmost hole.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="58a8-3b5d-d693-4c4d" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -26668,6 +26782,7 @@ result of a single D6.</description>
         <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="02f5-fd71-e54f-8aea" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
         <entryLink import="true" name="Iben Faruk" hidden="true" id="ab28-0495-dfc0-de4a" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
         <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="459b-a659-39ae-92e6" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+        <entryLink import="true" name="Hammer of Tyrants" hidden="false" id="84ca-2243-0ac2-7223" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

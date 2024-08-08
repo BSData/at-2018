@@ -919,5 +919,15 @@
         </entryLink>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Hammer of Tyrants" hidden="false" id="73be-43e9-bf60-9b18" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8">
+      <entryLinks>
+        <entryLink import="true" name="Legio Krytos (God Breakers)" hidden="false" id="d377-3d4b-8d03-c538" type="selectionEntry" targetId="bffc-4266-a83d-cae6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b2b-ca59-4d76-267a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b2b-ca59-4d76-267a-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
