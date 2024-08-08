@@ -23244,9 +23244,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                 <entryLink import="false" name="Reaver Titan Chainfist" hidden="false" id="6ba9-3f05-753c-45c5" collective="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
                 <entryLink import="false" name="Reaver Titan Power Fist" hidden="false" id="e73d-a7e8-379a-7574" collective="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
                 <entryLink import="false" name="Volcano Cannon" hidden="false" id="d5c0-e38f-d859-fef1" collective="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
-                <entryLink import="false" name="=Tempestus= Chasmata Laser Blaster" hidden="true" id="636a-4bbd-65a4-2b24" collective="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry"/>
-                <entryLink import="false" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" id="1fc3-a08d-f5ba-1ca0" collective="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry"/>
-                <entryLink import="false" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" id="2f5e-d55e-6681-4240" collective="false" targetId="d813-f8ae-081e-d421" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Carapace" id="66a6-b99a-32fb-e7d2" hidden="false" collective="false" import="false">
@@ -23447,6 +23444,137 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="58a8-3b5d-d693-4c4d" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="bffc-4266-a83d-cae6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Penumbral Reaper" hidden="false" id="c1e6-23d7-73ff-f29c" collective="false">
+      <profiles>
+        <profile name="Warlord Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="4d74-89cf-803c-1475">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/2</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">4</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="bb15-04fc-5949-99ed" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="WarlordTitan" hidden="false" id="83cd-eec9-6cc7-01ee" targetId="7103-9316-d4a5-8caa" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="3c36-1ec2-c212-5388" targetId="9a74-94db-f8be-10e8" primary="true"/>
+        <categoryLink targetId="f88f-e42d-38f7-bfa7" id="a462-1116-7e7b-b5b6" primary="false" name="LegioMortis"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="9aca-44b3-9074-d858" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="574a-20c7-f0b1-db2c" hidden="false" collective="false" import="false">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d400-0393-a42a-a6f9-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d400-0393-a42a-a6f9-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Sunfury Plasma Annihilator" hidden="false" id="ea1a-4578-8b37-be43" collective="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c629-b29e-beaa-4f5b-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c629-b29e-beaa-4f5b-max" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="false" name="Arioch Titan Power Claw" hidden="false" id="4f12-73b9-a8b4-095a" collective="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55c4-4dd5-6977-6129-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55c4-4dd5-6977-6129-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Carapace" id="df92-a02d-3581-084c" hidden="false" collective="false" import="false">
+              <entryLinks>
+                <entryLink import="false" name="Paired Laser Blaster" hidden="false" id="6571-0ecf-ec2a-e448" collective="false" targetId="5fc7-120d-623b-8b5a" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e41-bc3e-90bb-8293-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e41-bc3e-90bb-8293-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="false" name="Ardex Defensor Cannon" hidden="false" id="d8cb-bd18-0ef1-3c12" collective="false" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="3aa4-f334-95e0-9d59" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="cb5c-4c73-ab8d-7f8f" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="2e92-86c7-1c09-a1a3" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="8350-2a5d-fba2-cf4f" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="96b8-d543-b56f-8353" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Traitor Wargear" hidden="false" id="fbd1-7029-4fa1-364d" collective="false" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Base Mutation" hidden="false" id="2ef0-1f1a-ee55-1154" collective="false" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Corrupt Titan" hidden="false" id="f281-70c6-662f-0107" collective="false" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink import="true" name="Additional Mutations" hidden="false" id="1210-f885-5ca9-0dff" collective="false" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ec36-f86b-99e5-23dd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="ec36-f86b-99e5-23dd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="7395-6aeb-d595-14ec" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="525"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Towering Exemplar" id="2e4a-54f9-214a-ff00" hidden="false">
+          <description>Friendly Titans within 12&quot; add 1 to all Command checks and can re-roll rolls of 1 To Hit with weapons with the Melee trait. If Machine Spirit is awakened, &apos;Haughty&apos; automatically applies.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="be9e-1db3-f874-b7a6" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="1b13-8735-b4bf-0caf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -26782,7 +26910,8 @@ result of a single D6.</description>
         <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="02f5-fd71-e54f-8aea" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
         <entryLink import="true" name="Iben Faruk" hidden="true" id="ab28-0495-dfc0-de4a" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
         <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="459b-a659-39ae-92e6" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
-        <entryLink import="true" name="Hammer of Tyrants" hidden="false" id="84ca-2243-0ac2-7223" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+        <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="84ca-2243-0ac2-7223" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+        <entryLink import="true" name="Penumbral Reaper" hidden="true" id="a86b-3758-e38e-278a" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

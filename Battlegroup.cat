@@ -929,5 +929,15 @@
         </entryLink>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Penumbral Reaper" hidden="false" id="8457-2e64-23eb-64f1" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c">
+      <entryLinks>
+        <entryLink import="true" name="Legio Mortis (Death&apos;s Heads)" hidden="false" id="51bf-cc29-8d3c-0fc9" type="selectionEntry" targetId="1b13-8735-b4bf-0caf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e772-9815-f3ec-974e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e772-9815-f3ec-974e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
