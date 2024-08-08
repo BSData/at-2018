@@ -5540,16 +5540,6 @@ In addition, when fielding a Fortis maniple, a Legio Krytos player may take a si
       </costs>
     </selectionEntry>
     <selectionEntry id="1a92-f760-bf0e-ce26" name="Legio Fureans (Tiger Eyes)" publicationId="975a-00f4-pubN87630" page="49" hidden="false" collective="false" import="false" type="upgrade">
-      <rules>
-        <rule id="ae03-90bb-549c-18cc" name="Machine Rage" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
-          <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counds both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spiri; the blank face does not increase the Reactor level.
-However, if a Tiger Eyes player fails the Command check to quell the machine spirit, they may choose the result from the Awakened Machine Spirit table, rather than rolling randomly
-If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Entity table when called upon to do so, and chooses one of the results.</description>
-        </rule>
-        <rule id="3956-1d81-32e8-2797" name="Many Faces of the Omnissiah" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
-          <description>In the first round of the game, any Tiger Eyes TItan may choose to forgo its activation in either the Movement phase and/or the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activiations.  For each phase sacrificed by a Titan, either 1 or2, that Titan may re-roll any one dice later in the game. A Titan chooses if it is sacrificing its phase when activated in that phase.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="fcc3-9ec5-1d35-6043" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="2c6f-f845-d96b-1c92" name="LegioFureans" hidden="false" targetId="72ba-4008-bf4b-fe3b" primary="false"/>
@@ -5558,6 +5548,16 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <rules>
+        <rule name="Machine Rage" id="ae03-90bb-549c-18cc" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="51">
+          <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counds both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spiri; the blank face does not increase the Reactor level.
+However, if a Tiger Eyes player fails the Command check to quell the machine spirit, they may choose the result from the Awakened Machine Spirit table, rather than rolling randomly
+If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Entity table when called upon to do so, and chooses one of the results.</description>
+        </rule>
+        <rule name="Many Faces of the Omnissiah" id="3956-1d81-32e8-2797" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="51">
+          <description>In the first round of the game, any Tiger Eyes Titan may choose to forgo its activation in either the Movement phase and/or the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activiations. For each phase sacrificed by a Titan, either 1 or2, that Titan may re-roll any one dice later in the game. A Titan chooses if it is sacrificing its phase when activated in that phase.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="7093-f8b3-b5f9-d38d" name="Legio Vulpa (Death Stalkers)" publicationId="975a-00f4-pubN87630" page="54" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
@@ -8823,6 +8823,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3a16-e37f-de62-e329" value="1">
@@ -8832,6 +8833,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="9aa0-2e76-da99-3f1a" value="1">
@@ -8923,6 +8925,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d011-abe9-ffd9-10b6" value="1">
@@ -8932,6 +8936,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="d011-abe9-ffd9-10b6" value="1">
@@ -9032,11 +9038,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="055e-09da-4524-d5a3" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Knights of Legend" hidden="false" id="75e0-9723-c1ba-1fc3" type="selectionEntry" targetId="efba-d45d-4116-76bc" sortIndex="16">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c188-853c-e33b-145e" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Titans of Legend" hidden="false" id="75e0-9723-c1ba-1fc3" type="selectionEntryGroup" targetId="01a1-f590-a19a-7147"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
@@ -22935,16 +22937,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="High King" hidden="false" id="4935-72b9-5af4-dcf1" targetId="6023-4ce7-7008-e851" primary="false"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Titans of Legend" hidden="false" id="efba-d45d-4116-76bc">
-      <categoryLinks>
-        <categoryLink targetId="9a74-94db-f8be-10e8" id="c239-48c6-1863-6549" primary="false" name="Titan of Legend"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Iben Faruk" hidden="true" id="f646-3ee3-0920-4757" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
-        <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="c597-91f7-30a1-7798" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
-        <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="bd6e-238f-d9d7-4613" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
-      </entryLinks>
-    </selectionEntry>
     <selectionEntry type="model" import="false" name="Iben Faruk" hidden="false" id="1dee-3970-5fa7-9ba5" collective="false">
       <profiles>
         <profile name="Warhound Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="af53-b4b1-a65d-7632">
@@ -22963,6 +22955,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="Titan" hidden="false" id="6376-2e51-7fd9-540a" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink name="WarhoundTitan" hidden="false" id="84b3-02d9-25d1-9a13" targetId="223f-6e71-9e4f-939e" primary="false"/>
         <categoryLink name="Titan of Legend" hidden="false" id="8f6f-a75f-792d-dceb" targetId="9a74-94db-f8be-10e8" primary="true"/>
+        <categoryLink targetId="72ba-4008-bf4b-fe3b" id="969a-eb3c-94f3-7c66" primary="false" name="LegioFureans"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="477b-571b-1ada-d1a3" hidden="false" collective="false" import="false">
@@ -23036,14 +23029,17 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Personal Trait" hidden="false" id="275b-32bf-0170-69dd" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
-        <entryLink import="false" name="Legio Fureans (Tiger Eyes)" hidden="false" id="a72b-a68a-4c6a-e807" collective="false" targetId="1a92-f760-bf0e-ce26" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink name="LegioFureans" hidden="false" id="b30b-af36-6bb9-709c" targetId="72ba-4008-bf4b-fe3b" primary="false"/>
-          </categoryLinks>
+        <entryLink import="true" name="=Fureans= Hunting Auspex" hidden="false" id="5be8-34bf-e813-6f5b" type="selectionEntry" targetId="0d56-2ed6-8229-739e" defaultAmount="1">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c183-0a96-dc4a-c042-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c183-0a96-dc4a-c042-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f266-76ed-aeca-73f0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f266-76ed-aeca-73f0-max" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -23053,34 +23049,34 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="1a92-f760-bf0e-ce26" shared="true" includeChildSelections="true"/>
-              </conditions>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="72ba-4008-bf4b-fe3b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6982-2d18-55cb-61e5" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6982-2d18-55cb-61e5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Kingslayer" hidden="false" id="4416-6237-2ad3-d30d">
-          <rules>
-            <rule name="Kingslayer" id="31ca-7532-f6e2-7fdf" hidden="false">
-              <description>The Titan has the hunting auspex upgrade at no extra cost. Add 2 to Armour rolls for attacks made against Titans Scale 10 or larger.</description>
-            </rule>
-            <rule name="Hunting Auspex" id="415d-e25b-0bd4-d086" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="51">
-              <description>Any Legio Fureans Titan may take a Hunting Auspex upgrade for +20 points. When making a ranged attack at over 12” away, a Legio Fureans Titan equipped with a Hunting Auspex may reduce any penalty to Hit by 1, to a minimum of 0.</description>
-            </rule>
-          </rules>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b160-b851-5bbd-d214-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b160-b851-5bbd-d214-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b0d0-9802-9f0f-78d8" includeChildSelections="true"/>
       </constraints>
+      <rules>
+        <rule name="Kingslayer" id="31ca-7532-f6e2-7fdf" hidden="false">
+          <description>The Titan has the hunting auspex upgrade at no extra cost. Add 2 to Armour rolls for attacks made against Titans Scale 10 or larger.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="model" import="false" name="Mantellum Fulmen" hidden="false" id="b539-aae7-d903-4b5c" collective="false">
       <profiles>
@@ -23173,15 +23169,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Personal Trait" hidden="false" id="2f91-2258-e630-7255" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
-        <entryLink import="false" name="Legio Tempestus (Storm Lords)" hidden="false" id="6678-aec9-168d-a268" collective="false" targetId="cbc6-216c-8a22-c1b4" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink name="LegioTempestus" hidden="false" id="7768-8dbf-e76f-01ad" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb7b-9a8e-26bf-d09a-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb7b-9a8e-26bf-d09a-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="205"/>
@@ -23193,7 +23180,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="8e37-010b-d3ad-5d4f" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cbc6-216c-8a22-c1b4" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -23313,15 +23300,6 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Personal Trait" hidden="false" id="7988-048e-c560-a814" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
-        <entryLink import="false" name="Legio Vulpa (Death Stalkers)" hidden="false" id="7ca3-1d48-0683-b57b" collective="false" targetId="7093-f8b3-b5f9-d38d" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink name="LegioVulpa" hidden="false" id="6392-e787-eb99-4310" targetId="561a-cb05-d4b5-94fd" primary="false"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93a8-7a65-263e-6088-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93a8-7a65-263e-6088-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="275"/>
@@ -23334,6 +23312,10 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
               <description>When this Titan suffers a Devastating Hit, roll a D6. On a 6, the Titan loses 1 Structure point instead of 2.</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4559-715f-1f90-b8e2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4559-715f-1f90-b8e2-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -23342,7 +23324,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="e641-9188-67b5-df35" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="7093-f8b3-b5f9-d38d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -23501,6 +23483,9 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="06c0-383b-8b5d-e1ad" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="3e3c-9275-f31a-9532" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+          </costs>
         </entryLink>
         <entryLink id="2292-032b-7b1a-5570" name="=Mortis= Remains of the Fallen" hidden="false" collective="false" import="false" targetId="f8aa-6108-4447-0e90" type="selectionEntry">
           <constraints>
@@ -26677,6 +26662,13 @@ result of a single D6.</description>
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Titans of Legend" id="01a1-f590-a19a-7147" hidden="false" import="true">
+      <entryLinks>
+        <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="02f5-fd71-e54f-8aea" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+        <entryLink import="true" name="Iben Faruk" hidden="true" id="ab28-0495-dfc0-de4a" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+        <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="459b-a659-39ae-92e6" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

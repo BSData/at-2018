@@ -15,7 +15,7 @@
         </categoryLink>
         <categoryLink id="09c3-4572-186e-436f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="false"/>
         <categoryLink id="7a3b-42f9-f60d-696a" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
-        <categoryLink name="Titan of Legend" hidden="false" id="e480-77a6-70bc-49ad" targetId="9a74-94db-f8be-10e8" type="category"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="e480-77a6-70bc-49ad" targetId="9a74-94db-f8be-10e8"/>
         <categoryLink id="0606-1d0c-defb-d6e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="4f07-d070-7d91-0291" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
@@ -883,8 +883,41 @@
       </modifiers>
     </entryLink>
     <entryLink id="b794-3768-8a75-3a14" name="Battle Level" hidden="false" collective="false" import="true" targetId="270a-cdcc-91b8-0787" type="selectionEntry"/>
-    <entryLink import="true" name="Iben Faruk" hidden="false" id="9ca5-e3f4-f6d4-3067" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
-    <entryLink import="true" name="Mantellum Fulmen" hidden="false" id="5659-aac2-59c5-e654" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
-    <entryLink import="true" name="Vestiti Ferrus" hidden="false" id="cdbc-07d0-7633-5a78" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+    <entryLink import="true" name="Iben Faruk" hidden="false" id="9ca5-e3f4-f6d4-3067" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5">
+      <entryLinks>
+        <entryLink import="true" name="Legio Fureans (Tiger Eyes)" hidden="false" id="7af7-b7a3-217f-3bed" type="selectionEntry" targetId="1a92-f760-bf0e-ce26">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e4f-7ab6-3aca-dab5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e4f-7ab6-3aca-dab5-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mantellum Fulmen" hidden="false" id="5659-aac2-59c5-e654" type="selectionEntry" targetId="b539-aae7-d903-4b5c">
+      <entryLinks>
+        <entryLink import="false" name="Legio Tempestus (Storm Lords)" hidden="false" id="e8cb-1162-1e22-39fd" collective="false" targetId="cbc6-216c-8a22-c1b4" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="LegioTempestus" hidden="false" id="c315-42c5-6029-0688" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c91-ee46-bc2f-8045-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c91-ee46-bc2f-8045-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vestiti Ferrus" hidden="false" id="cdbc-07d0-7633-5a78" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9">
+      <entryLinks>
+        <entryLink import="false" name="Legio Vulpa (Death Stalkers)" hidden="false" id="7ca3-1d48-0683-b57b" collective="false" targetId="7093-f8b3-b5f9-d38d" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="LegioVulpa" hidden="false" id="6392-e787-eb99-4310" targetId="561a-cb05-d4b5-94fd" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45c3-9d63-d0bf-c795-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45c3-9d63-d0bf-c795-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
