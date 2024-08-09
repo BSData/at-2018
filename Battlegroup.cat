@@ -979,5 +979,15 @@
         </entryLink>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Iracundos" hidden="false" id="1aa3-a8c5-5d61-3716" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b">
+      <entryLinks>
+        <entryLink import="true" name="Legio Ignatum (Fire Wasps)" hidden="false" id="c247-7d65-af70-eaad" type="selectionEntry" targetId="4a11-763b-6a82-bc29">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="788d-59eb-99dd-dee0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="788d-59eb-99dd-dee0-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
