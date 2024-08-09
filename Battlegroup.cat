@@ -969,5 +969,15 @@
         </entryLink>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Bellator Magno" hidden="false" id="bca8-69cc-a476-43ee" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640">
+      <entryLinks>
+        <entryLink import="true" name="Legio Gryphonicus (War Griffons)" hidden="false" id="d709-769c-29bd-bbd9" type="selectionEntry" targetId="0986-9b84-b734-e9c8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f81c-e9c7-c754-7d71-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f81c-e9c7-c754-7d71-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
