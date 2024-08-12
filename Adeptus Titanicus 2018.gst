@@ -11323,6 +11323,18 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="410b-82c9-7659-59b5" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="044c-b6d3-3bfb-6e2b" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="c4b5-a655-44f5-965c" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+            <entryLink import="true" name="Penumbral Reaper" hidden="true" id="f804-25a0-e742-b5f8" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="a70e-b5c7-2ead-a212" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="f40b-9ac5-0430-7c2d" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Ignis Ferrus" hidden="true" id="44bb-24f6-5662-c585" type="selectionEntry" targetId="7c7d-0f96-2a56-531f"/>
+            <entryLink import="true" name="Bellator Magno" hidden="true" id="3ba0-47df-4fc7-1f1d" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="f3c0-1526-c732-b563" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2276-d58d-a919-6ecc" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
@@ -11334,6 +11346,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="029d-c629-c563-9f4e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="97f2-88f1-367e-4aee" value="1">
@@ -11342,6 +11358,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="54a7-7b7a-7e79-fd2e" value="1">
@@ -11369,6 +11389,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="a001-f8b7-d5de-905b" value="1">
@@ -11377,6 +11401,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="0367-10c5-5cf5-71a2" value="1">
