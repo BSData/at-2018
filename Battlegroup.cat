@@ -883,7 +883,7 @@
       </modifiers>
     </entryLink>
     <entryLink id="b794-3768-8a75-3a14" name="Battle Level" hidden="false" collective="false" import="true" targetId="270a-cdcc-91b8-0787" type="selectionEntry"/>
-    <entryLink import="true" name="Iben Faruk" hidden="false" id="9ca5-e3f4-f6d4-3067" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5">
+    <entryLink import="true" name="Iben Faruk" hidden="true" id="9ca5-e3f4-f6d4-3067" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5">
       <entryLinks>
         <entryLink import="true" name="Legio Fureans (Tiger Eyes)" hidden="false" id="7af7-b7a3-217f-3bed" type="selectionEntry" targetId="1a92-f760-bf0e-ce26">
           <constraints>
@@ -892,8 +892,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Mantellum Fulmen" hidden="false" id="5659-aac2-59c5-e654" type="selectionEntry" targetId="b539-aae7-d903-4b5c">
+    <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="5659-aac2-59c5-e654" type="selectionEntry" targetId="b539-aae7-d903-4b5c">
       <entryLinks>
         <entryLink import="false" name="Legio Tempestus (Storm Lords)" hidden="false" id="e8cb-1162-1e22-39fd" collective="false" targetId="cbc6-216c-8a22-c1b4" type="selectionEntry">
           <categoryLinks>
@@ -905,8 +912,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Vestiti Ferrus" hidden="false" id="cdbc-07d0-7633-5a78" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9">
+    <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="cdbc-07d0-7633-5a78" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9">
       <entryLinks>
         <entryLink import="false" name="Legio Vulpa (Death Stalkers)" hidden="false" id="7ca3-1d48-0683-b57b" collective="false" targetId="7093-f8b3-b5f9-d38d" type="selectionEntry">
           <categoryLinks>
@@ -918,8 +932,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Hammer of Tyrants" hidden="false" id="73be-43e9-bf60-9b18" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8">
+    <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="73be-43e9-bf60-9b18" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8">
       <entryLinks>
         <entryLink import="true" name="Legio Krytos (God Breakers)" hidden="false" id="d377-3d4b-8d03-c538" type="selectionEntry" targetId="bffc-4266-a83d-cae6">
           <constraints>
@@ -928,8 +949,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Penumbral Reaper" hidden="false" id="8457-2e64-23eb-64f1" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c">
+    <entryLink import="true" name="Penumbral Reaper" hidden="true" id="8457-2e64-23eb-64f1" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c">
       <entryLinks>
         <entryLink import="true" name="Legio Mortis (Death&apos;s Heads)" hidden="false" id="51bf-cc29-8d3c-0fc9" type="selectionEntry" targetId="1b13-8735-b4bf-0caf">
           <constraints>
@@ -938,8 +966,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Lucius Pretorian" hidden="false" id="04ce-63d3-db10-88bd" type="selectionEntry" targetId="5357-5da1-e9dd-4392">
+    <entryLink import="true" name="Lucius Pretorian" hidden="true" id="04ce-63d3-db10-88bd" type="selectionEntry" targetId="5357-5da1-e9dd-4392">
       <entryLinks>
         <entryLink import="true" name="Legio Astorum (Warp Runners)" hidden="false" id="45b3-bffd-ca07-efb7" type="selectionEntry" targetId="dbd6-65fd-6354-a154">
           <constraints>
@@ -948,8 +983,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Dawn of Enlightenment" hidden="false" id="432f-c537-cfb2-d237" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2">
+    <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="432f-c537-cfb2-d237" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2">
       <entryLinks>
         <entryLink import="true" name="Legio Defensor (Nova Guard)" hidden="false" id="aaeb-cd8c-aa94-708e" type="selectionEntry" targetId="63e1-fca8-5023-12d6">
           <constraints>
@@ -958,8 +1000,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Ignis Ferrus" hidden="false" id="e614-e268-a3cf-208a" type="selectionEntry" targetId="7c7d-0f96-2a56-531f">
+    <entryLink import="true" name="Ignis Ferrus" hidden="true" id="e614-e268-a3cf-208a" type="selectionEntry" targetId="7c7d-0f96-2a56-531f">
       <entryLinks>
         <entryLink import="true" name="Legio Atarus (Firebrands)" hidden="false" id="b032-99e4-8c7a-846c" type="selectionEntry" targetId="bf14-af1e-5d72-7c8b">
           <constraints>
@@ -968,8 +1017,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Bellator Magno" hidden="false" id="bca8-69cc-a476-43ee" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640">
+    <entryLink import="true" name="Bellator Magno" hidden="true" id="bca8-69cc-a476-43ee" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640">
       <entryLinks>
         <entryLink import="true" name="Legio Gryphonicus (War Griffons)" hidden="false" id="d709-769c-29bd-bbd9" type="selectionEntry" targetId="0986-9b84-b734-e9c8">
           <constraints>
@@ -978,8 +1034,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Iracundos" hidden="false" id="1aa3-a8c5-5d61-3716" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b">
+    <entryLink import="true" name="Iracundos" hidden="true" id="1aa3-a8c5-5d61-3716" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b">
       <entryLinks>
         <entryLink import="true" name="Legio Ignatum (Fire Wasps)" hidden="false" id="c247-7d65-af70-eaad" type="selectionEntry" targetId="4a11-763b-6a82-bc29">
           <constraints>
@@ -988,6 +1051,13 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
 </catalogue>
