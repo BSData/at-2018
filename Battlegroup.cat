@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="6" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="7" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -15,6 +15,7 @@
         </categoryLink>
         <categoryLink id="09c3-4572-186e-436f" name="Maniple" hidden="false" targetId="6982-2d18-55cb-61e5" primary="false"/>
         <categoryLink id="7a3b-42f9-f60d-696a" name="Titan" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="e480-77a6-70bc-49ad" targetId="9a74-94db-f8be-10e8"/>
         <categoryLink id="0606-1d0c-defb-d6e6" name="Banner" hidden="false" targetId="917a-77ef-30e4-b812" primary="false"/>
         <categoryLink id="4f07-d070-7d91-0291" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="true"/>
       </categoryLinks>
@@ -882,5 +883,181 @@
       </modifiers>
     </entryLink>
     <entryLink id="b794-3768-8a75-3a14" name="Battle Level" hidden="false" collective="false" import="true" targetId="270a-cdcc-91b8-0787" type="selectionEntry"/>
+    <entryLink import="true" name="Iben Faruk" hidden="true" id="9ca5-e3f4-f6d4-3067" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5">
+      <entryLinks>
+        <entryLink import="true" name="Legio Fureans (Tiger Eyes)" hidden="false" id="7af7-b7a3-217f-3bed" type="selectionEntry" targetId="1a92-f760-bf0e-ce26">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8189-80bc-4c80-e1ad-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8189-80bc-4c80-e1ad-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="5659-aac2-59c5-e654" type="selectionEntry" targetId="b539-aae7-d903-4b5c">
+      <entryLinks>
+        <entryLink import="false" name="Legio Tempestus (Storm Lords)" hidden="false" id="e8cb-1162-1e22-39fd" collective="false" targetId="cbc6-216c-8a22-c1b4" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="LegioTempestus" hidden="false" id="c315-42c5-6029-0688" targetId="15bd-0b4b-5cac-dc48" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c91-ee46-bc2f-8045-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c91-ee46-bc2f-8045-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="cdbc-07d0-7633-5a78" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9">
+      <entryLinks>
+        <entryLink import="false" name="Legio Vulpa (Death Stalkers)" hidden="false" id="7ca3-1d48-0683-b57b" collective="false" targetId="7093-f8b3-b5f9-d38d" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="LegioVulpa" hidden="false" id="6392-e787-eb99-4310" targetId="561a-cb05-d4b5-94fd" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45c3-9d63-d0bf-c795-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45c3-9d63-d0bf-c795-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="73be-43e9-bf60-9b18" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8">
+      <entryLinks>
+        <entryLink import="true" name="Legio Krytos (God Breakers)" hidden="false" id="d377-3d4b-8d03-c538" type="selectionEntry" targetId="bffc-4266-a83d-cae6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b2b-ca59-4d76-267a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b2b-ca59-4d76-267a-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Penumbral Reaper" hidden="true" id="8457-2e64-23eb-64f1" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c">
+      <entryLinks>
+        <entryLink import="true" name="Legio Mortis (Death&apos;s Heads)" hidden="false" id="51bf-cc29-8d3c-0fc9" type="selectionEntry" targetId="1b13-8735-b4bf-0caf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e772-9815-f3ec-974e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e772-9815-f3ec-974e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Lucius Pretorian" hidden="true" id="04ce-63d3-db10-88bd" type="selectionEntry" targetId="5357-5da1-e9dd-4392">
+      <entryLinks>
+        <entryLink import="true" name="Legio Astorum (Warp Runners)" hidden="false" id="45b3-bffd-ca07-efb7" type="selectionEntry" targetId="dbd6-65fd-6354-a154">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f98a-a7ab-1fa5-ffe7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f98a-a7ab-1fa5-ffe7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="432f-c537-cfb2-d237" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2">
+      <entryLinks>
+        <entryLink import="true" name="Legio Defensor (Nova Guard)" hidden="false" id="aaeb-cd8c-aa94-708e" type="selectionEntry" targetId="63e1-fca8-5023-12d6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="716a-46a6-80da-89a7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="716a-46a6-80da-89a7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Ignis Ferrus" hidden="true" id="e614-e268-a3cf-208a" type="selectionEntry" targetId="7c7d-0f96-2a56-531f">
+      <entryLinks>
+        <entryLink import="true" name="Legio Atarus (Firebrands)" hidden="false" id="b032-99e4-8c7a-846c" type="selectionEntry" targetId="bf14-af1e-5d72-7c8b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a00-49b5-22da-f570-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a00-49b5-22da-f570-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Bellator Magno" hidden="true" id="bca8-69cc-a476-43ee" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640">
+      <entryLinks>
+        <entryLink import="true" name="Legio Gryphonicus (War Griffons)" hidden="false" id="d709-769c-29bd-bbd9" type="selectionEntry" targetId="0986-9b84-b734-e9c8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f81c-e9c7-c754-7d71-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f81c-e9c7-c754-7d71-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Iracundos" hidden="true" id="1aa3-a8c5-5d61-3716" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b">
+      <entryLinks>
+        <entryLink import="true" name="Legio Ignatum (Fire Wasps)" hidden="false" id="c247-7d65-af70-eaad" type="selectionEntry" targetId="4a11-763b-6a82-bc29">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="788d-59eb-99dd-dee0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="788d-59eb-99dd-dee0-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
 </catalogue>

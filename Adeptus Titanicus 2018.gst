@@ -623,6 +623,7 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       </modifiers>
       <comment>This category is used to exclude Retainers from the banner limit, while still allowing them to have the &apos;Banner&apos; category</comment>
     </categoryEntry>
+    <categoryEntry name="Titan of Legend" id="9a74-94db-f8be-10e8" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" hidden="true">
@@ -5539,16 +5540,6 @@ In addition, when fielding a Fortis maniple, a Legio Krytos player may take a si
       </costs>
     </selectionEntry>
     <selectionEntry id="1a92-f760-bf0e-ce26" name="Legio Fureans (Tiger Eyes)" publicationId="975a-00f4-pubN87630" page="49" hidden="false" collective="false" import="false" type="upgrade">
-      <rules>
-        <rule id="ae03-90bb-549c-18cc" name="Machine Rage" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
-          <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counds both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spiri; the blank face does not increase the Reactor level.
-However, if a Tiger Eyes player fails the Command check to quell the machine spirit, they may choose the result from the Awakened Machine Spirit table, rather than rolling randomly
-If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Entity table when called upon to do so, and chooses one of the results.</description>
-        </rule>
-        <rule id="3956-1d81-32e8-2797" name="Many Faces of the Omnissiah" publicationId="bf8b-27d7-039e-5df9" page="51" hidden="false">
-          <description>In the first round of the game, any Tiger Eyes TItan may choose to forgo its activation in either the Movement phase and/or the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activiations.  For each phase sacrificed by a Titan, either 1 or2, that Titan may re-roll any one dice later in the game. A Titan chooses if it is sacrificing its phase when activated in that phase.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="fcc3-9ec5-1d35-6043" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
         <categoryLink id="2c6f-f845-d96b-1c92" name="LegioFureans" hidden="false" targetId="72ba-4008-bf4b-fe3b" primary="false"/>
@@ -5557,6 +5548,16 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <rules>
+        <rule name="Machine Rage" id="ae03-90bb-549c-18cc" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="51">
+          <description>When rolling the Reactor dice (see page 43 of the Adeptus Titanicus rulebook) a Tiger Eyes player counds both the Machine Spirit symbol and the blank facing on the dice as a trigger for awakening their Titan&apos;s machine spiri; the blank face does not increase the Reactor level.
+However, if a Tiger Eyes player fails the Command check to quell the machine spirit, they may choose the result from the Awakened Machine Spirit table, rather than rolling randomly
+If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Entity table when called upon to do so, and chooses one of the results.</description>
+        </rule>
+        <rule name="Many Faces of the Omnissiah" id="3956-1d81-32e8-2797" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="51">
+          <description>In the first round of the game, any Tiger Eyes Titan may choose to forgo its activation in either the Movement phase and/or the Combat phase - in essence doing nothing for that phase but counting as one of the Tiger Eyes Player&apos;s activiations. For each phase sacrificed by a Titan, either 1 or2, that Titan may re-roll any one dice later in the game. A Titan chooses if it is sacrificing its phase when activated in that phase.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="7093-f8b3-b5f9-d38d" name="Legio Vulpa (Death Stalkers)" publicationId="975a-00f4-pubN87630" page="54" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
@@ -7695,6 +7696,16 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="ca87-f827-1e23-4509" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="5914-0f1f-7114-7916" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Iben Faruk" hidden="true" id="f97b-aefa-6530-1506" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+            <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="561f-1a14-34d2-e464" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="77c6-b833-8bc9-eee8" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="6a36-c46a-6820-250b" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="33af-d465-f876-118b" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="486d-f659-0c62-2155" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -7710,6 +7721,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="9434-7d69-d629-379c" value="1">
@@ -7723,6 +7738,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="set" field="hidden" value="true">
@@ -7757,6 +7776,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="19f5-95fb-9e80-96d3" value="1">
@@ -7765,6 +7786,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="19f5-95fb-9e80-96d3" value="1">
@@ -8208,6 +8231,18 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="a686-abf1-434a-2049" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="f2b6-4374-ca36-b242" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="ac07-846d-da0d-3dc5" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+            <entryLink import="true" name="Penumbral Reaper" hidden="true" id="d2a6-0456-8df7-2a23" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="2fda-120a-7bc3-0cc7" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="1259-b71b-9bd6-8a5f" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Ignis Ferrus" hidden="true" id="52a0-5700-fb32-22df" type="selectionEntry" targetId="7c7d-0f96-2a56-531f"/>
+            <entryLink import="true" name="Bellator Magno" hidden="true" id="7ccd-4591-947a-ed5d" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="8761-d9fd-0799-daee" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d020-5fd1-a571-ddf2" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
@@ -8219,6 +8254,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="8bf1-e26a-82a0-d5ba" value="1">
@@ -8227,6 +8266,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="8bf1-e26a-82a0-d5ba" value="1">
@@ -8259,6 +8302,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="ae73-44f7-3a1e-c536" value="1">
@@ -8268,6 +8315,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="set" field="hidden" value="true">
@@ -8822,6 +8873,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3a16-e37f-de62-e329" value="1">
@@ -8831,6 +8886,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="9aa0-2e76-da99-3f1a" value="1">
@@ -8898,6 +8957,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="72f4-ef46-bd95-4ba9" value="1">
@@ -8906,6 +8969,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -8922,6 +8989,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d011-abe9-ffd9-10b6" value="1">
@@ -8931,6 +9000,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="d011-abe9-ffd9-10b6" value="1">
@@ -9031,6 +9102,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="055e-09da-4524-d5a3" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Titans of Legend" hidden="false" id="75e0-9723-c1ba-1fc3" type="selectionEntryGroup" targetId="01a1-f590-a19a-7147"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
@@ -9175,6 +9247,14 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="9a5d-8810-e101-8c46" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="82d4-c367-6ca3-e12d" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="5b89-035a-81de-4114" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="05e1-e413-640e-63ec" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="b9ed-47a9-aa12-f5f1" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d2ae-05d2-2fcb-0798" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -9185,6 +9265,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3201-7f9d-bbe4-e121" value="1">
@@ -9193,6 +9277,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -9569,6 +9657,16 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="d8a6-c117-c6f1-08f7" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="c7ef-223c-a216-0631" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Iben Faruk" hidden="true" id="38e3-b593-6e51-dd1c" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+            <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="2935-9a54-b684-285e" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="2057-d4f1-3047-5a75" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="58a2-d8b6-3e1e-8b7a" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="dc00-f5d4-9586-54f7" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fbf6-2b08-3998-d83e" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -9579,6 +9677,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="a3b6-c6b9-ac60-617d" value="1">
@@ -9587,6 +9689,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="db7d-8f30-ca24-e30e" value="1">
@@ -9619,6 +9725,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="803f-03a2-c313-9c2a" value="1">
@@ -9627,6 +9735,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="6f37-979e-47fe-7098" value="1">
@@ -10008,6 +10118,16 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="0284-2e14-3a08-9cc4" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Iben Faruk" hidden="true" id="c266-75f4-2dcb-702f" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+            <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="03d8-fe0a-3f23-3e23" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+            <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="2cbc-f33f-c8e7-66df" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+            <entryLink import="true" name="Penumbral Reaper" hidden="true" id="b7ef-529e-aa2d-5d38" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c"/>
+            <entryLink import="true" name="Ignis Ferrus" hidden="true" id="678f-b499-f160-7f41" type="selectionEntry" targetId="7c7d-0f96-2a56-531f"/>
+            <entryLink import="true" name="Bellator Magno" hidden="true" id="dfbe-1189-3ba0-784f" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8bd5-b643-57b5-5c37" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -10019,6 +10139,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="10e2-8a30-036e-fa3d" value="1">
@@ -10027,6 +10149,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="10e2-8a30-036e-fa3d" value="1">
@@ -10053,6 +10177,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="8032-04c4-538f-85ad" value="1">
@@ -10061,6 +10189,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="c5e4-a8b8-d00f-44dd" value="1">
@@ -10322,6 +10454,12 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="adbd-9258-bd19-a03a" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Iben Faruk" hidden="true" id="2de3-6cf6-ac43-207b" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+            <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="4b22-9b34-454c-597c" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="888e-a4ff-c051-e2ab" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -10332,6 +10470,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="f6a3-2c2d-9562-dac0" value="1">
@@ -10341,6 +10481,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -10765,6 +10907,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               <repeats>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -10792,6 +10936,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="ca1b-bd28-2557-a917" value="1">
@@ -10800,6 +10948,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="3578-3bfa-02f4-09e0" value="1">
@@ -10828,6 +10980,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="7ce4-9226-0a1a-3f99" value="1">
@@ -10836,6 +10992,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="c052-2f9b-24c5-16bb" value="1">
@@ -10937,6 +11097,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a289-a80b-8354-7bce" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Titans of Legend" hidden="false" id="0cac-1c9b-76e4-2fa8" type="selectionEntryGroup" targetId="01a1-f590-a19a-7147"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
@@ -11266,6 +11427,18 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="410b-82c9-7659-59b5" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="044c-b6d3-3bfb-6e2b" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="c4b5-a655-44f5-965c" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+            <entryLink import="true" name="Penumbral Reaper" hidden="true" id="f804-25a0-e742-b5f8" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="a70e-b5c7-2ead-a212" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="f40b-9ac5-0430-7c2d" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Ignis Ferrus" hidden="true" id="44bb-24f6-5662-c585" type="selectionEntry" targetId="7c7d-0f96-2a56-531f"/>
+            <entryLink import="true" name="Bellator Magno" hidden="true" id="3ba0-47df-4fc7-1f1d" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="f3c0-1526-c732-b563" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2276-d58d-a919-6ecc" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
@@ -11277,6 +11450,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="029d-c629-c563-9f4e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="97f2-88f1-367e-4aee" value="1">
@@ -11285,6 +11462,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="54a7-7b7a-7e79-fd2e" value="1">
@@ -11312,6 +11493,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="a001-f8b7-d5de-905b" value="1">
@@ -11320,6 +11505,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="0367-10c5-5cf5-71a2" value="1">
@@ -11694,6 +11883,16 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="cb1b-afe8-ead9-dba9" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="ad02-e6c2-b72f-3728" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Iben Faruk" hidden="true" id="3ed8-0632-215c-ce0d" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+            <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="f1ac-8c88-1274-e1c8" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="3e13-4c64-c950-61fb" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="bbbb-37c8-9b47-7da8" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="0654-e270-1fcd-724b" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e55d-c4aa-9307-146d" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -11706,6 +11905,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="8e65-1872-3677-b75a" value="1">
@@ -11714,6 +11915,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="8e65-1872-3677-b75a" value="1">
@@ -11743,6 +11946,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="997f-69f2-59b5-a4e2" value="1">
@@ -11752,6 +11959,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26af-393b-729b-3e2a" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="a0be-9463-3ea5-50b7" value="1">
@@ -12081,6 +12292,12 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="1c64-32f7-ea1a-14fb" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Iben Faruk" hidden="true" id="1bb8-f05b-480e-6d42" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+            <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="53c8-7854-8184-fd16" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ae58-fccd-53f3-e7d5" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -12090,12 +12307,16 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="c4c4-9670-0378-b53e" value="1">
               <repeats>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="a10c-04b0-24c7-38cf" value="1">
@@ -12475,6 +12696,14 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="ff39-d6a4-73eb-a813" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="0f8c-0ba5-82e8-0b16" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="aa82-ca60-fb52-8071" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="bf6f-0785-3f75-2b70" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="79a1-4194-b0ad-00e9" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ece9-d720-9039-e293" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry">
@@ -12485,6 +12714,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d049-710a-cfe3-2097" value="1">
@@ -12493,6 +12726,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="d049-710a-cfe3-2097" value="1">
@@ -12867,6 +13104,16 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="c614-e4f9-47f1-844c" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Iben Faruk" hidden="true" id="5f3b-0046-ec58-d636" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+            <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="1765-ea0b-6b75-d2ee" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+            <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="9e17-e8ee-657c-fa6f" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+            <entryLink import="true" name="Penumbral Reaper" hidden="true" id="6b23-4d93-5f6a-f6c1" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c"/>
+            <entryLink import="true" name="Ignis Ferrus" hidden="true" id="d2f5-b577-0417-8172" type="selectionEntry" targetId="7c7d-0f96-2a56-531f"/>
+            <entryLink import="true" name="Bellator Magno" hidden="true" id="15b9-acf3-6f6f-4c32" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8366-f454-1d97-b4f0" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -12878,6 +13125,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="dcd4-8604-cbc2-2e44" value="1">
@@ -12886,6 +13135,8 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="9c21-219f-eb16-73a0" value="1">
@@ -12912,6 +13163,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="41de-b58c-83df-e3f8" value="1">
@@ -12920,6 +13175,10 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="373a-02ba-7869-caa9" value="1">
@@ -13371,6 +13630,18 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="0634-aa07-d387-506d" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="4548-5420-d00d-6105" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="07a9-2fdb-4c52-dcf4" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+            <entryLink import="true" name="Penumbral Reaper" hidden="true" id="5063-00a2-35f3-f3d0" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="d825-21ea-30fc-961d" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="a5e9-df79-cc3e-4829" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Ignis Ferrus" hidden="true" id="c42e-480f-30a9-58b4" type="selectionEntry" targetId="7c7d-0f96-2a56-531f"/>
+            <entryLink import="true" name="Bellator Magno" hidden="true" id="e510-1811-71d4-a165" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="d91e-cb83-23d9-20a7" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6222-235f-9835-8d12" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -13398,6 +13669,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="e28f-47ce-7c9c-e45a" value="1">
@@ -13405,6 +13680,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="e28f-47ce-7c9c-e45a" value="1">
@@ -13431,6 +13710,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="079a-2edc-cbc9-fb63" value="1">
@@ -13439,6 +13722,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="079a-2edc-cbc9-fb63" value="1">
@@ -13693,6 +13980,14 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="7b2d-159d-7600-752a" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="729b-0db0-8f0c-86e3" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+            <entryLink import="true" name="Penumbral Reaper" hidden="true" id="27ee-0f23-fd64-a197" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c"/>
+            <entryLink import="true" name="Ignis Ferrus" hidden="true" id="c17a-b888-8fe5-e118" type="selectionEntry" targetId="7c7d-0f96-2a56-531f"/>
+            <entryLink import="true" name="Bellator Magno" hidden="true" id="0e76-50e7-eac5-e5e7" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="a70c-0891-bbb2-0c0d" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -13709,6 +14004,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="fed8-b66a-4f3c-c863" value="1">
@@ -13717,6 +14016,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -14068,6 +14371,16 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="0022-a35e-33c4-35e9" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="7c8d-dd77-166d-5cf2" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Iben Faruk" hidden="true" id="09a6-ce25-6988-6492" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+            <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="c4e2-b265-08db-f58d" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="3d54-b413-1315-599f" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="4630-a95d-6ba3-5265" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="9af4-b078-7670-b85c" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="eb2a-0169-6eb0-e0cd" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -14084,6 +14397,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="8fc1-f430-7854-6e63" value="1">
@@ -14106,6 +14423,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="set" field="hidden" value="true">
@@ -14140,6 +14461,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="1bb3-7b3b-ed32-c8f7" value="1">
@@ -14147,6 +14470,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="set" field="hidden" value="true">
@@ -14404,6 +14729,12 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="9d40-b21c-504e-7e3a" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Iben Faruk" hidden="true" id="2edc-90cb-6c35-c571" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+            <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="1ebf-c387-c41e-ca3c" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4f88-cfa9-250f-b4fb" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
@@ -14415,6 +14746,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="816c-1cc6-323d-5a01" value="1">
@@ -14423,6 +14756,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -14853,28 +15188,28 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         <entryLink id="f1de-3bec-c19b-eef1" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="3b87-a57d-fcc3-b067" value="1">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ed65-de2a-f1d6-a6f0" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="a2ce-dd49-ecfa-5ee8" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="241f-bfe6-fc92-62a6" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="e5c6-a7a6-1315-09b8" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
             </modifier>
             <modifier type="decrement" field="33ca-aac3-3d14-f7ae" value="1">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed65-de2a-f1d6-a6f0" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2ce-dd49-ecfa-5ee8" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5c6-a7a6-1315-09b8" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ed65-de2a-f1d6-a6f0" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="a2ce-dd49-ecfa-5ee8" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="241f-bfe6-fc92-62a6" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="e5c6-a7a6-1315-09b8" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="f7d8-5efb-466d-a8d8" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1e6-23d7-73ff-f29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c7d-0f96-2a56-531f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d9c7-f0a7-f1dd-a640" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
             </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -14934,6 +15269,14 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="241f-bfe6-fc92-62a6" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7831-176e-a10c-4f17" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="9016-fc67-e2dd-0af6">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -15009,16 +15352,15 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         <entryLink id="7616-e76b-3d0d-5ce2" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry">
           <modifiers>
             <modifier type="decrement" field="472e-ad61-3e09-f9f6" value="1">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="e34d-9d04-97f4-777c" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="e1ea-4e6f-d353-2cc4" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="2910-5e72-a7de-f973" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7b35-6cd7-d914-c133" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="fc0d-eb8b-2ed0-a798" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
             </modifier>
             <modifier type="decrement" field="09a9-9a9e-ecbc-c3ab" value="1">
               <repeats>
@@ -15027,6 +15369,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="09a9-9a9e-ecbc-c3ab" value="1">
@@ -15110,6 +15454,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac35-cd37-7ac3-5efb" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Titans of Legend" hidden="false" id="c4ec-24e3-922c-0077" type="selectionEntryGroup" targetId="01a1-f590-a19a-7147"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
@@ -22929,6 +23274,1183 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="High King" hidden="false" id="4935-72b9-5af4-dcf1" targetId="6023-4ce7-7008-e851" primary="false"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="false" name="Iben Faruk" hidden="false" id="1dee-3970-5fa7-9ba5" collective="false">
+      <profiles>
+        <profile name="Warhound Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="af53-b4b1-a65d-7632">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">8&quot;/12&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">3/5</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">2</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="6376-2e51-7fd9-540a" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="WarhoundTitan" hidden="false" id="84b3-02d9-25d1-9a13" targetId="223f-6e71-9e4f-939e" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="8f6f-a75f-792d-dceb" targetId="9a74-94db-f8be-10e8" primary="true"/>
+        <categoryLink targetId="72ba-4008-bf4b-fe3b" id="969a-eb3c-94f3-7c66" primary="false" name="LegioFureans"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="477b-571b-1ada-d1a3" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="10c4-d7e7-3448-d534" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="ec79-638f-f80d-e46a">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ec79-638f-f80d-e46a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9464-1d1b-6f44-b64a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Inferno Gun [WH]" hidden="false" id="385d-8b5d-8a70-83ea" collective="false" targetId="c7aa-80e5-43d2-0cfd" type="selectionEntry"/>
+                <entryLink import="false" name="Plasma Blast Gun [WH]" hidden="false" id="1143-e267-2ec6-03d5" collective="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
+                <entryLink import="false" name="Turbo Laser Destructor [WH]" hidden="false" id="9965-9b10-fa0e-8087" collective="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter [WH]" hidden="false" id="f921-ccbf-297e-3293" collective="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
+                <entryLink import="false" name="Ursus Claw" hidden="false" id="04e0-ff73-db98-bc89" collective="false" targetId="abfb-13ba-25c8-f130" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="false" name="Natrix Shock Lance" hidden="false" id="2032-bd29-cb2c-b32c" collective="false" targetId="59e1-0284-05e3-4c67" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Eradicator [WH]" hidden="false" id="b284-c558-7651-81a8" collective="false" targetId="2f29-8298-5888-bcc6" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Destructor [WH]" hidden="false" id="46f2-47ab-4575-616c" collective="false" targetId="cfff-d280-9b0e-aadb" type="selectionEntry"/>
+                <entryLink import="true" name="Conversion Beam Dissolutor [WH]" hidden="false" id="4e1e-dbf9-ee36-a692" collective="false" targetId="8bc9-6a75-d799-0d56" type="selectionEntry"/>
+                <entryLink import="true" name="Incisor Pattern Melta Lance" hidden="false" id="92b4-04fa-9a21-d656" collective="false" targetId="9cfc-2c4f-fa54-e935" type="selectionEntry"/>
+                <entryLink import="true" name="Swarmer Missiles" hidden="false" id="6f74-e341-57d1-ec12" collective="false" targetId="834a-4f80-00fb-a341" type="selectionEntry"/>
+                <entryLink import="true" name="Shudder Missiles" hidden="false" id="4ae4-5489-74f5-9e46" collective="false" targetId="6268-9937-423c-55d9" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="4fe9-cdab-d655-8ab5" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="d215-f710-cd45-7305" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="e17e-2ce9-87ba-7803" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Traitor Wargear" hidden="false" id="619d-05bb-e6c9-e080" collective="false" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Base Mutation" hidden="false" id="f102-d0fc-a450-0608" collective="false" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Corrupt Titan" hidden="false" id="b737-4803-ef0f-7850" collective="false" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink import="true" name="Additional Mutations" hidden="false" id="7d36-579b-d8b3-3868" collective="false" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="acc5-af77-38b8-4f17" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="acc5-af77-38b8-4f17">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="275b-32bf-0170-69dd" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+        <entryLink import="true" name="=Fureans= Hunting Auspex" hidden="false" id="5be8-34bf-e813-6f5b" type="selectionEntry" targetId="0d56-2ed6-8229-739e" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f266-76ed-aeca-73f0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f266-76ed-aeca-73f0-max" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="200"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="72ba-4008-bf4b-fe3b" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b0d0-9802-9f0f-78d8" includeChildSelections="true"/>
+      </constraints>
+      <rules>
+        <rule name="Kingslayer" id="31ca-7532-f6e2-7fdf" hidden="false">
+          <description>The Titan has the hunting auspex upgrade at no extra cost. Add 2 to Armour rolls for attacks made against Titans Scale 10 or larger.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Mantellum Fulmen" hidden="false" id="b539-aae7-d903-4b5c" collective="false">
+      <profiles>
+        <profile name="Warhound Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="a0a9-e7c0-0093-b826">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">8&quot;/12&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">5+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">3/5</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">2</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="2675-d126-6c0f-e0f2" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="WarhoundTitan" hidden="false" id="6414-2f0e-67e2-5d19" targetId="223f-6e71-9e4f-939e" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="006f-9356-38f8-a9ba" targetId="9a74-94db-f8be-10e8" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="73a2-f10e-ff68-9add" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="af24-d771-242e-6326" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="dd5f-2f66-3c7d-d65f">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dd5f-2f66-3c7d-d65f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a9f2-9cb4-7143-2c93" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Inferno Gun [WH]" hidden="false" id="d1b6-15c2-9551-b97e" collective="false" targetId="c7aa-80e5-43d2-0cfd" type="selectionEntry"/>
+                <entryLink import="false" name="Plasma Blast Gun [WH]" hidden="false" id="55fe-9380-8aa6-e8af" collective="false" targetId="bd35-3f71-8bea-7e42" type="selectionEntry"/>
+                <entryLink import="false" name="Turbo Laser Destructor [WH]" hidden="false" id="1373-ff59-f94f-94f5" collective="false" targetId="2165-2206-85af-b273" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter [WH]" hidden="false" id="ab18-8450-fe56-86cb" collective="false" targetId="edcd-f43d-10ba-7f60" type="selectionEntry"/>
+                <entryLink import="false" name="=Tempestus= Chasmata Turbo Laser Destructor [WH]" hidden="true" id="8fb3-3c00-8a3e-0ab0" collective="false" targetId="8fee-61b8-1c39-b9ee" type="selectionEntry"/>
+                <entryLink import="false" name="=Mordaxis= Plasma Blastgun with Toxin Nodes" hidden="true" id="a329-0c89-5e9e-41ec" collective="false" targetId="81ba-0dd4-a06d-ea23" type="selectionEntry"/>
+                <entryLink import="false" name="=Audax= Ursus Claw" hidden="false" id="606a-135f-f552-2bc9" collective="false" targetId="f476-3a7b-5612-d96e" type="selectionEntry"/>
+                <entryLink import="false" name="Ursus Claw" hidden="false" id="dace-c97f-f040-955d" collective="false" targetId="abfb-13ba-25c8-f130" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="4f76-34ac-3cf7-34c6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="false" name="Natrix Shock Lance" hidden="false" id="51d9-fa81-058b-14d8" collective="false" targetId="59e1-0284-05e3-4c67" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Eradicator [WH]" hidden="false" id="d105-912c-99bd-2ff7" collective="false" targetId="2f29-8298-5888-bcc6" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Destructor [WH]" hidden="false" id="8228-cf5a-f8d4-9ca0" collective="false" targetId="cfff-d280-9b0e-aadb" type="selectionEntry"/>
+                <entryLink import="true" name="Conversion Beam Dissolutor [WH]" hidden="false" id="2c37-9f88-d1f6-4ae0" collective="false" targetId="8bc9-6a75-d799-0d56" type="selectionEntry"/>
+                <entryLink import="true" name="Incisor Pattern Melta Lance" hidden="false" id="d17b-78fb-6bae-9a69" collective="false" targetId="9cfc-2c4f-fa54-e935" type="selectionEntry"/>
+                <entryLink import="true" name="Swarmer Missiles" hidden="false" id="0196-6174-8dbf-a28b" collective="false" targetId="834a-4f80-00fb-a341" type="selectionEntry"/>
+                <entryLink import="true" name="Shudder Missiles" hidden="false" id="0c15-02c9-38b6-a362" collective="false" targetId="6268-9937-423c-55d9" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="0637-feaf-a7bb-34c2" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="3620-4b8a-65a9-023f" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="e765-afd7-ca36-e2f6" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Traitor Wargear" hidden="false" id="7728-68ba-9ca2-e8eb" collective="false" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Base Mutation" hidden="false" id="97cd-d354-90e5-38e6" collective="false" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Corrupt Titan" hidden="false" id="2988-e558-4efb-77b9" collective="false" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink import="true" name="Additional Mutations" hidden="false" id="9bf6-a4cc-6fa0-b91c" collective="false" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e37d-c152-3689-35f4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="e37d-c152-3689-35f4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="2f91-2258-e630-7255" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="205"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cbc6-216c-8a22-c1b4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Solitary Hunter" hidden="false" id="8287-795d-bc63-f272">
+          <rules>
+            <rule name="Solitary Hunter" id="9765-0745-8720-4907" hidden="false">
+              <description>Cannot be part of a squadron. When issued a First Fire order, it may fire all weapons.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c67-1d7e-9d52-cfcd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c67-1d7e-9d52-cfcd-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a72e-7817-d285-39a4" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Vestiti Ferrus" hidden="false" id="08ce-f55b-ff2f-e7e9" collective="false">
+      <profiles>
+        <profile name="Reaver Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="a5f8-caab-7046-9097">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">6&quot;/9&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">4+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">2/3</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">3</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="e8a6-dfe9-d0e3-7456" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="ReaverTitan" hidden="false" id="4017-79e4-bfe7-5467" targetId="d36f-5e44-2150-3428" primary="false"/>
+        <categoryLink targetId="9a74-94db-f8be-10e8" id="452f-ec98-1b84-0f3b" primary="true" name="Titan of Legend"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="f1e8-9180-b4d3-33a3" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="e4ae-86dd-ed28-4142" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="3549-1fc3-5766-8efc">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3549-1fc3-5766-8efc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3078-65d1-cd46-bc65" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Gatling Blaster" hidden="false" id="e045-ae91-30e0-2a45" collective="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
+                <entryLink import="false" name="Laser Blaster" hidden="false" id="7055-23e7-061d-03e7" collective="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
+                <entryLink import="false" name="Melta Cannon [RVR]" hidden="false" id="99d9-7150-d8b9-538b" collective="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
+                <entryLink import="false" name="Reaver Titan Chainfist" hidden="false" id="6ba9-3f05-753c-45c5" collective="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
+                <entryLink import="false" name="Reaver Titan Power Fist" hidden="false" id="e73d-a7e8-379a-7574" collective="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
+                <entryLink import="false" name="Volcano Cannon" hidden="false" id="d5c0-e38f-d859-fef1" collective="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Carapace" id="66a6-b99a-32fb-e7d2" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="4759-4d03-fd6a-d557">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4759-4d03-fd6a-d557" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ee5-69a4-ca4d-3b7b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Apocalypse Missile Launcher" hidden="false" id="9e27-34f9-c131-4188" collective="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
+                <entryLink import="false" name="Turbo Laser Destructor [RVR]" hidden="false" id="6347-dbef-a2fe-99dd" collective="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink import="false" name="Warp Missile Support Rack" hidden="false" id="02db-5b6e-9160-8a9a" collective="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter [RVR]" hidden="false" id="ad64-fa61-f341-a0b8" collective="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink import="false" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" id="dbfc-549a-784f-bf14" collective="false" targetId="08c7-5efe-0712-c420" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Eradicator [RVR]" hidden="false" id="a930-a05c-cc19-42cf" collective="false" targetId="4f49-0fb1-426f-c152" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Destructor [RVR]" hidden="false" id="05a8-c8d6-bb7e-51a8" collective="false" targetId="7093-9a5b-12c0-f7ed" type="selectionEntry"/>
+                <entryLink import="true" name="Conversion Beam Dissolutor [RVR]" hidden="false" id="21a2-45da-9f29-9ee6" collective="false" targetId="22d3-59fd-2b09-5980" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="2f42-517d-ff38-287f" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="950d-ec1f-9926-da85" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="004d-5e86-280a-7c23" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="260e-93e7-cc9b-275c" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="07ff-69e7-fa89-c05f" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Traitor Wargear" hidden="false" id="6c6b-0c88-1622-8570" collective="false" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Corrupt Titan" hidden="false" id="984e-ba6a-39e6-c7ad" collective="false" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink import="true" name="Base Mutation" hidden="false" id="1d20-3d65-2785-060c" collective="false" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Additional Mutations" hidden="false" id="ad09-dc4b-7a7c-4d17" collective="false" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e067-28ae-0361-518a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="e067-28ae-0361-518a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="7988-048e-c560-a814" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="275"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ironclad" hidden="false" id="1b36-16f6-f19b-906e">
+          <rules>
+            <rule name="Ironclad" id="01ce-ead1-45ae-ea08" hidden="false">
+              <description>When this Titan suffers a Devastating Hit, roll a D6. On a 6, the Titan loses 1 Structure point instead of 2.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4559-715f-1f90-b8e2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4559-715f-1f90-b8e2-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="7093-f8b3-b5f9-d38d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4f52-7c6a-2e7e-ce80" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Hammer of Tyrants" hidden="false" id="f7d8-5efb-466d-a8d8" collective="false">
+      <profiles>
+        <profile name="Warlord Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="3581-62b3-8f99-8311">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/2</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">4</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="b64c-d774-d616-b026" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="WarlordTitan" hidden="false" id="488a-da00-949c-cbb9" targetId="7103-9316-d4a5-8caa" primary="false"/>
+        <categoryLink targetId="9a74-94db-f8be-10e8" id="7578-b83f-8dec-5f22" primary="true" name="Titan of Legend"/>
+        <categoryLink targetId="95e8-3d8e-a0ad-4ad3" id="4a9d-26ce-df16-34f6" primary="false" name="LegioKrytos"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="cc4d-88af-91cd-e3f2" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="a14d-bcfd-9563-8cde" hidden="false" collective="false" import="false">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="22d1-e0d7-8657-76d3-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="22d1-e0d7-8657-76d3-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Bellicosa Volcano Cannon [WLD]" hidden="false" id="bc73-d9e4-7b70-72d9" collective="false" targetId="fee8-4996-06cd-64bc" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4b0-75d9-7d4d-5d1a-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4b0-75d9-7d4d-5d1a-max" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="false" name="Sunfury Plasma Annihilator" hidden="false" id="a881-9bbb-1418-38a6" collective="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff17-fa52-2961-d168-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff17-fa52-2961-d168-max" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Carapace" id="d693-df79-3103-f62e" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="37bd-a809-433f-f246">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37bd-a809-433f-f246" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d77c-d1da-4dbb-ed54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Apocalypse Missile Launchers" hidden="false" id="6eb5-5ac0-ce5c-c074" collective="false" targetId="bd33-0564-6277-6dc1" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Gatling Blasters" hidden="false" id="b9d1-ffbd-a756-13ee" collective="false" targetId="bfdb-4953-f838-7d21" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Laser Blaster" hidden="false" id="d2ab-d96a-9d24-3df4" collective="false" targetId="5fc7-120d-623b-8b5a" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Turbo Laser Destructor" hidden="false" id="292d-08bf-118c-e620" collective="false" targetId="bfee-3947-a004-3a4e" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter Array" hidden="false" id="433a-ee6c-44b5-2b98" collective="false" targetId="f2ae-e883-28c4-dbcc" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="false" name="Ardex Defensor Cannon" hidden="false" id="c110-248c-82d8-0012" collective="false" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="0f25-7d33-d85f-f2e8" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="b3ed-2eab-4393-35c6" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="d003-d147-f164-013f" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="6959-6bda-b039-b5fd" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="b1e9-6a25-c9f5-c4ed" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Traitor Wargear" hidden="false" id="0039-1b81-fa6b-7375" collective="false" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Base Mutation" hidden="false" id="d3a8-6230-1c9d-0a45" collective="false" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Corrupt Titan" hidden="false" id="924a-c0af-b98c-8070" collective="false" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink import="true" name="Additional Mutations" hidden="false" id="b4b8-ba7a-ad72-e89b" collective="false" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7f66-66e1-bf96-dd6c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="7f66-66e1-bf96-dd6c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="8cf2-1034-db69-fbc6" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="515"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Fuelled by Rage" id="6d11-e7b0-dd00-6e9d" hidden="false">
+          <description>When using the Maximal Fire trait, 1s do not increase the reactor level. The first time the Titan suffers a Critical Hit, return the Reactor marker to the leftmost hole.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="58a8-3b5d-d693-4c4d" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="bffc-4266-a83d-cae6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Penumbral Reaper" hidden="false" id="c1e6-23d7-73ff-f29c" collective="false">
+      <profiles>
+        <profile name="Warlord Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="4d74-89cf-803c-1475">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/2</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">4</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="bb15-04fc-5949-99ed" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="WarlordTitan" hidden="false" id="83cd-eec9-6cc7-01ee" targetId="7103-9316-d4a5-8caa" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="3c36-1ec2-c212-5388" targetId="9a74-94db-f8be-10e8" primary="true"/>
+        <categoryLink targetId="f88f-e42d-38f7-bfa7" id="a462-1116-7e7b-b5b6" primary="false" name="LegioMortis"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="9aca-44b3-9074-d858" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="574a-20c7-f0b1-db2c" hidden="false" collective="false" import="false">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d400-0393-a42a-a6f9-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d400-0393-a42a-a6f9-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Sunfury Plasma Annihilator" hidden="false" id="ea1a-4578-8b37-be43" collective="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c629-b29e-beaa-4f5b-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c629-b29e-beaa-4f5b-max" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="false" name="Arioch Titan Power Claw" hidden="false" id="4f12-73b9-a8b4-095a" collective="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55c4-4dd5-6977-6129-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55c4-4dd5-6977-6129-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Carapace" id="df92-a02d-3581-084c" hidden="false" collective="false" import="false">
+              <entryLinks>
+                <entryLink import="false" name="Paired Laser Blaster" hidden="false" id="6571-0ecf-ec2a-e448" collective="false" targetId="5fc7-120d-623b-8b5a" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e41-bc3e-90bb-8293-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e41-bc3e-90bb-8293-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="false" name="Ardex Defensor Cannon" hidden="false" id="d8cb-bd18-0ef1-3c12" collective="false" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="3aa4-f334-95e0-9d59" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="cb5c-4c73-ab8d-7f8f" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="2e92-86c7-1c09-a1a3" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="8350-2a5d-fba2-cf4f" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="96b8-d543-b56f-8353" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Traitor Wargear" hidden="false" id="fbd1-7029-4fa1-364d" collective="false" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Base Mutation" hidden="false" id="2ef0-1f1a-ee55-1154" collective="false" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Corrupt Titan" hidden="false" id="f281-70c6-662f-0107" collective="false" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
+        <entryLink import="true" name="Additional Mutations" hidden="false" id="1210-f885-5ca9-0dff" collective="false" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ec36-f86b-99e5-23dd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="ec36-f86b-99e5-23dd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2281-11a9-8008-a263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="7395-6aeb-d595-14ec" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="525"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Towering Exemplar" id="2e4a-54f9-214a-ff00" hidden="false">
+          <description>Friendly Titans within 12&quot; add 1 to all Command checks and can re-roll rolls of 1 To Hit with weapons with the Melee trait. If Machine Spirit is awakened, &apos;Haughty&apos; automatically applies.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="be9e-1db3-f874-b7a6" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="1b13-8735-b4bf-0caf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Lucius Pretorian" hidden="false" id="5357-5da1-e9dd-4392" collective="false">
+      <profiles>
+        <profile name="Reaver Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="a35b-021f-6048-bf9a">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">6&quot;/9&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">4+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">2/3</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">4</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="0d96-f724-68c9-796f" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="ReaverTitan" hidden="false" id="0465-1ef6-fea3-fedf" targetId="d36f-5e44-2150-3428" primary="false"/>
+        <categoryLink targetId="06c2-f93e-7bf5-9fd5" id="768b-b853-680b-1811" primary="false" name="LegioAstorum"/>
+        <categoryLink targetId="9a74-94db-f8be-10e8" id="bead-ece1-8316-c477" primary="true" name="Titan of Legend"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="a808-95c3-a2b5-ca73" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="ebea-e5ae-7879-400d" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="4e49-92c3-d408-7dbc">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4e49-92c3-d408-7dbc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7463-08c8-d08a-067a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Gatling Blaster" hidden="false" id="1ab6-9c73-3431-0827" collective="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
+                <entryLink import="false" name="Laser Blaster" hidden="false" id="1178-0c98-c133-3e62" collective="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
+                <entryLink import="false" name="Melta Cannon [RVR]" hidden="false" id="1f1c-509e-964f-c6d7" collective="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
+                <entryLink import="false" name="Reaver Titan Chainfist" hidden="false" id="6725-97c5-9b96-3273" collective="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
+                <entryLink import="false" name="Reaver Titan Power Fist" hidden="false" id="c2c7-79b1-32a1-b065" collective="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
+                <entryLink import="false" name="Volcano Cannon" hidden="false" id="7c08-d3ad-6e94-baa3" collective="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
+                <entryLink import="false" name="=Tempestus= Chasmata Laser Blaster" hidden="true" id="9695-c34e-e220-3b00" collective="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry"/>
+                <entryLink import="false" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" id="adf8-134e-bdbc-4b36" collective="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry"/>
+                <entryLink import="false" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" id="49d9-7bcb-aaa2-f924" collective="false" targetId="d813-f8ae-081e-d421" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Carapace" id="b4d5-f6f6-564c-e9f6" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="ea8c-50ad-7b30-22c4">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea8c-50ad-7b30-22c4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e447-fc9d-4f7e-e875" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Apocalypse Missile Launcher" hidden="false" id="d5c3-771e-9eed-9c5a" collective="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
+                <entryLink import="false" name="Turbo Laser Destructor [RVR]" hidden="false" id="a44a-df1e-cadc-b6ee" collective="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink import="false" name="Warp Missile Support Rack" hidden="false" id="d0b0-46e9-df48-49f4" collective="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter [RVR]" hidden="false" id="4f15-ea42-8b3f-6db6" collective="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink import="false" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" id="8b3c-01b3-a8fa-b7f7" collective="false" targetId="08c7-5efe-0712-c420" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Eradicator [RVR]" hidden="false" id="1df3-55dd-c95c-5570" collective="false" targetId="4f49-0fb1-426f-c152" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Destructor [RVR]" hidden="false" id="4e99-e1d0-dceb-966b" collective="false" targetId="7093-9a5b-12c0-f7ed" type="selectionEntry"/>
+                <entryLink import="true" name="Conversion Beam Dissolutor [RVR]" hidden="false" id="3074-f98a-3366-fd01" collective="false" targetId="22d3-59fd-2b09-5980" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="2ce9-033e-436a-4fcf" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="63ee-763c-4306-0f20" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="f9b7-6401-1b19-6a5b" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="c5ba-a332-599d-c115" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="9323-5477-1d64-e5b9" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="2e8e-bd24-d899-9019" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="290"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="dbd6-65fd-6354-a154" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Will to Survive" id="8cac-6918-bbb7-e8e4" hidden="false">
+          <description>Add one to all Repair rolls made by this Titan.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4c76-c448-c2ed-5d9f" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Dawn of Enlightenment" hidden="false" id="cc4c-4b80-cb60-e3b2" collective="false">
+      <profiles>
+        <profile name="Reaver Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="0e96-3597-ce33-0b04">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">6&quot;/9&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">4+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">2/3</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">3</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="2633-dd6a-f815-9ea2" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="ReaverTitan" hidden="false" id="3860-c7bb-60fc-e894" targetId="d36f-5e44-2150-3428" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="f5da-f589-363a-fa81" targetId="9a74-94db-f8be-10e8" primary="true"/>
+        <categoryLink targetId="7b17-f14f-4709-e96c" id="7160-1ce7-1855-0c48" primary="false" name="LegioDefensor"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="70c4-3519-ee62-1a64" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="f477-30d8-5d16-2e6c" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="3b07-21fd-b873-3356">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3b07-21fd-b873-3356" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7967-855f-62f6-18e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Gatling Blaster" hidden="false" id="99a7-c135-c329-4d52" collective="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry"/>
+                <entryLink import="false" name="Laser Blaster" hidden="false" id="0aba-a108-9ae5-f3cd" collective="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry"/>
+                <entryLink import="false" name="Melta Cannon [RVR]" hidden="false" id="fef4-2b74-fd8b-79ba" collective="false" targetId="087a-abff-3ffe-f488" type="selectionEntry"/>
+                <entryLink import="false" name="Reaver Titan Chainfist" hidden="false" id="19b0-df43-b854-3e74" collective="false" targetId="73bc-c1cd-03b3-bedf" type="selectionEntry"/>
+                <entryLink import="false" name="Reaver Titan Power Fist" hidden="false" id="30a5-5f3f-7f8c-a194" collective="false" targetId="e89d-64cd-eb26-e165" type="selectionEntry"/>
+                <entryLink import="false" name="Volcano Cannon" hidden="false" id="c2bd-c0ca-e4fa-8221" collective="false" targetId="8bd4-e1ff-d447-389e" type="selectionEntry"/>
+                <entryLink import="false" name="=Tempestus= Chasmata Laser Blaster" hidden="true" id="5a33-9674-15b1-3f7c" collective="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry"/>
+                <entryLink import="false" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" id="0c40-a392-9491-1f00" collective="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry"/>
+                <entryLink import="false" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" id="b836-27ce-e9de-61e2" collective="false" targetId="d813-f8ae-081e-d421" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Carapace" id="da63-4f11-2c08-2d12" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="2256-9d51-e61a-e9c0">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2256-9d51-e61a-e9c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db46-a8d9-0513-1986" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Apocalypse Missile Launcher" hidden="false" id="e28c-0213-2249-d719" collective="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry"/>
+                <entryLink import="false" name="Turbo Laser Destructor [RVR]" hidden="false" id="4f77-9f3a-5b41-4628" collective="false" targetId="0b27-6d01-57d3-0e9d" type="selectionEntry"/>
+                <entryLink import="false" name="Warp Missile Support Rack" hidden="false" id="cee4-825d-8881-b8c3" collective="false" targetId="be6b-8894-c7d1-bdba" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter [RVR]" hidden="false" id="1d01-ccb3-7e90-4e9b" collective="false" targetId="47c9-43b5-8afc-b64f" type="selectionEntry"/>
+                <entryLink import="false" name="=Tempestus= Chasmata Turbo Laser Destructor [RVR]" hidden="true" id="aa7c-563f-2876-ce2b" collective="false" targetId="08c7-5efe-0712-c420" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Eradicator [RVR]" hidden="false" id="d3db-c9b2-ba23-4d0d" collective="false" targetId="4f49-0fb1-426f-c152" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Destructor [RVR]" hidden="false" id="de9a-a61b-fd55-fe8e" collective="false" targetId="7093-9a5b-12c0-f7ed" type="selectionEntry"/>
+                <entryLink import="true" name="Conversion Beam Dissolutor [RVR]" hidden="false" id="8c77-d485-7433-c726" collective="false" targetId="22d3-59fd-2b09-5980" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="3aeb-bfee-bdb9-a27d" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="dfdb-a02d-8495-1d4b" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="e00a-dde4-f5cd-160b" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="7039-b3e1-0f28-affc" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="7fcc-1d5e-c910-17e9" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="51ab-2de5-93c0-c499" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="275"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="63e1-fca8-5023-12d6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Beseech the Emperor" id="0155-67a8-4831-de24" hidden="false">
+          <description>In the Movement phase, this Titan can forgo its activation, doing nothing for that phase but counting as one of the player&apos;s activations.
+
+
+If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shields are collapsed. This cannot be used if the Titan has the VSG Burnout Damage Effect.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f505-6d9f-f609-776b" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Ignis Ferrus" hidden="false" id="7c7d-0f96-2a56-531f" collective="false">
+      <profiles>
+        <profile name="Warlord Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="f2b7-16a0-c627-ac5c">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/2</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">4</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="b749-bbb8-5dbf-7a32" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="WarlordTitan" hidden="false" id="95a4-b8c0-089b-3899" targetId="7103-9316-d4a5-8caa" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="6f09-acb7-5e55-dfe1" targetId="9a74-94db-f8be-10e8" primary="true"/>
+        <categoryLink targetId="cfcc-e5c0-bb0b-db6f" id="1208-6521-88db-e5f7" primary="false" name="LegioAtarus"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="fb51-ffc9-d918-4745" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Carapace" id="1581-2b63-16c9-91d9" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="de58-1630-aca2-850d">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de58-1630-aca2-850d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fe9-2007-2291-3326" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Apocalypse Missile Launchers" hidden="false" id="ddcf-0b90-fa35-dd8d" collective="false" targetId="bd33-0564-6277-6dc1" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Gatling Blasters" hidden="false" id="9dbe-ad7b-3ef9-a701" collective="false" targetId="bfdb-4953-f838-7d21" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Laser Blaster" hidden="false" id="6eb0-7172-d25c-b3e7" collective="false" targetId="5fc7-120d-623b-8b5a" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Turbo Laser Destructor" hidden="false" id="a368-e736-75c2-254a" collective="false" targetId="bfee-3947-a004-3a4e" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter Array" hidden="false" id="48eb-d36b-3a04-55ea" collective="false" targetId="f2ae-e883-28c4-dbcc" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Arms" id="ee46-5c24-3673-9962" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="a4e2-fe67-5cab-4399">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a4e2-fe67-5cab-4399" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5193-9c18-0ec1-112d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Bellicosa Volcano Cannon [WLD]" hidden="false" id="761d-2dca-a139-a916" collective="false" targetId="fee8-4996-06cd-64bc" type="selectionEntry"/>
+                <entryLink import="false" name="Mori Quake Cannon [WLD]" hidden="false" id="2337-eef0-fce3-0677" collective="false" targetId="1904-506f-6b2d-0843" type="selectionEntry"/>
+                <entryLink import="false" name="Sunfury Plasma Annihilator" hidden="false" id="479c-11a3-0ea0-deaf" collective="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
+                <entryLink import="false" name="Macro Gatling Blaster" hidden="false" id="2aaf-2222-ea99-e3de" collective="false" targetId="2cea-d272-fa57-5553" type="selectionEntry"/>
+                <entryLink import="false" name="Arioch Titan Power Claw" hidden="false" id="9362-066f-6241-252a" collective="false" targetId="4e23-1ac3-bb9b-14b5" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Destructor" hidden="false" id="5e76-2b4d-6feb-6feb" collective="false" targetId="2e8a-92e8-a90e-545e" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Ruinator" hidden="false" id="9d55-b92c-7908-b387" collective="false" targetId="3322-b111-508b-cf74" type="selectionEntry"/>
+                <entryLink import="true" name="Conversion Beam Extirpator" hidden="false" id="447f-884b-9fee-0551" collective="false" targetId="7ead-bff0-82f7-29ed" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="false" name="Ardex Defensor Cannon" hidden="false" id="4d5f-b1c5-ab5e-659b" collective="false" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="fb61-3876-864d-65ac" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="17b6-fad2-b92d-3f9f" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="72e9-6014-f3e5-ad10" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="00b3-333a-0287-aeb7" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="948c-1ef1-9e6e-597b" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="f933-1abe-2d33-b0eb" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="410"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Advanced Reactor" id="10b0-af7d-db6e-414f" hidden="false">
+          <description>Advance the Reactor marker once when two reactor symbols are rolled on the Reactor dice. If Machine Spirit is awakened, &apos;Wrathful&apos; automatically applies.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d9ba-4648-d372-1cc9" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="bf14-af1e-5d72-7c8b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Bellator Magno" hidden="false" id="d9c7-f0a7-f1dd-a640" collective="false">
+      <profiles>
+        <profile name="Warlord Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="1cad-96da-3a00-727b">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">2+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/2</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">4</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">10</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="ecbe-3d42-556a-d694" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="WarlordTitan" hidden="false" id="524d-0754-bfa3-13b3" targetId="7103-9316-d4a5-8caa" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="5dbc-b7d4-31b8-a6d3" targetId="9a74-94db-f8be-10e8" primary="true"/>
+        <categoryLink targetId="0796-178c-50ce-2d1f" id="7520-aa6e-45f9-8fba" primary="false" name="LegioGryphonicus"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="1ee2-2979-e0c5-f593" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Carapace" id="1d90-d636-b70e-d8a9" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="3943-621c-0c56-e087">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3943-621c-0c56-e087" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d27c-1ff5-f538-4ace" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Apocalypse Missile Launchers" hidden="false" id="bb2c-15af-354a-13a1" collective="false" targetId="bd33-0564-6277-6dc1" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Gatling Blasters" hidden="false" id="c418-be44-ffa6-9edb" collective="false" targetId="bfdb-4953-f838-7d21" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Laser Blaster" hidden="false" id="53ac-c4bb-e0af-77f5" collective="false" targetId="5fc7-120d-623b-8b5a" type="selectionEntry"/>
+                <entryLink import="false" name="Paired Turbo Laser Destructor" hidden="false" id="d692-8a90-329b-7fa7" collective="false" targetId="bfee-3947-a004-3a4e" type="selectionEntry"/>
+                <entryLink import="false" name="Vulcan Megabolter Array" hidden="false" id="9978-ae23-4dee-0f2f" collective="false" targetId="f2ae-e883-28c4-dbcc" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Arms" id="10bc-6f17-20ee-13b7" hidden="false" collective="false" import="false">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f29c-82a1-c8f4-c73a" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cb81-377f-1786-707e" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Bellicosa Volcano Cannon [WLD]" hidden="false" id="cc5e-88d0-3f4b-5554" collective="false" targetId="fee8-4996-06cd-64bc" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7df-0986-10c2-dbc0-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7df-0986-10c2-dbc0-max" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="false" name="Sunfury Plasma Annihilator" hidden="false" id="6dd6-6097-6550-6431" collective="false" targetId="5960-ee8c-3107-46c4" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="735f-ecc6-7daa-8e8f-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="735f-ecc6-7daa-8e8f-max" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="993f-89bb-6619-22a4" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="4116-8b82-c81d-6bb4" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="0879-08fb-8d70-a8a9" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="ac4c-c569-5f1d-ee79" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="13b9-e61b-f77d-f02e" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="7529-7671-42b8-2304" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="495"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Marital Pride" id="c9c7-40ec-1b60-89f1" hidden="false">
+          <description>During the Combat phase, the Titan may push the reactor to re-roll any Hit rolls for a single weapon.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="405d-ce4a-927e-e74f" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="0986-9b84-b734-e9c8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="Iracundos" hidden="false" id="4d1e-08df-2a4d-9e9b" collective="false">
+      <profiles>
+        <profile name="Reaver Titan" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="7efd-93a7-4c46-769c">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">6&quot;/9&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">4+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">2/3</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">3</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Titan" hidden="false" id="7f23-c377-ff05-bc87" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+        <categoryLink name="ReaverTitan" hidden="false" id="2309-992e-6a47-aa4d" targetId="d36f-5e44-2150-3428" primary="false"/>
+        <categoryLink name="Titan of Legend" hidden="false" id="e4d4-a942-18ef-c8e8" targetId="9a74-94db-f8be-10e8" primary="true"/>
+        <categoryLink targetId="5f7b-2051-3935-7637" id="4eab-ac07-d121-c87d" primary="false" name="LegioIgnatum"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="70c7-eb15-18ef-96e6" hidden="false" collective="false" import="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arms" id="d05a-fa4a-79b6-4062" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="633a-9a5b-b1c3-5ace">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="633a-9a5b-b1c3-5ace" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1ccd-77ff-a322-ceaa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Gatling Blaster" hidden="false" id="a7fc-3248-7d38-5e34" collective="false" targetId="aa7a-74f4-180e-3b5e" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d755-db29-be61-7d04-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d755-db29-be61-7d04-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="false" name="Laser Blaster" hidden="false" id="b47d-cb61-4ab4-acc7" collective="false" targetId="375a-7b78-8edd-71d5" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6c3-f97b-554f-b2e9-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6c3-f97b-554f-b2e9-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Carapace" id="3582-1f67-0075-0e89" hidden="false" collective="false" import="false">
+              <modifiers>
+                <modifier type="set" value="0" field="9ac6-4a29-cd1e-e527">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="b539-a35c-fe3f-9c34" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b30-f1d4-e095-2a98-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b30-f1d4-e095-2a98-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="false" name="Apocalypse Missile Launcher" hidden="false" id="ad73-0fed-9027-01c0" collective="false" targetId="54d9-e1d5-30b0-c357" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="false" name="Legio Specific Wargear" hidden="false" id="67e3-4ec7-9568-075c" collective="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Princeps Seniores" hidden="false" id="0a1c-7f11-ca80-5c38" collective="false" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Princeps Seniores" hidden="false" id="6d00-8961-046a-f848" targetId="c130-1260-4c15-147a" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Loyalist Wargear" hidden="false" id="9418-2cd8-cc80-b109" collective="false" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Universal Wargear" hidden="false" id="84e1-5f2d-acc0-7b13" collective="false" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Personal Trait" hidden="false" id="ccd2-bc39-d1a1-a324" collective="false" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="310"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4a11-763b-6a82-bc29" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Hear my Fury!" id="7cd3-d46f-9727-1097" hidden="false">
+          <description>In the Movement phase, this Titan can forgo its activation, doing nothing for that phase but counting as one of the player&apos;s activations. If you do so, pick an enemy Titan within 18&quot;. The target must make a Command check. If it fails the check, any Order it has ends and is removed from its Command Terminal.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8c1b-59df-34da-636c" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -23078,6 +24600,9 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
             <constraint type="max" value="1" field="selections" scope="model-or-unit" shared="false" id="06c0-383b-8b5d-e1ad" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="3e3c-9275-f31a-9532" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+          </costs>
         </entryLink>
         <entryLink id="2292-032b-7b1a-5570" name="=Mortis= Remains of the Fallen" hidden="false" collective="false" import="false" targetId="f8aa-6108-4447-0e90" type="selectionEntry">
           <constraints>
@@ -26254,6 +27779,20 @@ result of a single D6.</description>
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Titans of Legend" id="01a1-f590-a19a-7147" hidden="false" import="true">
+      <entryLinks>
+        <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="02f5-fd71-e54f-8aea" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+        <entryLink import="true" name="Iben Faruk" hidden="true" id="ab28-0495-dfc0-de4a" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+        <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="459b-a659-39ae-92e6" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+        <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="84ca-2243-0ac2-7223" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+        <entryLink import="true" name="Penumbral Reaper" hidden="true" id="a86b-3758-e38e-278a" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c"/>
+        <entryLink import="true" name="Lucius Pretorian" hidden="true" id="63f7-cfc8-134a-0de1" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+        <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="1d0f-2b89-e200-d0d8" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+        <entryLink import="true" name="Ignis Ferrus" hidden="true" id="002c-ca2b-2639-9925" type="selectionEntry" targetId="7c7d-0f96-2a56-531f"/>
+        <entryLink import="true" name="Bellator Magno" hidden="true" id="ad31-bdbc-8778-0b1d" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640"/>
+        <entryLink import="true" name="Iracundos" hidden="true" id="c24a-dcae-963a-1261" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
