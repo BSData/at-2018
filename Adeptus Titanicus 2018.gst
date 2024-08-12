@@ -14173,6 +14173,16 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Titans of Legend" id="0022-a35e-33c4-35e9" hidden="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="7c8d-dd77-166d-5cf2" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
+            <entryLink import="true" name="Iben Faruk" hidden="true" id="09a6-ce25-6988-6492" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+            <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="c4e2-b265-08db-f58d" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+            <entryLink import="true" name="Lucius Pretorian" hidden="true" id="3d54-b413-1315-599f" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+            <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="4630-a95d-6ba3-5265" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+            <entryLink import="true" name="Iracundos" hidden="true" id="9af4-b078-7670-b85c" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="eb2a-0169-6eb0-e0cd" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
@@ -14189,6 +14199,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cb32-33c1-1564-983e" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="8fc1-f430-7854-6e63" value="1">
@@ -14211,6 +14225,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="30ae-04ab-aaad-4429" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3467-3cbd-94c5-7a8b" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd3-5e33-6755-835f" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="08ce-f55b-ff2f-e7e9" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="5357-5da1-e9dd-4392" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="cc4c-4b80-cb60-e3b2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="4d1e-08df-2a4d-9e9b" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="set" field="hidden" value="true">
@@ -14245,6 +14263,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="1bb3-7b3b-ed32-c8f7" value="1">
@@ -14252,6 +14272,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e34d-9d04-97f4-777c" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b35-6cd7-d914-c133" repeats="1" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
             </modifier>
             <modifier type="set" field="hidden" value="true">
