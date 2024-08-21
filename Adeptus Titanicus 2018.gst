@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="11" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="12" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -17565,6 +17565,28 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <entryLink import="true" name="=Crusade= Fusion Missiles" hidden="true" id="665b-ab89-c37f-393d" collective="false" targetId="617d-4ecf-2753-447a" type="selectionEntry"/>
             <entryLink import="false" name="=Vulcanum= Janus Pattern Missiles" hidden="true" id="f986-8527-8301-103f" collective="false" targetId="3dfc-85e0-9496-60ec" type="selectionEntry"/>
             <entryLink import="false" name="=Tritonis= Radiative Warheads" hidden="true" id="9ca4-b720-3ba1-693c" collective="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
+            <entryLink import="true" name="=Crusade= Autoloaders" hidden="true" id="cdf8-888a-2086-3612" collective="false" targetId="b44a-669d-a9d2-6cdc" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="20" field="a731-e220-2d8a-41bf">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="0daa-82c1-fd91-7ba5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="78e3-cb1c-d504-bda2"/>
@@ -17588,6 +17610,26 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <modifier type="add" value="2e59-3e13-7382-4fac" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="665b-ab89-c37f-393d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="4f0a-1f44-e3b2-5d17" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="30" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="cdf8-888a-2086-3612" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="65" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="parent" childId="cdf8-888a-2086-3612" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="105" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="parent" childId="cdf8-888a-2086-3612" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -17803,6 +17845,21 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="405e-ee62-a0ec-ede0" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="25" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="b44a-669d-a9d2-6cdc" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="50" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="parent" childId="b44a-669d-a9d2-6cdc" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="85" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="parent" childId="b44a-669d-a9d2-6cdc" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="daea-6b05-7a54-7156" name="Warp Missile Support Rack" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
@@ -17819,21 +17876,18 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Limited, Warp</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
-        </profile>
-        <profile id="10e7-e99b-c32c-c384" name="Warp Missile Support Rack (Vortex)" hidden="false" typeId="b054-6896-e395-0e91" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
-            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">X</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">20&quot;</characteristic>
-            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">80&quot;</characteristic>
-            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+2</characteristic>
-            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
-            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
-            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">1</characteristic>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Limited, Vortex</characteristic>
-            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
-          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Carapace, Limited, Vortex" field="bcd4-cb45-5d53-b7d8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="405e-ee62-a0ec-ede0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="b21f-61e9-4f0d-88e6">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="193f-5096-dbaa-c76e" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -17843,13 +17897,42 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="51f3-ce0f-0ad8-ea07" name="Warp" hidden="false" targetId="7130-bbeb-02e3-de28" primary="false"/>
         <categoryLink id="186e-5993-6e22-fecf" name="Weapon" hidden="false" targetId="8faf-9e14-9676-2327" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="38ed-3d00-a5ec-8a60" name="Weapon Destroyed" hidden="true" collective="false" import="false" targetId="bad0-317f-20ed-813e" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="e0ca-16ef-60e7-3230" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="=Crusade= Autoloaders" hidden="true" id="193f-5096-dbaa-c76e" collective="false" targetId="b44a-669d-a9d2-6cdc" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="56f8-d2f7-288b-8800">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1d28-19be-3964-7c56" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="56f8-d2f7-288b-8800" negative="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Vortex Payload" hidden="false" id="1d28-19be-3964-7c56" collective="false" targetId="405e-ee62-a0ec-ede0" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="5fc7-120d-623b-8b5a" name="Paired Laser Blaster" hidden="false" collective="false" import="false" type="upgrade">
       <profiles>
@@ -18036,6 +18119,28 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <entryLink import="true" name="=Crusade= Fusion Missiles" hidden="true" id="1d65-6019-5074-5d61" collective="false" targetId="617d-4ecf-2753-447a" type="selectionEntry"/>
             <entryLink import="false" name="=Vulcanum= Janus Pattern Missiles" hidden="true" id="1737-8e57-4a38-a25b" collective="false" targetId="3dfc-85e0-9496-60ec" type="selectionEntry"/>
             <entryLink import="false" name="=Tritonis= Radiative Warheads" hidden="true" id="a0ac-08b3-92ca-ea4b" collective="false" targetId="5b5c-2d02-7856-0dd8" type="selectionEntry"/>
+            <entryLink import="true" name="=Crusade= Autoloaders" hidden="true" id="34ce-9bc7-3cb4-83d2" collective="false" targetId="b44a-669d-a9d2-6cdc" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="20" field="a731-e220-2d8a-41bf">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="9e09-2e0f-0afb-a0f8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1a69-7c62-8dce-96c0"/>
@@ -18059,6 +18164,26 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <modifier type="add" value="2e59-3e13-7382-4fac" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="1d65-6019-5074-5d61" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="4f0a-1f44-e3b2-5d17" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="25" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="34ce-9bc7-3cb4-83d2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="50" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="parent" childId="34ce-9bc7-3cb4-83d2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="85" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="parent" childId="34ce-9bc7-3cb4-83d2" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19900,12 +20025,12 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be6b-8894-c7d1-bdba" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="706f-6074-c1e5-e759" value="1">
           <repeats>
-            <repeat field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6982-2d18-55cb-61e5" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -22354,8 +22479,7 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
       <rules>
         <rule id="805e-e75f-f270-6661" name="Autoloaders" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
           <description>Any Titan that is equipped with a Limited (X) Carapace weapon can take Autoloaders for a cost equal to the base cost of the weapon +5 points. Each of the Titan’s weapons must be upgraded separately. A weapon equipped with Autoloaders increases the (X) value by 1. This upgrade can be bought multiple times for the same weapon, increasing the cost to take Autoloaders by +10 points for each additional purchase, e.g., a Reaver warp missile could be upgraded twice (upgrading Limited (1) trait to a Limited (3) trait) with Autoloaders at a cost of +50 points – +15 points for the first upgrade and +25 points for the second.
-
-Take the correct amount of selections to come to the total cost for the upgrade as described above.</description>
+</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -25006,40 +25130,6 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
             <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="false" id="20f7-a799-3be5-ed8c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink id="cdf8-888a-2086-3612" name="=Crusade= Autoloaders" hidden="true" collective="false" import="true" targetId="b44a-669d-a9d2-6cdc" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4f0a-1f44-e3b2-5d17" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="97c9-0bce-fc01-46f4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="97c9-0bce-fc01-46f4" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="10" field="a731-e220-2d8a-41bf">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="be6b-8894-c7d1-bdba" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="50" field="a731-e220-2d8a-41bf">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="08fc-3215-ee7f-68bb" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="model-or-unit" shared="true" id="438e-e195-e775-0357" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
         <entryLink id="4d45-2010-5417-235d" name="=Crusade= Auxiliary Shield Capacitors" hidden="true" collective="false" import="true" targetId="8990-ddd7-37d3-0666" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -25281,7 +25371,6 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <entryLink id="23d0-a3eb-5bee-d509" name="Null Emitter" hidden="false" collective="false" import="true" targetId="31c3-cb32-1048-ba54" type="selectionEntry"/>
         <entryLink id="ab4d-45a8-e96d-8769" name="Plasmatic Binders" hidden="false" collective="false" import="true" targetId="528d-e5e2-a24d-4e06" type="selectionEntry"/>
         <entryLink id="83a8-203f-e0f2-33c4" name="Spark of Vengeance" hidden="false" collective="false" import="true" targetId="c5cb-fe7e-6bc2-f4bd" type="selectionEntry"/>
-        <entryLink id="1d28-19be-3964-7c56" name="Vortex Payload" hidden="false" collective="false" import="true" targetId="405e-ee62-a0ec-ede0" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f360-b4bd-e6cd-d077" name="Universal Wargear" hidden="false" collective="false" import="true">
