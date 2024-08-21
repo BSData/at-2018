@@ -17446,10 +17446,15 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="append" value=", Rapid" field="bcd4-cb45-5d53-b7d8">
+            <modifier type="append" value=", Rapid, Limited" field="bcd4-cb45-5d53-b7d8">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="b21f-61e9-4f0d-88e6">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="34ce-9bc7-3cb4-83d2" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
             </modifier>
           </modifiers>
         </profile>
@@ -17497,7 +17502,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             </modifier>
           </modifiers>
         </profile>
-        <profile name="Fusion Missiles [WL]" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="d89d-f312-8eed-83bd">
+        <profile name="Fusion Missiles [WL]" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="true" id="d89d-f312-8eed-83bd">
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
@@ -17569,11 +17574,18 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="0daa-82c1-fd91-7ba5" shared="true" includeChildSelections="true"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -17999,10 +18011,15 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="append" value=", Rapid" field="bcd4-cb45-5d53-b7d8">
+            <modifier type="append" value=", Rapid, Limited" field="bcd4-cb45-5d53-b7d8">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6010-6066-629e-1305" shared="true" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="b21f-61e9-4f0d-88e6">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="34ce-9bc7-3cb4-83d2" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
             </modifier>
           </modifiers>
         </profile>
@@ -18123,10 +18140,17 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="9e09-2e0f-0afb-a0f8" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -19679,9 +19703,16 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">12+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
             <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6">4</characteristic>
-            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Limited(4), Concussive, Ordnance</characteristic>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Carapace, Limited, Concussive, Ordnance</characteristic>
             <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="b21f-61e9-4f0d-88e6">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d7fd-c9fa-2a08-df85" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -19714,9 +19745,43 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Casing" hidden="false" id="25d2-98e1-d17e-bd1d" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+            <entryLink import="true" name="=Crusade= Autoloaders" hidden="true" id="d7fd-c9fa-2a08-df85" collective="false" targetId="b44a-669d-a9d2-6cdc" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="e533-372b-c9b4-4f13" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="105" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="d7fd-c9fa-2a08-df85" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="170" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="parent" childId="d7fd-c9fa-2a08-df85" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="245" field="a731-e220-2d8a-41bf">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="parent" childId="d7fd-c9fa-2a08-df85" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="d152-f92c-fa32-dcfd" name="Plasmatic Locomotors" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
