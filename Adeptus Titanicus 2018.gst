@@ -15466,7 +15466,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         <categoryLink id="5473-e38d-bf74-96eb" name="Titan Legion" hidden="false" targetId="d204-9898-0ffb-02f4" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="45f2-b1ee-23d5-1d11" name="Titan Legions" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="45f2-b1ee-23d5-1d11" name="Titan Legions" hidden="false" collective="false" import="false" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d00-c954-d909-610e" type="max"/>
           </constraints>
@@ -15658,7 +15658,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7708-bf77-5df8-acb1" name="Crusade Legio" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="7708-bf77-5df8-acb1" name="Crusade Legio" hidden="true" collective="false" import="true" sortIndex="2">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -16513,7 +16513,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="c161-c1d8-f789-0f47" name="ReaverTitan" hidden="false" targetId="d36f-5e44-2150-3428" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="360a-34ac-766d-69f2" name="Weapons" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="360a-34ac-766d-69f2" name="Weapons" hidden="false" collective="false" import="false" sortIndex="11">
           <selectionEntryGroups>
             <selectionEntryGroup id="7087-f431-ad06-6061" name="Arms" hidden="false" collective="false" import="false">
               <modifiers>
@@ -16566,7 +16566,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e7e8-b86e-8590-f289" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="e7e8-b86e-8590-f289" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry" sortIndex="1">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -16584,18 +16584,18 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2930-4fbc-e7db-8b33" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="8d8c-9755-8e12-171b" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
-        <entryLink id="dc65-2c47-a746-00e1" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+        <entryLink id="8d8c-9755-8e12-171b" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup" sortIndex="7"/>
+        <entryLink id="dc65-2c47-a746-00e1" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry" sortIndex="2">
           <categoryLinks>
             <categoryLink id="d5d2-eebe-8913-d09d" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
           </categoryLinks>
         </entryLink>
-        <entryLink id="78aa-e114-838d-a41b" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
-        <entryLink id="ffab-831a-9c60-823a" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
-        <entryLink id="53c0-a1cd-f7e8-eb5a" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="2593-76d2-ff94-6091" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
-        <entryLink id="f121-bc20-108d-b324" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
-        <entryLink id="0c61-f0f0-067b-d873" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+        <entryLink id="78aa-e114-838d-a41b" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink id="ffab-831a-9c60-823a" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup" sortIndex="4"/>
+        <entryLink id="53c0-a1cd-f7e8-eb5a" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup" sortIndex="6"/>
+        <entryLink id="2593-76d2-ff94-6091" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry" sortIndex="8"/>
+        <entryLink id="f121-bc20-108d-b324" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup" sortIndex="9"/>
+        <entryLink id="0c61-f0f0-067b-d873" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup" sortIndex="10">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b4c-a5f1-3348-1cf3" type="max"/>
           </constraints>
@@ -16607,7 +16607,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="0969-2a69-0c81-c174" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+        <entryLink id="0969-2a69-0c81-c174" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup" sortIndex="3"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="250"/>
@@ -16633,7 +16633,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="e9d5-d649-c246-8d73" name="WarlordTitan" hidden="false" targetId="7103-9316-d4a5-8caa" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2c49-32dd-c032-07ff" name="Weapons" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="2c49-32dd-c032-07ff" name="Weapons" hidden="false" collective="false" import="false" sortIndex="11">
           <selectionEntryGroups>
             <selectionEntryGroup id="a1a4-28d9-f4b1-8620" name="Arms" hidden="false" collective="false" import="false">
               <modifiers>
@@ -16687,7 +16687,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4dcc-4217-0816-846e" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="4dcc-4217-0816-846e" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry" sortIndex="1">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -16705,18 +16705,18 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8363-23e4-9244-93f2" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4994-4e39-e7fe-57d5" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
-        <entryLink id="17e5-7a1d-0467-27c1" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+        <entryLink id="4994-4e39-e7fe-57d5" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup" sortIndex="7"/>
+        <entryLink id="17e5-7a1d-0467-27c1" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry" sortIndex="2">
           <categoryLinks>
             <categoryLink id="ca6e-73da-5c0f-e2e3" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
           </categoryLinks>
         </entryLink>
-        <entryLink id="d423-0b55-e2dc-5814" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
-        <entryLink id="390c-cf74-a2a8-27c1" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
-        <entryLink id="b0c5-f29e-c8fb-9c63" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="a562-625e-d1b3-ef8b" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
-        <entryLink id="1583-f2be-fe73-2973" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
-        <entryLink id="e04b-e35b-7bf7-0dcb" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+        <entryLink id="d423-0b55-e2dc-5814" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink id="390c-cf74-a2a8-27c1" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup" sortIndex="4"/>
+        <entryLink id="b0c5-f29e-c8fb-9c63" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup" sortIndex="6"/>
+        <entryLink id="a562-625e-d1b3-ef8b" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup" sortIndex="9"/>
+        <entryLink id="1583-f2be-fe73-2973" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry" sortIndex="8"/>
+        <entryLink id="e04b-e35b-7bf7-0dcb" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup" sortIndex="10">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c308-84df-cbd7-ae63" type="max"/>
           </constraints>
@@ -16728,7 +16728,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="608f-49c3-ac17-ba10" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+        <entryLink id="608f-49c3-ac17-ba10" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup" sortIndex="3"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="385"/>
@@ -16754,7 +16754,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="e12e-1619-83e6-4a5c" name="WarhoundTitan" hidden="false" targetId="223f-6e71-9e4f-939e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f4dd-18ef-5ac0-0de0" name="Weapons" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="f4dd-18ef-5ac0-0de0" name="Weapons" hidden="false" collective="false" import="false" sortIndex="11">
           <selectionEntryGroups>
             <selectionEntryGroup id="dee5-7afd-4f12-6e20" name="Arms" hidden="false" collective="false" import="false">
               <modifiers>
@@ -16803,7 +16803,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5cf4-5897-342d-5a46" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="5cf4-5897-342d-5a46" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry" sortIndex="1">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -16821,18 +16821,18 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="895d-6fe2-456c-f3da" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="fcd2-9d09-2af7-36de" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
-        <entryLink id="34b6-b972-e7b1-1fb8" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+        <entryLink id="fcd2-9d09-2af7-36de" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup" sortIndex="7"/>
+        <entryLink id="34b6-b972-e7b1-1fb8" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry" sortIndex="2">
           <categoryLinks>
             <categoryLink id="89bc-e4ca-5d75-4e54" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
           </categoryLinks>
         </entryLink>
-        <entryLink id="b8b1-c93b-014e-44ce" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
-        <entryLink id="7046-1472-1c31-4540" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
-        <entryLink id="d706-586f-da3d-d4d7" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="a04a-64cc-1355-4074" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
-        <entryLink id="2e81-60ef-d7af-a961" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
-        <entryLink id="2156-5d00-20d0-0c3e" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+        <entryLink id="b8b1-c93b-014e-44ce" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink id="7046-1472-1c31-4540" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup" sortIndex="4"/>
+        <entryLink id="d706-586f-da3d-d4d7" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup" sortIndex="6"/>
+        <entryLink id="a04a-64cc-1355-4074" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup" sortIndex="9"/>
+        <entryLink id="2e81-60ef-d7af-a961" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry" sortIndex="8"/>
+        <entryLink id="2156-5d00-20d0-0c3e" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup" sortIndex="10">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a845-8974-9124-140a" type="max"/>
           </constraints>
@@ -16844,7 +16844,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="3095-5097-cede-0c0d" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+        <entryLink id="3095-5097-cede-0c0d" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup" sortIndex="3"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="180"/>
@@ -18715,7 +18715,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="581e-fe63-34ff-c79b" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="91e8-4476-60da-5d84" name="Weapons" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="91e8-4476-60da-5d84" name="Weapons" hidden="false" collective="false" import="false" sortIndex="11">
           <selectionEntryGroups>
             <selectionEntryGroup id="2d68-4ed5-5963-c242" name="Arms" hidden="false" collective="false" import="false">
               <modifiers>
@@ -18763,7 +18763,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="df1f-33ef-d3c2-f669" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="df1f-33ef-d3c2-f669" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry" sortIndex="1">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -18781,18 +18781,18 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0a2-bcaf-7f29-9ee3" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="fc7a-b856-2fe3-566f" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
-        <entryLink id="014f-fb41-12dd-1860" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+        <entryLink id="fc7a-b856-2fe3-566f" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup" sortIndex="7"/>
+        <entryLink id="014f-fb41-12dd-1860" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry" sortIndex="2">
           <categoryLinks>
             <categoryLink id="d8ba-fd36-d3a1-e997" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
           </categoryLinks>
         </entryLink>
-        <entryLink id="9864-2da3-5f35-c2e7" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
-        <entryLink id="ebdf-52f9-0ae0-c477" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
-        <entryLink id="a4ba-8f7d-98d7-1127" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
-        <entryLink id="8e0c-4aec-51bc-7494" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
-        <entryLink id="b514-61b3-7daa-c0c2" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="8c7e-c5ec-6fbe-c7e1" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+        <entryLink id="9864-2da3-5f35-c2e7" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink id="ebdf-52f9-0ae0-c477" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup" sortIndex="4"/>
+        <entryLink id="a4ba-8f7d-98d7-1127" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry" sortIndex="8"/>
+        <entryLink id="8e0c-4aec-51bc-7494" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup" sortIndex="9"/>
+        <entryLink id="b514-61b3-7daa-c0c2" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup" sortIndex="6"/>
+        <entryLink id="8c7e-c5ec-6fbe-c7e1" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup" sortIndex="10">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fe8-5be7-02a5-0fb4" type="max"/>
           </constraints>
@@ -18804,7 +18804,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="80c3-d1c5-44bc-595c" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+        <entryLink id="80c3-d1c5-44bc-595c" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup" sortIndex="3"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="325"/>
@@ -19011,7 +19011,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="d7dd-e3aa-4ba1-e5a6" name="WarlordTitan" hidden="false" targetId="7103-9316-d4a5-8caa" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="25b0-37d3-2ac2-2a2a" name="Weapons" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="25b0-37d3-2ac2-2a2a" name="Weapons" hidden="false" collective="false" import="false" sortIndex="4">
           <selectionEntryGroups>
             <selectionEntryGroup id="397b-afe8-38ba-4186" name="Arm A" hidden="false" collective="false" import="false">
               <modifiers>
@@ -19082,9 +19082,9 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e567-79a0-2397-8b15" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
-        <entryLink id="21e5-616b-0e01-800a" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
-        <entryLink id="e127-fa59-df52-fa3d" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+        <entryLink id="e567-79a0-2397-8b15" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup" sortIndex="3"/>
+        <entryLink id="21e5-616b-0e01-800a" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup" sortIndex="1"/>
+        <entryLink id="e127-fa59-df52-fa3d" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup" sortIndex="2"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="685"/>
@@ -19151,7 +19151,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="cbff-0ef8-f81c-c21d" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f27e-cbf0-3fe6-58e0" name="Weapons" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="f27e-cbf0-3fe6-58e0" name="Weapons" hidden="false" collective="false" import="false" sortIndex="10">
           <selectionEntryGroups>
             <selectionEntryGroup id="9b89-3f1f-28ee-dde8" name="Arms" hidden="false" collective="false" import="false">
               <modifiers>
@@ -19238,19 +19238,19 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c80e-97e4-8ebb-3a55" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="c80e-97e4-8ebb-3a55" name="Titan Legion" hidden="false" collective="false" import="false" targetId="6202-19dc-f26f-9b64" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa60-5daf-d144-87ac" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5218-ff2f-3ac3-5acd" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="73ce-e513-8b62-aaca" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
-        <entryLink id="b65c-9738-14e6-5ffc" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
-        <entryLink id="4d5a-c123-302f-107e" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
-        <entryLink id="efd6-6e25-6902-ee37" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="7b94-3a99-9ca7-4a5a" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
-        <entryLink id="5553-6a55-7161-6e9f" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
-        <entryLink id="e204-44a6-ebd1-636d" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+        <entryLink id="73ce-e513-8b62-aaca" name="Legio Specific Wargear" hidden="false" collective="false" import="false" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink id="b65c-9738-14e6-5ffc" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup" sortIndex="3"/>
+        <entryLink id="4d5a-c123-302f-107e" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup" sortIndex="2"/>
+        <entryLink id="efd6-6e25-6902-ee37" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup" sortIndex="4"/>
+        <entryLink id="7b94-3a99-9ca7-4a5a" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup" sortIndex="7"/>
+        <entryLink id="5553-6a55-7161-6e9f" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry" sortIndex="6"/>
+        <entryLink id="e204-44a6-ebd1-636d" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup" sortIndex="8">
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6102-5061-22da-a0b6" type="max"/>
           </constraints>
@@ -19262,7 +19262,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="4242-2e7d-2598-ed46" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
+        <entryLink id="4242-2e7d-2598-ed46" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup" sortIndex="9">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5550-4382-a169-feb8" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dcb-9cfa-c8d5-c393" type="max"/>
@@ -20525,7 +20525,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         <categoryLink id="1014-03f9-469f-bc52" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7de5-7f04-9af4-48ad" name="Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="7de5-7f04-9af4-48ad" name="Weapons" hidden="false" collective="false" import="true" sortIndex="10">
           <selectionEntryGroups>
             <selectionEntryGroup id="4194-33f7-0086-9095" name="Arms" hidden="false" collective="false" import="true">
               <constraints>
@@ -20574,19 +20574,19 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1bc1-e919-8b37-6d77" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="1bc1-e919-8b37-6d77" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7eae-f7e3-e737-d0b3" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4e7-2761-cd28-4590" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="5658-d710-1366-1738" name="Legio Specific Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
-        <entryLink id="d2b5-8a58-2fc0-ed72" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
-        <entryLink id="db5c-2136-1b19-bcae" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
-        <entryLink id="0011-5d08-3f1c-261e" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="892a-11a0-96a3-8e32" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
-        <entryLink id="d471-78cc-7637-3047" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
-        <entryLink id="50d0-c869-f15c-2c67" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+        <entryLink id="5658-d710-1366-1738" name="Legio Specific Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink id="d2b5-8a58-2fc0-ed72" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup" sortIndex="3"/>
+        <entryLink id="db5c-2136-1b19-bcae" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup" sortIndex="2"/>
+        <entryLink id="0011-5d08-3f1c-261e" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup" sortIndex="4"/>
+        <entryLink id="892a-11a0-96a3-8e32" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup" sortIndex="7"/>
+        <entryLink id="d471-78cc-7637-3047" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry" sortIndex="6"/>
+        <entryLink id="50d0-c869-f15c-2c67" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup" sortIndex="8">
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f5f6-c908-6c0d-5aaf" type="max"/>
           </constraints>
@@ -20598,7 +20598,7 @@ A Corrupted Titan commanded by a Princeps Seniores rolls a D6 on the Corrupted T
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="2150-108b-8691-fad4" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup">
+        <entryLink id="2150-108b-8691-fad4" name="Ancillary Reactor System" hidden="false" collective="false" import="true" targetId="4714-166b-0f6a-5260" type="selectionEntryGroup" sortIndex="9">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5efe-d557-fbe9-1521" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="405a-7e80-db56-6f6d" type="max"/>
@@ -22096,7 +22096,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink id="0f9d-1fcf-293c-116c" name="Auxiliary Titan" hidden="false" targetId="b2c2-c5d6-ee00-6736" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0bf3-b565-0a0b-83f8" name="Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="0bf3-b565-0a0b-83f8" name="Weapons" hidden="false" collective="false" import="true" sortIndex="11">
           <selectionEntryGroups>
             <selectionEntryGroup id="8126-1aec-8408-b5dd" name="Carapace" hidden="false" collective="false" import="true">
               <constraints>
@@ -22123,13 +22123,13 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="2f11-c9b5-098d-fbce" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
-        <entryLink id="3025-7f95-f560-db04" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry">
+        <entryLink id="2f11-c9b5-098d-fbce" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry" sortIndex="8"/>
+        <entryLink id="3025-7f95-f560-db04" name="Princeps Seniores" hidden="false" collective="false" import="true" targetId="2dc5-e9bf-6f6e-39a5" type="selectionEntry" sortIndex="2">
           <categoryLinks>
             <categoryLink id="a771-fc4d-4a5c-a4b0" name="Princeps Seniores" hidden="false" targetId="c130-1260-4c15-147a" primary="false"/>
           </categoryLinks>
         </entryLink>
-        <entryLink id="5d04-369c-7209-50b1" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry">
+        <entryLink id="5d04-369c-7209-50b1" name="Titan Legion" hidden="false" collective="false" import="true" targetId="6202-19dc-f26f-9b64" type="selectionEntry" sortIndex="1">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -22147,12 +22147,12 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42d6-aaeb-0d55-4e00" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="878d-30ba-50e2-c79e" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
-        <entryLink id="80ec-128d-7b57-f966" name="Legio Specific Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup"/>
-        <entryLink id="bb79-f489-473a-3303" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
-        <entryLink id="125e-2c77-29d2-e95e" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="7391-89ca-bdc1-a7bb" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
-        <entryLink id="e167-ae83-62ee-c78d" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
+        <entryLink id="878d-30ba-50e2-c79e" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup" sortIndex="9"/>
+        <entryLink id="80ec-128d-7b57-f966" name="Legio Specific Wargear" hidden="false" collective="false" import="true" targetId="187f-a18f-cafe-4ae6" type="selectionEntryGroup" sortIndex="7"/>
+        <entryLink id="bb79-f489-473a-3303" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink id="125e-2c77-29d2-e95e" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup" sortIndex="6"/>
+        <entryLink id="7391-89ca-bdc1-a7bb" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup" sortIndex="4"/>
+        <entryLink id="e167-ae83-62ee-c78d" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup" sortIndex="10">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fc8-6bca-46dc-7954" type="max"/>
           </constraints>
@@ -22164,7 +22164,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="959b-ce0c-0b58-a493" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup"/>
+        <entryLink id="959b-ce0c-0b58-a493" name="Personal Trait" hidden="false" collective="false" import="true" targetId="aa6b-a665-b907-234e" type="selectionEntryGroup" sortIndex="3"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="210"/>
@@ -22543,8 +22543,7 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
     <selectionEntry id="b44a-669d-a9d2-6cdc" name="=Crusade= Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="805e-e75f-f270-6661" name="Autoloaders" publicationId="2988-f24d-39ef-352e" page="99" hidden="false">
-          <description>Any Titan that is equipped with a Limited (X) Carapace weapon can take Autoloaders for a cost equal to the base cost of the weapon +5 points. Each of the Titan’s weapons must be upgraded separately. A weapon equipped with Autoloaders increases the (X) value by 1. This upgrade can be bought multiple times for the same weapon, increasing the cost to take Autoloaders by +10 points for each additional purchase, e.g., a Reaver warp missile could be upgraded twice (upgrading Limited (1) trait to a Limited (3) trait) with Autoloaders at a cost of +50 points – +15 points for the first upgrade and +25 points for the second.
-</description>
+          <description>Any Titan that is equipped with a Limited (X) Carapace weapon can take Autoloaders for a cost equal to the base cost of the weapon +5 points. Each of the Titan’s weapons must be upgraded separately. A weapon equipped with Autoloaders increases the (X) value by 1. This upgrade can be bought multiple times for the same weapon, increasing the cost to take Autoloaders by +10 points for each additional purchase, e.g., a Reaver warp missile could be upgraded twice (upgrading Limited (1) trait to a Limited (3) trait) with Autoloaders at a cost of +50 points – +15 points for the first upgrade and +25 points for the second.</description>
         </rule>
       </rules>
       <categoryLinks>
