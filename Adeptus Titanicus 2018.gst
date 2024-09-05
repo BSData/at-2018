@@ -3625,7 +3625,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink targetId="98d8-1204-e5c2-6cdf" id="46e7-7f0b-6da8-35cd" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="af24-dd9d-cfa8-fdbf" name="Questoris Knight Lord Scion" hidden="false" collective="false" import="false" targetId="9570-2851-584c-62e9" type="selectionEntry">
+        <entryLink id="af24-dd9d-cfa8-fdbf" name="Questoris Knight Lord Scion" hidden="false" collective="false" import="false" targetId="9570-2851-584c-62e9" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85a6-21d7-2800-08c5" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4b2-9420-fc91-97c5" type="min"/>
@@ -3634,7 +3634,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <entryLink import="true" name="Nobility" hidden="false" id="6735-f85e-9663-cec9" type="selectionEntryGroup" targetId="6d3f-68e7-c9ac-1c07"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="be8e-e238-af50-a42b" name="Questoris Knight Scion Martial" hidden="false" collective="false" import="false" targetId="2f87-1543-1c08-5dcf" type="selectionEntry">
+        <entryLink id="be8e-e238-af50-a42b" name="Questoris Knight Scion Martial" hidden="false" collective="false" import="false" targetId="2f87-1543-1c08-5dcf" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7a9-0ac6-4501-e53f" type="max"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7f5-dd6f-f885-41bb" type="min"/>
@@ -3646,7 +3646,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Loadout" id="8165-a870-8c7d-3bb7" hidden="true" collective="false" import="false">
+        <selectionEntryGroup name="Loadout" id="8165-a870-8c7d-3bb7" hidden="true" collective="false" import="false" sortIndex="3">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -4286,7 +4286,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink targetId="98d8-1204-e5c2-6cdf" id="a7fd-3325-ab39-b717" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5626-d833-9689-d56b" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5626-d833-9689-d56b" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a301-9ddb-9d3f-bcd5" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6942-deec-2c9c-3cc8" type="max"/>
@@ -4303,7 +4303,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="6dec-b5d7-faf0-4c13" name="Questoris Knight Styrix Lord Scion" hidden="false" collective="false" import="false" targetId="e393-1183-33fd-d14d" type="selectionEntry">
+        <entryLink id="6dec-b5d7-faf0-4c13" name="Questoris Knight Styrix Lord Scion" hidden="false" collective="false" import="false" targetId="e393-1183-33fd-d14d" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5911-f08c-cd69-fd24" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b379-9ba6-2ffe-98f5" type="min"/>
@@ -4312,13 +4312,13 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <entryLink import="true" name="Nobility" hidden="false" id="1be9-7713-f388-858c" type="selectionEntryGroup" targetId="6d3f-68e7-c9ac-1c07"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="f092-af82-3042-7d64" name="Questoris Knight Styrix Scion Martial" hidden="false" collective="false" import="false" targetId="540a-525d-45fd-2f93" type="selectionEntry">
+        <entryLink id="f092-af82-3042-7d64" name="Questoris Knight Styrix Scion Martial" hidden="false" collective="false" import="false" targetId="540a-525d-45fd-2f93" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cd5-50dd-98aa-902b" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5850-db9b-1135-88de" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="ddf1-a4e4-e7b1-8ed0" name="Ionic Flare Shield" hidden="false" collective="false" import="false" targetId="77ba-108d-edd5-7993" type="selectionEntry">
+        <entryLink id="ddf1-a4e4-e7b1-8ed0" name="Ionic Flare Shield" hidden="false" collective="false" import="false" targetId="77ba-108d-edd5-7993" type="selectionEntry" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53e3-ed03-4bda-eb07" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12e3-cc2d-0569-8cbb" type="max"/>
@@ -4330,7 +4330,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Loadout" id="b2e3-52e4-3721-a93d" hidden="true" collective="false" import="false">
+        <selectionEntryGroup name="Loadout" id="b2e3-52e4-3721-a93d" hidden="true" collective="false" import="false" sortIndex="3">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -4452,7 +4452,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <categoryLink targetId="98d8-1204-e5c2-6cdf" id="567f-f7f7-d229-251b" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="009f-a8cf-de0d-c07a" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="009f-a8cf-de0d-c07a" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cb2-8137-3c5a-32f4" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81b3-06f0-1593-199b" type="max"/>
@@ -4469,7 +4469,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="23a7-c61e-575a-87a4" name="Questoris Knight Magaera Lord Scion" hidden="false" collective="false" import="false" targetId="be8e-e48f-d3f1-580c" type="selectionEntry">
+        <entryLink id="23a7-c61e-575a-87a4" name="Questoris Knight Magaera Lord Scion" hidden="false" collective="false" import="false" targetId="be8e-e48f-d3f1-580c" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43bd-744a-553b-0566" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ff-7926-59a8-453a" type="min"/>
@@ -4478,13 +4478,13 @@ If the result is 25, move the reactor tracker to its leftmost hole.
             <entryLink import="true" name="Nobility" hidden="false" id="8189-a35d-9807-4624" type="selectionEntryGroup" targetId="6d3f-68e7-c9ac-1c07"/>
           </entryLinks>
         </entryLink>
-        <entryLink id="fbfd-3e68-0d63-9f8a" name="Questoris Knight Magaera Scion Martial" hidden="false" collective="false" import="false" targetId="8d33-f08f-31d2-75a3" type="selectionEntry">
+        <entryLink id="fbfd-3e68-0d63-9f8a" name="Questoris Knight Magaera Scion Martial" hidden="false" collective="false" import="false" targetId="8d33-f08f-31d2-75a3" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3c2-f2b7-81de-dab9" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f32-9145-a71c-cb88" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4c52-84fc-03e5-d0e3" name="Ionic Flare Shield" hidden="false" collective="false" import="false" targetId="77ba-108d-edd5-7993" type="selectionEntry">
+        <entryLink id="4c52-84fc-03e5-d0e3" name="Ionic Flare Shield" hidden="false" collective="false" import="false" targetId="77ba-108d-edd5-7993" type="selectionEntry" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f126-8bc9-5760-7778" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f807-d2c2-9884-b67c" type="max"/>
@@ -4496,7 +4496,7 @@ If the result is 25, move the reactor tracker to its leftmost hole.
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Loadout" id="567c-3b77-1aa9-3778" hidden="true" collective="false" import="false">
+        <selectionEntryGroup name="Loadout" id="567c-3b77-1aa9-3778" hidden="true" collective="false" import="false" sortIndex="3">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -20920,13 +20920,13 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink id="8bd4-6576-0c82-6089" name="Retainers" hidden="false" targetId="5063-b6aa-3590-30fb" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ed8e-725e-95cc-cfce" name="Moirax Knight Scion Martial" hidden="false" collective="false" import="true" targetId="1497-e03b-3ed2-3ebe" type="selectionEntry">
+        <entryLink id="ed8e-725e-95cc-cfce" name="Moirax Knight Scion Martial" hidden="false" collective="false" import="true" targetId="1497-e03b-3ed2-3ebe" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a718-9eda-a4ea-45d6" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c802-b747-0f11-36f4" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="aff1-0776-4452-3e33" name="Moirax Knight Scion Auxilia" hidden="false" collective="false" import="true" targetId="b364-f730-c1ca-208b" type="selectionEntry">
+        <entryLink id="aff1-0776-4452-3e33" name="Moirax Knight Scion Auxilia" hidden="false" collective="false" import="true" targetId="b364-f730-c1ca-208b" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b7-d8ef-037a-86a0" type="min"/>
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ff4-ec8c-b826-6920" type="max"/>
@@ -20944,7 +20944,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Loadout" id="7629-2e2a-5dc2-42b1" hidden="true">
+        <selectionEntryGroup name="Loadout" id="7629-2e2a-5dc2-42b1" hidden="true" sortIndex="3">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -21061,13 +21061,13 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink id="daf4-6417-8a9a-93c2" name="Retainers" hidden="false" targetId="5063-b6aa-3590-30fb" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c20c-e9bf-2370-4bf1" name="Armiger Knight Scion Martial" hidden="false" collective="false" import="true" targetId="37bd-1bf3-0df2-2cb5" type="selectionEntry">
+        <entryLink id="c20c-e9bf-2370-4bf1" name="Armiger Knight Scion Martial" hidden="false" collective="false" import="true" targetId="37bd-1bf3-0df2-2cb5" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bebf-57bb-7069-1604" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5db1-c359-f16b-e1f8" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="a5df-3bb8-97ee-85d4" name="Armiger Knight Scion Auxilia" hidden="false" collective="false" import="true" targetId="3ccd-476c-5c16-3c5b" type="selectionEntry">
+        <entryLink id="a5df-3bb8-97ee-85d4" name="Armiger Knight Scion Auxilia" hidden="false" collective="false" import="true" targetId="3ccd-476c-5c16-3c5b" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a14c-6e4d-2f6f-ce69" type="min"/>
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f05c-f474-285d-e220" type="max"/>
@@ -21079,7 +21079,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Loadout" id="98dc-dfea-a1ba-2390" hidden="true">
+        <selectionEntryGroup name="Loadout" id="98dc-dfea-a1ba-2390" hidden="true" sortIndex="3">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -21903,7 +21903,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
         <categoryLink targetId="98d8-1204-e5c2-6cdf" id="8db7-6087-c876-7cf9" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="4882-65c1-6a18-b1fc" name="Cerastus Knight Atrapos Lord Scion" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="4882-65c1-6a18-b1fc" name="Cerastus Knight Atrapos Lord Scion" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e180-921c-3e18-8446" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="772a-2825-35cd-577f" type="max"/>
@@ -21926,7 +21926,7 @@ Long: Concussive, Draining, Ordance, Quake</characteristic>
             <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c5a9-52de-3f3a-3174" name="Cerastus Knight Atrapos Scion Martial" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="c5a9-52de-3f3a-3174" name="Cerastus Knight Atrapos Scion Martial" hidden="false" collective="false" import="true" type="model" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdde-301c-2ac5-fdc6" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="067f-fd3e-eabb-0f5a" type="min"/>
@@ -27567,13 +27567,13 @@ result of a single D6.</description>
     </selectionEntryGroup>
     <selectionEntryGroup name="Nobility" id="6d3f-68e7-c9ac-1c07" hidden="false" publicationId="975a-00f4-pubN89746" page="37" collective="false" import="true">
       <entryLinks>
-        <entryLink import="true" name="High Scion" hidden="false" id="8f8d-7677-41e1-b71c" collective="false" targetId="a0c0-a49a-deb3-0b9f" type="selectionEntry">
+        <entryLink import="true" name="High Scion" hidden="false" id="8f8d-7677-41e1-b71c" collective="false" targetId="a0c0-a49a-deb3-0b9f" type="selectionEntry" sortIndex="3">
           <categoryLinks>
             <categoryLink name="High Scion" hidden="false" id="ce69-f8c1-5fd9-cd55" targetId="7d0a-a772-ed25-9202" primary="false"/>
             <categoryLink name="Nobility" hidden="false" id="8060-f949-4736-e5e0" targetId="e49d-7912-8e4f-a188" primary="false"/>
           </categoryLinks>
         </entryLink>
-        <entryLink import="true" name="Seneschal" hidden="false" id="17ee-3a67-31d4-0269" type="selectionEntry" targetId="ad7f-8a59-5602-0e51">
+        <entryLink import="true" name="Seneschal" hidden="false" id="17ee-3a67-31d4-0269" type="selectionEntry" targetId="ad7f-8a59-5602-0e51" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="edc1-2cd5-6899-9032-min" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="edc1-2cd5-6899-9032-max" includeChildSelections="true"/>
@@ -27601,7 +27601,7 @@ result of a single D6.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="High King" hidden="false" id="47b6-f3e9-8f1f-29d0" type="selectionEntry" targetId="386e-c242-ecc7-1b70">
+        <entryLink import="true" name="High King" hidden="false" id="47b6-f3e9-8f1f-29d0" type="selectionEntry" targetId="386e-c242-ecc7-1b70" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c6a3-b60c-fc35-d35b" includeChildSelections="true"/>
           </constraints>
