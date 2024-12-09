@@ -24662,7 +24662,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       </profiles>
       <infoLinks>
         <infoLink name="Networked Anima" id="7354-12eb-aeb4-3c3c" hidden="false" type="rule" targetId="f62e-52b6-3247-e960"/>
-        <infoLink name="Construct Shield" id="3f39-d254-2bdc-6ca5" hidden="false" type="rule" targetId="6755-7ad7-0bc8-1285"/>
+        <infoLink name="Construct Shield 4+" id="3f39-d254-2bdc-6ca5" hidden="false" type="rule" targetId="6755-7ad7-0bc8-1285"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Errax Stalker" hidden="false" id="f630-2007-770c-0cfb">
@@ -24781,7 +24781,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scintillax Stalker Banner" hidden="false" id="f2c7-10c1-0eee-ea98">
       <infoLinks>
-        <infoLink name="Construct Shield" id="30f6-55df-b1d4-47da" hidden="false" type="rule" targetId="6755-7ad7-0bc8-1285"/>
+        <infoLink name="Construct Shield 4+" id="30f6-55df-b1d4-47da" hidden="false" type="rule" targetId="6755-7ad7-0bc8-1285"/>
         <infoLink name="Networked Anima" id="bb84-5abe-18d4-a99a" hidden="false" type="rule" targetId="f62e-52b6-3247-e960"/>
       </infoLinks>
       <categoryLinks>
@@ -24963,7 +24963,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <profiles>
         <profile name="Exo-Planar-Cannon" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="00eb-7339-3822-7342">
           <characteristics>
-            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">0</characteristic>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
             <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
             <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
@@ -25014,7 +25014,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Storm Laser Flenser" hidden="false" id="0b85-b0f7-efd4-0f55" type="selectionEntry" targetId="2aed-bf26-3d49-a551">
+            <entryLink import="true" name="Storm Laser" hidden="false" id="0b85-b0f7-efd4-0f55" type="selectionEntry" targetId="3b8a-0891-b6ff-893a">
               <costs>
                 <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
               </costs>
@@ -25026,6 +25026,32 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Storm Laser" hidden="false" id="3b8a-0891-b6ff-893a">
+      <profiles>
+        <profile name="Storm Laser" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="5fa8-c516-48ca-a85d">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Rapid</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="a421-ff94-44cf-2eb8" id="8503-0e58-e7fd-d98c" primary="false" name="Rapid"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -30469,11 +30495,11 @@ result of a single D6.</description>
       <description>This banner may use the Command value of a friendly model within 6&quot; that has the Networked Anima special rule.</description>
     </rule>
     <rule name="Construct Shield 4+" id="6755-7ad7-0bc8-1285" hidden="false">
-      <description>Unit has an Ion Shield level of 4+, which is unchanged by  weapon strength or Banner size. They have a Construct Shield level of 1 times the starting number of Stalkers in the Banner.
+      <description>Unit has an Ion Shield level of 4+, which is unchanged by weapon strength or Banner size. It has a Construct Shield level of 1 times the starting number of Stalkers in the Banner.
 Each time a Save roll is failed, decrease the Construct Shield by 1 - you still make Armour rolls for these Hits. When a Construct Shield level is 0 or less, the Banner cannot make Ion Shield saves for the remainder of the battle.</description>
     </rule>
     <rule name="Construct Shield 3+" id="49c3-49d6-5461-3315" hidden="false">
-      <description>Unit has an Ion Shield level of 3+, which is unchanged by  weapon strength or Banner size. They have a Construct Shield level of 1 times the starting number of Stalkers in the Banner.
+      <description>Unit has an Ion Shield level of 3+, which is unchanged by weapon strength or Banner size. It has a Construct Shield level of 1 times the starting number of Stalkers in the Banner.
 Each time a Save roll is failed, decrease the Construct Shield by 1 - you still make Armour rolls for these Hits. When a Construct Shield level is 0 or less, the Banner cannot make Ion Shield saves for the remainder of the battle.</description>
     </rule>
   </sharedRules>
