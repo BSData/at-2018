@@ -402,6 +402,26 @@
       </constraints>
     </entryLink>
     <entryLink import="true" name="Battle Level" hidden="false" id="1867-718f-4471-bdc3" collective="false" targetId="270a-cdcc-91b8-0787" type="selectionEntry"/>
+    <entryLink import="true" name="Errax Stalker Banner" hidden="false" id="eaf2-cd85-8be6-f5cf" type="selectionEntry" targetId="2c8d-5c19-13e8-1334">
+      <categoryLinks>
+        <categoryLink targetId="efc2-e899-f74b-55ad" id="a086-758d-6828-3be9" primary="true" name="Freeblades"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tenebrax Stalker Banner" hidden="false" id="4cd5-5c09-6544-2860" type="selectionEntry" targetId="f82b-d1b8-cd1f-0f27">
+      <categoryLinks>
+        <categoryLink targetId="efc2-e899-f74b-55ad" id="3d93-554b-e5fb-c4b9" primary="false" name="Freeblades"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Scintillax Stalker Banner" hidden="false" id="f127-dfeb-1ef5-1455" type="selectionEntry" targetId="f2c7-10c1-0eee-ea98">
+      <categoryLinks>
+        <categoryLink targetId="efc2-e899-f74b-55ad" id="ad3b-d1ce-1234-1db4" primary="false" name="Freeblades"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Serperos Stalker Banner" hidden="false" id="406f-46d1-339a-11e3" type="selectionEntry" targetId="5267-24b1-1d96-6496">
+      <categoryLinks>
+        <categoryLink targetId="efc2-e899-f74b-55ad" id="d979-830a-ba22-4cf6" primary="true" name="Freeblades"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7183-c0e8-3027-d054" name="Knight House" publicationId="975a-00f4-pubN89746" page="44" hidden="false" collective="false" import="false">
