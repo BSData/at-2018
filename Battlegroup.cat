@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="7" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7c04-d50d-bc70-52f3" name="Battlegroup" revision="8" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="7c04-d50d-pubN65537" name="Adeptus Titanicus 2018"/>
   </publications>
@@ -1058,6 +1058,26 @@
           </conditions>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Errax Stalker Banner" hidden="false" id="e047-8294-eb99-5dce" type="selectionEntry" targetId="2c8d-5c19-13e8-1334">
+      <categoryLinks>
+        <categoryLink targetId="917a-77ef-30e4-b812" id="66cd-afb1-d194-fc2f" primary="true" name="Banner"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tenebrax Stalker Banner" hidden="false" id="253b-24e7-fa2e-9eb5" type="selectionEntry" targetId="f82b-d1b8-cd1f-0f27">
+      <categoryLinks>
+        <categoryLink targetId="917a-77ef-30e4-b812" id="a613-3f83-60d1-faed" primary="true" name="Banner"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Scintillax Stalker Banner" hidden="false" id="dfa3-a18f-c04b-0ef7" type="selectionEntry" targetId="f2c7-10c1-0eee-ea98">
+      <categoryLinks>
+        <categoryLink targetId="917a-77ef-30e4-b812" id="4ee5-9590-c01b-c17b" primary="true" name="Banner"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Serperos Stalker Banner" hidden="false" id="4f67-d636-d654-0650" type="selectionEntry" targetId="5267-24b1-1d96-6496">
+      <categoryLinks>
+        <categoryLink targetId="917a-77ef-30e4-b812" id="9026-c7a8-7273-b99a" primary="true" name="Banner"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
 </catalogue>

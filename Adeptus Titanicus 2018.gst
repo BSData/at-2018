@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="14" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="15" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -24639,6 +24639,394 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8c1b-59df-34da-636c" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Errax Stalker Banner" hidden="false" id="2c8d-5c19-13e8-1334">
+      <profiles>
+        <profile name="Errax Stalker Banner" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="0587-878f-572b-3139">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">9&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">7+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">4+</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">3+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">-</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">3 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Errax Stalker Banner Location Table" typeId="b72e-0b77-ebb5-507d" typeName="Location Table" hidden="false" id="8468-cba1-48a4-d16e">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">8-12</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Networked Anima" id="7354-12eb-aeb4-3c3c" hidden="false" type="rule" targetId="f62e-52b6-3247-e960"/>
+        <infoLink name="Construct Shield" id="3f39-d254-2bdc-6ca5" hidden="false" type="rule" targetId="6755-7ad7-0bc8-1285"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Errax Stalker" hidden="false" id="f630-2007-770c-0cfb">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="89bc-d533-c5e5-2002"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="2c13-2692-a292-d589" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Loadout" id="ed00-70c6-4499-2771" hidden="false" defaultSelectionEntryId="b104-b2f2-c9ec-7eff">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Melta gun" hidden="false" id="1b8a-63da-1e36-9c56">
+                  <profiles>
+                    <profile name="Melta gun" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="0b59-defb-fa2c-2a21">
+                      <characteristics>
+                        <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+                        <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">8</characteristic>
+                        <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">3&quot;</characteristic>
+                        <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+                        <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">6&quot;</characteristic>
+                        <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+                        <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+                        <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+                        <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+                        <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion</characteristic>
+                        <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="a731-e220-2d8a-41bf" value="5"/>
+                    <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Melee" hidden="false" id="bdd9-3670-5a83-21dc" targetId="4739-6f52-a293-aa06" primary="false"/>
+                  </categoryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="deec-11e4-3d93-427d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deec-11e4-3d93-427d-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Lascutter" hidden="false" id="b104-b2f2-c9ec-7eff" type="selectionEntry" targetId="74ed-3785-cdf0-51ad"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="e580-b213-3f86-c2fc" id="c9a2-74b9-1c9b-34b0" primary="false" name="Agile"/>
+        <categoryLink targetId="184a-ded9-ae1a-e357" id="fba1-7bd7-be7d-9914" primary="false" name="Knight"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tenebrax Stalker Banner" hidden="false" id="f82b-d1b8-cd1f-0f27">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tenebrax Stalker" hidden="false" id="9c28-a0af-256c-a387">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2f2b-7924-ac39-d87f"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e463-0eeb-e425-d51e" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Loadout" id="82d9-afd1-f695-f5ea" hidden="false" defaultSelectionEntryId="1ea1-d4d6-751f-e3de">
+              <entryLinks>
+                <entryLink import="true" name="Exo-Planar-Cannon" hidden="false" id="9daf-ee1a-d646-357a" type="selectionEntry" targetId="a598-3dd8-b9f6-8ce9">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e47-65c7-52ff-be94-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e47-65c7-52ff-be94-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Storm Laser Flenser" hidden="false" id="a182-20c9-315b-ae3a" type="selectionEntry" targetId="2aed-bf26-3d49-a551">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba3d-f045-ab45-4a3c-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba3d-f045-ab45-4a3c-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Tenebrax Stalker Banner" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="6633-a823-68a5-e23b">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">7&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">6+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">-</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">3 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tenebrax Stalker Banner Location Table" typeId="b72e-0b77-ebb5-507d" typeName="Location Table" hidden="false" id="5a33-27cd-3893-9729">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">8-12</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Networked Anima" id="3731-2b7a-160a-cd0f" hidden="false" type="rule" targetId="f62e-52b6-3247-e960"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="e580-b213-3f86-c2fc" id="6960-8ae7-fef2-9ad3" primary="false" name="Agile"/>
+        <categoryLink targetId="184a-ded9-ae1a-e357" id="6637-6f3c-bffd-80d8" primary="false" name="Knight"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scintillax Stalker Banner" hidden="false" id="f2c7-10c1-0eee-ea98">
+      <infoLinks>
+        <infoLink name="Construct Shield" id="30f6-55df-b1d4-47da" hidden="false" type="rule" targetId="6755-7ad7-0bc8-1285"/>
+        <infoLink name="Networked Anima" id="bb84-5abe-18d4-a99a" hidden="false" type="rule" targetId="f62e-52b6-3247-e960"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="184a-ded9-ae1a-e357" id="2e35-2190-ddab-ba91" primary="false" name="Knight"/>
+        <categoryLink targetId="e580-b213-3f86-c2fc" id="173d-df4d-aa4e-786f" primary="false" name="Agile"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Scintillax Stalker" hidden="false" id="7159-a87f-2364-6cb0" type="selectionEntry" targetId="13bb-0cde-c5bb-0701" collective="false">
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="001e-08d9-0d62-dfbc" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="685d-a591-e623-c995" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Scintillax Stalker Banner" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="61da-9769-2f73-77ac">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">8&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">4+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">-</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">3 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scintillax Stalker Banner Location Table" typeId="b72e-0b77-ebb5-507d" typeName="Location Table" hidden="false" id="0f8c-25ab-87c6-59f3">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">8-12</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Serperos Stalker Banner" hidden="false" id="5267-24b1-1d96-6496">
+      <infoLinks>
+        <infoLink name="Construct Shield 3+" id="f191-a9dd-f55a-82d1" hidden="false" type="rule" targetId="49c3-49d6-5461-3315"/>
+        <infoLink name="Networked Anima" id="3106-dc92-e90b-1523" hidden="false" type="rule" targetId="f62e-52b6-3247-e960"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Serperos Stalker Banner" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="c142-ff71-c351-932c">
+          <characteristics>
+            <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">8&quot;</characteristic>
+            <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">7+</characteristic>
+            <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">3</characteristic>
+            <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">4+</characteristic>
+            <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">-</characteristic>
+            <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">-</characteristic>
+            <characteristic name="Scale" typeId="5359-4d2b-082b-546a">4 (Grandis)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Serperos Stalker Banner Location Table" typeId="b72e-0b77-ebb5-507d" typeName="Location Table" hidden="false" id="695d-04ed-8583-50ba">
+          <characteristics>
+            <characteristic name="Direct" typeId="c665-cd89-936b-f2e5">8-12</characteristic>
+            <characteristic name="Devastating" typeId="d16c-dca6-9e62-f9aa">13-14</characteristic>
+            <characteristic name="Critical" typeId="d300-246c-10d9-f5b2">15+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Serperos Stalker" hidden="false" id="6a64-bb0b-f1d0-9c3b">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Loadout" id="c6aa-7812-6ea9-2c61" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Lascutter" hidden="false" id="0e61-4c14-8e6f-4302" type="selectionEntry" targetId="74ed-3785-cdf0-51ad">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a14-7f78-bec9-c1ba-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a14-7f78-bec9-c1ba-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Storm Laser Array" hidden="false" id="6014-8246-940d-e0bb">
+                  <profiles>
+                    <profile name="Storm Laser Array" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="e3f0-9dac-d735-5658">
+                      <characteristics>
+                        <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+                        <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">4</characteristic>
+                        <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+                        <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+                        <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+                        <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+                        <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+                        <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+                        <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+                        <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Rapid</characteristic>
+                        <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <categoryLinks>
+                    <categoryLink targetId="a421-ff94-44cf-2eb8" id="7b6e-d76f-ad42-ef49" primary="false" name="Rapid"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5db-3fc9-d34c-1afe" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Exo-Planar Bombard" hidden="false" id="304a-1ed1-306d-002c">
+                  <profiles>
+                    <profile name="Exo-Planar Bombard" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="5834-f71a-3ea5-7dd0">
+                      <characteristics>
+                        <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+                        <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+                        <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+                        <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+                        <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">16&quot;</characteristic>
+                        <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+                        <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+                        <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+                        <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+                        <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Bypass</characteristic>
+                        <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <categoryLinks>
+                    <categoryLink targetId="719c-7b89-a08d-4acc" id="81b8-77bf-ff9c-c716" primary="false" name="Bypass"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da13-8a78-a497-ec80" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3842-7bce-172f-2921-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3842-7bce-172f-2921-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Points" typeId="a731-e220-2d8a-41bf" value="40"/>
+            <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="842d-4ca7-b4ea-7fd8" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7b34-1435-c955-ec7e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lascutter" hidden="false" id="74ed-3785-cdf0-51ad">
+      <profiles>
+        <profile name="Lascutter" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="75ae-8969-7feb-e897">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">2&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">-</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Fusion, Melee</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Fusion" hidden="false" id="5df3-ae3f-f003-89ca" targetId="2e59-3e13-7382-4fac" primary="false"/>
+        <categoryLink name="Melee" hidden="false" id="6482-1873-1139-4def" targetId="4739-6f52-a293-aa06" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Exo-Planar-Cannon" hidden="false" id="a598-3dd8-b9f6-8ce9">
+      <profiles>
+        <profile name="Exo-Planar-Cannon" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="00eb-7339-3822-7342">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">0</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">6</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">+1</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">16&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"/>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Storm Laser Flenser" hidden="false" id="2aed-bf26-3d49-a551">
+      <profiles>
+        <profile name="Storm Laser Flenser" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="c2e2-3791-00d6-2c69">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">30&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">+1</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16"/>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4"/>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8"/>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scintillax Stalker" hidden="false" id="13bb-0cde-c5bb-0701">
+      <costs>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="0ca0-d2a7-f7b4-f718" hidden="false" defaultSelectionEntryId="b748-7a55-4748-d045">
+          <entryLinks>
+            <entryLink import="true" name="Lascutter" hidden="false" id="b748-7a55-4748-d045" type="selectionEntry" targetId="74ed-3785-cdf0-51ad"/>
+            <entryLink import="true" name="Exo-Planar-Cannon" hidden="false" id="636e-649f-8860-25e9" type="selectionEntry" targetId="a598-3dd8-b9f6-8ce9">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Laser Flenser" hidden="false" id="0b85-b0f7-efd4-0f55" type="selectionEntry" targetId="2aed-bf26-3d49-a551">
+              <costs>
+                <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0f4-072e-5147-72b0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0f4-072e-5147-72b0-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
@@ -30076,6 +30464,17 @@ result of a single D6.</description>
     </rule>
     <rule name="Multiple Warhead Launchers" id="fa71-afe2-0322-1f39" hidden="false" publicationId="2988-f24d-39ef-352e" page="99">
       <description>Any of the Legio’s Titans armed with Apocalypse missile launchers or an Apocalypse missile launcher can be upgraded to have Multiple Warhead Launchers for +20 points, so long as that Titan does not already have an upgrade affecting that weapon. Each of the Titan’s weapons must be upgraded separately. Any Apocalypse missile launcher equipped with this upgrade adds 5 to their Dice value and gains the Rapid and Limited (2) traits. A Titan can upgrade a weapon with Multiple Warhead Launchers and Autoloaders, however the base cost of the weapon includes the +20 points, which is applied before determining the cost of the Autoloaders.</description>
+    </rule>
+    <rule name="Networked Anima" id="f62e-52b6-3247-e960" hidden="false">
+      <description>This banner may use the Command value of a friendly model within 6&quot; that has the Networked Anima special rule.</description>
+    </rule>
+    <rule name="Construct Shield 4+" id="6755-7ad7-0bc8-1285" hidden="false">
+      <description>Unit has an Ion Shield level of 4+, which is unchanged by  weapon strength or Banner size. They have a Construct Shield level of 1 times the starting number of Stalkers in the Banner.
+Each time a Save roll is failed, decrease the Construct Shield by 1 - you still make Armour rolls for these Hits. When a Construct Shield level is 0 or less, the Banner cannot make Ion Shield saves for the remainder of the battle.</description>
+    </rule>
+    <rule name="Construct Shield 3+" id="49c3-49d6-5461-3315" hidden="false">
+      <description>Unit has an Ion Shield level of 3+, which is unchanged by  weapon strength or Banner size. They have a Construct Shield level of 1 times the starting number of Stalkers in the Banner.
+Each time a Save roll is failed, decrease the Construct Shield by 1 - you still make Armour rolls for these Hits. When a Construct Shield level is 0 or less, the Banner cannot make Ion Shield saves for the remainder of the battle.</description>
     </rule>
   </sharedRules>
 </gameSystem>
