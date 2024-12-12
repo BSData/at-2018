@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="6" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="20c9-0c15-57e3-bf84" name="Household" revision="7" library="false" gameSystemId="975a-00f4-df37-b565" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <forceEntries>
     <forceEntry id="5334-72bf-3cf7-d361" name="Household Battlegroup" hidden="false">
       <constraints>
@@ -409,12 +409,12 @@
     </entryLink>
     <entryLink import="true" name="Tenebrax Stalker Banner" hidden="false" id="4cd5-5c09-6544-2860" type="selectionEntry" targetId="f82b-d1b8-cd1f-0f27">
       <categoryLinks>
-        <categoryLink targetId="efc2-e899-f74b-55ad" id="3d93-554b-e5fb-c4b9" primary="false" name="Freeblades"/>
+        <categoryLink targetId="efc2-e899-f74b-55ad" id="3d93-554b-e5fb-c4b9" primary="true" name="Freeblades"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Scintillax Stalker Banner" hidden="false" id="f127-dfeb-1ef5-1455" type="selectionEntry" targetId="f2c7-10c1-0eee-ea98">
       <categoryLinks>
-        <categoryLink targetId="efc2-e899-f74b-55ad" id="ad3b-d1ce-1234-1db4" primary="false" name="Freeblades"/>
+        <categoryLink targetId="efc2-e899-f74b-55ad" id="ad3b-d1ce-1234-1db4" primary="true" name="Freeblades"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Serperos Stalker Banner" hidden="false" id="406f-46d1-339a-11e3" type="selectionEntry" targetId="5267-24b1-1d96-6496">
