@@ -11811,13 +11811,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="0b29-fdcb-087c-a9b3" name="Heavy Scout Titan" hidden="false" collective="false" import="true" sortIndex="11">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d28f-aa15-2cc0-324b" type="max"/>
           </constraints>
@@ -11832,6 +11825,13 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e9a0-229e-7cfb-4def" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="acc9-5855-b712-2cf4" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true" sortIndex="2">
           <modifiers>
@@ -11904,7 +11904,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" repeats="1" roundUp="false"/>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
@@ -15590,6 +15589,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="26ca-c6f5-04b3-10c1" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="223f-6e71-9e4f-939e" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="d173-87e6-9f1b-1aaa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="365e-d892-5c42-f7a3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7fa2-9af4-1b60-8a28" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="56b0-f155-3635-45da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fcfd-d034-1395-9eea" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -25052,6 +25055,28 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <categoryLinks>
         <categoryLink targetId="a421-ff94-44cf-2eb8" id="8503-0e58-e7fd-d98c" primary="false" name="Rapid"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Outflank" hidden="false" id="db96-a33e-8cca-efe7" publicationId="bf8b-27d7-039e-5df9" page="172" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c0d2-7e5e-ba5a-82b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <rules>
+        <rule name="Outflank" id="6bea-62a5-84e0-bde4" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="172">
+          <description>When this Stratagem is chosen, the player secretly writes down one of their units. The cost of the Stratagem is equal to half the unit’s Scale, rounding up. Play this Stratagem at the start of deployment to set that unit to one side and state that it is outflanking (it is not deployed with the rest of its battlegroup). Write down which of the battlefield’s neutral flanks it will arrive on, but do not reveal this to the opposing player. While the unit is not on the board, it cannot be activated, and so cannot be issued Orders.
+
+At the start of the Movement phase of the first round, the unit appears on long range auspex – reveal to the opposing player which neutral flank was chosen. During the Movement phase of the second round, the outflanking unit can be activated. When it is, it is set up so that the Rear arc of its base is touching the chosen flank. It cannot move any further during the phase.
+
+If a player’s battlegroup contains any Squadrons, they can choose this Stratagem more than once, as long as each outflanking unit is part of the same Squadron.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Stratagem Hand" hidden="false" id="d62f-76ee-f27e-a247" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink targetId="9e2e-c35f-34a4-d245" id="71a8-2e81-1590-cfb6" primary="false" name="Tricks and Tactics"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

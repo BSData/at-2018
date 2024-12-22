@@ -1079,5 +1079,11 @@
         <categoryLink targetId="917a-77ef-30e4-b812" id="9026-c7a8-7273-b99a" primary="true" name="Banner"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Outflank" hidden="false" id="abd9-0a3d-00e9-b2a7" type="selectionEntry" targetId="db96-a33e-8cca-efe7">
+      <categoryLinks>
+        <categoryLink targetId="b539-a35c-fe3f-9c34" id="cea8-958c-f1c5-bd87" primary="true" name="Stratagem Hand"/>
+        <categoryLink targetId="9e2e-c35f-34a4-d245" id="93c6-bb8c-8566-2349" primary="false" name="Tricks and Tactics"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
