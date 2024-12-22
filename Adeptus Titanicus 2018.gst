@@ -25053,6 +25053,28 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <categoryLink targetId="a421-ff94-44cf-2eb8" id="8503-0e58-e7fd-d98c" primary="false" name="Rapid"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Outflank" hidden="false" id="db96-a33e-8cca-efe7" publicationId="bf8b-27d7-039e-5df9" page="172" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c0d2-7e5e-ba5a-82b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <rules>
+        <rule name="Outflank" id="6bea-62a5-84e0-bde4" hidden="false" publicationId="bf8b-27d7-039e-5df9" page="172">
+          <description>When this Stratagem is chosen, the player secretly writes down one of their units. The cost of the Stratagem is equal to half the unit’s Scale, rounding up. Play this Stratagem at the start of deployment to set that unit to one side and state that it is outflanking (it is not deployed with the rest of its battlegroup). Write down which of the battlefield’s neutral flanks it will arrive on, but do not reveal this to the opposing player. While the unit is not on the board, it cannot be activated, and so cannot be issued Orders.
+
+At the start of the Movement phase of the first round, the unit appears on long range auspex – reveal to the opposing player which neutral flank was chosen. During the Movement phase of the second round, the outflanking unit can be activated. When it is, it is set up so that the Rear arc of its base is touching the chosen flank. It cannot move any further during the phase.
+
+If a player’s battlegroup contains any Squadrons, they can choose this Stratagem more than once, as long as each outflanking unit is part of the same Squadron.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Stratagem Hand" hidden="false" id="d62f-76ee-f27e-a247" targetId="b539-a35c-fe3f-9c34" primary="true"/>
+        <categoryLink targetId="9e2e-c35f-34a4-d245" id="71a8-2e81-1590-cfb6" primary="false" name="Tricks and Tactics"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="187f-a18f-cafe-4ae6" name="Legio Specific Wargear" hidden="false" collective="false" import="false">
