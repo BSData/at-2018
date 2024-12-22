@@ -11811,13 +11811,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="0b29-fdcb-087c-a9b3" name="Heavy Scout Titan" hidden="false" collective="false" import="true" sortIndex="11">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d28f-aa15-2cc0-324b" type="max"/>
           </constraints>
@@ -11832,6 +11825,13 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e9a0-229e-7cfb-4def" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="acc9-5855-b712-2cf4" name="Legio Trait: Engines of War" hidden="true" collective="false" import="true" sortIndex="2">
           <modifiers>
@@ -11904,7 +11904,6 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2910-5e72-a7de-f973" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1ea-4e6f-d353-2cc4" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc0d-eb8b-2ed0-a798" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f76-34ac-3cf7-34c6" repeats="1" roundUp="false"/>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="1dee-3970-5fa7-9ba5" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="b539-aae7-d903-4b5c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </repeats>
@@ -15590,6 +15589,10 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="26ca-c6f5-04b3-10c1" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="223f-6e71-9e4f-939e" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="d173-87e6-9f1b-1aaa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="365e-d892-5c42-f7a3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7fa2-9af4-1b60-8a28" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="56b0-f155-3635-45da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fcfd-d034-1395-9eea" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
