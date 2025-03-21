@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="17" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="18" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -7767,7 +7767,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9434-7d69-d629-379c" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="50fe-fac4-704d-2dde" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="9">
+        <entryLink id="50fe-fac4-704d-2dde" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="9" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="124a-743e-536c-5546" value="1">
               <repeats>
@@ -8245,7 +8245,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d020-5fd1-a571-ddf2" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry" sortIndex="13">
+        <entryLink id="d020-5fd1-a571-ddf2" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry" sortIndex="13" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="baf4-9b7f-f9b7-e2d9" value="1">
               <repeats>
@@ -9257,7 +9257,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d2ae-05d2-2fcb-0798" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry" sortIndex="6">
+        <entryLink id="d2ae-05d2-2fcb-0798" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry" sortIndex="6" defaultAmount="1,1,1">
           <modifiers>
             <modifier type="decrement" field="1a83-28f9-39f2-6a12" value="1">
               <repeats>
@@ -9716,7 +9716,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db7d-8f30-ca24-e30e" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="1ace-3985-55cd-6c93" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="9">
+        <entryLink id="1ace-3985-55cd-6c93" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="9" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="6f37-979e-47fe-7098" value="1">
               <repeats>
@@ -10169,7 +10169,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c80-07d9-8233-0331" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="2b1d-c2a1-5fb1-5f26" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry" sortIndex="10">
+        <entryLink id="2b1d-c2a1-5fb1-5f26" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry" sortIndex="10" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="c5e4-a8b8-d00f-44dd" value="1">
               <repeats>
@@ -10323,7 +10323,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" publicationId="975a-00f4-pubN87630" page="66" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" publicationId="975a-00f4-pubN87630" page="66" hidden="false" collective="false" import="false" type="unit" defaultAmount="">
       <rules>
         <rule id="6068-bc44-f6a2-c418" name="Hunting Pack" publicationId="975a-00f4-pubN87630" page="66" hidden="false">
           <description>Working closely together, the Warhound Titans can surround and pick off foes many times their size. At the beggining of each round, any or all of the Warhounds within the maniple may be formed into a Squadron with other members of their maniple. These squadrons last until the end of the round.</description>
@@ -10462,7 +10462,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="888e-a4ff-c051-e2ab" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="7">
+        <entryLink id="888e-a4ff-c051-e2ab" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="7" defaultAmount="1,1,1">
           <modifiers>
             <modifier type="decrement" field="e1c2-3492-0032-293a" value="1">
               <repeats>
@@ -10972,7 +10972,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3578-3bfa-02f4-09e0" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="09fb-74c1-051c-8094" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry" sortIndex="8">
+        <entryLink id="09fb-74c1-051c-8094" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry" sortIndex="8" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="c052-2f9b-24c5-16bb" value="1">
               <repeats>
@@ -11484,7 +11484,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97f2-88f1-367e-4aee" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="9187-74a9-9d6f-2f7e" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry" sortIndex="10">
+        <entryLink id="9187-74a9-9d6f-2f7e" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry" sortIndex="10" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="0367-10c5-5cf5-71a2" value="1">
               <repeats>
@@ -11895,7 +11895,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e55d-c4aa-9307-146d" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="9">
+        <entryLink id="e55d-c4aa-9307-146d" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="9" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="7d26-0a5d-3cbd-4c28" value="1">
               <repeats>
@@ -12299,7 +12299,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ae58-fccd-53f3-e7d5" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="7">
+        <entryLink id="ae58-fccd-53f3-e7d5" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="7" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="a10c-04b0-24c7-38cf" value="1">
               <repeats>
@@ -12753,7 +12753,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a2-05a6-3b09-b6f1" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="dfab-de0a-7560-01c3" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry" sortIndex="7">
+        <entryLink id="dfab-de0a-7560-01c3" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="d2b6-f342-ccdb-b9cc" type="selectionEntry" sortIndex="7" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="4d19-e17c-9d1a-e7ad" value="1">
               <repeats>
@@ -13115,7 +13115,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8366-f454-1d97-b4f0" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="8">
+        <entryLink id="8366-f454-1d97-b4f0" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="8" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="9c21-219f-eb16-73a0" value="1">
               <repeats>
@@ -13343,7 +13343,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="226f-2919-9fde-63ff" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="2">
+        <entryLink id="226f-2919-9fde-63ff" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="2" defaultAmount="1,1,1">
           <modifiers>
             <modifier type="decrement" field="a948-9bb4-d5a9-0974" value="1">
               <repeats>
@@ -13701,7 +13701,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10e3-d657-4ea1-db2f" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="c8f7-588c-d32c-51ec" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry" sortIndex="8">
+        <entryLink id="c8f7-588c-d32c-51ec" name="Reaver Titan" hidden="false" collective="false" import="false" targetId="9ff1-81bc-203d-620c" type="selectionEntry" sortIndex="8" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="aeb5-826c-2be3-7ffb" value="1">
               <repeats>
@@ -13995,7 +13995,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0855-232e-6cd3-05a2" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="fc56-35c1-3e51-cc81" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry" sortIndex="9">
+        <entryLink id="fc56-35c1-3e51-cc81" name="Warlord Titan" hidden="false" collective="false" import="false" targetId="5122-cb02-8703-ce88" type="selectionEntry" sortIndex="9" defaultAmount="1,1,1">
           <modifiers>
             <modifier type="decrement" field="4fac-1855-976e-8b33" value="1">
               <repeats>
@@ -14441,7 +14441,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fc1-f430-7854-6e63" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="b22b-b7c2-6ded-3736" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="9">
+        <entryLink id="b22b-b7c2-6ded-3736" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="9" defaultAmount="1,1">
           <modifiers>
             <modifier type="increment" field="1eb0-8515-9f97-8f1a" value="1">
               <repeats>
@@ -14736,7 +14736,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4f88-cfa9-250f-b4fb" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="7">
+        <entryLink id="4f88-cfa9-250f-b4fb" name="Warhound Titan" hidden="false" collective="false" import="false" targetId="3ad7-cd10-8d6e-8c2e" type="selectionEntry" sortIndex="7" defaultAmount="1,1">
           <modifiers>
             <modifier type="decrement" field="fb74-a086-4d5c-6596" value="1">
               <repeats>
@@ -29766,7 +29766,7 @@ result of a single D6.</description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="" id="7ac7-ab6f-00b3-7ef0" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="7ac7-ab6f-00b3-7ef0" hidden="false" collective="false" import="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cda-237e-c112-f85c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
