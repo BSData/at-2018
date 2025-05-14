@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="18" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="19" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -624,6 +624,8 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       <comment>This category is used to exclude Retainers from the banner limit, while still allowing them to have the &apos;Banner&apos; category</comment>
     </categoryEntry>
     <categoryEntry name="Titan of Legend" id="9a74-94db-f8be-10e8" hidden="false"/>
+    <categoryEntry name="Traitor Titan of Legend" id="e29c-eb6f-b9c7-4c2e" hidden="false"/>
+    <categoryEntry name="Loyalist Titan of Legend" id="53b1-a2b6-919d-0f65" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" hidden="true">
@@ -10323,7 +10325,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" publicationId="975a-00f4-pubN87630" page="66" hidden="false" collective="false" import="false" type="unit" defaultAmount="">
+    <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" publicationId="975a-00f4-pubN87630" page="66" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="6068-bc44-f6a2-c418" name="Hunting Pack" publicationId="975a-00f4-pubN87630" page="66" hidden="false">
           <description>Working closely together, the Warhound Titans can surround and pick off foes many times their size. At the beggining of each round, any or all of the Warhounds within the maniple may be formed into a Squadron with other members of their maniple. These squadrons last until the end of the round.</description>
@@ -20469,9 +20471,14 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
     <selectionEntry id="a6b6-2e17-4aaa-3ec0" name="Corrupt Titan" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -23484,6 +23491,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="WarhoundTitan" hidden="false" id="84b3-02d9-25d1-9a13" targetId="223f-6e71-9e4f-939e" primary="false"/>
         <categoryLink name="Titan of Legend" hidden="false" id="8f6f-a75f-792d-dceb" targetId="9a74-94db-f8be-10e8" primary="true"/>
         <categoryLink targetId="72ba-4008-bf4b-fe3b" id="969a-eb3c-94f3-7c66" primary="false" name="LegioFureans"/>
+        <categoryLink targetId="e29c-eb6f-b9c7-4c2e" id="b3ca-eec4-259c-845d" primary="false" name="Traitor Titan of Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="477b-571b-1ada-d1a3" hidden="false" collective="false" import="false">
@@ -23574,11 +23582,25 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="72ba-4008-bf4b-fe3b" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="72ba-4008-bf4b-fe3b" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -23610,6 +23632,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="Titan" hidden="false" id="2675-d126-6c0f-e0f2" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink name="WarhoundTitan" hidden="false" id="6414-2f0e-67e2-5d19" targetId="223f-6e71-9e4f-939e" primary="false"/>
         <categoryLink name="Titan of Legend" hidden="false" id="006f-9356-38f8-a9ba" targetId="9a74-94db-f8be-10e8" primary="true"/>
+        <categoryLink targetId="e29c-eb6f-b9c7-4c2e" id="f7df-3795-422a-15fd" primary="false" name="Traitor Titan of Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="73a2-f10e-ff68-9add" hidden="false" collective="false" import="false">
@@ -23691,11 +23714,25 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cbc6-216c-8a22-c1b4" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cbc6-216c-8a22-c1b4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -23735,6 +23772,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="Titan" hidden="false" id="e8a6-dfe9-d0e3-7456" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
         <categoryLink name="ReaverTitan" hidden="false" id="4017-79e4-bfe7-5467" targetId="d36f-5e44-2150-3428" primary="false"/>
         <categoryLink targetId="9a74-94db-f8be-10e8" id="452f-ec98-1b84-0f3b" primary="true" name="Titan of Legend"/>
+        <categoryLink targetId="e29c-eb6f-b9c7-4c2e" id="6862-951d-cce6-a1cb" primary="false" name="Traitor Titan of Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="f1e8-9180-b4d3-33a3" hidden="false" collective="false" import="false">
@@ -23832,11 +23870,25 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="7093-f8b3-b5f9-d38d" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7093-f8b3-b5f9-d38d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -23864,6 +23916,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="WarlordTitan" hidden="false" id="488a-da00-949c-cbb9" targetId="7103-9316-d4a5-8caa" primary="false"/>
         <categoryLink targetId="9a74-94db-f8be-10e8" id="7578-b83f-8dec-5f22" primary="true" name="Titan of Legend"/>
         <categoryLink targetId="95e8-3d8e-a0ad-4ad3" id="4a9d-26ce-df16-34f6" primary="false" name="LegioKrytos"/>
+        <categoryLink targetId="e29c-eb6f-b9c7-4c2e" id="4fa1-1125-a2cf-9d7e" primary="false" name="Traitor Titan of Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="cc4d-88af-91cd-e3f2" hidden="false" collective="false" import="false">
@@ -23961,11 +24014,25 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="bffc-4266-a83d-cae6" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="bffc-4266-a83d-cae6" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -23990,6 +24057,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="WarlordTitan" hidden="false" id="83cd-eec9-6cc7-01ee" targetId="7103-9316-d4a5-8caa" primary="false"/>
         <categoryLink name="Titan of Legend" hidden="false" id="3c36-1ec2-c212-5388" targetId="9a74-94db-f8be-10e8" primary="true"/>
         <categoryLink targetId="f88f-e42d-38f7-bfa7" id="a462-1116-7e7b-b5b6" primary="false" name="LegioMortis"/>
+        <categoryLink targetId="e29c-eb6f-b9c7-4c2e" id="1b8d-967f-2fe7-38c1" primary="false" name="Traitor Titan of Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="9aca-44b3-9074-d858" hidden="false" collective="false" import="false">
@@ -24080,11 +24148,25 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="1b13-8735-b4bf-0caf" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1b13-8735-b4bf-0caf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -24109,6 +24191,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="ReaverTitan" hidden="false" id="0465-1ef6-fea3-fedf" targetId="d36f-5e44-2150-3428" primary="false"/>
         <categoryLink targetId="06c2-f93e-7bf5-9fd5" id="768b-b853-680b-1811" primary="false" name="LegioAstorum"/>
         <categoryLink targetId="9a74-94db-f8be-10e8" id="bead-ece1-8316-c477" primary="true" name="Titan of Legend"/>
+        <categoryLink targetId="53b1-a2b6-919d-0f65" id="ddda-0b1d-833a-685f" primary="false" name="Loyalist Titan of Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="a808-95c3-a2b5-ca73" hidden="false" collective="false" import="false">
@@ -24181,11 +24264,25 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="dbd6-65fd-6354-a154" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="dbd6-65fd-6354-a154" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -24218,6 +24315,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
         <categoryLink name="ReaverTitan" hidden="false" id="3860-c7bb-60fc-e894" targetId="d36f-5e44-2150-3428" primary="false"/>
         <categoryLink name="Titan of Legend" hidden="false" id="f5da-f589-363a-fa81" targetId="9a74-94db-f8be-10e8" primary="true"/>
         <categoryLink targetId="7b17-f14f-4709-e96c" id="7160-1ce7-1855-0c48" primary="false" name="LegioDefensor"/>
+        <categoryLink targetId="53b1-a2b6-919d-0f65" id="07a5-34c6-b7a4-97ad" primary="false" name="Loyalist Titan of Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="70c4-3519-ee62-1a64" hidden="false" collective="false" import="false">
@@ -24290,11 +24388,25 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="63e1-fca8-5023-12d6" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="63e1-fca8-5023-12d6" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -24330,6 +24442,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <categoryLink name="WarlordTitan" hidden="false" id="95a4-b8c0-089b-3899" targetId="7103-9316-d4a5-8caa" primary="false"/>
         <categoryLink name="Titan of Legend" hidden="false" id="6f09-acb7-5e55-dfe1" targetId="9a74-94db-f8be-10e8" primary="true"/>
         <categoryLink targetId="cfcc-e5c0-bb0b-db6f" id="1208-6521-88db-e5f7" primary="false" name="LegioAtarus"/>
+        <categoryLink targetId="53b1-a2b6-919d-0f65" id="18c2-6a1a-20b1-6bf0" primary="false" name="Loyalist Titan of Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="fb51-ffc9-d918-4745" hidden="false" collective="false" import="false">
@@ -24409,11 +24522,25 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="bf14-af1e-5d72-7c8b" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="bf14-af1e-5d72-7c8b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -24438,6 +24565,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <categoryLink name="WarlordTitan" hidden="false" id="524d-0754-bfa3-13b3" targetId="7103-9316-d4a5-8caa" primary="false"/>
         <categoryLink name="Titan of Legend" hidden="false" id="5dbc-b7d4-31b8-a6d3" targetId="9a74-94db-f8be-10e8" primary="true"/>
         <categoryLink targetId="0796-178c-50ce-2d1f" id="7520-aa6e-45f9-8fba" primary="false" name="LegioGryphonicus"/>
+        <categoryLink targetId="53b1-a2b6-919d-0f65" id="f515-0ae0-2070-6bfc" primary="false" name="Loyalist Titan of Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="1ee2-2979-e0c5-f593" hidden="false" collective="false" import="false">
@@ -24517,10 +24645,24 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="0986-9b84-b734-e9c8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="0986-9b84-b734-e9c8" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -24546,6 +24688,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <categoryLink name="ReaverTitan" hidden="false" id="2309-992e-6a47-aa4d" targetId="d36f-5e44-2150-3428" primary="false"/>
         <categoryLink name="Titan of Legend" hidden="false" id="e4d4-a942-18ef-c8e8" targetId="9a74-94db-f8be-10e8" primary="true"/>
         <categoryLink targetId="5f7b-2051-3935-7637" id="4eab-ac07-d121-c87d" primary="false" name="LegioIgnatum"/>
+        <categoryLink targetId="53b1-a2b6-919d-0f65" id="414e-4e22-4387-7c63" primary="false" name="Loyalist Titan of Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="70c7-eb15-18ef-96e6" hidden="false" collective="false" import="false">
@@ -24624,11 +24767,25 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4a11-763b-6a82-bc29" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4a11-763b-6a82-bc29" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -25861,9 +26018,23 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
     <selectionEntryGroup id="c354-c2bb-8d84-0770" name="Loyalist Wargear" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <entryLinks>
@@ -25897,9 +26068,23 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
     <selectionEntryGroup id="3bce-46aa-99ca-8f60" name="Traitor Wargear" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <entryLinks>
@@ -25926,9 +26111,16 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6b6-2e17-4aaa-3ec0" type="greaterThan"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -26029,9 +26221,16 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6b6-2e17-4aaa-3ec0" type="greaterThan"/>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="a6b6-2e17-4aaa-3ec0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
