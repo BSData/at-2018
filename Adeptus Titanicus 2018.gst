@@ -10323,7 +10323,7 @@ The first Critical Hit a Titan with this upgrade receives is downgraded to a Dev
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" publicationId="975a-00f4-pubN87630" page="66" hidden="false" collective="false" import="false" type="unit" defaultAmount="">
+    <selectionEntry id="26ca-c6f5-04b3-10c1" name="Lupercal Light Maniple" publicationId="975a-00f4-pubN87630" page="66" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="6068-bc44-f6a2-c418" name="Hunting Pack" publicationId="975a-00f4-pubN87630" page="66" hidden="false">
           <description>Working closely together, the Warhound Titans can surround and pick off foes many times their size. At the beggining of each round, any or all of the Warhounds within the maniple may be formed into a Squadron with other members of their maniple. These squadrons last until the end of the round.</description>
@@ -23579,11 +23579,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="72ba-4008-bf4b-fe3b" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="72ba-4008-bf4b-fe3b" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -23696,11 +23703,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="cbc6-216c-8a22-c1b4" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="cbc6-216c-8a22-c1b4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -23837,11 +23851,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="7093-f8b3-b5f9-d38d" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7093-f8b3-b5f9-d38d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -23966,11 +23987,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="bffc-4266-a83d-cae6" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="bffc-4266-a83d-cae6" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -24085,11 +24113,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="1b13-8735-b4bf-0caf" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1b13-8735-b4bf-0caf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -24186,11 +24221,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="dbd6-65fd-6354-a154" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="dbd6-65fd-6354-a154" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -24295,11 +24337,18 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="63e1-fca8-5023-12d6" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="63e1-fca8-5023-12d6" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -24414,11 +24463,18 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="bf14-af1e-5d72-7c8b" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="bf14-af1e-5d72-7c8b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -24522,10 +24578,17 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="0986-9b84-b734-e9c8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="0986-9b84-b734-e9c8" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -24629,11 +24692,18 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4a11-763b-6a82-bc29" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4a11-763b-6a82-bc29" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>

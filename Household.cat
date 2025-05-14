@@ -37,6 +37,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Titan of Legend" hidden="false" id="316b-6974-b448-e534" targetId="9a74-94db-f8be-10e8" type="categoryEntry"/>
         <categoryLink id="346a-4747-185f-fc53" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
       </categoryLinks>
     </forceEntry>
@@ -422,6 +423,16 @@
         <categoryLink targetId="efc2-e899-f74b-55ad" id="d979-830a-ba22-4cf6" primary="true" name="Freeblades"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Iben Faruk" hidden="true" id="5fea-5179-7e5a-e66e" type="selectionEntry" targetId="1dee-3970-5fa7-9ba5"/>
+    <entryLink import="true" name="Bellator Magno" hidden="true" id="140e-008d-7f31-51c1" type="selectionEntry" targetId="d9c7-f0a7-f1dd-a640"/>
+    <entryLink import="true" name="Dawn of Enlightenment" hidden="true" id="6127-1b93-ccfb-6213" type="selectionEntry" targetId="cc4c-4b80-cb60-e3b2"/>
+    <entryLink import="true" name="Hammer of Tyrants" hidden="true" id="a6f4-a7c2-4112-bd10" type="selectionEntry" targetId="f7d8-5efb-466d-a8d8"/>
+    <entryLink import="true" name="Ignis Ferrus" hidden="true" id="ac08-2418-e005-4b9e" type="selectionEntry" targetId="7c7d-0f96-2a56-531f"/>
+    <entryLink import="true" name="Iracundos" hidden="true" id="c614-84f3-7540-9fab" type="selectionEntry" targetId="4d1e-08df-2a4d-9e9b"/>
+    <entryLink import="true" name="Lucius Pretorian" hidden="true" id="8e78-5415-e63d-7eeb" type="selectionEntry" targetId="5357-5da1-e9dd-4392"/>
+    <entryLink import="true" name="Mantellum Fulmen" hidden="true" id="60e5-f554-0caa-df8b" type="selectionEntry" targetId="b539-aae7-d903-4b5c"/>
+    <entryLink import="true" name="Penumbral Reaper" hidden="true" id="a8fc-fd82-6adc-9b45" type="selectionEntry" targetId="c1e6-23d7-73ff-f29c"/>
+    <entryLink import="true" name="Vestiti Ferrus" hidden="true" id="8504-59f1-cebe-7952" type="selectionEntry" targetId="08ce-f55b-ff2f-e7e9"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7183-c0e8-3027-d054" name="Knight House" publicationId="975a-00f4-pubN89746" page="44" hidden="false" collective="false" import="false">
