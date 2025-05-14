@@ -20469,9 +20469,14 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
     <selectionEntry id="a6b6-2e17-4aaa-3ec0" name="Corrupt Titan" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
