@@ -26008,9 +26008,14 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
     <selectionEntryGroup id="c354-c2bb-8d84-0770" name="Loyalist Wargear" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43fb-83e1-2c6b-100c" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43fb-83e1-2c6b-100c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a1f2-9a53-e8b9-632d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <entryLinks>
@@ -26078,9 +26083,16 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6b6-2e17-4aaa-3ec0" type="greaterThan"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -26181,9 +26193,16 @@ more Titans with this mutation. Corrupted Titans are not affected by this mutati
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d634-d27a-fd9c-3f8f" type="atLeast"/>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6b6-2e17-4aaa-3ec0" type="greaterThan"/>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="a6b6-2e17-4aaa-3ec0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
