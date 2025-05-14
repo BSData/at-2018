@@ -23597,6 +23597,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -23728,6 +23729,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -23883,6 +23885,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -24026,6 +24029,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -24159,6 +24163,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -24274,6 +24279,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -24397,6 +24403,7 @@ When firing a weapon with this upgrade, the player may choose to use its Focused
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -24530,6 +24537,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -24649,6 +24657,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -24773,6 +24782,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -26019,6 +26029,7 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="3bce-46aa-99ca-8f60" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e29c-eb6f-b9c7-4c2e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -26068,6 +26079,7 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="c354-c2bb-8d84-0770" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
