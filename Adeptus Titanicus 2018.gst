@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="19" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="20" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -19414,7 +19414,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="8b4c-0fba-7864-cb6c" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
       <selectionEntryGroups>
@@ -19448,10 +19448,10 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
           </modifiers>
           <characteristics>
             <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">1</characteristic>
-            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">11</characteristic>
-            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">10</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">8&quot;</characteristic>
             <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
-            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">16&quot;</characteristic>
             <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
             <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
             <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">3&quot;</characteristic>
@@ -19598,7 +19598,7 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
         <categoryLink id="a769-62e5-7329-3f2a" name="Shoulder" hidden="false" targetId="e37e-10e6-accd-329d" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="20"/>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
       <selectionEntryGroups>
