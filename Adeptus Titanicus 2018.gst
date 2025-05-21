@@ -6322,11 +6322,13 @@ Legio Audax Squadrons can contain up to five Titans, unless they can normally co
       </constraints>
       <rules>
         <rule id="eb20-0124-4019-ea50" name="Combat Drop" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Tempestus player. Play this Stratagem at the start of deployment, before any units have been placed upon the battlefield. Choose a friendly Legio Tempestus Titan of Scale 7 or lower to be kept in reserve; that unit is not deployed as normal and instead will arrive by combat drop.
+          <description>This Stratagem can be purchased by any Legio Tempestus player. Play this Stratagem at the start of deployment, before any units have been placed upon the battlefield. Choose a friendly Legio Tempestus Titan of Scale 7 or lower to be kept in reserve; that unit is not deployed as normal and instead will arrive by combat drop.
 
-At the start of any Strategy phase from the second round onwards, the chosen Titan is deployed by combat drop. Place the Titan anywhere on the battlefield more than 3&quot; away from an enemy unit then scatter the Titan D6&quot;. If the Titan scatters into a piece of Terrain, it stops before moving into it and suffers D3+2 Strength 9 hits (Void Shield saves are allowed). If, after it scatters, the Titan’s base overlaps with another model, friend or foe, with a Scale lower than the Titan’s, move the Titan the shortest distance so its base is not overlapping then resolve the effects of a Collision. If the Titan’s base overlaps that of a unit with a Scale equal to or greater than its own, the Titan is destroyed; do not roll on the Catastrophic Damage table. The unit it overlapped with suffers a Collision as normal.
 
-A Titan that arrives in this way cannot be activated in the Strategy phase or Movement phase in the round it arrives. [FAQ - 1.4]</description>
+At the start of any Strategy phase from the second round onwards, the chosen Titan may be deployed by combat drop. Place the Titan anywhere on the battlefield more than 3&quot; away from an enemy unit then scatter the Titan D6&quot;. If the Titan scatters into a piece of Terrain, it stops before moving into it and suffers D3+2 Strength 9 hits (Void Shield saves are allowed). If, after it scatters, the Titan’s base overlaps with another model, friend or foe, with a Scale lower than the Titan’s, move the Titan the shortest distance so its base is not overlapping then resolve the effects of a Collision. If the Titan’s base overlaps that of a unit with a Scale equal to or greater than its own, the Titan is destroyed; do not roll on the Catastrophic Damage table. The unit it overlapped with suffers a Collision as normal.
+
+
+A Titan that arrives in this way cannot be activated in the Strategy phase or Movement phase in the round it arrives. [FAQ - 1.5]</description>
         </rule>
       </rules>
       <categoryLinks>
