@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="20" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="21" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -626,6 +626,26 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
     <categoryEntry name="Titan of Legend" id="9a74-94db-f8be-10e8" hidden="false"/>
     <categoryEntry name="Traitor Titan of Legend" id="e29c-eb6f-b9c7-4c2e" hidden="false"/>
     <categoryEntry name="Loyalist Titan of Legend" id="53b1-a2b6-919d-0f65" hidden="false"/>
+    <categoryEntry name="Dark Mechanicum" id="a570-d2d8-6de9-a37e" hidden="false">
+      <modifiers>
+        <modifier type="increment" value="1" field="5ba3-a0e4-594a-2771">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="b1c7-cb6c-5810-e9d9" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="20c9-0c15-57e3-bf84" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="5ba3-a0e4-594a-2771">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5ba3-a0e4-594a-2771"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="stub-entry" hidden="true">
@@ -6322,11 +6342,13 @@ Legio Audax Squadrons can contain up to five Titans, unless they can normally co
       </constraints>
       <rules>
         <rule id="eb20-0124-4019-ea50" name="Combat Drop" publicationId="bf8b-27d7-039e-5df9" page="21" hidden="false">
-          <description>This Stratagem can be purchased by any Legio Tempestus player. Play this Stratagem at the start of deployment, before any units have been placed upon the battlefield. Choose a friendly Legio Tempestus Titan of Scale 7 or lower to be kept in reserve; that unit is not deployed as normal and instead will arrive by combat drop.
+          <description>This Stratagem can be purchased by any Legio Tempestus player. Play this Stratagem at the start of deployment, before any units have been placed upon the battlefield. Choose a friendly Legio Tempestus Titan of Scale 7 or lower to be kept in reserve; that unit is not deployed as normal and instead will arrive by combat drop.
 
-At the start of any Strategy phase from the second round onwards, the chosen Titan is deployed by combat drop. Place the Titan anywhere on the battlefield more than 3&quot; away from an enemy unit then scatter the Titan D6&quot;. If the Titan scatters into a piece of Terrain, it stops before moving into it and suffers D3+2 Strength 9 hits (Void Shield saves are allowed). If, after it scatters, the Titan’s base overlaps with another model, friend or foe, with a Scale lower than the Titan’s, move the Titan the shortest distance so its base is not overlapping then resolve the effects of a Collision. If the Titan’s base overlaps that of a unit with a Scale equal to or greater than its own, the Titan is destroyed; do not roll on the Catastrophic Damage table. The unit it overlapped with suffers a Collision as normal.
 
-A Titan that arrives in this way cannot be activated in the Strategy phase or Movement phase in the round it arrives. [FAQ - 1.4]</description>
+At the start of any Strategy phase from the second round onwards, the chosen Titan may be deployed by combat drop. Place the Titan anywhere on the battlefield more than 3&quot; away from an enemy unit then scatter the Titan D6&quot;. If the Titan scatters into a piece of Terrain, it stops before moving into it and suffers D3+2 Strength 9 hits (Void Shield saves are allowed). If, after it scatters, the Titan’s base overlaps with another model, friend or foe, with a Scale lower than the Titan’s, move the Titan the shortest distance so its base is not overlapping then resolve the effects of a Collision. If the Titan’s base overlaps that of a unit with a Scale equal to or greater than its own, the Titan is destroyed; do not roll on the Catastrophic Damage table. The unit it overlapped with suffers a Collision as normal.
+
+
+A Titan that arrives in this way cannot be activated in the Strategy phase or Movement phase in the round it arrives. [FAQ - 1.5]</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -24799,7 +24821,7 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8c1b-59df-34da-636c" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Errax Stalker Banner" hidden="false" id="2c8d-5c19-13e8-1334">
+    <selectionEntry type="upgrade" import="true" name="Errax Stalker Banner" hidden="true" id="2c8d-5c19-13e8-1334">
       <profiles>
         <profile name="Errax Stalker Banner" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine" hidden="false" id="0587-878f-572b-3139">
           <characteristics>
@@ -24878,9 +24900,31 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <categoryLinks>
         <categoryLink targetId="e580-b213-3f86-c2fc" id="c9a2-74b9-1c9b-34b0" primary="false" name="Agile"/>
         <categoryLink targetId="184a-ded9-ae1a-e357" id="fba1-7bd7-be7d-9914" primary="false" name="Knight"/>
+        <categoryLink targetId="a570-d2d8-6de9-a37e" id="07b0-ee52-745c-5f96" primary="false" name="Dark Mechanicum"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="ff35-0598-025d-e035" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Tenebrax Stalker Banner" hidden="false" id="f82b-d1b8-cd1f-0f27">
+    <selectionEntry type="upgrade" import="true" name="Tenebrax Stalker Banner" hidden="true" id="f82b-d1b8-cd1f-0f27">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tenebrax Stalker" hidden="false" id="9c28-a0af-256c-a387">
           <costs>
@@ -24937,9 +24981,31 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <categoryLinks>
         <categoryLink targetId="e580-b213-3f86-c2fc" id="6960-8ae7-fef2-9ad3" primary="false" name="Agile"/>
         <categoryLink targetId="184a-ded9-ae1a-e357" id="6637-6f3c-bffd-80d8" primary="false" name="Knight"/>
+        <categoryLink targetId="a570-d2d8-6de9-a37e" id="e0e7-20d2-dea1-158c" primary="false" name="Dark Mechanicum"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="81b3-567a-a87c-3a80" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scintillax Stalker Banner" hidden="false" id="f2c7-10c1-0eee-ea98">
+    <selectionEntry type="upgrade" import="true" name="Scintillax Stalker Banner" hidden="true" id="f2c7-10c1-0eee-ea98">
       <infoLinks>
         <infoLink name="Construct Shield 4+" id="30f6-55df-b1d4-47da" hidden="false" type="rule" targetId="6755-7ad7-0bc8-1285"/>
         <infoLink name="Networked Anima" id="bb84-5abe-18d4-a99a" hidden="false" type="rule" targetId="f62e-52b6-3247-e960"/>
@@ -24947,6 +25013,8 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
       <categoryLinks>
         <categoryLink targetId="184a-ded9-ae1a-e357" id="2e35-2190-ddab-ba91" primary="false" name="Knight"/>
         <categoryLink targetId="e580-b213-3f86-c2fc" id="173d-df4d-aa4e-786f" primary="false" name="Agile"/>
+        <categoryLink targetId="a570-d2d8-6de9-a37e" id="106e-95fe-ea20-253c" primary="false" name="Dark Mechanicum"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="e95a-4dc8-6c4c-fea2" primary="false" name="Reinforcement Banner"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Scintillax Stalker" hidden="false" id="7159-a87f-2364-6cb0" type="selectionEntry" targetId="13bb-0cde-c5bb-0701" collective="false">
@@ -24983,8 +25051,28 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="10"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Serperos Stalker Banner" hidden="false" id="5267-24b1-1d96-6496">
+    <selectionEntry type="upgrade" import="true" name="Serperos Stalker Banner" hidden="true" id="5267-24b1-1d96-6496">
       <infoLinks>
         <infoLink name="Construct Shield 3+" id="f191-a9dd-f55a-82d1" hidden="false" type="rule" targetId="49c3-49d6-5461-3315"/>
         <infoLink name="Networked Anima" id="3106-dc92-e90b-1523" hidden="false" type="rule" targetId="f62e-52b6-3247-e960"/>
@@ -25095,6 +25183,32 @@ If you do so, restore the Titan&apos;s Void Shield level by D3, or 1 if the shie
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="a570-d2d8-6de9-a37e" id="868a-49e0-1318-d074" primary="false" name="Dark Mechanicum"/>
+        <categoryLink targetId="e580-b213-3f86-c2fc" id="e5a5-64e8-3518-85db" primary="false" name="Agile"/>
+        <categoryLink targetId="184a-ded9-ae1a-e357" id="d698-6ae3-d932-73e5" primary="false" name="Knight"/>
+        <categoryLink targetId="98d8-1204-e5c2-6cdf" id="8474-9930-f2a2-200a" primary="false" name="Reinforcement Banner"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="53b1-a2b6-919d-0f65" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d634-d27a-fd9c-3f8f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2bb9-9312-773b-3274" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2cd7-f37d-6476-cf93" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lascutter" hidden="false" id="74ed-3785-cdf0-51ad">
       <profiles>
