@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="22" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="23" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -26306,7 +26306,7 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
         <selectionEntry id="6783-8f0d-7481-1b04" name="Frozen Soul" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="1657-c53b-f9b5-ad51" name="Frozen Soul" publicationId="bf8b-27d7-039e-5df9" page="164" hidden="false">
-              <description>A Titan may be upgraded with this Base Mutation for +15 points. During the Damage Control phase, a Titan with this upgrade may roll an additional two Repair dice. Thesedice can only be used on the Vent Plasma Repair Action.</description>
+              <description>A Titan may be upgraded with this Base Mutation for +15 points. During the Damage Control phase, a Titan with this upgrade may roll an additional two Repair dice. These dice can only be used on the Vent Plasma Repair Action.</description>
             </rule>
           </rules>
           <costs>
