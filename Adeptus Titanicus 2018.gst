@@ -20201,7 +20201,9 @@ Take one selection per Dice.  Reaver Gatling Blaster should have 6 selections fo
       </constraints>
       <rules>
         <rule id="3232-7b01-8300-438e" name="Tracking Gyroscopes" hidden="false">
-          <description>Any Titan of Scale 10 or lower can be upgraded with Tracking Gyroscopes for +25 points. A Titan with this upgrade changes the Fire arc of all their carapace weapons to include the entire Front arc of the Titan.</description>
+          <description>Any Titan of Scale 10 or lower can be upgraded with Tracking Gyroscopes for +25 points. A Titan with this upgrade changes the Fire arc of all their carapace weapons to include the entire Front arc of the Titan.
+
+Note: This upgrade has no effect on Warhounds (they have no carapace), Direwolves (they already have front arc) and Reavers (all carapace weapons have 360 arc).</description>
         </rule>
       </rules>
       <costs>
@@ -22619,7 +22621,10 @@ Additionally, if the Head is chosen, in a campaign the Titan’s crew will alway
     <selectionEntry id="cd35-17bf-d32f-5e60" name="=Crusade= Tracking Gyroscopes" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="e537-e7ca-39e0-f677" name="Tracking Gyroscopes" publicationId="2988-f24d-39ef-352e" page="100" hidden="false">
-          <description>Any Titan from this Legio may be equipped with Tracking Gyroscopes for +10 points. A Titan with this upgrade changes the Fire Arc of their carapace weapons to include the entire Front Arc of the Titan.</description>
+          <description>Any Titan from this Legio may be equipped with Tracking Gyroscopes for +10 points. A Titan with this upgrade changes the Fire Arc of their carapace weapons to include the entire Front Arc of the Titan.
+
+
+Note: This upgrade has no effect on Warhounds (they have no carapace), Direwolves (they already have front arc) and Reavers (all carapace weapons have 360 arc).</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -26058,11 +26063,21 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="8eed-a57c-a7f9-6ec6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8eed-a57c-a7f9-6ec6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </conditions>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="8eed-a57c-a7f9-6ec6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="8eed-a57c-a7f9-6ec6" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="7103-9316-d4a5-8caa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="c37f-5ca9-9d98-5cf0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -26170,6 +26185,9 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2062-8f97-c49e-abe2" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c45d-04e4-f35f-8b20" type="instanceOf"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d36f-5e44-2150-3428" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="223f-6e71-9e4f-939e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d173-87e6-9f1b-1aaa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
