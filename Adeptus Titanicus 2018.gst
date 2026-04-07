@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="23" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="24" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -15772,8 +15772,8 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
                     <categoryLink id="09d6-d48e-8d0e-6e7f" name="Stratagem Hand" hidden="false" targetId="b539-a35c-fe3f-9c34" primary="false"/>
                   </categoryLinks>
                   <costs>
-                    <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="3"/>
                     <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
+                    <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="2"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="3802-c07b-d2d2-52d3" name="Target Lock" hidden="false" collective="false" import="true" type="upgrade">
