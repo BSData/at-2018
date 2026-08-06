@@ -621,7 +621,7 @@ Note: This upgrade has no effect on Warhounds (they have no carapace), Direwolve
       <modifiers>
         <modifier type="increment" value="2" field="7bd6-c857-ad95-8794">
           <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false" includeChildSelections="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="set" value="-1" field="7bd6-c857-ad95-8794">
