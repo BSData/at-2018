@@ -533,7 +533,16 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
     <categoryEntry id="f03e-2c70-6202-e81c" name="Secondary Shield Generators" hidden="false"/>
     <categoryEntry id="97c9-0bce-fc01-46f4" name="Autoloaders" hidden="false"/>
     <categoryEntry id="5221-b61f-f881-45e7" name="Macro Charges" hidden="false"/>
-    <categoryEntry id="8eed-a57c-a7f9-6ec6" name="Tracking Gyroscopes" hidden="false"/>
+    <categoryEntry id="8eed-a57c-a7f9-6ec6" name="Tracking Gyroscopes" hidden="false">
+      <rules>
+        <rule name="Tracking Gyroscopes" id="80af-a555-1d2d-2100" hidden="false" publicationId="2988-f24d-39ef-352e" page="100">
+          <description>Any Titan from this Legio may be equipped with Tracking Gyroscopes for +10 points. A Titan with this upgrade changes the Fire Arc of their carapace weapons to include the entire Front Arc of the Titan.
+
+
+Note: This upgrade has no effect on Warhounds (they have no carapace), Direwolves (they already have front arc) and Reavers (all carapace weapons have 360 arc).</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="40cd-b4c6-809f-9acf" name="Fusion Missiles" hidden="false"/>
     <categoryEntry id="7318-705d-7b35-c278" name="Gravitonic Stabilisers" hidden="false"/>
     <categoryEntry id="f834-a2e8-bf06-4d7c" name="Diabatic Warheads" hidden="false"/>
