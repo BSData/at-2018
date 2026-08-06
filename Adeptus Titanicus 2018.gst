@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="25" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="26" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -16563,6 +16563,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="064b-58f1-d5da-64a1" name="=Tempestus= Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry"/>
                 <entryLink id="29eb-226f-2914-22b5" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry"/>
                 <entryLink id="ea37-10a0-56cd-3018" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="d813-f8ae-081e-d421" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Obliterator" hidden="false" id="25df-512a-3091-d2e7" type="selectionEntry" targetId="3c41-407c-9284-39ca"/>
+                <entryLink import="true" name="Volkite Annihilator" hidden="false" id="7397-e246-468a-0093" type="selectionEntry" targetId="3de5-9714-507e-db10"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="27cf-b4d5-20b6-9032" name="Carapace" hidden="false" collective="false" import="false">
@@ -18763,6 +18765,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="2021-8c59-2b52-27b9" name="=Tempestus= Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry"/>
                 <entryLink id="80c2-5b5f-d0d8-58d3" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="d813-f8ae-081e-d421" type="selectionEntry"/>
                 <entryLink id="d0dd-da70-419a-ac77" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Annihilator" hidden="false" id="476e-004d-4cf2-4c2d" type="selectionEntry" targetId="3de5-9714-507e-db10"/>
+                <entryLink import="true" name="Graviton Obliterator" hidden="false" id="5196-f3bd-27e5-f9ff" type="selectionEntry" targetId="3c41-407c-9284-39ca"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="52a3-9f9b-284a-8ab7" name="Carapace" hidden="false" collective="false" import="false">
@@ -25352,6 +25356,79 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Graviton Obliterator" hidden="false" id="3c41-407c-9284-39ca">
+      <profiles>
+        <profile name="Graviton Obliterator" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="334c-6b10-19e2-ff84">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">20&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">40&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Concussive, Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="62f0-d5ca-5ce1-596f" id="d114-8863-ba4b-8c54" primary="false" name="Concussive"/>
+        <categoryLink targetId="511f-4690-c2b7-9996" id="1480-bb5e-3644-e126" primary="false" name="Rending"/>
+        <categoryLink targetId="44b5-8770-ea8e-2401" id="7c0c-ad61-3fdf-5d14" primary="true" name="Arm"/>
+        <categoryLink targetId="6bfc-b62c-823a-5a29" id="d392-f1ed-487a-cecf" primary="false" name="Arc: Front"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="f400-d554-a7d6-5268" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="c78a-415f-1362-6e0a" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volkite Annihilator" hidden="false" id="3de5-9714-507e-db10">
+      <categoryLinks>
+        <categoryLink targetId="8ab9-d312-06e4-8ba0" id="2830-c10a-c4b6-f396" primary="false" name="Draining"/>
+        <categoryLink targetId="1875-e91f-1789-465f" id="df2f-5886-4cac-a94e" primary="false" name="Beam (X)"/>
+        <categoryLink targetId="ce80-524a-1913-7f68" id="4ea0-15d6-0112-affe" primary="false" name="Voidbreaker"/>
+        <categoryLink targetId="44b5-8770-ea8e-2401" id="e2e1-dc70-1979-4eb4" primary="true" name="Arm"/>
+        <categoryLink targetId="6bfc-b62c-823a-5a29" id="b92f-095d-def3-7feb" primary="false" name="Arc: Front"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Volkite Annihilator" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="5d0d-8b96-91d3-9539">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">16&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">1</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2), Beam (1) {Draining}</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="a090-51bf-57d4-4aa6" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="bc0e-fdcb-0053-b04a" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
