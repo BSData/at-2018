@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="25" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="975a-00f4-df37-b565" name="Adeptus Titanicus 2018" revision="26" authorName="Play Titanicus BS Team" authorContact="You can find us on the Discord Server for comments and feedback:  https://discord.com/invite/UrrPB3T" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>No longer compatible with BS</comment>
   <readme>Create a Legio Battlegroup by adding a Battlegroup to your Roster. Maniples and Reinforcements can be added directly to a Legio Battlegroup!
 
@@ -366,7 +366,7 @@ Attacks made by Impale weapons bypass void shields.</description>
     <categoryEntry id="1875-e91f-1789-465f" name="Beam (X)" hidden="false">
       <rules>
         <rule id="3882-2805-b80e-d019" name="Beam (X)" publicationId="3265-f408-cc9b-bfa3" page="94" hidden="false">
-          <description>When resolving an attack from a Beam weapon, do not roll To Hit. Instead, pick a target and draw an imaginary, 1mm wide, straight line from the weapon to its maximum range; the line must cross the base of the target at the point closest to the firing model. The closes unit to the firing unit whose base is under the line suffers a number of hits equal to the weapon&apos;s Dice value. If that unit is destroyed, the next closest unit suffers aa number of hits equal to the weapon&apos;s Dice value minus the number in brackets after the trait, to a minimum of 0.
+          <description>When resolving an attack from a Beam weapon, do not roll To Hit. Instead, pick a target and draw an imaginary, 1mm wide, straight line from the weapon to its maximum range; the line must cross the base of the target at the point closest to the firing model. The closes unit to the firing unit whose base is under the line suffers a number of hits equal to the weapon&apos;s Dice value. If that unit is destroyed, the next closest unit suffers a number of hits equal to the weapon&apos;s Dice value minus the number in brackets after the trait, to a minimum of 0.
 Continue these steps until a unit is not destroyed, there are no units left underneath the line, or the weapon&apos;s Dice value has been reduced to 0. Beam weapons can only make Targeted Attacks against the closest unit - randomly determine the location for any subsequent unit hit by a Beam weapon.
 When determining the closest unit to be hit, any piece of terrain underneath the line counts as a unit. If a piece of terrain underneath the line is the closest &apos;unit&apos;, the beam carries on as if it had destroyed an enemy unit, i.e, reduce the Dice value and resolve hits against the next unit down the line.
 If the Destroying Terrain special rule is in use, the terrain takes hits as normal however the beam carries on after resolving these even if the building is not destroyed, reducing the Dice value as if it had destroyed an enemy unit.</description>
@@ -533,7 +533,16 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
     <categoryEntry id="f03e-2c70-6202-e81c" name="Secondary Shield Generators" hidden="false"/>
     <categoryEntry id="97c9-0bce-fc01-46f4" name="Autoloaders" hidden="false"/>
     <categoryEntry id="5221-b61f-f881-45e7" name="Macro Charges" hidden="false"/>
-    <categoryEntry id="8eed-a57c-a7f9-6ec6" name="Tracking Gyroscopes" hidden="false"/>
+    <categoryEntry id="8eed-a57c-a7f9-6ec6" name="Tracking Gyroscopes" hidden="false">
+      <rules>
+        <rule name="Tracking Gyroscopes" id="80af-a555-1d2d-2100" hidden="false" publicationId="2988-f24d-39ef-352e" page="100">
+          <description>Any Titan from this Legio may be equipped with Tracking Gyroscopes for +10 points. A Titan with this upgrade changes the Fire Arc of their carapace weapons to include the entire Front Arc of the Titan.
+
+
+Note: This upgrade has no effect on Warhounds (they have no carapace), Direwolves (they already have front arc) and Reavers (all carapace weapons have 360 arc).</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="40cd-b4c6-809f-9acf" name="Fusion Missiles" hidden="false"/>
     <categoryEntry id="7318-705d-7b35-c278" name="Gravitonic Stabilisers" hidden="false"/>
     <categoryEntry id="f834-a2e8-bf06-4d7c" name="Diabatic Warheads" hidden="false"/>
@@ -612,7 +621,7 @@ Unless otherwise stated, a Lance Standard’s effects only apply to Knight Bann
       <modifiers>
         <modifier type="increment" value="2" field="7bd6-c857-ad95-8794">
           <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false" includeChildSelections="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6982-2d18-55cb-61e5" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="set" value="-1" field="7bd6-c857-ad95-8794">
@@ -5764,11 +5773,11 @@ If the Titan is a Corrupted Titan, it instead rolls two dice on the Awakened Ent
     <selectionEntry id="f3d0-92f8-3bf7-4799" name="Legio Interfector (Murder Lords)" publicationId="975a-00f4-pubN89746" page="26" hidden="false" collective="false" import="false" type="upgrade">
       <rules>
         <rule id="5124-9f90-a107-cac9" name="Creeping Madness" publicationId="975a-00f4-pubN89746" page="26" hidden="false">
-          <description>When a Legio Interfector Titan is activaed in the Movement phase, it&apos;s player may choose to allows the madness of its Princeps to take over.  When this madness takes over, roll (a D3) on the table below:
+          <description>When a Legio Interfector Titan is activated in the Movement phase, it&apos;s player may choose to allows the madness of its Princeps to take over. When this madness takes over, roll (a D3) on the table below:
 
-                        1 - Dark Embrace:  The Titan gains the Charge order. It must move toward the nearest visible enemy Titan or Knight Banner by the shortest route possible, stopping if it reaches base contact with another model, and then make a smash attack, or attack with a single weapon with the Melee trait.
-                        2 - Weapon Overload:  The Titan gains the First Fire order. When the Titan would fire in the Movement phase, randomly choose one of the Titan&apos;s weapons without the Melee trait and make an atack with this weapon against the nearest enemy Titan or Knight Banner, counting the weapon&apos;s Strength as 2 higher than normal and its Dice as 1 higher than normal.  After the attack has be resolved, disable the chosen weapon.
-                        3 - Static Scream: All Titans and Knight Banners, both friendly and foe, within 12&quot;of the Titan must remove their Orders, except Emergency Repair orders. Titans who lost their Orders before activated are not subject to any of the lost Order&apos;s restrictions</description>
+1 - Dark Embrace: The Titan gains the Charge order. It must move toward the nearest visible enemy Titan or Knight Banner by the shortest route possible, stopping if it reaches base contact with another model, and then make a smash attack, or attack with a single weapon with the Melee trait.
+2 - Weapon Overload: The Titan gains the First Fire order. When the Titan would fire in the Movement phase, randomly choose one of the Titan&apos;s weapons without the Melee trait and make an attack with this weapon against the nearest enemy Titan or Knight Banner, counting the weapon&apos;s Strength as 2 higher than normal and its Dice as 1 higher than normal. After the attack has be resolved, disable the chosen weapon.
+3 - Static Scream: All Titans and Knight Banners, both friendly and foe, within 12&quot;of the Titan must remove their Orders, except Emergency Repair orders. Titans who lost their Orders before activated are not subject to any of the lost Order&apos;s restrictions</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -14609,9 +14618,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
     <selectionEntry id="ab5b-9a2c-91b9-35a2" name="Ignus Light Maniple" publicationId="ce02-a882-fdad-dd36" page="56" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="3b40-aa65-1afd-b2cd" name="Ignus Light Maniple" publicationId="ce02-a882-fdad-dd36" page="56" hidden="false">
-          <description>Scorched Earth. add 1 dice to all firestorm weapons, and reroll armour rolls of one.
-                        Banners must be Acherons.
-                        Banners within 6&quot; of a titan may be issued a First Fire or Full Stride order without a command check, if the titan has been successfully issued the same order this round.</description>
+          <description>Consuming Fire: Units within this maniple add 1 to the Dice value of any weapon with the Firestorm trait. In addition, they may re-roll Armour rolls of a 1 for attacks made with a weapon with the Firestorm trait. Cerastus Knight Banners within an Ignus Light Maniple must be upgraded to Cerastus Knight Acherons. In addition, Knight Banners included in an Ignus Light Maniple within 6&quot; of a Titan from this maniple may be issued a First Fire or Full Stride order without the need to make a Command check if that Titan has been successfully issued the same Order already this round.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -16563,6 +16570,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="064b-58f1-d5da-64a1" name="=Tempestus= Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry"/>
                 <entryLink id="29eb-226f-2914-22b5" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry"/>
                 <entryLink id="ea37-10a0-56cd-3018" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="d813-f8ae-081e-d421" type="selectionEntry"/>
+                <entryLink import="true" name="Graviton Obliterator" hidden="false" id="25df-512a-3091-d2e7" type="selectionEntry" targetId="3c41-407c-9284-39ca"/>
+                <entryLink import="true" name="Volkite Annihilator" hidden="false" id="7397-e246-468a-0093" type="selectionEntry" targetId="3de5-9714-507e-db10"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="27cf-b4d5-20b6-9032" name="Carapace" hidden="false" collective="false" import="false">
@@ -18763,6 +18772,8 @@ Take 1 selection for each half strength of the weapon you are upgrading.</descri
                 <entryLink id="2021-8c59-2b52-27b9" name="=Tempestus= Chasmata Laser Blaster" hidden="true" collective="false" import="false" targetId="01e4-e3f5-4396-d5c4" type="selectionEntry"/>
                 <entryLink id="80c2-5b5f-d0d8-58d3" name="=Mordaxis= Melta Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="d813-f8ae-081e-d421" type="selectionEntry"/>
                 <entryLink id="d0dd-da70-419a-ac77" name="=Mordaxis= Volcano Cannon with Toxin Nodes" hidden="true" collective="false" import="false" targetId="5f42-557f-65e1-68b2" type="selectionEntry"/>
+                <entryLink import="true" name="Volkite Annihilator" hidden="false" id="476e-004d-4cf2-4c2d" type="selectionEntry" targetId="3de5-9714-507e-db10"/>
+                <entryLink import="true" name="Graviton Obliterator" hidden="false" id="5196-f3bd-27e5-f9ff" type="selectionEntry" targetId="3c41-407c-9284-39ca"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="52a3-9f9b-284a-8ab7" name="Carapace" hidden="false" collective="false" import="false">
@@ -25352,6 +25363,79 @@ If a player’s battlegroup contains any Squadrons, they can choose this Strata
         <cost name="Points" typeId="a731-e220-2d8a-41bf" value="0"/>
         <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Graviton Obliterator" hidden="false" id="3c41-407c-9284-39ca">
+      <profiles>
+        <profile name="Graviton Obliterator" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="334c-6b10-19e2-ff84">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">2</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">9</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">20&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34">-</characteristic>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">40&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c">-</characteristic>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">-</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Concussive, Rending</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="62f0-d5ca-5ce1-596f" id="d114-8863-ba4b-8c54" primary="false" name="Concussive"/>
+        <categoryLink targetId="511f-4690-c2b7-9996" id="1480-bb5e-3644-e126" primary="false" name="Rending"/>
+        <categoryLink targetId="44b5-8770-ea8e-2401" id="7c0c-ad61-3fdf-5d14" primary="true" name="Arm"/>
+        <categoryLink targetId="6bfc-b62c-823a-5a29" id="d392-f1ed-487a-cecf" primary="false" name="Arc: Front"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="25"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="f400-d554-a7d6-5268" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="c78a-415f-1362-6e0a" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volkite Annihilator" hidden="false" id="3de5-9714-507e-db10">
+      <categoryLinks>
+        <categoryLink targetId="8ab9-d312-06e4-8ba0" id="2830-c10a-c4b6-f396" primary="false" name="Draining"/>
+        <categoryLink targetId="1875-e91f-1789-465f" id="df2f-5886-4cac-a94e" primary="false" name="Beam (X)"/>
+        <categoryLink targetId="ce80-524a-1913-7f68" id="4ea0-15d6-0112-affe" primary="false" name="Voidbreaker"/>
+        <categoryLink targetId="44b5-8770-ea8e-2401" id="e2e1-dc70-1979-4eb4" primary="true" name="Arm"/>
+        <categoryLink targetId="6bfc-b62c-823a-5a29" id="b92f-095d-def3-7feb" primary="false" name="Arc: Front"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="a731-e220-2d8a-41bf" value="30"/>
+        <cost name="Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Volkite Annihilator" typeId="b054-6896-e395-0e91" typeName="Weapon" hidden="false" id="5d0d-8b96-91d3-9539">
+          <characteristics>
+            <characteristic name="Dice" typeId="fff8-b599-3d0a-2555">3</characteristic>
+            <characteristic name="Strength" typeId="2761-1395-aa4e-73bd">5</characteristic>
+            <characteristic name="Short Range" typeId="8320-f9a1-68a0-47c2">16&quot;</characteristic>
+            <characteristic name="Short Accuracy" typeId="68ee-0c9a-e4c2-4a34"/>
+            <characteristic name="Long Range" typeId="bdee-aca0-6c3e-cc27">24&quot;</characteristic>
+            <characteristic name="Long Accuracy" typeId="98c1-7f92-4b2c-8d4c"/>
+            <characteristic name="Disabled Roll" typeId="02bc-8716-7743-7b16">10+</characteristic>
+            <characteristic name="X Value" typeId="f14d-88df-2e41-f0b4">1</characteristic>
+            <characteristic name="Limited" typeId="b21f-61e9-4f0d-88e6"/>
+            <characteristic name="Trait" typeId="bcd4-cb45-5d53-b7d8">Voidbreaker (2), Beam (1) {Draining}</characteristic>
+            <characteristic name="Critically Disabled Roll" typeId="2a6c-74d9-5a61-04bf"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="a090-51bf-57d4-4aa6" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hardened Casing" hidden="false" id="bc0e-fdcb-0053-b04a" type="selectionEntry" targetId="fc6c-b6b9-51a0-b7b0"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
