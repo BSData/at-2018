@@ -14618,9 +14618,7 @@ If a player has more than one Canis Light Maniple, each maniple beyond the first
     <selectionEntry id="ab5b-9a2c-91b9-35a2" name="Ignus Light Maniple" publicationId="ce02-a882-fdad-dd36" page="56" hidden="false" collective="false" import="false" type="unit">
       <rules>
         <rule id="3b40-aa65-1afd-b2cd" name="Ignus Light Maniple" publicationId="ce02-a882-fdad-dd36" page="56" hidden="false">
-          <description>Scorched Earth. add 1 dice to all firestorm weapons, and reroll armour rolls of one.
-                        Banners must be Acherons.
-                        Banners within 6&quot; of a titan may be issued a First Fire or Full Stride order without a command check, if the titan has been successfully issued the same order this round.</description>
+          <description>Consuming Fire: Units within this maniple add 1 to the Dice value of any weapon with the Firestorm trait. In addition, they may re-roll Armour rolls of a 1 for attacks made with a weapon with the Firestorm trait. Cerastus Knight Banners within an Ignus Light Maniple must be upgraded to Cerastus Knight Acherons. In addition, Knight Banners included in an Ignus Light Maniple within 6&quot; of a Titan from this maniple may be issued a First Fire or Full Stride order without the need to make a Command check if that Titan has been successfully issued the same Order already this round.</description>
         </rule>
       </rules>
       <categoryLinks>
